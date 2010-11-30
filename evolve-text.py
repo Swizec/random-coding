@@ -1,23 +1,22 @@
 
-TARGET = """Critticall is a new kind of a software tool, dedicated to hard problems solving. From discovering new unknown algorithms, answering some unsettled math questions, to creating school schedules. Critticall harnesses the power of the evolution to search for cunning solutions nobody has thought about them before. 
+TARGET = """
+Oft have we trod the vales of Castaly
+And heard sweet notes of sylvan music blown
+From antique reeds to common folk unknown:
+And often launched our bark upon that sea
+Which the nine Muses hold in empery,
+And ploughed free furrows through the wave and foam,
+Nor spread reluctant sail for more safe home
+Till we had freighted well our argosy.
 
-Sounds like some hardcore science fiction, but it's rather the radical incoming reality. Just try the ArtificialSort, invented using this tool, and you will be no less than impressed. If you don't like to be shocked, it's time to leave the site now. For the rest, we are having some amazing fun here. 
-
-Critticall is an evolution process simulator, dedicated for code segments improvement. Be it a C dialect known as the "strict C", or a specially designed language for the school schedule description. 
-
-The user submits some pieces of a valid code, along with the fitness function, and the Critticall will exercise some evolution upon it, to get more and more fitter piece of code. That may mean a faster program segment, a shorter program sequence doing the same job, or a better schedule solution. 
-
-It's a plenty of real examples here. Already mentioned ArtificialSort which you can try if you are a C++ programmer. Since seeing is the most straight way to believing, we recommend you to do so. You have been almost thought at school, something like this isn't possible. What is another reason to try. 
-
-To be a sceptic is the sole rational attitude to this kind of talk, you are reading just now. On the other hand we want exactly the rational people to engage in this, so we have provided a working examples, you may try free of any charge, whatsoever. 
-
-With the remaining percent of brave, skilled and smart ... let we go forward with this! 
-
-On the left side links of this page you will see the muscles of the Critticall software. The stuff hard to believe before checking it. 
-
-On the right side is a link to a very practical application - School Schedule. Many programs tries to match humans in the scheduling art and no one can. Critticall however surpasses them all. No wonder, when it's able to crack the left side problems, is it? Follow the link to ALGiT on the right! 
+Of which despoiled treasures these remain,
+Sordello's passion, and the honied line
+Of young Endymion, lordly Tamburlaine
+Driving his pampered jades, and more than these,
+The seven-fold vision of the Florentine,
+And grave-browed Milton's solemn harmonies.
 """
-ALPHABET = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz,\n'.\"! "
+ALPHABET = ""    
 MUTATE_CHANCE = 0.005
 BREED_CHANCE = 0.2
 BREED_MAX_CHUNK = 50
@@ -76,8 +75,17 @@ def there_yet(population):
             return True
     return False
 
+def construct_alphabet():
+    fin = {}
+    for c in TARGET:
+        fin[c] = True
+    return "".join(fin.keys())
+
 if __name__ == "__main__":
+    ALPHABET = construct_alphabet()
     population = seed(START_POPULATION, len(TARGET))
+
+    print population[0]
 
     min = distance(population[0], TARGET)
     max = distance(population[-1:][0], TARGET)
@@ -97,5 +105,5 @@ if __name__ == "__main__":
             print i, population[0]
             break
 
-    print "end of world!"
+    print "\nend of world!"
     #print population
