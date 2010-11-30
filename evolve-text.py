@@ -18,11 +18,11 @@ And grave-browed Milton's solemn harmonies.
 """
 ALPHABET = ""    
 MUTATE_CHANCE = 0.005
-BREED_CHANCE = 0.2
-BREED_MAX_CHUNK = 50
+BREED_CHANCE = 0.3
+BREED_MAX_CHUNK = len(TARGET)/4
 START_POPULATION = 150
-MAX_POPULATION = 800
-BREED_RANGE = (20, 60)
+MAX_POPULATION = 1500
+BREED_RANGE = (30, 60)
 MAX_EPOCHS = 3000
 
 import random
@@ -93,17 +93,21 @@ if __name__ == "__main__":
     print "gen:", 0, "min:", min, "max:", max, "populus:", len(population)
     
     for i in xrange(1, MAX_EPOCHS):
-        population = epoch(population)
+        try:
+            population = epoch(population)
 
-        min = distance(population[0], TARGET)
-        max = distance(population[-1:][0], TARGET)
+            min = distance(population[0], TARGET)
+            max = distance(population[-1:][0], TARGET)
 
-        print "gen:", i, "min:", min, "max:", max, "populus:", len(population)
-        #print population[0:2], population[-2:]
+            print "gen:", i, "min:", min, "max:", max, "populus:", len(population)
             
-        if there_yet(population):
-            print i, population[0]
-            break
+            if there_yet(population):
+                print i, population[0]
+                break
+        except KeyboardInterrupt:
+            print population[0]
+            raise
+
 
     print "\nend of world!"
     #print population
