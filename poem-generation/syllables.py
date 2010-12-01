@@ -8,14 +8,14 @@ BREED_CHANCE = 0.5
 BREED_MAX_CHUNK = 3
 SEED_SIZE = 100
 MAX_POPULATION = 500
-BREED_RANGE = (10, 40)
+BREED_RANGE = (20, 40)
 SYLLABLE = {'max': {"C": 3, "V": 1},
             'min': {"C": 0, "V": 1}}
 MAX_DISTANCE = SYLLABLE['max']['C']*4 # side-effect of how distance is calculated
 MAX_LENGTH = SYLLABLE['max']['C']+SYLLABLE['max']['V']
 
 PLEASANT = constants.ENGLISH_PLEASANTNESS
-MAX_EPOCHS = 400
+MAX_EPOCHS = 1000
 
 def seed(n):
     words = []
@@ -57,12 +57,15 @@ def breed(a, b):
         return mutate(b)
 
 def mutate(a):
-    if random.random() < 0.5:
+    r = random.random()
+    if r < 0.3:
         return [random.choice(ALPHABET.keys()) if abs(random.random()-0.5) < MUTATE_CHANCE else k \
                     for k in a]
-    else:
+    elif r < 0.6:
         return filter(lambda e: e!=None, [None if abs(random.random()-0.5) < MUTATE_CHANCE else k \
                                               for k in a])
+    else:
+        return a+[random.choice(ALPHABET.keys())] if random.random()-0.5 < MUTATE_CHANCE else a
 
 def fitness(a):
     types = [ALPHABET[k].split('-')[0] for k in a]
@@ -105,7 +108,11 @@ def fitness(a):
                     d = 1
             return s+c
 
-        return 1-(distance(types)+distance(reversed(types)))/float(MAX_DISTANCE)
+        d = (distance(types)+distance(reversed(types)))
+        if d > 0:
+            return 1-d/float(MAX_DISTANCE)
+        else:
+            return 0
                 
 
     return shortness()+pleasantness()+complexity()
@@ -142,8 +149,6 @@ def epoch(syllables):
 
 
 if __name__ == "__main__":
-    #print fitness(['x', 'th', 'oa', 'th'])
-    #print fitness(['p', 'i'])
     syllables = seed(SEED_SIZE)
     
     for i in xrange(MAX_EPOCHS):
@@ -151,4 +156,4 @@ if __name__ == "__main__":
         syllables = epoch(syllables)
     syllables = cutoff(syllables)
 
-    print [":".join(["".join(a), str(fitness(a))]) for a in syllables]
+    print ["".join(a) for a in syllables]
