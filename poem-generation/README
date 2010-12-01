@@ -1,0 +1,35 @@
+
+The idea of this mini project is very simple:
+
+- algorithmically construct an artificial language
+- algorithmically write a poem in said language
+
+
+A lot of the theoretical work behind language creation has been summed up from http://www.zompist.com/kitlong.html#phono
+
+Mostly because I've already used the page during my brief fantasy writing stint for creating artificial languages and I know it works.
+
+
+# PROCESS
+
+The language generation algorithm is divided into layers.
+
+## LANGUAGE
+0. List of phonems with defined pronounciation
+0.1 List of pleasantness of phonems
+0.2 Syllable constraints for number of consonants and vowels
+---
+1. Generate syllables, making sure they conform to the defined structure,
+   	    	       optimizing for simplicity and pleasantness
+2. Generate words, optimizing for simplicity and pleasantness,
+   	    	   trying to generate words mostly in an etymologycal way
+3. Generate lexicon, optimizing for even word simplicity distribution and variety,
+   	    	     making sure that ratios of verbs and nouns etc. are sane
+4. Generate sentence structure
+5. Generate a way to inflict sentences, optimizing for distinguishability
+6. Generate a way to present tense, optimizing for simplicity
+
+## POETRY
+1. Generate poetic structure, optimize for structure -> rhymes, sound flow etc.
+2. Generate sequences of sentences, optimize for poetic structure
+3. Generate meaningful poetry, optimize for "meaning" flow
