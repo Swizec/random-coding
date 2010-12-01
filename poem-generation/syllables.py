@@ -9,7 +9,7 @@ BREED_MAX_CHUNK = 3
 SEED_SIZE = 100
 MAX_POPULATION = 500
 BREED_RANGE = (20, 40)
-SYLLABLE = {'max': {"C": 4, "V": 1},
+SYLLABLE = {'max': {"C": 3, "V": 1},
             'min': {"C": 0, "V": 1}}
 MAX_DISTANCE = SYLLABLE['max']['C']*4 # side-effect of how distance is calculated
 MAX_LENGTH = SYLLABLE['max']['C']+SYLLABLE['max']['V']
