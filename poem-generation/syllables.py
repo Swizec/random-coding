@@ -27,9 +27,28 @@ def seed(n):
 
 def breed(a, b):
     if random.random()-0.5 < BREED_CHANCE:
+        r = random.random()
         s = random.randint(0, len(a))
         e = s+random.randint(1, BREED_MAX_CHUNK)
-        c =  a[0:s]+b[s:e]+a[e:]
+
+        def replace():
+            return a[0:s]+b[s:e]+a[e:]
+        def prepend():
+            return b[s:e]+a
+        def append():
+            return a+b[s:e]
+        def insert():
+            m = random.randint(1, len(a))
+            return a[0:m]+b[s:e]+a[m:]
+
+        if r < 0.25:
+            c = replace()
+        elif r < 0.50:
+            c = prepend()
+        elif r < 0.75:
+            c = append()
+        else:
+            c = insert()
         return c
     else:
         return mutate(b)
