@@ -7,7 +7,9 @@ MUTATE_CHANCE = 0.05
 BREED_CHANCE = 0.3
 BREED_MAX_CHUNK = 3
 SEED_SIZE = 10
-SYLLABLE = {"C": 3, "V": 2}
+SYLLABLE = {'max': {"C": 3, "V": 2},
+            'min': {"C": 0, "V": 1}}
+PLEASANT = constants.ENGLISH_PLEASANTNESS
 
 def seed(n):
     words = []
@@ -30,13 +32,39 @@ def breed(a, b):
         return mutate(b)
 
 def mutate(a):
-    return [random.choice(ALPHABET.keys()) if abs(random.random()-0.5) < MUTATE_CHANCE else k for k in a]
+    return [random.choice(ALPHABET.keys()) if abs(random.random()-0.5) < MUTATE_CHANCE else k \
+                for k in a]
 
 def fitness(a):
-    print [ALPHABET[k].split('-')[0] for k in a]
+    types = [ALPHABET[k].split('-')[0] for k in a]
+    C = sum([1 if t=='C' else 0 for t in types])
+    V = sum([1 if t=='V' else 0 for t in types])
+
+    def out_of_bounds():
+       return C < SYLLABLE['min']['C'] or V < SYLLABLE['min']['V'] or \
+              C > SYLLABLE['max']['C'] or V > SYLLABLE['max']['V']
+
+    if out_of_bounds():
+        return 0
+
+    def shortness():
+        return (SYLLABLE['max']['C']+SYLLABLE['max']['V'])-len(a)
+
+    def pleasantness():
+        s = 0
+        for k in a:
+            try:
+                k = PLEASANT[k.split('-')[1]]
+            except IndexError:
+                k = ''
+            s += PLEASANT[k]
+        return s
+
+    return shortness()+pleasantness()
+    
 
 
 if __name__ == "__main__":
     words = seed(SEED_SIZE)
     print words[0]
-    fitness(words[0])
+    print fitness(words[0])
