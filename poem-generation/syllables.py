@@ -3,13 +3,16 @@ import random
 import constants
 
 ALPHABET = constants.ENGLISH_ALPHABET
-MUTATE_CHANCE = 0.05
-BREED_CHANCE = 0.3
+MUTATE_CHANCE = 0.2
+BREED_CHANCE = 0.5
 BREED_MAX_CHUNK = 3
-SEED_SIZE = 10
-SYLLABLE = {'max': {"C": 3, "V": 2},
+SEED_SIZE = 50
+MAX_POPULATION = 500
+BREED_RANGE = (10, 40)
+SYLLABLE = {'max': {"C": 3, "V": 1},
             'min': {"C": 0, "V": 1}}
 PLEASANT = constants.ENGLISH_PLEASANTNESS
+MAX_EPOCHS = 100
 
 def seed(n):
     words = []
@@ -75,16 +78,50 @@ def fitness(a):
                     c = 0
                     d = 1
             return s+c
+        def max_distance():
+            return (len(types)-1)*4
 
-        s = distance(types)+distance(reversed(types))
-        return s
+        return max_distance()-(distance(types)+distance(reversed(types)))
                 
 
     return shortness()+pleasantness()+complexity()
     
+def compete(syllables):
+    syllables.sort(key=lambda a: fitness(a),
+                   reverse=True)
+            
+    return syllables
+
+def cutoff(syllables):
+    cut = MAX_POPULATION
+    for i in reversed(xrange(0, len(syllables))):
+        if fitness(syllables[i]) > 0:
+            cut = min([len(syllables)-i, MAX_POPULATION])
+            break
+    return syllables[:cut]
+    
+
+def epoch(syllables):
+    syllables = compete(map(mutate, syllables))
+    for i in xrange(BREED_RANGE[0]):
+        for j in xrange(BREED_RANGE[1]):
+            if i!=j:
+                syllables.append(breed(syllables[i], syllables[j]))
+
+    uniques = {}
+    for s in syllables:
+        uniques["".join(s)] = s
+
+    syllables = compete([uniques[k] for k in uniques.keys()])
+    return cutoff(syllables)
+    
 
 
 if __name__ == "__main__":
-    words = seed(SEED_SIZE)
-    print words[0]
-    print fitness(words[0])
+    syllables = seed(SEED_SIZE)
+    
+    for i in xrange(MAX_EPOCHS):
+        print "".join(syllables[0]), ",", "".join(syllables[-1:][0])
+        syllables = epoch(syllables)
+
+    print ["".join(a) for a in syllables]
