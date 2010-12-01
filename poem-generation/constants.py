@@ -62,7 +62,7 @@ ENGLISH_ALPHABET = \
  'oa': "V-",
  'oo': "V-",
  'p': "C-sl",
- 'q': "C-",
+ 'qu': "C-sg",
  'r': "C-aa",
  's': "C-fa",
  'sh': "C-fap",

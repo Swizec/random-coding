@@ -7,6 +7,7 @@ MUTATE_CHANCE = 0.05
 BREED_CHANCE = 0.3
 BREED_MAX_CHUNK = 3
 SEED_SIZE = 10
+SYLLABLE = {"C": 3, "V": 2}
 
 def seed(n):
     words = []
@@ -31,9 +32,11 @@ def breed(a, b):
 def mutate(a):
     return [random.choice(ALPHABET.keys()) if abs(random.random()-0.5) < MUTATE_CHANCE else k for k in a]
 
+def fitness(a):
+    print [ALPHABET[k].split('-')[0] for k in a]
+
 
 if __name__ == "__main__":
     words = seed(SEED_SIZE)
     print words[0]
-    print mutate(words[0])
-    print breed(words[0], words[1])
+    fitness(words[0])
