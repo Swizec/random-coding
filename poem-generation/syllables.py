@@ -153,7 +153,4 @@ def syllabary(debug=False):
     return ["".join(a) for a in syllables]
 
 if __name__ == "__main__":
-    print fitness(['w', 'i', 'y', 'p', 'w'])
-#    print syllabary(debug=True)
-#    print fitness(['z', 't'])
-#    print fitness(['i', 'zh', 'j', 'k', 'ou', 'a'])
+    print syllabary(debug=True)
