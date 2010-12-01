@@ -54,8 +54,12 @@ def breed(a, b):
         return mutate(b)
 
 def mutate(a):
-    return [random.choice(ALPHABET.keys()) if abs(random.random()-0.5) < MUTATE_CHANCE else k \
-                for k in a]
+    if random.random() < 0.5:
+        return [random.choice(ALPHABET.keys()) if abs(random.random()-0.5) < MUTATE_CHANCE else k \
+                    for k in a]
+    else:
+        return filter(lambda e: e!=None, [None if abs(random.random()-0.5) < MUTATE_CHANCE else k \
+                                              for k in a])
 
 def fitness(a):
     types = [ALPHABET[k].split('-')[0] for k in a]
