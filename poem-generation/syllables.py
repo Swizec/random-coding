@@ -83,6 +83,7 @@ def fitness(a):
         return 1-len(a)/float(MAX_LENGTH)
 
     def pleasantness():
+        # TODO: factor in sound sequences
         s = 0
         for k in a:
             try:
