@@ -60,7 +60,28 @@ def fitness(a):
             s += PLEASANT[k]
         return s
 
-    return shortness()+pleasantness()
+    def complexity():
+        # essentally distance of consonants from vowels
+        def distance(types):
+            s = 0
+            c = 0
+            d = 1
+            for t in types:
+                if t == 'C':
+                    c += d
+                    d += 1
+                elif t == 'V':
+                    s += c
+                    c = 0
+                    d = 1
+            return s+c
+
+        s = distance(types)+distance(reversed(types))
+        print s
+        return s
+                
+
+    return shortness()+pleasantness()+complexity()
     
 
 
