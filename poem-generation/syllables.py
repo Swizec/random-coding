@@ -118,28 +118,28 @@ def fitness(a):
 
     return shortness()+pleasantness()+complexity()
     
-def compete(syllables):
-    syllables.sort(key=lambda a: fitness(a),
+def compete(population):
+    population.sort(key=lambda a: fitness(a),
                    reverse=True)
             
-    return syllables
+    return population
 
-def cutoff(syllables):
-    return filter(lambda a: fitness(a) > 0, syllables[:MAX_POPULATION])
+def cutoff(population):
+    return filter(lambda a: fitness(a) > 0, population[:MAX_POPULATION])
 
-def epoch(syllables):
-    syllables = compete(map(mutate, syllables))
+def epoch(population):
+    population = compete(map(mutate, population))
     for i in xrange(BREED_RANGE[0]):
         for j in xrange(BREED_RANGE[1]):
             if i!=j:
-                syllables.append(breed(syllables[i], syllables[j]))
+                population.append(breed(population[i], population[j]))
 
     uniques = {}
-    for s in syllables:
+    for s in population:
         uniques["".join(s)] = s
 
-    syllables = compete([uniques[k] for k in uniques.keys()])
-    return cutoff(syllables)
+    population = compete([uniques[k] for k in uniques.keys()])
+    return cutoff(population)
     
 def syllabary(debug=False):
     print "Generating syllabary"
