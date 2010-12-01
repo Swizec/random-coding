@@ -18,15 +18,15 @@ PLEASANT = constants.ENGLISH_PLEASANTNESS
 MAX_EPOCHS = 1000
 
 def seed(n):
-    words = []
+    syllables = []
 
-    def word():
+    def syllable():
         return [random.choice(ALPHABET.keys()) for i in xrange(random.randint(1, 10))]
 
     for i in xrange(n):
-        words.append(word())
+        syllables.append(syllable())
 
-    return words
+    return syllables
 
 def breed(a, b):
     if random.random()-0.5 < BREED_CHANCE:
@@ -125,13 +125,7 @@ def compete(syllables):
     return syllables
 
 def cutoff(syllables):
-    cut = MAX_POPULATION
-    for i in reversed(xrange(0, len(syllables))):
-        if fitness(syllables[i]) > 0:
-            cut = min([len(syllables)-i, MAX_POPULATION])
-            break
-    return syllables[:cut]
-    
+    return filter(lambda a: fitness(a) > 0, syllables[:MAX_POPULATION])
 
 def epoch(syllables):
     syllables = compete(map(mutate, syllables))
@@ -148,13 +142,18 @@ def epoch(syllables):
     return cutoff(syllables)
     
 def syllabary(debug=False):
+    print "Generating syllabary"
+
     syllables = seed(SEED_SIZE)
     
     for i in xrange(MAX_EPOCHS):
         if debug:
             print "".join(syllables[0]), ",", "".join(syllables[-1:][0])
         syllables = epoch(syllables)
-    return cutoff(syllables)
+    return ["".join(a) for a in syllables]
 
 if __name__ == "__main__":
-    print ["".join(a) for a in syllabary()]
+    print fitness(['w', 'i', 'y', 'p', 'w'])
+#    print syllabary(debug=True)
+#    print fitness(['z', 't'])
+#    print fitness(['i', 'zh', 'j', 'k', 'ou', 'a'])
