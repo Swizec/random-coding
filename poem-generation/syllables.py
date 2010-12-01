@@ -77,7 +77,6 @@ def fitness(a):
             return s+c
 
         s = distance(types)+distance(reversed(types))
-        print s
         return s
                 
 
