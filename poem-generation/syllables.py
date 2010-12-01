@@ -9,7 +9,7 @@ BREED_MAX_CHUNK = 3
 SEED_SIZE = 100
 MAX_POPULATION = 500
 BREED_RANGE = (20, 40)
-SYLLABLE = {'max': {"C": 3, "V": 1},
+SYLLABLE = {'max': {"C": 4, "V": 1},
             'min': {"C": 0, "V": 1}}
 MAX_DISTANCE = SYLLABLE['max']['C']*4 # side-effect of how distance is calculated
 MAX_LENGTH = SYLLABLE['max']['C']+SYLLABLE['max']['V']
@@ -147,14 +147,14 @@ def epoch(syllables):
     syllables = compete([uniques[k] for k in uniques.keys()])
     return cutoff(syllables)
     
-
-
-if __name__ == "__main__":
+def syllabary(debug=False):
     syllables = seed(SEED_SIZE)
     
     for i in xrange(MAX_EPOCHS):
-        print "".join(syllables[0]), ",", "".join(syllables[-1:][0])
+        if debug:
+            print "".join(syllables[0]), ",", "".join(syllables[-1:][0])
         syllables = epoch(syllables)
-    syllables = cutoff(syllables)
+    return cutoff(syllables)
 
-    print ["".join(a) for a in syllables]
+if __name__ == "__main__":
+    print ["".join(a) for a in syllabary()]
