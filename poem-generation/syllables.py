@@ -141,7 +141,7 @@ def epoch(population):
     population = compete([uniques[k] for k in uniques.keys()])
     return cutoff(population)
     
-def syllabary(debug=False, scores=False):
+def syllabary(debug=False, meta=False):
     print "Generating syllabary"
 
     syllables = seed(SEED_SIZE)
@@ -151,12 +151,21 @@ def syllabary(debug=False, scores=False):
             print "".join(syllables[0]), ",", "".join(syllables[-1:][0])
         syllables = epoch(syllables)
 
-    if not scores:
+    if not meta:
         return ["".join(a) for a in syllables]
     else:
         d = {}
+        def meta(a):
+            def vowel(a):
+                for s in a:
+                    if ALPHABET[s].split('-')[0] == 'V':
+                        return s
+
+            return {'score': fitness(a),
+                    'vowel': vowel(a)}
+
         for a in syllables:
-            d["".join(a)] = fitness(a)
+            d["".join(a)] = meta(a)
         return d
 
 if __name__ == "__main__":

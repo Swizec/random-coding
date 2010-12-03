@@ -142,3 +142,16 @@ ENGLISH_PLEASANTNESS = \
  'lbrt': 2,
  'lbst': 0,
 }
+
+MELODY = {
+ 'a': "L",
+ 'e': "M",
+ 'ea': "H",
+ 'i': "H",
+ 'o': "L",
+ 'ou': "L",
+ 'oa': "M",
+ 'oo': "H",
+ 'u': "H",
+ 'ui': "H"
+}
