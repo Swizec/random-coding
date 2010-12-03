@@ -100,4 +100,5 @@ def words(debug=True):
     return ["".join(a) for a in population]
 
 if __name__=="__main__":
-    print words()
+    print syllables.syllabary(scores=True)
+#    print words()
