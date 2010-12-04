@@ -96,12 +96,13 @@ def fitness(a):
         return sum([(1-distance(map(lambda s: MELODY[SYLLABARY[s]['vowel']], a),
                                 rank)/max_dist(rank))*MELODY_RANKS[rank] \
                     for rank in MELODY_RANKS.keys()])
+    def phonology():
+        return 1
 
     if len(a) == 0:
         return 0
     
-    return shortnes()*melody()*syllables()
-    return syllables()*shortnes()+melody()
+    return (shortnes()*2)*melody()*syllables()*phonology()
 
 def compete(population):
     population.sort(key=lambda a: fitness(a),
@@ -135,13 +136,9 @@ def words(debug=False):
 
     for i in xrange(MAX_EPOCHS):
         if debug:
-            print "".join(population[0]), ",", "".join(population[-1:][0])
+            print i, "".join(population[0]), ",", "".join(population[-1:][0])
         population = epoch(population)
-    print population[0]
-    return ["".join(a) for a in population]
+    return [":".join(["".join(w), str(fitness(w))]) for w in population]
 
 if __name__=="__main__":
-    #print fitness(['ooy', 'oum'])
-    #print "known HL"
-    #print syllables.syllabary(meta=True)
     print words(debug=True)

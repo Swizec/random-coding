@@ -155,3 +155,32 @@ MELODY = {
  'u': "H",
  'ui': "H"
 }
+
+# borrowed from english
+# http://en.wikipedia.org/wiki/Sonority_hierarchy
+SONORITY = {
+    'p': 0,
+    't': 0,
+    'k': 0,
+    'b': 1,
+    'd': 1,
+    'g': 1,
+    's': 2,
+    'f': 2,
+    'th': 2,
+    'z': 3,
+    'v': 3,
+    'm': 4,
+    'n': 4,
+    'l': 5,
+    'r': 6,
+    'ea': 6,
+    'i': 7,
+    'ui': 7,
+    'u': 7,
+    'e': 8,
+    'ou': 8,
+    'o': 8,
+    'oo': 9,
+    'a': 9
+}

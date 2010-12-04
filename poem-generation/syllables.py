@@ -13,6 +13,25 @@ SYLLABLE = {'max': {"C": 3, "V": 1},
             'min': {"C": 0, "V": 1}}
 MAX_DISTANCE = SYLLABLE['max']['C']*4 # side-effect of how distance is calculated
 MAX_LENGTH = SYLLABLE['max']['C']+SYLLABLE['max']['V']
+SONORITY = constants.SONORITY
+def NUCLEUS(a):
+    for i in xrange(len(a)):
+        if a[i].split('-')[0] == 'V':
+            return i
+    return 0
+def EXCEPTIONS(a):
+    for i in xrange(len(a)):
+        if a[i] == 'x':
+            try:
+                if a[i-1] not in ['e'] and a[i+1].split('-')[0] != 'V':
+                    return 0
+            except IndexError:
+                pass
+    if a[-1:][0] == 'th':
+        return 0
+    if a[0] == 'ng':
+        return 0
+    return 1
 
 PLEASANT = constants.ENGLISH_PLEASANTNESS
 MAX_EPOCHS = 1000
@@ -114,9 +133,22 @@ def fitness(a):
             return 1-d/float(MAX_DISTANCE)
         else:
             return 0
-                
 
-    return shortness()+pleasantness()+complexity()
+    def sonority():
+        def _son(p):
+            try:
+                return SONORITY[p]
+            except KeyError:
+                return 0
+        for i in xrange(NUCLEUS(a)):
+            if _son(a[i]) > _son(a[i+1]):
+                return 0
+        for i in xrange(NUCLEUS(a), len(a)-1):
+            if _son(a[i]) < _son(a[i+1]):
+                return 0
+        return 1
+    
+    return (shortness()+pleasantness()+complexity())*sonority()*EXCEPTIONS(a)
     
 def compete(population):
     population.sort(key=lambda a: fitness(a),
