@@ -20,7 +20,7 @@ BREED_MAX_CHUNK = 3
 SEED_SIZE = 100
 MAX_POPULATION = 500
 BREED_RANGE = (20, 40)
-MAX_EPOCHS = 100
+MAX_EPOCHS = 500
 
 def seed(n):
     words = []
@@ -74,28 +74,33 @@ def mutate(a):
 
 def fitness(a):
     def syllables():
-        return sum([SYLLABARY[s]['score'] for s in a])
+        return reduce(lambda a,b: a*b, [SYLLABARY[s]['score'] for s in a])
 
     def shortnes():
-        try:
-            return 1-len(a)/float(MAX_SYLLABLES)
-        except ZeroDivisionError:
-            return 0
+        return 1-len(a)/float(MAX_SYLLABLES)
 
     def melody():
+        def delta(a, b):
+            la = len(a)
+            lb = len(b)
+            return (xrange(la) if la<lb else xrange(lb),
+                    abs(la-lb)*3)
         def distance(a, b):
-            if len(a)<len(b):
-                r = xrange(len(a))
-                d = (len(b)-len(a))*3
-            else:
-                r = xrange(len(b))
-                d = (len(a)-len(b))*3
+            (r, d) = delta(a, b)
             enum = {'H': 2, 'M': 1, 'L': 0}
-            return sum([abs(enum[a[i]]-enum[b[i]]) for i in r])
+            return d+sum([abs(enum[a[i]]-enum[b[i]]) for i in r])
+        def max_dist(b):
+            (r, d) = delta(a, b)
+            return float(d+len(r)*2)
             
-        print "".join(map(lambda s: MELODY[SYLLABARY[s]['vowel']], a))
-        return 1
+        return sum([(1-distance(map(lambda s: MELODY[SYLLABARY[s]['vowel']], a),
+                                rank)/max_dist(rank))*MELODY_RANKS[rank] \
+                    for rank in MELODY_RANKS.keys()])
 
+    if len(a) == 0:
+        return 0
+    
+    return shortnes()*melody()*syllables()
     return syllables()*shortnes()+melody()
 
 def compete(population):
@@ -130,10 +135,13 @@ def words(debug=False):
 
     for i in xrange(MAX_EPOCHS):
         if debug:
-            print "".join(population[0]), ",", "".join(population[-1:][0]), len(population)
+            print "".join(population[0]), ",", "".join(population[-1:][0])
         population = epoch(population)
+    print population[0]
     return ["".join(a) for a in population]
 
 if __name__=="__main__":
+    #print fitness(['ooy', 'oum'])
+    #print "known HL"
     #print syllables.syllabary(meta=True)
     print words(debug=True)
