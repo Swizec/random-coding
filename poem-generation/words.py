@@ -5,7 +5,6 @@ import constants, syllables
 #SYLLABARY = syllables.syllabary()
 # generated one, easier for development, less waiting :)
 SYLLABARY = pickle.load(open('syllabary.pickle', 'r'))
-MAX_SYLLABLES = 5
 MELODY = constants.MELODY
 MELODY_RANKS = {'H': 5,
                 'L': 4,
@@ -13,11 +12,11 @@ MELODY_RANKS = {'H': 5,
                 'HLHL': 3,
                 'M': 1,
                 'LMH': 1,
-                'HML': 1,
+                'HML': 2,
                 'HLL': 1}
 MUTATE_CHANCE = 0.2
 BREED_CHANCE = 0.5
-BREED_MAX_CHUNK = 3
+BREED_MAX_CHUNK = 2
 SEED_SIZE = 100
 MAX_POPULATION = 500
 BREED_RANGE = (20, 40)
@@ -73,12 +72,12 @@ def mutate(a):
     else:
         return a+[random.choice(SYLLABARY.keys())] if random.random()-0.5 < MUTATE_CHANCE else a
 
-def fitness(a):
+def fitness(a, longest):
     def syllables():
         return reduce(lambda a,b: a*b, [SYLLABARY[s]['score'] for s in a])
 
     def shortnes():
-        return 1-len(a)/float(MAX_SYLLABLES)
+        return 1-len(a)/float(longest)
 
     def melody():
         def delta(a, b):
@@ -105,14 +104,22 @@ def fitness(a):
     
     return (shortnes()*2)*melody()*syllables()*phonology()
 
+def longest(population):
+    return len(reduce(lambda a,b: a if len(a) > len(b) else b,
+                      population))
+
 def compete(population):
-    population.sort(key=lambda a: fitness(a),
+    max = longest(population)
+
+    population.sort(key=lambda a: fitness(a, max),
                    reverse=True)
             
     return population
 
 def cutoff(population):
-    return filter(lambda a: fitness(a) > 0, population[:MAX_POPULATION])
+    max = longest(population)
+    return filter(lambda a: fitness(a, max) > 0, population[:MAX_POPULATION])
+
 
 def epoch(population):
     population = compete(map(mutate, population))
