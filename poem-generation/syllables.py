@@ -201,6 +201,11 @@ def syllabary(debug=False, meta=False):
         return d
 
 if __name__ == "__main__":
-    #print fitness(['ou', 'ng', 'k'])
-    #print EXCEPTIONS(['oo','x', 'w'])
-    print syllabary(debug=True, meta=True)
+    import sys, pickle
+
+    data = syllabary(debug=True, meta=True)
+
+    try:
+        pickle.dump(data, open(sys.argv[1], 'w'))
+    except IndexError:
+        print data
