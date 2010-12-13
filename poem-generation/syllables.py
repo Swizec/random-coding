@@ -5,7 +5,7 @@ import constants
 ALPHABET = constants.ENGLISH_ALPHABET
 MUTATE_CHANCE = 0.2
 BREED_CHANCE = 0.5
-BREED_MAX_CHUNK = 3
+BREED_MAX_CHUNK = 2
 SEED_SIZE = 100
 MAX_POPULATION = 500
 BREED_RANGE = (20, 40)
@@ -23,7 +23,7 @@ def EXCEPTIONS(a):
     for i in xrange(len(a)):
         if a[i] == 'x':
             try:
-                if a[i-1] not in ['e'] and a[i+1].split('-')[0] != 'V':
+                if a[i-1] != 'e' or ALPHABET[a[i+1]].split('-')[0] != 'V':
                     return 0
             except IndexError:
                 pass
@@ -141,13 +141,13 @@ def fitness(a):
             except KeyError:
                 return 0
         for i in xrange(NUCLEUS(a)):
-            if _son(a[i]) > _son(a[i+1]):
-                return 0
-        for i in xrange(NUCLEUS(a), len(a)-1):
             if _son(a[i]) < _son(a[i+1]):
                 return 0
+        for i in xrange(NUCLEUS(a), len(a)-1):
+            if _son(a[i]) > _son(a[i+1]):
+                return 0
         return 1
-    
+
     return (shortness()+pleasantness()+complexity())*sonority()*EXCEPTIONS(a)
     
 def compete(population):
@@ -201,4 +201,6 @@ def syllabary(debug=False, meta=False):
         return d
 
 if __name__ == "__main__":
-    print syllabary(debug=True)
+    #print fitness(['ou', 'ng', 'k'])
+    #print EXCEPTIONS(['oo','x', 'w'])
+    print syllabary(debug=True, meta=True)
