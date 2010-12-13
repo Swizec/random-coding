@@ -1,23 +1,22 @@
 
-import random
+import random, pickle
 import constants, syllables
 
 #SYLLABARY = syllables.syllabary()
 # generated one, easier for development, less waiting :)
-MAX_SYLLABLES = 5
-SYLLABARY = {'zhso': {'score': 0.75, 'vowel': 'o'}, 'zhja': {'score': 0.75, 'vowel': 'a'}, 'zhsu': {'score': 0.75, 'vowel': 'u'}, 'oa': {'score': 0.75, 'vowel': 'oa'}, 'wea': {'score': 1.3333333333333335, 'vowel': 'ea'}, 'le': {'score': 1.3333333333333335, 'vowel': 'e'}, 'shzhoa': {'score': 0.75, 'vowel': 'oa'}, 'la': {'score': 1.3333333333333335, 'vowel': 'a'}, 'shjoa': {'score': 0.75, 'vowel': 'oa'}, 'lo': {'score': 1.3333333333333335, 'vowel': 'o'}, 'yoah': {'score': 0.91666666666666674, 'vowel': 'oa'}, 'cla': {'score': 0.75, 'vowel': 'a'}, 'li': {'score': 1.3333333333333335, 'vowel': 'i'}, 'chpi': {'score': 0.75, 'vowel': 'i'}, 'ti': {'score': 1.3333333333333335, 'vowel': 'i'}, 'woazh': {'score': 0.91666666666666674, 'vowel': 'oa'}, 'ta': {'score': 1.3333333333333335, 'vowel': 'a'}, 'oapsh': {'score': 0.75, 'vowel': 'oa'}, 'ya': {'score': 1.3333333333333335, 'vowel': 'a'}, 'quwe': {'score': 0.75, 'vowel': 'e'}, 'chya': {'score': 0.75, 'vowel': 'a'}, 'ye': {'score': 1.3333333333333335, 'vowel': 'e'}, 'poash': {'score': 0.91666666666666674, 'vowel': 'oa'}, 'yu': {'score': 1.3333333333333335, 'vowel': 'u'}, 'shu': {'score': 1.3333333333333335, 'vowel': 'u'}, 'wso': {'score': 0.75, 'vowel': 'o'}, 'sha': {'score': 1.3333333333333335, 'vowel': 'a'}, 'pba': {'score': 0.75, 'vowel': 'a'}, 'she': {'score': 1.3333333333333335, 'vowel': 'e'}, 'shi': {'score': 1.3333333333333335, 'vowel': 'i'}, 'sho': {'score': 1.3333333333333335, 'vowel': 'o'}, 'shea': {'score': 1.3333333333333335, 'vowel': 'ea'}, 'oash': {'score': 1.3333333333333335, 'vowel': 'oa'}, 'jchi': {'score': 0.75, 'vowel': 'i'}, 'quoapc': {'score': 0.33333333333333337, 'vowel': 'oa'}, 'oashw': {'score': 0.75, 'vowel': 'oa'}, 'sea': {'score': 1.3333333333333335, 'vowel': 'ea'}, 'chea': {'score': 1.3333333333333335, 'vowel': 'ea'}, 'quoac': {'score': 0.91666666666666674, 'vowel': 'oa'}, 'oashy': {'score': 0.75, 'vowel': 'oa'}, 'qukou': {'score': 0.75, 'vowel': 'ou'}, 'chna': {'score': 0.75, 'vowel': 'a'}, 'wou': {'score': 1.3333333333333335, 'vowel': 'ou'}, 'cno': {'score': 0.75, 'vowel': 'o'}, 'woa': {'score': 1.3333333333333335, 'vowel': 'oa'}, 'pea': {'score': 1.3333333333333335, 'vowel': 'ea'}, 'sma': {'score': 0.75, 'vowel': 'a'}, 'we': {'score': 1.3333333333333335, 'vowel': 'e'}, 'quu': {'score': 1.3333333333333335, 'vowel': 'u'}, 'ba': {'score': 1.3333333333333335, 'vowel': 'a'}, 'wa': {'score': 1.3333333333333335, 'vowel': 'a'}, 'wo': {'score': 1.3333333333333335, 'vowel': 'o'}, 'yshoa': {'score': 0.75, 'vowel': 'oa'}, 'bo': {'score': 1.3333333333333335, 'vowel': 'o'}, 'wi': {'score': 1.3333333333333335, 'vowel': 'i'}, 'qua': {'score': 1.3333333333333335, 'vowel': 'a'}, 'bu': {'score': 1.3333333333333335, 'vowel': 'u'}, 'wu': {'score': 1.3333333333333335, 'vowel': 'u'}, 'jo': {'score': 1.3333333333333335, 'vowel': 'o'}, 'que': {'score': 1.3333333333333335, 'vowel': 'e'}, 'ji': {'score': 1.3333333333333335, 'vowel': 'i'}, 'shoaqu': {'score': 0.91666666666666674, 'vowel': 'oa'}, 'oashk': {'score': 0.75, 'vowel': 'oa'}, 'cpou': {'score': 0.75, 'vowel': 'ou'}, 'choa': {'score': 1.3333333333333335, 'vowel': 'oa'}, 'cou': {'score': 1.3333333333333335, 'vowel': 'ou'}, 'bou': {'score': 1.3333333333333335, 'vowel': 'ou'}, 'o': {'score': 0.75, 'vowel': 'o'}, 'coa': {'score': 1.3333333333333335, 'vowel': 'oa'}, 'chou': {'score': 1.3333333333333335, 'vowel': 'ou'}, 'yla': {'score': 0.75, 'vowel': 'a'}, 'yqua': {'score': 0.75, 'vowel': 'a'}, 'ou': {'score': 0.75, 'vowel': 'ou'}, 'chwe': {'score': 0.75, 'vowel': 'e'}, 'tu': {'score': 1.3333333333333335, 'vowel': 'u'}, 'co': {'score': 1.3333333333333335, 'vowel': 'o'}, 'ce': {'score': 1.3333333333333335, 'vowel': 'e'}, 'sou': {'score': 1.3333333333333335, 'vowel': 'ou'}, 'je': {'score': 1.3333333333333335, 'vowel': 'e'}, 'shoab': {'score': 0.91666666666666674, 'vowel': 'oa'}, 'shoac': {'score': 0.91666666666666674, 'vowel': 'oa'}, 'cu': {'score': 1.3333333333333335, 'vowel': 'u'}, 'zhno': {'score': 0.75, 'vowel': 'o'}, 'cha': {'score': 1.3333333333333335, 'vowel': 'a'}, 'che': {'score': 1.3333333333333335, 'vowel': 'e'}, 'pu': {'score': 1.3333333333333335, 'vowel': 'u'}, 'chla': {'score': 0.75, 'vowel': 'a'}, 'chi': {'score': 1.3333333333333335, 'vowel': 'i'}, 'wquu': {'score': 0.75, 'vowel': 'u'}, 'ybou': {'score': 0.75, 'vowel': 'ou'}, 'shsho': {'score': 0.75, 'vowel': 'o'}, 'pa': {'score': 1.3333333333333335, 'vowel': 'a'}, 'chu': {'score': 1.3333333333333335, 'vowel': 'u'}, 'pe': {'score': 1.3333333333333335, 'vowel': 'e'}, 'cwoa': {'score': 0.75, 'vowel': 'oa'}, 'pi': {'score': 1.3333333333333335, 'vowel': 'i'}, 'wqua': {'score': 0.75, 'vowel': 'a'}, 'woach': {'score': 0.91666666666666674, 'vowel': 'oa'}, 'cya': {'score': 0.75, 'vowel': 'a'}, 'quoaw': {'score': 0.91666666666666674, 'vowel': 'oa'}, 'wque': {'score': 0.75, 'vowel': 'e'}, 'me': {'score': 1.3333333333333335, 'vowel': 'e'}, 'wwe': {'score': 0.75, 'vowel': 'e'}, 'pqua': {'score': 0.75, 'vowel': 'a'}, 'jque': {'score': 0.75, 'vowel': 'e'}, 'zha': {'score': 1.3333333333333335, 'vowel': 'a'}, 'zhoav': {'score': 0.91666666666666674, 'vowel': 'oa'}, 'ui': {'score': 0.75, 'vowel': 'ui'}, 'chche': {'score': 0.75, 'vowel': 'e'}, 'zho': {'score': 1.3333333333333335, 'vowel': 'o'}, 'chqua': {'score': 0.75, 'vowel': 'a'}, 'pwea': {'score': 0.75, 'vowel': 'ea'}, 'zhui': {'score': 1.3333333333333335, 'vowel': 'ui'}, 'shzhe': {'score': 0.75, 'vowel': 'e'}, 'zhla': {'score': 0.75, 'vowel': 'a'}, 'quou': {'score': 1.3333333333333335, 'vowel': 'ou'}, 'no': {'score': 1.3333333333333335, 'vowel': 'o'}, 'na': {'score': 1.3333333333333335, 'vowel': 'a'}, 'yoa': {'score': 1.3333333333333335, 'vowel': 'oa'}, 'quoa': {'score': 1.3333333333333335, 'vowel': 'oa'}, 'u': {'score': 0.75, 'vowel': 'u'}, 'you': {'score': 1.3333333333333335, 'vowel': 'ou'}, 'nu': {'score': 1.3333333333333335, 'vowel': 'u'}, 'oay': {'score': 1.3333333333333335, 'vowel': 'oa'}, 'zhou': {'score': 1.3333333333333335, 'vowel': 'ou'}, 'wche': {'score': 0.75, 'vowel': 'e'}, 'zhcha': {'score': 0.75, 'vowel': 'a'}, 'shchu': {'score': 0.75, 'vowel': 'u'}, 'jche': {'score': 0.75, 'vowel': 'e'}, 'wsha': {'score': 0.75, 'vowel': 'a'}, 'zhchi': {'score': 0.75, 'vowel': 'i'}, 'a': {'score': 0.75, 'vowel': 'a'}, 'chsu': {'score': 0.75, 'vowel': 'u'}, 'e': {'score': 0.75, 'vowel': 'e'}, 'su': {'score': 1.3333333333333335, 'vowel': 'u'}, 'chse': {'score': 0.75, 'vowel': 'e'}, 'si': {'score': 1.3333333333333335, 'vowel': 'i'}, 'cshoa': {'score': 0.75, 'vowel': 'oa'}, 'so': {'score': 1.3333333333333335, 'vowel': 'o'}, 'quwu': {'score': 0.75, 'vowel': 'u'}, 'wya': {'score': 0.75, 'vowel': 'a'}, 'cce': {'score': 0.75, 'vowel': 'e'}, 'sa': {'score': 1.3333333333333335, 'vowel': 'a'}, 'se': {'score': 1.3333333333333335, 'vowel': 'e'}, 'quno': {'score': 0.75, 'vowel': 'o'}}
+SYLLABARY = pickle.load(open('syllabary.pickle', 'r'))
 MELODY = constants.MELODY
 MELODY_RANKS = {'H': 5,
                 'L': 4,
-                'HM': 2,
-                'HLHL': 3,
-                'M': 1,
+                'HM': 2.5,
+                'HLHL': 2,
+                'M': 2,
                 'LMH': 1,
-                'HML': 1,
+                'HML': 1.5,
                 'HLL': 1}
 MUTATE_CHANCE = 0.2
 BREED_CHANCE = 0.5
-BREED_MAX_CHUNK = 3
+BREED_MAX_CHUNK = 2
 SEED_SIZE = 100
 MAX_POPULATION = 1500
 BREED_RANGE = (20, 40)
@@ -73,12 +72,12 @@ def mutate(a):
     else:
         return a+[random.choice(SYLLABARY.keys())] if random.random()-0.5 < MUTATE_CHANCE else a
 
-def fitness(a):
+def fitness(a, longest):
     def syllables():
         return reduce(lambda a,b: a*b, [SYLLABARY[s]['score'] for s in a])
 
     def shortnes():
-        return 1-len(a)/float(MAX_SYLLABLES)
+        return 1-len(a)/float(longest)
 
     def melody():
         def delta(a, b):
@@ -117,14 +116,22 @@ def fitness(a):
     
     return (shortnes()*2)*melody()*syllables()*phonology()*complexity()
 
+def longest(population):
+    return len(reduce(lambda a,b: a if len(a) > len(b) else b,
+                      population))
+
 def compete(population):
-    population.sort(key=lambda a: fitness(a),
+    max = longest(population)
+
+    population.sort(key=lambda a: fitness(a, max),
                    reverse=True)
             
     return population
 
 def cutoff(population):
-    return filter(lambda a: fitness(a) > 0, population[:MAX_POPULATION])
+    max = longest(population)
+    return filter(lambda a: fitness(a, max) > 0, population[:MAX_POPULATION])
+
 
 def epoch(population):
     population = compete(map(mutate, population))
