@@ -19,7 +19,7 @@ MUTATE_CHANCE = 0.2
 BREED_CHANCE = 0.5
 BREED_MAX_CHUNK = 3
 SEED_SIZE = 100
-MAX_POPULATION = 500
+MAX_POPULATION = 1500
 BREED_RANGE = (20, 40)
 MAX_EPOCHS = 500
 
@@ -100,10 +100,22 @@ def fitness(a):
     def phonology():
         return 1
 
+    def complexity():
+        # find nucleus of word
+        # len deltas from nucleus
+        # compare to ideal deltas
+        # scoar
+        nucleus = a[len(a)/2]
+        deltas = [abs(len(s)-len(nucleus)) for s in a]
+        try:
+            return 1.0/sum(deltas)
+        except ZeroDivisionError:
+            return 1
+
     if len(a) == 0:
         return 0
     
-    return (shortnes()*2)*melody()*syllables()*phonology()
+    return (shortnes()*2)*melody()*syllables()*phonology()*complexity()
 
 def compete(population):
     population.sort(key=lambda a: fitness(a),
