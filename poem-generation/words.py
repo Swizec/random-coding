@@ -8,11 +8,11 @@ SYLLABARY = pickle.load(open('syllabary.pickle', 'r'))
 MELODY = constants.MELODY
 MELODY_RANKS = {'H': 5,
                 'L': 4,
-                'HM': 2,
-                'HLHL': 3,
-                'M': 1,
+                'HM': 2.5,
+                'HLHL': 2,
+                'M': 2,
                 'LMH': 1,
-                'HML': 2,
+                'HML': 1.5,
                 'HLL': 1}
 MUTATE_CHANCE = 0.2
 BREED_CHANCE = 0.5
