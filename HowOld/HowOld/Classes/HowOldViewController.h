@@ -13,11 +13,13 @@
 {
   IBOutlet UIPickerView *yearPicker;
   IBOutlet UITextField *celebrity;
+  IBOutlet UIProgressView *fetchProgress;
   NSArray *pickerData;
 }
 
 @property(nonatomic , retain) UIPickerView *yearPicker;
 @property(nonatomic , retain) UITextField *celebrity;
+@property(nonatomic , retain) UIProgressView *fetchProgress;
 @property(nonatomic , retain) NSArray *pickerData;
 @property(nonatomic) int currentYear;
 

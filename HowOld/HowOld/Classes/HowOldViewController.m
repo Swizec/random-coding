@@ -7,12 +7,14 @@
 //
 
 #import "HowOldViewController.h"
+#import "ASIHTTPRequest.h"
 
 @implementation HowOldViewController
 @synthesize yearPicker;
 @synthesize pickerData;
 @synthesize currentYear;
 @synthesize celebrity;
+@synthesize fetchProgress;
 
 - (void)didReceiveMemoryWarning {
 	// Releases the view if it doesn't have a superview.
@@ -33,6 +35,20 @@
 
 -(IBAction)buttonPressed
 {
+  [self grabURLInBackground];  
+
+  /*
+  ASIHTTPRequest *request = [ASIHTTPRequest requestWithURL:url];
+  [request startSynchronous];
+  NSError *error = [request error];
+  if (!error) {
+    NSString *response = [request responseString];
+    
+    NSLog(response);
+  } else {
+    NSLog([error localizedDescription]);
+  }*/
+  
   NSInteger row = [yearPicker selectedRowInComponent:0];
   NSString *selected = [pickerData objectAtIndex:row];
   NSString *title = [[NSString alloc] initWithFormat:
@@ -40,11 +56,42 @@
   UIAlertView *alert = [[UIAlertView alloc] initWithTitle:title
                                                  message : @"Thank you for choosing."
                                                  delegate:nil
-                                       cancelButtonTitle :@"You are Welcome"             
+                                       cancelButtonTitle :celebrity.text
                                        otherButtonTitles :nil];
   [alert show];
   [alert release];
   [title release];
+}
+
+- (IBAction)grabURLInBackground
+{
+  NSString *encodedCelebrity = (NSString *)CFURLCreateStringByAddingPercentEscapes(
+                                                                                   NULL,
+                                                                                   (CFStringRef)celebrity.text,
+                                                                                   NULL,
+                                                                                   (CFStringRef)@"!*'();:@&=+$,/?%#[]",
+                                                                                   kCFStringEncodingUTF8 );
+  NSString *_url = [NSString stringWithFormat:@"http://en.wikipedia.org/w/index.php?search=%@", encodedCelebrity];
+  NSURL *url = [NSURL URLWithString:_url];
+  
+  ASIHTTPRequest *request = [ASIHTTPRequest requestWithURL:url];
+  fetchProgress.progress = 0.0;
+  [request setDownloadProgressDelegate:fetchProgress]; 
+  [request setDelegate:self];
+  [request startAsynchronous];
+}
+
+- (void)requestFinished:(ASIHTTPRequest *)request
+{
+  // Use when fetching text data
+  NSString *responseString = [request responseString];
+  
+  //NSLog(@"%@", responseString);
+}
+
+- (void)requestFailed:(ASIHTTPRequest *)request
+{
+  NSError *error = [request error];
 }
 
 -(IBAction) textFieldDoneEditing : (id) sender{
