@@ -99,15 +99,48 @@
   
   HTMLNode *body = [parser body];
   
-  NSArray * pNodes = [body findChildTags:@"p"];
   
-  for (HTMLNode * pNode in pNodes) {
-    if ([[[pNode firstChild] tagName] isEqualToString:@"b"]) {
-      NSLog(@"%@", [pNode rawContents]);
+  HTMLNode *persondata = [body findChildWithAttribute:@"class" matchingName:@"persondata" allowPartial:NO];
+  
+  NSArray * trs = [persondata findChildTags:@"tr"];
+  
+  NSRegularExpression *regexTitle = [NSRegularExpression regularExpressionWithPattern:@"date of birth"
+                                                                              options:NSRegularExpressionCaseInsensitive
+                                                                                error:&error];
+  NSRegularExpression *regexYear = [NSRegularExpression regularExpressionWithPattern:@"[0-9]+"
+                                                                             options:NSRegularExpressionCaseInsensitive
+                                                                               error:&error];
+  NSUInteger numberOfMatches;
+  NSString *s, *s2;
+  NSRange rangeOfMatch;
+  BOOL foundIt = NO;
+  
+  for (HTMLNode * tr in trs) {
+    
+    s = [[tr firstChild] rawContents];
+    numberOfMatches = [regexTitle numberOfMatchesInString:s
+                                                  options:0
+                                                    range:NSMakeRange(0, [s length])];
+    if (numberOfMatches > 0) {
+      foundIt = YES;
+      s2 = [[[tr findChildTags:@"td"] objectAtIndex:1] rawContents];
+      NSArray *matches = [regexYear matchesInString:s2 
+                                           options:0 
+                                             range:NSMakeRange(0, [s2 length])];
+      
+      //NSLog(@"nummatch: %s", NSStringFromRange([[matches objectAtIndex:[matches count]-1] range]));
+      NSTextCheckingResult *match = [matches objectAtIndex:[matches count]-1];
+      NSLog(@"range: %d", [[s2 substringWithRange:[match range]] intValue]);
+      //NSInteger year = [[s substringWithRange:[match range]] intValue];
+      //NSLog(@"%d", year); 
     }
   }
   
   [parser release];
+  //[regexTitle release];
+  //[regexYear release];
+  //[trs release];
+  //[body release];
 }
 
 - (void)requestFailed:(ASIHTTPRequest *)request
