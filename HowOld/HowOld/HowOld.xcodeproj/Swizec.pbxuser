@@ -22,7 +22,7 @@
 					20,
 					341,
 					20,
-					48.16259765625,
+					48,
 					43,
 					43,
 					20,
@@ -37,8 +37,12 @@
 					PBXFileDataSource_Target_ColumnID,
 				);
 			};
-			PBXPerProjectTemplateStateSaveDate = 316265086;
-			PBXWorkspaceStateSaveDate = 316265086;
+			PBXPerProjectTemplateStateSaveDate = 316265756;
+			PBXWorkspaceStateSaveDate = 316265756;
+		};
+		perUserProjectItems = {
+			38A6A45F12D9D4CA00F842AE = 38A6A45F12D9D4CA00F842AE /* XDModelBookmark */;
+			38A6A46112D9D4CA00F842AE = 38A6A46112D9D4CA00F842AE /* XDModelBookmark */;
 		};
 		sourceControlManager = 38A6A38F12D9D28400F842AE /* Source Control */;
 		userBuildSettings = {
@@ -60,6 +64,7 @@
 		dataTipSortType = 0;
 		debuggerPlugin = GDBDebugging;
 		disassemblyDisplayState = 0;
+		dylibVariantSuffix = "";
 		enableDebugStr = 1;
 		environmentEntries = (
 		);
@@ -84,5 +89,27 @@
 	38A6A39012D9D28400F842AE /* Code sense */ = {
 		isa = PBXCodeSenseManager;
 		indexTemplatePath = "";
+	};
+	38A6A45F12D9D4CA00F842AE /* XDModelBookmark */ = {
+		isa = XDModelBookmark;
+		fRef = 38A6A46012D9D4CA00F842AE /* HowOld_1.xcclassmodel */;
+		fallbackIsa = PBXBookmark;
+	};
+	38A6A46012D9D4CA00F842AE /* HowOld_1.xcclassmodel */ = {
+		isa = PBXFileReference;
+		lastKnownFileType = wrapper.xcclassmodel;
+		path = HowOld_1.xcclassmodel;
+		sourceTree = "<group>";
+	};
+	38A6A46112D9D4CA00F842AE /* XDModelBookmark */ = {
+		isa = XDModelBookmark;
+		fRef = 38A6A46212D9D4CA00F842AE /* HowOld_1.xcclassmodel */;
+		fallbackIsa = PBXBookmark;
+	};
+	38A6A46212D9D4CA00F842AE /* HowOld_1.xcclassmodel */ = {
+		isa = PBXFileReference;
+		lastKnownFileType = wrapper.xcclassmodel;
+		path = HowOld_1.xcclassmodel;
+		sourceTree = "<group>";
 	};
 }
