@@ -37,36 +37,12 @@
 
 -(IBAction)buttonPressed
 {
-  [self grabURLInBackground];  
-
-  /*
-  ASIHTTPRequest *request = [ASIHTTPRequest requestWithURL:url];
-  [request startSynchronous];
-  NSError *error = [request error];
-  if (!error) {
-    NSString *response = [request responseString];
-    
-    NSLog(response);
-  } else {
-    NSLog([error localizedDescription]);
-  }*/
-  
-  NSInteger row = [yearPicker selectedRowInComponent:0];
-  NSString *selected = [pickerData objectAtIndex:row];
-  NSString *title = [[NSString alloc] initWithFormat:
-                     @"you selected %@!", selected];
-  UIAlertView *alert = [[UIAlertView alloc] initWithTitle:title
-                                                 message : @"Thank you for choosing."
-                                                 delegate:nil
-                                       cancelButtonTitle :celebrity.text
-                                       otherButtonTitles :nil];
-  [alert show];
-  [alert release];
-  [title release];
+  [self fetchDataInBackground];  
 }
 
-- (IBAction)grabURLInBackground
+- (IBAction)fetchDataInBackground
 {
+  
   NSString *encodedCelebrity = (NSString *)CFURLCreateStringByAddingPercentEscapes(
                                                                                    NULL,
                                                                                    (CFStringRef)celebrity.text,
@@ -112,7 +88,6 @@
                                                                                error:&error];
   NSUInteger numberOfMatches;
   NSString *s, *s2;
-  NSRange rangeOfMatch;
   BOOL foundIt = NO;
   
   for (HTMLNode * tr in trs) {
@@ -128,24 +103,61 @@
                                            options:0 
                                              range:NSMakeRange(0, [s2 length])];
       
-      //NSLog(@"nummatch: %s", NSStringFromRange([[matches objectAtIndex:[matches count]-1] range]));
       NSTextCheckingResult *match = [matches objectAtIndex:[matches count]-1];
-      NSLog(@"range: %d", [[s2 substringWithRange:[match range]] intValue]);
-      //NSInteger year = [[s substringWithRange:[match range]] intValue];
-      //NSLog(@"%d", year); 
+      [self reportResult:[[s2 substringWithRange:[match range]] intValue]];
     }
   }
   
+  if (!foundIt) {
+    [self noFound];
+  }
+  
   [parser release];
-  //[regexTitle release];
-  //[regexYear release];
-  //[trs release];
-  //[body release];
+  /*[regexTitle release];
+  [regexYear release];
+  [trs release];
+  [body release];*/
 }
 
 - (void)requestFailed:(ASIHTTPRequest *)request
 {
   NSError *error = [request error];
+  
+  [self noFound];
+}
+
+- (void)reportResult:(NSInteger)birthYear {
+  NSLog(@"birth: %d", birthYear);
+  
+  NSInteger row = [yearPicker selectedRowInComponent:0];
+  NSString *selected = [pickerData objectAtIndex:row];
+  NSInteger selectedYear = [selected intValue];
+  
+  NSString *title = [[NSString alloc] initWithFormat:
+                     @"In %d", selectedYear];
+  NSString *message = [[NSString alloc] initWithFormat:@"%@ was %d years old!", celebrity.text, selectedYear-birthYear];
+  
+  UIAlertView *alert = [[UIAlertView alloc] initWithTitle:title
+                                                    message:message
+                                                   delegate:nil
+                                          cancelButtonTitle:@"Wow thanks!"
+                                          otherButtonTitles:nil];
+  
+  [alert show];
+  
+  [alert release];
+}
+
+-(void)noFound {
+  UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Oh dear!"
+                                                  message:@"Couldn't anything on wikipedia"
+                                                 delegate:nil
+                                        cancelButtonTitle:@":("
+                                        otherButtonTitles:nil];
+  
+  [alert show];
+  
+  [alert release];
 }
 
 -(IBAction) textFieldDoneEditing : (id) sender{

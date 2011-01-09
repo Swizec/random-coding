@@ -29,4 +29,8 @@
 -(IBAction)buttonPressed;
 -(int)getCurrentYear;
 
+-(IBAction)fetchDataInBackground;
+-(void)reportResult:(NSInteger)birthYear;
+-(void)noFound;
+
 @end
