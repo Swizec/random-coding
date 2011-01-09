@@ -12,6 +12,7 @@
 @synthesize yearPicker;
 @synthesize pickerData;
 @synthesize currentYear;
+@synthesize celebrity;
 
 - (void)didReceiveMemoryWarning {
 	// Releases the view if it doesn't have a superview.
@@ -46,10 +47,16 @@
   [title release];
 }
 
+-(IBAction) textFieldDoneEditing : (id) sender{
+  [sender resignFirstResponder];
+}
+
+-(IBAction) backgroundTap:(id) sender{
+  [self.celebrity resignFirstResponder];
+}
+
 - (void)viewDidLoad {
   currentYear = [self getCurrentYear];
-  
-  NSLog(@"year %d", currentYear);
   
   NSMutableArray *array = [NSMutableArray arrayWithCapacity:currentYear];
   for (int i=currentYear; i>=0; i--) {

@@ -9,15 +9,20 @@
 #import <UIKit/UIKit.h>
 
 @interface HowOldViewController : UIViewController 
-<UIPickerViewDataSource , UIPickerViewDelegate>
+<UIPickerViewDataSource , UIPickerViewDelegate, UITextFieldDelegate>
 {
   IBOutlet UIPickerView *yearPicker;
+  IBOutlet UITextField *celebrity;
   NSArray *pickerData;
 }
 
 @property(nonatomic , retain) UIPickerView *yearPicker;
+@property(nonatomic , retain) UITextField *celebrity;
 @property(nonatomic , retain) NSArray *pickerData;
 @property(nonatomic) int currentYear;
+
+-(IBAction) textFieldDoneEditing : (id) sender;
+-(IBAction) backgroundTap:(id) sender;
 
 -(IBAction)buttonPressed;
 -(int)getCurrentYear;
