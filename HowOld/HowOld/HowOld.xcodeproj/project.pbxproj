@@ -28,6 +28,9 @@
 		38789B6612DA002500998694 /* ASIInputStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 38789B5A12DA002500998694 /* ASIInputStream.m */; };
 		38789B6712DA002500998694 /* ASINetworkQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 38789B5C12DA002500998694 /* ASINetworkQueue.m */; };
 		38789B6812DA002500998694 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 38789B5F12DA002500998694 /* Reachability.m */; };
+		38789C4512DA0FBE00998694 /* HTMLNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 38789C4212DA0FBE00998694 /* HTMLNode.m */; };
+		38789C4612DA0FBE00998694 /* HTMLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 38789C4412DA0FBE00998694 /* HTMLParser.m */; };
+		38789C5612DA118600998694 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 38789C5512DA118600998694 /* libxml2.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -70,6 +73,11 @@
 		38789B5D12DA002500998694 /* ASIProgressDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIProgressDelegate.h; sourceTree = "<group>"; };
 		38789B5E12DA002500998694 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
 		38789B5F12DA002500998694 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		38789C4112DA0FBE00998694 /* HTMLNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTMLNode.h; sourceTree = "<group>"; };
+		38789C4212DA0FBE00998694 /* HTMLNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTMLNode.m; sourceTree = "<group>"; };
+		38789C4312DA0FBE00998694 /* HTMLParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTMLParser.h; sourceTree = "<group>"; };
+		38789C4412DA0FBE00998694 /* HTMLParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTMLParser.m; sourceTree = "<group>"; };
+		38789C5512DA118600998694 /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
 		8D1107310486CEB800E47090 /* HowOld-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "HowOld-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -85,6 +93,7 @@
 				38789ACB12D9F73C00998694 /* SystemConfiguration.framework in Frameworks */,
 				38789AD212D9F75900998694 /* libz.1.1.3.dylib in Frameworks */,
 				38789ADD12D9F76B00998694 /* MobileCoreServices.framework in Frameworks */,
+				38789C5612DA118600998694 /* libxml2.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,6 +103,7 @@
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				38789C4012DA0FBE00998694 /* HTMLParser */,
 				38789B4912DA002500998694 /* ASIHTTPRequest */,
 				1D3623240D0F684500981E51 /* HowOldAppDelegate.h */,
 				1D3623250D0F684500981E51 /* HowOldAppDelegate.m */,
@@ -153,6 +163,7 @@
 				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
 				1D30AB110D05D00D00671497 /* Foundation.framework */,
 				288765A40DF7441C002DB57D /* CoreGraphics.framework */,
+				38789C5512DA118600998694 /* libxml2.dylib */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -184,6 +195,17 @@
 				38789B5F12DA002500998694 /* Reachability.m */,
 			);
 			path = ASIHTTPRequest;
+			sourceTree = "<group>";
+		};
+		38789C4012DA0FBE00998694 /* HTMLParser */ = {
+			isa = PBXGroup;
+			children = (
+				38789C4112DA0FBE00998694 /* HTMLNode.h */,
+				38789C4212DA0FBE00998694 /* HTMLNode.m */,
+				38789C4312DA0FBE00998694 /* HTMLParser.h */,
+				38789C4412DA0FBE00998694 /* HTMLParser.m */,
+			);
+			path = HTMLParser;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,6 +281,8 @@
 				38789B6612DA002500998694 /* ASIInputStream.m in Sources */,
 				38789B6712DA002500998694 /* ASINetworkQueue.m in Sources */,
 				38789B6812DA002500998694 /* Reachability.m in Sources */,
+				38789C4512DA0FBE00998694 /* HTMLNode.m in Sources */,
+				38789C4612DA0FBE00998694 /* HTMLParser.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,6 +324,8 @@
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = /usr/include/libxml2;
+				OTHER_LDFLAGS = "";
 				PREBINDING = NO;
 				SDKROOT = iphoneos;
 			};

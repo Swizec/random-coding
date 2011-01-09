@@ -8,6 +8,8 @@
 
 #import "HowOldViewController.h"
 #import "ASIHTTPRequest.h"
+#import "HTMLParser.h"
+#import "HTMLNode.h"
 
 @implementation HowOldViewController
 @synthesize yearPicker;
@@ -86,7 +88,26 @@
   // Use when fetching text data
   NSString *responseString = [request responseString];
   
-  //NSLog(@"%@", responseString);
+  NSError *error = NULL;
+  HTMLParser *parser = [[HTMLParser alloc] initWithString:responseString 
+                                                    error:error];
+  
+  if (error) {
+    NSLog(@"error: %@", error);
+    return;
+  }
+  
+  HTMLNode *body = [parser body];
+  
+  NSArray * pNodes = [body findChildTags:@"p"];
+  
+  for (HTMLNode * pNode in pNodes) {
+    if ([[[pNode firstChild] tagName] isEqualToString:@"b"]) {
+      NSLog(@"%@", [pNode rawContents]);
+    }
+  }
+  
+  [parser release];
 }
 
 - (void)requestFailed:(ASIHTTPRequest *)request
