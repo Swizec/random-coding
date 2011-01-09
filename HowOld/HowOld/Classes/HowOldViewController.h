@@ -8,9 +8,16 @@
 
 #import <UIKit/UIKit.h>
 
-@interface HowOldViewController : UIViewController {
-
+@interface HowOldViewController : UIViewController 
+<UIPickerViewDataSource , UIPickerViewDelegate>
+{
+  IBOutlet UIPickerView *yearPicker;
+  NSArray *pickerData;
 }
 
-@end
+@property(nonatomic , retain) UIPickerView *singlePicker;
+@property(nonatomic , retain) NSArray *pickerData;
 
+-(IBAction)buttonPressed;
+
+@end
