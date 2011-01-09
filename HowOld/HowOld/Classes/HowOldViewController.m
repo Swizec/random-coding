@@ -150,7 +150,7 @@
 
 -(void)noFound {
   UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Oh dear!"
-                                                  message:@"Couldn't anything on wikipedia"
+                                                  message:@"Couldn't find anything on wikipedia"
                                                  delegate:nil
                                         cancelButtonTitle:@":("
                                         otherButtonTitles:nil];

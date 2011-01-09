@@ -15,6 +15,7 @@
 		2899E5220DE3E06400AC0155 /* HowOldViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2899E5210DE3E06400AC0155 /* HowOldViewController.xib */; };
 		28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
 		28D7ACF80DDB3853001CB0EB /* HowOldViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28D7ACF70DDB3853001CB0EB /* HowOldViewController.m */; };
+		3815396812DA293500BB35E0 /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3815396712DA293500BB35E0 /* iAd.framework */; };
 		38789AC712D9F73700998694 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38789AC612D9F73700998694 /* CFNetwork.framework */; };
 		38789ACB12D9F73C00998694 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38789ACA12D9F73C00998694 /* SystemConfiguration.framework */; };
 		38789AD212D9F75900998694 /* libz.1.1.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 38789AD012D9F74C00998694 /* libz.1.1.3.dylib */; };
@@ -46,6 +47,7 @@
 		28D7ACF70DDB3853001CB0EB /* HowOldViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HowOldViewController.m; sourceTree = "<group>"; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		32CA4F630368D1EE00C91783 /* HowOld_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HowOld_Prefix.pch; sourceTree = "<group>"; };
+		3815396712DA293500BB35E0 /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
 		38789AC612D9F73700998694 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		38789ACA12D9F73C00998694 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		38789ACE12D9F74000998694 /* libc.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libc.dylib; path = usr/lib/libc.dylib; sourceTree = SDKROOT; };
@@ -94,6 +96,7 @@
 				38789AD212D9F75900998694 /* libz.1.1.3.dylib in Frameworks */,
 				38789ADD12D9F76B00998694 /* MobileCoreServices.framework in Frameworks */,
 				38789C5612DA118600998694 /* libxml2.dylib in Frameworks */,
+				3815396812DA293500BB35E0 /* iAd.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -164,6 +167,7 @@
 				1D30AB110D05D00D00671497 /* Foundation.framework */,
 				288765A40DF7441C002DB57D /* CoreGraphics.framework */,
 				38789C5512DA118600998694 /* libxml2.dylib */,
+				3815396712DA293500BB35E0 /* iAd.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";

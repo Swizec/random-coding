@@ -99,7 +99,7 @@
 					<object class="IBUILabel" id="564079628">
 						<reference key="NSNextResponder" ref="774585933"/>
 						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{150, 156}, {22, 31}}</string>
+						<string key="NSFrame">{{149, 137}, {22, 31}}</string>
 						<reference key="NSSuperview" ref="774585933"/>
 						<reference key="IBUIBackgroundColor" ref="869681266"/>
 						<bool key="IBUIOpaque">NO</bool>
@@ -124,7 +124,7 @@
 					<object class="IBUIPickerView" id="843312952">
 						<reference key="NSNextResponder" ref="774585933"/>
 						<int key="NSvFlags">290</int>
-						<string key="NSFrame">{{0, 196}, {320, 216}}</string>
+						<string key="NSFrame">{{0, 169}, {320, 216}}</string>
 						<reference key="NSSuperview" ref="774585933"/>
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 						<bool key="IBUIShowsSelectionIndicator">YES</bool>
@@ -132,7 +132,7 @@
 					<object class="IBUIButton" id="142057103">
 						<reference key="NSNextResponder" ref="774585933"/>
 						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{124, 420}, {72, 37}}</string>
+						<string key="NSFrame">{{124, 393}, {72, 37}}</string>
 						<reference key="NSSuperview" ref="774585933"/>
 						<bool key="IBUIOpaque">NO</bool>
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
@@ -159,7 +159,7 @@
 					<object class="IBUIProgressView" id="895286832">
 						<reference key="NSNextResponder" ref="774585933"/>
 						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{85, 144}, {150, 9}}</string>
+						<string key="NSFrame">{{85, 438}, {150, 9}}</string>
 						<reference key="NSSuperview" ref="774585933"/>
 						<bool key="IBUIOpaque">NO</bool>
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
@@ -282,10 +282,10 @@
 						<object class="NSMutableArray" key="children">
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<reference ref="132851816"/>
+							<reference ref="1035376637"/>
 							<reference ref="564079628"/>
 							<reference ref="843312952"/>
 							<reference ref="142057103"/>
-							<reference ref="1035376637"/>
 							<reference ref="895286832"/>
 						</object>
 						<reference key="parent" ref="0"/>
@@ -337,6 +337,7 @@
 					<string>21.IBPluginDependency</string>
 					<string>21.IBViewBoundsToFrameTransform</string>
 					<string>38.IBPluginDependency</string>
+					<string>38.IBViewBoundsToFrameTransform</string>
 					<string>6.CustomClassName</string>
 					<string>6.IBEditorWindowLastContentRect</string>
 					<string>6.IBPluginDependency</string>
@@ -352,17 +353,20 @@
 					</object>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<object class="NSAffineTransform">
-						<bytes key="NSTransformStruct">P4AAAL+AAABDCwAAwy8AAA</bytes>
+						<bytes key="NSTransformStruct">P4AAAL+AAABDFQAAwy0AAA</bytes>
 					</object>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<object class="NSAffineTransform">
-						<bytes key="NSTransformStruct">P4AAAL+AAAAAAAAAw8eAAA</bytes>
+						<bytes key="NSTransformStruct">P4AAAL+AAAAAAAAAw8MAAA</bytes>
 					</object>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<object class="NSAffineTransform">
-						<bytes key="NSTransformStruct">P4AAAL+AAABCxAAAwkAAAA</bytes>
+						<bytes key="NSTransformStruct">P4AAAL+AAABC+AAAw9YAAA</bytes>
 					</object>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
+					<object class="NSAffineTransform">
+						<bytes key="NSTransformStruct">P4AAAL+AAABCqgAAw+IAAA</bytes>
+					</object>
 					<string>UIControl</string>
 					<string>{{718, 229}, {320, 480}}</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
@@ -385,7 +389,7 @@
 				</object>
 			</object>
 			<nil key="sourceID"/>
-			<int key="maxID">39</int>
+			<int key="maxID">40</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<object class="NSMutableArray" key="referencedPartialClassDescriptions">
