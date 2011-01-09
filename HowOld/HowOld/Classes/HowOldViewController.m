@@ -17,6 +17,7 @@
 @synthesize currentYear;
 @synthesize celebrity;
 @synthesize fetchProgress;
+@synthesize bannerIsVisible;
 
 - (void)didReceiveMemoryWarning {
 	// Releases the view if it doesn't have a superview.
@@ -32,7 +33,11 @@
 
 
 - (void)dealloc {
-    [super dealloc];
+  [adView release];
+  [yearPicker release];
+  [celebrity release];
+  [pickerData release];
+  [super dealloc];
 }
 
 -(IBAction)buttonPressed
@@ -176,7 +181,15 @@
     [array addObject:[NSString stringWithFormat:@"%d", i]];
   }
   self.pickerData = array;
-  //[array release];
+  
+  adView = [[ADBannerView alloc] initWithFrame:CGRectZero];
+  adView.frame = CGRectOffset(adView.frame, 0, -50);
+  adView.requiredContentSizeIdentifiers = [NSSet setWithObject:ADBannerContentSizeIdentifier320x50];
+  adView.currentContentSizeIdentifier = ADBannerContentSizeIdentifier320x50;
+  [self.view addSubview:adView];
+  adView.delegate=self;
+  self.bannerIsVisible=NO;
+  
   [super viewDidLoad];
 }
 
@@ -206,6 +219,30 @@ numberOfRowsInComponent:(NSInteger)component
   [dateFormat setDateFormat:@"yyyy"];
   
   return [[dateFormat stringFromDate:today] intValue];
+}
+
+- (void)bannerViewDidLoadAd:(ADBannerView *)banner
+{
+  if (!self.bannerIsVisible)
+  {
+    [UIView beginAnimations:@"animateAdBannerOn" context:NULL];
+    // banner is invisible now and moved out of the screen on 50 px
+    banner.frame = CGRectOffset(banner.frame, 0, 50);
+    [UIView commitAnimations];
+    self.bannerIsVisible = YES;
+  }
+}
+
+- (void)bannerView:(ADBannerView *)banner didFailToReceiveAdWithError:(NSError *)error
+{
+  if (self.bannerIsVisible)
+  {
+    [UIView beginAnimations:@"animateAdBannerOff" context:NULL];
+    // banner is visible and we move it out of the screen, due to connection issue
+    banner.frame = CGRectOffset(banner.frame, 0, -50);
+    [UIView commitAnimations];
+    self.bannerIsVisible = NO;
+  }
 }
 
 @end

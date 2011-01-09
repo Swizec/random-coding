@@ -7,13 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <iAd/iAD.h>
 
 @interface HowOldViewController : UIViewController 
-<UIPickerViewDataSource , UIPickerViewDelegate, UITextFieldDelegate>
+<UIPickerViewDataSource , UIPickerViewDelegate, UITextFieldDelegate, ADBannerViewDelegate>
 {
   IBOutlet UIPickerView *yearPicker;
   IBOutlet UITextField *celebrity;
   IBOutlet UIProgressView *fetchProgress;
+  IBOutlet ADBannerView *adView;
+  BOOL bannerIsVisible;
   NSArray *pickerData;
 }
 
@@ -22,6 +25,7 @@
 @property(nonatomic , retain) UIProgressView *fetchProgress;
 @property(nonatomic , retain) NSArray *pickerData;
 @property(nonatomic) int currentYear;
+@property(nonatomic,assign) BOOL bannerIsVisible;
 
 -(IBAction) textFieldDoneEditing : (id) sender;
 -(IBAction) backgroundTap:(id) sender;
