@@ -12,7 +12,7 @@
 		</object>
 		<object class="NSMutableArray" key="IBDocument.EditedObjectIDs">
 			<bool key="EncodedWithXMLCoder">YES</bool>
-			<integer value="41"/>
+			<integer value="6"/>
 		</object>
 		<object class="NSArray" key="IBDocument.PluginDependencies">
 			<bool key="EncodedWithXMLCoder">YES</bool>
@@ -71,7 +71,7 @@
 					<object class="IBUILabel" id="1035376637">
 						<reference key="NSNextResponder" ref="774585933"/>
 						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{46, 40}, {228, 57}}</string>
+						<string key="NSFrame">{{46, 50}, {228, 57}}</string>
 						<reference key="NSSuperview" ref="774585933"/>
 						<object class="NSColor" key="IBUIBackgroundColor" id="869681266">
 							<int key="NSColorSpace">3</int>
@@ -164,7 +164,7 @@
 						<bool key="IBUIOpaque">NO</bool>
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 					</object>
-					<object class="IBADBannerView" id="646925944">
+					<object class="IBADBannerView" id="136799585">
 						<reference key="NSNextResponder" ref="774585933"/>
 						<int key="NSvFlags">306</int>
 						<string key="NSFrameSize">{320, 50}</string>
@@ -286,7 +286,7 @@
 					<object class="IBCocoaTouchOutletConnection" key="connection">
 						<string key="label">adView</string>
 						<reference key="source" ref="372490531"/>
-						<reference key="destination" ref="646925944"/>
+						<reference key="destination" ref="136799585"/>
 					</object>
 					<int key="connectionID">43</int>
 				</object>
@@ -317,12 +317,12 @@
 						<object class="NSMutableArray" key="children">
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<reference ref="132851816"/>
-							<reference ref="1035376637"/>
 							<reference ref="564079628"/>
 							<reference ref="843312952"/>
 							<reference ref="142057103"/>
 							<reference ref="895286832"/>
-							<reference ref="646925944"/>
+							<reference ref="136799585"/>
+							<reference ref="1035376637"/>
 						</object>
 						<reference key="parent" ref="0"/>
 					</object>
@@ -358,7 +358,7 @@
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">41</int>
-						<reference key="object" ref="646925944"/>
+						<reference key="object" ref="136799585"/>
 						<reference key="parent" ref="774585933"/>
 					</object>
 				</object>
@@ -391,7 +391,7 @@
 					<string>UIResponder</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<object class="NSAffineTransform">
-						<bytes key="NSTransformStruct">P4AAAL+AAABCQAAAwr4AAA</bytes>
+						<bytes key="NSTransformStruct">P4AAAL+AAABCOAAAwr4AAA</bytes>
 					</object>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<object class="NSAffineTransform">

@@ -88,7 +88,7 @@
   NSRegularExpression *regexTitle = [NSRegularExpression regularExpressionWithPattern:@"date of birth"
                                                                               options:NSRegularExpressionCaseInsensitive
                                                                                 error:&error];
-  NSRegularExpression *regexYear = [NSRegularExpression regularExpressionWithPattern:@"[0-9]+"
+  NSRegularExpression *regexYear = [NSRegularExpression regularExpressionWithPattern:@"([0-9]+)(<span|</td)"
                                                                              options:NSRegularExpressionCaseInsensitive
                                                                                error:&error];
   NSUInteger numberOfMatches;
@@ -104,12 +104,13 @@
     if (numberOfMatches > 0) {
       foundIt = YES;
       s2 = [[[tr findChildTags:@"td"] objectAtIndex:1] rawContents];
+      NSDateFormatter *dateFormat = [[NSDateFormatter alloc] init];
       NSArray *matches = [regexYear matchesInString:s2 
                                            options:0 
                                              range:NSMakeRange(0, [s2 length])];
       
       NSTextCheckingResult *match = [matches objectAtIndex:[matches count]-1];
-      [self reportResult:[[s2 substringWithRange:[match range]] intValue]];
+      [self reportResult:[[s2 substringWithRange:[match rangeAtIndex:0]] intValue]];
     }
   }
   
