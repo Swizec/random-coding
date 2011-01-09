@@ -9,42 +9,9 @@
 #import "HowOldViewController.h"
 
 @implementation HowOldViewController
-
-
-
-/*
-// The designated initializer. Override to perform setup that is required before the view is loaded.
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
-    }
-    return self;
-}
-*/
-
-/*
-// Implement loadView to create a view hierarchy programmatically, without using a nib.
-- (void)loadView {
-}
-*/
-
-
-/*
-// Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
-- (void)viewDidLoad {
-    [super viewDidLoad];
-}
-*/
-
-
-/*
-// Override to allow orientations other than the default portrait orientation.
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
-    // Return YES for supported orientations
-    return (interfaceOrientation == UIInterfaceOrientationPortrait);
-}
-*/
+@synthesize yearPicker;
+@synthesize pickerData;
+@synthesize currentYear;
 
 - (void)didReceiveMemoryWarning {
 	// Releases the view if it doesn't have a superview.
@@ -61,6 +28,64 @@
 
 - (void)dealloc {
     [super dealloc];
+}
+
+-(IBAction)buttonPressed
+{
+  NSInteger row = [yearPicker selectedRowInComponent:0];
+  NSString *selected = [pickerData objectAtIndex:row];
+  NSString *title = [[NSString alloc] initWithFormat:
+                     @"you selected %@!", selected];
+  UIAlertView *alert = [[UIAlertView alloc] initWithTitle:title
+                                                 message : @"Thank you for choosing."
+                                                 delegate:nil
+                                       cancelButtonTitle :@"You are Welcome"             
+                                       otherButtonTitles :nil];
+  [alert show];
+  [alert release];
+  [title release];
+}
+
+- (void)viewDidLoad {
+  currentYear = [self getCurrentYear];
+  
+  NSLog(@"year %d", currentYear);
+  
+  NSMutableArray *array = [NSMutableArray arrayWithCapacity:currentYear];
+  for (int i=currentYear; i>=0; i--) {
+    [array addObject:[NSString stringWithFormat:@"%d", i]];
+  }
+  self.pickerData = array;
+  //[array release];
+  [super viewDidLoad];
+}
+
+#pragma mark Picker data source methods
+-(NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView
+{
+  return 1;
+}
+
+-(NSInteger)pickerView:(UIPickerView *)pickerView
+numberOfRowsInComponent:(NSInteger)component
+{
+  return [pickerData count];
+}
+
+#pragma mark Picker delegate method
+-(NSString *)pickerView:(UIPickerView *)pickerView
+            titleForRow:(NSInteger)row
+           forComponent:(NSInteger)component 
+{
+  return[pickerData objectAtIndex:row];
+}
+
+-(int)getCurrentYear {
+  NSDate *today = [[[NSDate alloc] init] autorelease];
+  NSDateFormatter *dateFormat = [[[NSDateFormatter alloc] init] autorelease];
+  [dateFormat setDateFormat:@"yyyy"];
+  
+  return [[dateFormat stringFromDate:today] intValue];
 }
 
 @end
