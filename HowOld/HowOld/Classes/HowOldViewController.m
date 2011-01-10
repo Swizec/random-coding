@@ -12,7 +12,7 @@
 #import "HTMLNode.h"
 
 // impossible for anyone to be older than 100M years
-#define UNPOSSIBLE_YEAR = -100000000
+NSInteger UNPOSSIBLE_YEAR = -100000000;
 
 @implementation HowOldViewController
 @synthesize yearPicker;
@@ -91,6 +91,8 @@
   NSInteger birthYear = [self getBirthYear:trs];
   NSInteger deathYear = [self getDeathYear:trs];
   
+  NSLog(@"birth: %d, death: %d", birthYear, deathYear);
+  
   if (birthYear <= UNPOSSIBLE_YEAR) {
     [self noFound];
   } else if (deathYear > UNPOSSIBLE_YEAR) {
@@ -119,6 +121,7 @@
   NSRegularExpression *regexYear = [NSRegularExpression regularExpressionWithPattern:@"([0-9]+)(<span|</td| BC)"
                                                                              options:NSRegularExpressionCaseInsensitive
                                                                                error:&error];
+  
   NSUInteger numberOfMatches;
   NSString *s, *s2;
   
@@ -140,10 +143,17 @@
       
       if ([matches count] > 0) {
         NSTextCheckingResult *match = [matches objectAtIndex:[matches count]-1];
-        return [[s2 substringWithRange:[match rangeAtIndex:0]] intValue];
+        NSRange BCrange = [s2 rangeOfString:@"BC"];
+        NSInteger year = [[s2 substringWithRange:[match rangeAtIndex:0]] intValue];
+        if (BCrange.length > 0) {
+          return -year;
+        } else {
+          return year;
+        }
       }
     }
   }
+  
   
   return UNPOSSIBLE_YEAR;
 }
@@ -156,13 +166,30 @@
   [self noFound];
 }
 
-- (void)reportResult:(NSInteger)birthYear {
+-(NSInteger)getSelectedYear {
   NSInteger row = [yearPicker selectedRowInComponent:0];
   NSString *selected = [pickerData objectAtIndex:row];
-  NSInteger selectedYear = [selected intValue];
+  NSRange BCrange = [selected rangeOfString:@"BC"];
+  NSInteger selectedYear;
+  if (BCrange.length > 0) {
+    selectedYear = -[[selected substringWithRange:NSMakeRange(0, 4)] intValue];
+  } else {
+    selectedYear = [selected intValue];
+  }
   
-  NSString *title = [[NSString alloc] initWithFormat:
-                     @"In %d", selectedYear];
+  return selectedYear;
+}
+
+- (void)reportResult:(NSInteger)birthYear {
+  NSInteger selectedYear = [self getSelectedYear];
+  
+  if (selectedYear >= 0) {
+    NSString *title = [[NSString alloc] initWithFormat:
+                       @"In %d", selectedYear];
+  } else {
+    NSString *title = [[NSString alloc] initWithFormat:
+                       @"In %d BC", selectedYear];
+  }
 
   NSString *message;
   
@@ -176,15 +203,19 @@
 }
 
 -(void)reportResult:(NSInteger)birthYear deathYear:(NSInteger)deathYear {
-  NSInteger row = [yearPicker selectedRowInComponent:0];
-  NSString *selected = [pickerData objectAtIndex:row];
-  NSInteger selectedYear = [selected intValue];
+  NSInteger selectedYear = [self getSelectedYear];
   
   if (deathYear < selectedYear) {
-    NSString *title = [[NSString alloc] initWithFormat:
-                       @"In %d", selectedYear];
-    NSString *message = [[NSString alloc] initWithFormat:@"%@ was dead for %d years :(", 
-                                              celebrity.text, selectedYear-deathYear, deathYear-birthYear];
+    if (selectedYear >= 0) {
+      NSString *title = [[NSString alloc] initWithFormat:
+                         @"In %d", selectedYear];
+    } else {
+      NSString *title = [[NSString alloc] initWithFormat:
+                         @"In %d BC", selectedYear];
+    }
+    
+    NSString *message = [[NSString alloc] initWithFormat:@"%@ died at %d and was dead for %d years :(", 
+                                              celebrity.text, deathYear-birthYear, selectedYear-deathYear, deathYear-birthYear];
     
     [self showMessage:title message:message button:@"Poor dude."];
   } else {
@@ -230,6 +261,9 @@
   NSMutableArray *array = [NSMutableArray arrayWithCapacity:currentYear];
   for (int i=currentYear; i>=0; i--) {
     [array addObject:[NSString stringWithFormat:@"%d", i]];
+  }
+  for (int i=1; i<=4000; i++) {
+    [array addObject:[NSString stringWithFormat:@"%d BC", i]];
   }
   self.pickerData = array;
   

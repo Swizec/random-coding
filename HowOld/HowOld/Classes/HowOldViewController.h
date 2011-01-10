@@ -27,6 +27,8 @@
 @property(nonatomic) int currentYear;
 @property(nonatomic,assign) BOOL bannerIsVisible;
 
+extern NSInteger UNPOSSIBLE_YEAR;
+
 -(IBAction) textFieldDoneEditing : (id) sender;
 -(IBAction) backgroundTap:(id) sender;
 

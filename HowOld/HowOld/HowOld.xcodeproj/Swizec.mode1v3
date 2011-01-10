@@ -202,46 +202,6 @@
 			<key>Content</key>
 			<dict>
 				<key>PBXProjectModuleGUID</key>
-				<string>381AE74C12D9F2DB000BA651</string>
-				<key>PBXProjectModuleLabel</key>
-				<string>HowOldViewController.m</string>
-				<key>PBXSplitModuleInNavigatorKey</key>
-				<dict>
-					<key>Split0</key>
-					<dict>
-						<key>PBXProjectModuleGUID</key>
-						<string>381AE74D12D9F2DB000BA651</string>
-						<key>PBXProjectModuleLabel</key>
-						<string>HowOldViewController.m</string>
-						<key>_historyCapacity</key>
-						<integer>0</integer>
-						<key>bookmark</key>
-						<string>38AEA5BA12DA8CDD00E9339B</string>
-						<key>history</key>
-						<array>
-							<string>38AEA4F112DA815900E9339B</string>
-						</array>
-					</dict>
-					<key>SplitCount</key>
-					<string>1</string>
-				</dict>
-				<key>StatusBarVisibility</key>
-				<true/>
-			</dict>
-			<key>Geometry</key>
-			<dict>
-				<key>Frame</key>
-				<string>{{0, 20}, {1156, 648}}</string>
-				<key>PBXModuleWindowStatusBarHidden2</key>
-				<false/>
-				<key>RubberWindowFrame</key>
-				<string>113 129 1156 689 0 0 1440 878 </string>
-			</dict>
-		</dict>
-		<dict>
-			<key>Content</key>
-			<dict>
-				<key>PBXProjectModuleGUID</key>
 				<string>381538D712DA22FF00BB35E0</string>
 				<key>PBXProjectModuleLabel</key>
 				<string>HowOldViewController.h</string>
@@ -256,7 +216,7 @@
 						<key>_historyCapacity</key>
 						<integer>0</integer>
 						<key>bookmark</key>
-						<string>38AEA5BB12DA8CDD00E9339B</string>
+						<string>38AEA60F12DA940800E9339B</string>
 						<key>history</key>
 						<array>
 							<string>381539AE12DA581100BB35E0</string>
@@ -276,6 +236,46 @@
 				<false/>
 				<key>RubberWindowFrame</key>
 				<string>38 163 1156 689 0 0 1440 878 </string>
+			</dict>
+		</dict>
+		<dict>
+			<key>Content</key>
+			<dict>
+				<key>PBXProjectModuleGUID</key>
+				<string>381AE74C12D9F2DB000BA651</string>
+				<key>PBXProjectModuleLabel</key>
+				<string>HowOldViewController.m</string>
+				<key>PBXSplitModuleInNavigatorKey</key>
+				<dict>
+					<key>Split0</key>
+					<dict>
+						<key>PBXProjectModuleGUID</key>
+						<string>381AE74D12D9F2DB000BA651</string>
+						<key>PBXProjectModuleLabel</key>
+						<string>HowOldViewController.m</string>
+						<key>_historyCapacity</key>
+						<integer>0</integer>
+						<key>bookmark</key>
+						<string>38AEA61012DA940800E9339B</string>
+						<key>history</key>
+						<array>
+							<string>38AEA5DE12DA8F6900E9339B</string>
+						</array>
+					</dict>
+					<key>SplitCount</key>
+					<string>1</string>
+				</dict>
+				<key>StatusBarVisibility</key>
+				<true/>
+			</dict>
+			<key>Geometry</key>
+			<dict>
+				<key>Frame</key>
+				<string>{{0, 20}, {1156, 648}}</string>
+				<key>PBXModuleWindowStatusBarHidden2</key>
+				<false/>
+				<key>RubberWindowFrame</key>
+				<string>113 129 1156 689 0 0 1440 878 </string>
 			</dict>
 		</dict>
 	</array>
@@ -409,7 +409,7 @@
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>38AEA5B912DA8CDD00E9339B</string>
+										<string>38AEA60E12DA940800E9339B</string>
 										<key>history</key>
 										<array>
 											<string>38789BB712DA04A800998694</string>
@@ -619,11 +619,11 @@
 	<key>WindowOrderList</key>
 	<array>
 		<string>1CD10A99069EF8BA00B06720</string>
+		<string>1C78EAAD065D492600B07095</string>
+		<string>38A6A38D12D9D28400F842AE</string>
+		<string>381AE74C12D9F2DB000BA651</string>
 		<string>381538D712DA22FF00BB35E0</string>
 		<string>/Users/Swizec/Documents/random-coding/HowOld/HowOld/HowOld.xcodeproj</string>
-		<string>38A6A38D12D9D28400F842AE</string>
-		<string>1C78EAAD065D492600B07095</string>
-		<string>381AE74C12D9F2DB000BA651</string>
 	</array>
 	<key>WindowString</key>
 	<string>271 305 788 504 0 0 1440 878 </string>
