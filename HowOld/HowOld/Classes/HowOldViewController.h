@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import <iAd/iAD.h>
+#import "MixpanelAPI.h"
 
 @interface HowOldViewController : UIViewController 
 <UIPickerViewDataSource , UIPickerViewDelegate, UITextFieldDelegate, ADBannerViewDelegate>
@@ -18,6 +19,7 @@
   IBOutlet ADBannerView *adView;
   BOOL bannerIsVisible;
   NSArray *pickerData;
+  MixpanelAPI *mixpanel;
 }
 
 @property(nonatomic , retain) UIPickerView *yearPicker;

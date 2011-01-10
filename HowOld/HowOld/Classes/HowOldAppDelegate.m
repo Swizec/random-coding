@@ -8,6 +8,8 @@
 
 #import "HowOldAppDelegate.h"
 #import "HowOldViewController.h"
+#import "MixpanelAPI.h"
+#define MIXPANEL_TOKEN @"56ff7b4fa6304505018718061ae9492f"
 
 @implementation HowOldAppDelegate
 
@@ -20,13 +22,18 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {    
     
-    // Override point for customization after application launch.
+  // Override point for customization after application launch.
+  mixpanel = [MixpanelAPI sharedAPIWithToken:MIXPANEL_TOKEN];
+  // Add the view controller's view to the window and display.
+  [window addSubview:viewController.view];
+  [window makeKeyAndVisible];
+  return YES;
 
-    // Add the view controller's view to the window and display.
-    [self.window addSubview:viewController.view];
-    [self.window makeKeyAndVisible];
+  // Add the view controller's view to the window and display.
+  [self.window addSubview:viewController.view];
+  [self.window makeKeyAndVisible];
 
-    return YES;
+  return YES;
 }
 
 

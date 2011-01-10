@@ -10,6 +10,7 @@
 #import "ASIHTTPRequest.h"
 #import "HTMLParser.h"
 #import "HTMLNode.h"
+#import "MixpanelAPI.h"
 
 // impossible for anyone to be older than 100M years
 NSInteger UNPOSSIBLE_YEAR = -100000000;
@@ -45,7 +46,11 @@ NSInteger UNPOSSIBLE_YEAR = -100000000;
 
 -(IBAction)buttonPressed
 {
-  [self fetchDataInBackground];  
+  [mixpanel track:@"Searched" 
+       properties:[NSDictionary dictionaryWithObjectsAndKeys:celebrity.text, @"celebrity",
+                   [NSString stringWithFormat:@"%d", [self getSelectedYear]], @"selectedYear", nil]];
+  
+  [self fetchDataInBackground]; 
 }
 
 - (IBAction)fetchDataInBackground
@@ -118,7 +123,7 @@ NSInteger UNPOSSIBLE_YEAR = -100000000;
   NSRegularExpression *regexTitle = [NSRegularExpression regularExpressionWithPattern:type
                                                                               options:NSRegularExpressionCaseInsensitive
                                                                                 error:&error];
-  NSRegularExpression *regexYear = [NSRegularExpression regularExpressionWithPattern:@"([0-9]+)(<span|</td| BC)"
+  NSRegularExpression *regexYear = [NSRegularExpression regularExpressionWithPattern:@"([0-9]+)[ ]*(<span|</td|BC)"
                                                                              options:NSRegularExpressionCaseInsensitive
                                                                                error:&error];
   
@@ -183,11 +188,13 @@ NSInteger UNPOSSIBLE_YEAR = -100000000;
 - (void)reportResult:(NSInteger)birthYear {
   NSInteger selectedYear = [self getSelectedYear];
   
+  NSString *title;
+  
   if (selectedYear >= 0) {
-    NSString *title = [[NSString alloc] initWithFormat:
+    title = [[NSString alloc] initWithFormat:
                        @"In %d", selectedYear];
   } else {
-    NSString *title = [[NSString alloc] initWithFormat:
+    title = [[NSString alloc] initWithFormat:
                        @"In %d BC", selectedYear];
   }
 
@@ -206,11 +213,12 @@ NSInteger UNPOSSIBLE_YEAR = -100000000;
   NSInteger selectedYear = [self getSelectedYear];
   
   if (deathYear < selectedYear) {
+    NSString *title;
     if (selectedYear >= 0) {
-      NSString *title = [[NSString alloc] initWithFormat:
+      title = [[NSString alloc] initWithFormat:
                          @"In %d", selectedYear];
     } else {
-      NSString *title = [[NSString alloc] initWithFormat:
+      title = [[NSString alloc] initWithFormat:
                          @"In %d BC", selectedYear];
     }
     
@@ -256,6 +264,10 @@ NSInteger UNPOSSIBLE_YEAR = -100000000;
 }
 
 - (void)viewDidLoad {
+  mixpanel = [MixpanelAPI sharedAPI];
+	
+  [mixpanel track:@"Application Open"];
+  
   currentYear = [self getCurrentYear];
   
   NSMutableArray *array = [NSMutableArray arrayWithCapacity:currentYear];

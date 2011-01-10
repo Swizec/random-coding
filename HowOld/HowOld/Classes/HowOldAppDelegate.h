@@ -7,12 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "MixpanelAPI.h"
 
 @class HowOldViewController;
 
 @interface HowOldAppDelegate : NSObject <UIApplicationDelegate> {
     UIWindow *window;
     HowOldViewController *viewController;
+  	MixpanelAPI *mixpanel;
 }
 
 @property (nonatomic, retain) IBOutlet UIWindow *window;
