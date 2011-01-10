@@ -126,6 +126,9 @@ NSInteger UNPOSSIBLE_YEAR = -100000000;
   NSRegularExpression *regexYear = [NSRegularExpression regularExpressionWithPattern:@"([0-9]+)[ ]*(<span|</td|BC)"
                                                                              options:NSRegularExpressionCaseInsensitive
                                                                                error:&error];
+  NSRegularExpression *regexYear2 = [NSRegularExpression regularExpressionWithPattern:@"([0-9]+)-[\-0-9 ]*(<span|</td|BC)"
+                                                                              options:NSRegularExpressionCaseInsensitive
+                                                                                error:&error];
   
   NSUInteger numberOfMatches;
   NSString *s, *s2;
@@ -142,9 +145,16 @@ NSInteger UNPOSSIBLE_YEAR = -100000000;
       
       s2 = [[children objectAtIndex:1] rawContents];
       NSLog(@"%@", s2);
-      NSArray *matches = [regexYear matchesInString:s2 
-                                            options:0 
-                                              range:NSMakeRange(0, [s2 length])];
+      NSArray *matches = [regexYear2 matchesInString:s2 
+                                             options:0 
+                                               range:NSMakeRange(0, [s2 length])];
+      
+      if ([matches count] <= 0) {
+        NSLog(@"not match!");
+        matches = [regexYear matchesInString:s2 
+                                     options:0 
+                                       range:NSMakeRange(0, [s2 length])];
+      }
       
       if ([matches count] > 0) {
         NSTextCheckingResult *match = [matches objectAtIndex:[matches count]-1];
