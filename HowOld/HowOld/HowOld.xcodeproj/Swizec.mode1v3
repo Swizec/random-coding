@@ -216,10 +216,10 @@
 						<key>_historyCapacity</key>
 						<integer>0</integer>
 						<key>bookmark</key>
-						<string>38AEA4B412DA7D9100E9339B</string>
+						<string>38AEA56412DA86AB00E9339B</string>
 						<key>history</key>
 						<array>
-							<string>381539AD12DA581100BB35E0</string>
+							<string>38AEA4F112DA815900E9339B</string>
 						</array>
 					</dict>
 					<key>SplitCount</key>
@@ -256,7 +256,7 @@
 						<key>_historyCapacity</key>
 						<integer>0</integer>
 						<key>bookmark</key>
-						<string>38AEA4B512DA7D9100E9339B</string>
+						<string>38AEA56512DA86AB00E9339B</string>
 						<key>history</key>
 						<array>
 							<string>381539AE12DA581100BB35E0</string>
@@ -409,7 +409,7 @@
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>38AEA4B312DA7D9100E9339B</string>
+										<string>38AEA56312DA86AB00E9339B</string>
 										<key>history</key>
 										<array>
 											<string>38789BB712DA04A800998694</string>
@@ -420,7 +420,7 @@
 											<string>381538D312DA22FF00BB35E0</string>
 											<string>381538D412DA22FF00BB35E0</string>
 											<string>3815398A12DA2A6A00BB35E0</string>
-											<string>381539AC12DA581100BB35E0</string>
+											<string>38AEA4F412DA816400E9339B</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -619,9 +619,9 @@
 	<key>WindowOrderList</key>
 	<array>
 		<string>1CD10A99069EF8BA00B06720</string>
-		<string>38A6A38D12D9D28400F842AE</string>
-		<string>/Users/Swizec/Documents/random-coding/HowOld/HowOld/HowOld.xcodeproj</string>
 		<string>381538D712DA22FF00BB35E0</string>
+		<string>/Users/Swizec/Documents/random-coding/HowOld/HowOld/HowOld.xcodeproj</string>
+		<string>38A6A38D12D9D28400F842AE</string>
 		<string>1C78EAAD065D492600B07095</string>
 		<string>381AE74C12D9F2DB000BA651</string>
 	</array>
@@ -647,7 +647,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CD0528F0623707200166675</string>
 								<key>PBXProjectModuleLabel</key>
-								<string></string>
+								<string>HowOldViewController.m</string>
 								<key>StatusBarVisibility</key>
 								<true/>
 							</dict>
@@ -664,6 +664,8 @@
 							<string>218pt</string>
 						</dict>
 						<dict>
+							<key>BecomeActive</key>
+							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
@@ -716,7 +718,7 @@
 			<key>WindowToolGUID</key>
 			<string>38A6A38D12D9D28400F842AE</string>
 			<key>WindowToolIsVisible</key>
-			<false/>
+			<true/>
 		</dict>
 		<dict>
 			<key>FirstTimeWindowDisplayed</key>

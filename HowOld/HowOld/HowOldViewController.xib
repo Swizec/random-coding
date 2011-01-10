@@ -12,7 +12,7 @@
 		</object>
 		<object class="NSMutableArray" key="IBDocument.EditedObjectIDs">
 			<bool key="EncodedWithXMLCoder">YES</bool>
-			<integer value="6"/>
+			<integer value="9"/>
 		</object>
 		<object class="NSArray" key="IBDocument.PluginDependencies">
 			<bool key="EncodedWithXMLCoder">YES</bool>
@@ -63,6 +63,8 @@
 						<bool key="IBUIAdjustsFontSizeToFit">YES</bool>
 						<float key="IBUIMinimumFontSize">24</float>
 						<object class="IBUITextInputTraits" key="IBUITextInputTraits">
+							<int key="IBUIAutocapitalizationType">1</int>
+							<int key="IBUIAutocorrectionType">1</int>
 							<int key="IBUIReturnKeyType">9</int>
 							<bool key="IBUIEnablesReturnKeyAutomatically">YES</bool>
 							<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
@@ -164,7 +166,7 @@
 						<bool key="IBUIOpaque">NO</bool>
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 					</object>
-					<object class="IBADBannerView" id="136799585">
+					<object class="IBADBannerView" id="886721386">
 						<reference key="NSNextResponder" ref="774585933"/>
 						<int key="NSvFlags">306</int>
 						<string key="NSFrameSize">{320, 50}</string>
@@ -286,7 +288,7 @@
 					<object class="IBCocoaTouchOutletConnection" key="connection">
 						<string key="label">adView</string>
 						<reference key="source" ref="372490531"/>
-						<reference key="destination" ref="136799585"/>
+						<reference key="destination" ref="886721386"/>
 					</object>
 					<int key="connectionID">43</int>
 				</object>
@@ -321,7 +323,7 @@
 							<reference ref="843312952"/>
 							<reference ref="142057103"/>
 							<reference ref="895286832"/>
-							<reference ref="136799585"/>
+							<reference ref="886721386"/>
 							<reference ref="1035376637"/>
 						</object>
 						<reference key="parent" ref="0"/>
@@ -358,7 +360,7 @@
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">41</int>
-						<reference key="object" ref="136799585"/>
+						<reference key="object" ref="886721386"/>
 						<reference key="parent" ref="774585933"/>
 					</object>
 				</object>

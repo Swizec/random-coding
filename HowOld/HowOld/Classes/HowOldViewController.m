@@ -85,7 +85,35 @@
   
   NSArray * trs = [persondata findChildTags:@"tr"];
   
-  NSRegularExpression *regexTitle = [NSRegularExpression regularExpressionWithPattern:@"date of birth"
+  BOOL *errBirth = NO, *errDeath = NO;
+  
+  NSInteger birthYear = [self getBirthYear:trs error:&errBirth];
+  NSInteger deathYear = [self getDeathYear:trs error:&errDeath];
+  
+  if (errBirth) {
+    [self noFound];
+  } else if (!errDeath) {
+    NSLog(@"we have a death year %d", deathYear);
+  } else {
+    [self reportResult:birthYear];
+  }
+  
+  [parser release];
+}
+
+- (NSInteger)getBirthYear:(NSArray *)nodes error:(BOOL **)err {
+  return [self getYearInWikipedia:nodes type:@"date of birth" error:err];
+}
+
+- (NSInteger)getDeathYear:(NSArray *)nodes error:(BOOL **)err {
+  return [self getYearInWikipedia:nodes type:@"date of death" error:err];
+}
+
+- (NSInteger)getYearInWikipedia:(NSArray *)nodes type:(NSString *)type error:(BOOL **)err {
+  err = NO;
+  
+  NSError *error = NULL;
+  NSRegularExpression *regexTitle = [NSRegularExpression regularExpressionWithPattern:type
                                                                               options:NSRegularExpressionCaseInsensitive
                                                                                 error:&error];
   NSRegularExpression *regexYear = [NSRegularExpression regularExpressionWithPattern:@"([0-9]+)(<span|</td)"
@@ -93,37 +121,33 @@
                                                                                error:&error];
   NSUInteger numberOfMatches;
   NSString *s, *s2;
-  BOOL foundIt = NO;
   
-  for (HTMLNode * tr in trs) {
+  for (HTMLNode * tr in nodes) {
     
     s = [[tr firstChild] rawContents];
     numberOfMatches = [regexTitle numberOfMatchesInString:s
                                                   options:0
                                                     range:NSMakeRange(0, [s length])];
+    
     if (numberOfMatches > 0) {
-      foundIt = YES;
-      s2 = [[[tr findChildTags:@"td"] objectAtIndex:1] rawContents];
-      NSDateFormatter *dateFormat = [[NSDateFormatter alloc] init];
-      NSArray *matches = [regexYear matchesInString:s2 
-                                           options:0 
-                                             range:NSMakeRange(0, [s2 length])];
+      NSArray *children = [tr findChildTags:@"td"];
       
-      NSTextCheckingResult *match = [matches objectAtIndex:[matches count]-1];
-      [self reportResult:[[s2 substringWithRange:[match rangeAtIndex:0]] intValue]];
+      s2 = [[children objectAtIndex:1] rawContents];
+      NSArray *matches = [regexYear matchesInString:s2 
+                                            options:0 
+                                              range:NSMakeRange(0, [s2 length])];
+      
+      if ([matches count] > 0) {
+        NSTextCheckingResult *match = [matches objectAtIndex:[matches count]-1];
+        return [[s2 substringWithRange:[match rangeAtIndex:0]] intValue];
+      }
     }
   }
   
-  if (!foundIt) {
-    [self noFound];
-  }
-  
-  [parser release];
-  /*[regexTitle release];
-  [regexYear release];
-  [trs release];
-  [body release];*/
+  err = YES;
+  return 0;
 }
+
 
 - (void)requestFailed:(ASIHTTPRequest *)request
 {
@@ -133,8 +157,6 @@
 }
 
 - (void)reportResult:(NSInteger)birthYear {
-  NSLog(@"birth: %d", birthYear);
-  
   NSInteger row = [yearPicker selectedRowInComponent:0];
   NSString *selected = [pickerData objectAtIndex:row];
   NSInteger selectedYear = [selected intValue];
@@ -185,8 +207,8 @@
   
   adView = [[ADBannerView alloc] initWithFrame:CGRectZero];
   adView.frame = CGRectOffset(adView.frame, 0, -50);
-  adView.requiredContentSizeIdentifiers = [NSSet setWithObject:ADBannerContentSizeIdentifier320x50];
-  adView.currentContentSizeIdentifier = ADBannerContentSizeIdentifier320x50;
+  adView.requiredContentSizeIdentifiers = [NSSet setWithObject:ADBannerContentSizeIdentifierPortrait];
+  adView.currentContentSizeIdentifier = ADBannerContentSizeIdentifierPortrait;
   [self.view addSubview:adView];
   adView.delegate=self;
   self.bannerIsVisible=NO;
