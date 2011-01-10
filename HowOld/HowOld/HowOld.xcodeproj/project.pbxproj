@@ -32,6 +32,7 @@
 		38789C4512DA0FBE00998694 /* HTMLNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 38789C4212DA0FBE00998694 /* HTMLNode.m */; };
 		38789C4612DA0FBE00998694 /* HTMLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 38789C4412DA0FBE00998694 /* HTMLParser.m */; };
 		38789C5612DA118600998694 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 38789C5512DA118600998694 /* libxml2.dylib */; };
+		389A0C2612DAA2BA0007AEE9 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 389A0C2512DAA2BA0007AEE9 /* icon.png */; };
 		38AEA62E12DA95C600E9339B /* CDataScanner.m in Sources */ = {isa = PBXBuildFile; fileRef = 38AEA61612DA95C600E9339B /* CDataScanner.m */; };
 		38AEA62F12DA95C600E9339B /* CDataScanner_Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 38AEA61812DA95C600E9339B /* CDataScanner_Extensions.m */; };
 		38AEA63012DA95C600E9339B /* CJSONDataSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 38AEA61A12DA95C600E9339B /* CJSONDataSerializer.m */; };
@@ -92,6 +93,7 @@
 		38789C4312DA0FBE00998694 /* HTMLParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTMLParser.h; sourceTree = "<group>"; };
 		38789C4412DA0FBE00998694 /* HTMLParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTMLParser.m; sourceTree = "<group>"; };
 		38789C5512DA118600998694 /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
+		389A0C2512DAA2BA0007AEE9 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 		38AEA61512DA95C600E9339B /* CDataScanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDataScanner.h; sourceTree = "<group>"; };
 		38AEA61612DA95C600E9339B /* CDataScanner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDataScanner.m; sourceTree = "<group>"; };
 		38AEA61712DA95C600E9339B /* CDataScanner_Extensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDataScanner_Extensions.h; sourceTree = "<group>"; };
@@ -190,6 +192,7 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				389A0C2512DAA2BA0007AEE9 /* icon.png */,
 				2899E5210DE3E06400AC0155 /* HowOldViewController.xib */,
 				28AD733E0D9D9553002E5188 /* MainWindow.xib */,
 				8D1107310486CEB800E47090 /* HowOld-Info.plist */,
@@ -356,6 +359,7 @@
 			files = (
 				28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */,
 				2899E5220DE3E06400AC0155 /* HowOldViewController.xib in Resources */,
+				389A0C2612DAA2BA0007AEE9 /* icon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
