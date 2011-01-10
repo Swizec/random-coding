@@ -291,8 +291,8 @@ NSInteger UNPOSSIBLE_YEAR = -100000000;
   
   adView = [[ADBannerView alloc] initWithFrame:CGRectZero];
   adView.frame = CGRectOffset(adView.frame, 0, -50);
-  adView.requiredContentSizeIdentifiers = [NSSet setWithObject:ADBannerContentSizeIdentifierPortrait];
-  adView.currentContentSizeIdentifier = ADBannerContentSizeIdentifierPortrait;
+  adView.requiredContentSizeIdentifiers = [NSSet setWithObject:ADBannerContentSizeIdentifier320x50];
+  adView.currentContentSizeIdentifier = ADBannerContentSizeIdentifier320x50;
   [self.view addSubview:adView];
   adView.delegate=self;
   self.bannerIsVisible=NO;
