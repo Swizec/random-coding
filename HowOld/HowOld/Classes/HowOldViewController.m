@@ -11,6 +11,9 @@
 #import "HTMLParser.h"
 #import "HTMLNode.h"
 
+// impossible for anyone to be older than 100M years
+#define UNPOSSIBLE_YEAR = -100000000
+
 @implementation HowOldViewController
 @synthesize yearPicker;
 @synthesize pickerData;
@@ -85,14 +88,12 @@
   
   NSArray * trs = [persondata findChildTags:@"tr"];
   
-  BOOL *errBirth = NO, *errDeath = NO;
+  NSInteger birthYear = [self getBirthYear:trs];
+  NSInteger deathYear = [self getDeathYear:trs];
   
-  NSInteger birthYear = [self getBirthYear:trs error:&errBirth];
-  NSInteger deathYear = [self getDeathYear:trs error:&errDeath];
-  
-  if (errBirth) {
+  if (birthYear <= UNPOSSIBLE_YEAR) {
     [self noFound];
-  } else if (!errDeath) {
+  } else if (deathYear > UNPOSSIBLE_YEAR) {
     [self reportResult:birthYear deathYear:deathYear];
   } else {
     [self reportResult:birthYear];
@@ -101,22 +102,21 @@
   [parser release];
 }
 
-- (NSInteger)getBirthYear:(NSArray *)nodes error:(BOOL **)err {
-  return [self getYearInWikipedia:nodes type:@"date of birth" error:err];
+- (NSInteger)getBirthYear:(NSArray *)nodes {
+  return [self getYearInWikipedia:nodes type:@"date of birth"];
 }
 
-- (NSInteger)getDeathYear:(NSArray *)nodes error:(BOOL **)err {
-  return [self getYearInWikipedia:nodes type:@"date of death" error:err];
+- (NSInteger)getDeathYear:(NSArray *)nodes {
+  return [self getYearInWikipedia:nodes type:@"date of death"];
 }
 
-- (NSInteger)getYearInWikipedia:(NSArray *)nodes type:(NSString *)type error:(BOOL **)err {
-  err = NO;
+- (NSInteger)getYearInWikipedia:(NSArray *)nodes type:(NSString *)type{
   
   NSError *error = NULL;
   NSRegularExpression *regexTitle = [NSRegularExpression regularExpressionWithPattern:type
                                                                               options:NSRegularExpressionCaseInsensitive
                                                                                 error:&error];
-  NSRegularExpression *regexYear = [NSRegularExpression regularExpressionWithPattern:@"([0-9]+)(<span|</td)"
+  NSRegularExpression *regexYear = [NSRegularExpression regularExpressionWithPattern:@"([0-9]+)(<span|</td| BC)"
                                                                              options:NSRegularExpressionCaseInsensitive
                                                                                error:&error];
   NSUInteger numberOfMatches;
@@ -133,6 +133,7 @@
       NSArray *children = [tr findChildTags:@"td"];
       
       s2 = [[children objectAtIndex:1] rawContents];
+      NSLog(@"%@", s2);
       NSArray *matches = [regexYear matchesInString:s2 
                                             options:0 
                                               range:NSMakeRange(0, [s2 length])];
@@ -144,8 +145,7 @@
     }
   }
   
-  err = YES;
-  return 0;
+  return UNPOSSIBLE_YEAR;
 }
 
 
