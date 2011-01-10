@@ -93,7 +93,7 @@
   if (errBirth) {
     [self noFound];
   } else if (!errDeath) {
-    NSLog(@"we have a death year %d", deathYear);
+    [self reportResult:birthYear deathYear:deathYear];
   } else {
     [self reportResult:birthYear];
   }
@@ -163,17 +163,45 @@
   
   NSString *title = [[NSString alloc] initWithFormat:
                      @"In %d", selectedYear];
-  NSString *message = [[NSString alloc] initWithFormat:@"%@ was %d years old!", celebrity.text, selectedYear-birthYear];
+
+  NSString *message;
   
+  if (birthYear > selectedYear) {
+    message = [[NSString alloc] initWithFormat:@"%@ would take another %d years to be born!", celebrity.text, birthYear-selectedYear];
+  } else {
+    message = [[NSString alloc] initWithFormat:@"%@ was %d years old!", celebrity.text, selectedYear-birthYear];
+  }
+  
+  [self showMessage:title message:message button:@"Wow thanks!"];
+}
+
+-(void)reportResult:(NSInteger)birthYear deathYear:(NSInteger)deathYear {
+  NSInteger row = [yearPicker selectedRowInComponent:0];
+  NSString *selected = [pickerData objectAtIndex:row];
+  NSInteger selectedYear = [selected intValue];
+  
+  if (deathYear < selectedYear) {
+    NSString *title = [[NSString alloc] initWithFormat:
+                       @"In %d", selectedYear];
+    NSString *message = [[NSString alloc] initWithFormat:@"%@ was dead for %d years :(", 
+                                              celebrity.text, selectedYear-deathYear, deathYear-birthYear];
+    
+    [self showMessage:title message:message button:@"Poor dude."];
+  } else {
+    [self reportResult:birthYear];
+  }
+}
+
+-(void)showMessage:(NSString *)title message:(NSString *)message button:(NSString *)button {
   UIAlertView *alert = [[UIAlertView alloc] initWithTitle:title
-                                                    message:message
-                                                   delegate:nil
-                                          cancelButtonTitle:@"Wow thanks!"
-                                          otherButtonTitles:nil];
+                                                  message:message
+                                                 delegate:nil
+                                        cancelButtonTitle:button
+                                        otherButtonTitles:nil];
   
   [alert show];
   
-  [alert release];
+  [alert release]; 
 }
 
 -(void)noFound {
