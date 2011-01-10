@@ -5,11 +5,11 @@
 	<key>CFBundleDevelopmentRegion</key>
 	<string>English</string>
 	<key>CFBundleDisplayName</key>
-	<string>${PRODUCT_NAME}</string>
+	<string>Age</string>
 	<key>CFBundleExecutable</key>
 	<string>${EXECUTABLE_NAME}</string>
 	<key>CFBundleIconFile</key>
-	<string>Resources/icon.png</string>
+	<string>icon.png</string>
 	<key>CFBundleShortVersionString</key>
 	<string></string>
 	<key>CFBundleGetInfoString</key>

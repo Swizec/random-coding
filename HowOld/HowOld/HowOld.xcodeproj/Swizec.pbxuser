@@ -32,14 +32,14 @@
 	};
 	28D7ACF70DDB3853001CB0EB /* HowOldViewController.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {607, 4810}}";
+			sepNavIntBoundsRect = "{{0, 0}, {607, 4745}}";
 			sepNavSelRange = "{9719, 0}";
-			sepNavVisRange = "{9202, 837}";
+			sepNavVisRange = "{9202, 836}";
 			sepNavWindowFrame = "{{113, 73}, {1156, 745}}";
 		};
 	};
 	29B97313FDCFA39411CA2CEA /* Project object */ = {
-		activeBuildConfigurationName = Debug;
+		activeBuildConfigurationName = Release;
 		activeExecutable = 38A6A38012D9D27E00F842AE /* HowOld */;
 		activeSDKPreference = iphoneos4.2;
 		activeTarget = 1D6058900D05DD3D006BFB54 /* HowOld */;
@@ -73,22 +73,32 @@
 					PBXFileDataSource_Target_ColumnID,
 				);
 			};
-			PBXPerProjectTemplateStateSaveDate = 316315787;
-			PBXWorkspaceStateSaveDate = 316315787;
+			PBXPerProjectTemplateStateSaveDate = 316320934;
+			PBXWorkspaceStateSaveDate = 316320934;
 		};
 		perUserProjectItems = {
-			381538D312DA22FF00BB35E0 /* PBXTextBookmark */ = 381538D312DA22FF00BB35E0 /* PBXTextBookmark */;
-			3815398A12DA2A6A00BB35E0 /* PBXTextBookmark */ = 3815398A12DA2A6A00BB35E0 /* PBXTextBookmark */;
-			38789BB712DA04A800998694 /* PBXTextBookmark */ = 38789BB712DA04A800998694 /* PBXTextBookmark */;
-			38789BB812DA04A800998694 /* PBXTextBookmark */ = 38789BB812DA04A800998694 /* PBXTextBookmark */;
-			38789BB912DA04A800998694 /* PBXTextBookmark */ = 38789BB912DA04A800998694 /* PBXTextBookmark */;
-			38789C6912DA122500998694 /* PBXTextBookmark */ = 38789C6912DA122500998694 /* PBXTextBookmark */;
-			38789C6A12DA122500998694 /* PBXTextBookmark */ = 38789C6A12DA122500998694 /* PBXTextBookmark */;
-			389A0C2912DAA37F0007AEE9 /* PBXTextBookmark */ = 389A0C2912DAA37F0007AEE9 /* PBXTextBookmark */;
-			389A0C3312DAA7C60007AEE9 /* PlistBookmark */ = 389A0C3312DAA7C60007AEE9 /* PlistBookmark */;
-			389A0C3412DAA7C60007AEE9 /* PBXTextBookmark */ = 389A0C3412DAA7C60007AEE9 /* PBXTextBookmark */;
-			389A0C3D12DAA8950007AEE9 /* PBXTextBookmark */ = 389A0C3D12DAA8950007AEE9 /* PBXTextBookmark */;
-			38AEA65912DA982D00E9339B /* PBXTextBookmark */ = 38AEA65912DA982D00E9339B /* PBXTextBookmark */;
+			381538D312DA22FF00BB35E0 = 381538D312DA22FF00BB35E0 /* PBXTextBookmark */;
+			3815398A12DA2A6A00BB35E0 = 3815398A12DA2A6A00BB35E0 /* PBXTextBookmark */;
+			3815FD8C12DAAB60007F60D2 = 3815FD8C12DAAB60007F60D2 /* PBXTextBookmark */;
+			3815FD8D12DAAB60007F60D2 = 3815FD8D12DAAB60007F60D2 /* PlistBookmark */;
+			3815FD8E12DAAB60007F60D2 = 3815FD8E12DAAB60007F60D2 /* PlistBookmark */;
+			38789BB712DA04A800998694 = 38789BB712DA04A800998694 /* PBXTextBookmark */;
+			38789BB812DA04A800998694 = 38789BB812DA04A800998694 /* PBXTextBookmark */;
+			38789BB912DA04A800998694 = 38789BB912DA04A800998694 /* PBXTextBookmark */;
+			38789C6912DA122500998694 = 38789C6912DA122500998694 /* PBXTextBookmark */;
+			38789C6A12DA122500998694 = 38789C6A12DA122500998694 /* PBXTextBookmark */;
+			389A0C2912DAA37F0007AEE9 = 389A0C2912DAA37F0007AEE9 /* PBXTextBookmark */;
+			38AEA65912DA982D00E9339B = 38AEA65912DA982D00E9339B /* PBXTextBookmark */;
+			38F71B4B12DAACD100106573 /* XCBuildMessageTextBookmark */ = 38F71B4B12DAACD100106573 /* XCBuildMessageTextBookmark */;
+			38F71B4C12DAACD100106573 /* PBXTextBookmark */ = 38F71B4C12DAACD100106573 /* PBXTextBookmark */;
+			38F71B5812DAAD5200106573 /* PlistBookmark */ = 38F71B5812DAAD5200106573 /* PlistBookmark */;
+			38F71B5912DAAD5200106573 /* XCBuildMessageTextBookmark */ = 38F71B5912DAAD5200106573 /* XCBuildMessageTextBookmark */;
+			38F71B5A12DAAD5200106573 /* PBXTextBookmark */ = 38F71B5A12DAAD5200106573 /* PBXTextBookmark */;
+			38F71B6712DAAE1A00106573 /* PBXTextBookmark */ = 38F71B6712DAAE1A00106573 /* PBXTextBookmark */;
+			38F71B6812DAAE1A00106573 /* PlistBookmark */ = 38F71B6812DAAE1A00106573 /* PlistBookmark */;
+			38F71B6912DAAE2300106573 /* PlistBookmark */ = 38F71B6912DAAE2300106573 /* PlistBookmark */;
+			38F71B6A12DAAE3700106573 /* PlistBookmark */ = 38F71B6A12DAAE3700106573 /* PlistBookmark */;
+			38F71B7312DAAE7700106573 /* PlistBookmark */ = 38F71B7312DAAE7700106573 /* PlistBookmark */;
 		};
 		sourceControlManager = 38A6A38F12D9D28400F842AE /* Source Control */;
 		userBuildSettings = {
@@ -113,6 +123,39 @@
 		rType = 0;
 		vrLen = 450;
 		vrLoc = 136;
+	};
+	3815FD8C12DAAB60007F60D2 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28D7ACF70DDB3853001CB0EB /* HowOldViewController.m */;
+		name = "HowOldViewController.m: 294";
+		rLen = 0;
+		rLoc = 9719;
+		rType = 0;
+		vrLen = 836;
+		vrLoc = 9202;
+	};
+	3815FD8D12DAAB60007F60D2 /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 8D1107310486CEB800E47090 /* HowOld-Info.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+		);
+		name = "/Users/Swizec/Documents/random-coding/HowOld/HowOld/HowOld-Info.plist";
+		rLen = 0;
+		rLoc = 9223372036854775808;
+	};
+	3815FD8E12DAAB60007F60D2 /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 8D1107310486CEB800E47090 /* HowOld-Info.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+			CFBundleExecutable,
+		);
+		name = "/Users/Swizec/Documents/random-coding/HowOld/HowOld/HowOld-Info.plist";
+		rLen = 0;
+		rLoc = 9223372036854775808;
 	};
 	38789B5512DA002500998694 /* ASIHTTPRequest.h */ = {
 		uiCtxt = {
@@ -183,9 +226,9 @@
 	};
 	38789C4312DA0FBE00998694 /* HTMLParser.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1097, 632}}";
-			sepNavSelRange = "{223, 0}";
-			sepNavVisRange = "{0, 620}";
+			sepNavIntBoundsRect = "{{0, 0}, {607, 442}}";
+			sepNavSelRange = "{172, 0}";
+			sepNavVisRange = "{0, 491}";
 			sepNavWindowFrame = "{{61, 86}, {1156, 745}}";
 		};
 	};
@@ -218,34 +261,6 @@
 		rType = 0;
 		vrLen = 346;
 		vrLoc = 0;
-	};
-	389A0C3312DAA7C60007AEE9 /* PlistBookmark */ = {
-		isa = PlistBookmark;
-		fRef = 8D1107310486CEB800E47090 /* HowOld-Info.plist */;
-		fallbackIsa = PBXBookmark;
-		isK = 0;
-		kPath = (
-		);
-		name = "/Users/Swizec/Documents/random-coding/HowOld/HowOld/HowOld-Info.plist";
-		rLen = 0;
-		rLoc = 9223372036854775807;
-	};
-	389A0C3412DAA7C60007AEE9 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 28D7ACF70DDB3853001CB0EB /* HowOldViewController.m */;
-		rLen = 0;
-		rLoc = 293;
-		rType = 1;
-	};
-	389A0C3D12DAA8950007AEE9 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 28D7ACF70DDB3853001CB0EB /* HowOldViewController.m */;
-		name = "HowOldViewController.m: 294";
-		rLen = 0;
-		rLoc = 9719;
-		rType = 0;
-		vrLen = 837;
-		vrLoc = 9202;
 	};
 	38A6A38012D9D27E00F842AE /* HowOld */ = {
 		isa = PBXExecutable;
@@ -302,5 +317,113 @@
 		rType = 0;
 		vrLen = 286;
 		vrLoc = 0;
+	};
+	38F71B4B12DAACD100106573 /* XCBuildMessageTextBookmark */ = {
+		isa = PBXTextBookmark;
+		comments = "Libxml/HTMLparser.h: No such file or directory";
+		fRef = 38789C4312DA0FBE00998694 /* HTMLParser.h */;
+		fallbackIsa = XCBuildMessageTextBookmark;
+		rLen = 1;
+		rLoc = 9;
+		rType = 1;
+	};
+	38F71B4C12DAACD100106573 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 38789C4312DA0FBE00998694 /* HTMLParser.h */;
+		name = "HTMLParser.h: 10";
+		rLen = 0;
+		rLoc = 172;
+		rType = 0;
+		vrLen = 277;
+		vrLoc = 0;
+	};
+	38F71B5812DAAD5200106573 /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 8D1107310486CEB800E47090 /* HowOld-Info.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+			CFBundleExecutable,
+		);
+		name = "/Users/Swizec/Documents/random-coding/HowOld/HowOld/HowOld-Info.plist";
+		rLen = 0;
+		rLoc = 9223372036854775807;
+	};
+	38F71B5912DAAD5200106573 /* XCBuildMessageTextBookmark */ = {
+		isa = PBXTextBookmark;
+		comments = "Libxml/HTMLparser.h: No such file or directory";
+		fRef = 38789C4312DA0FBE00998694 /* HTMLParser.h */;
+		fallbackIsa = XCBuildMessageTextBookmark;
+		rLen = 1;
+		rLoc = 9;
+		rType = 1;
+	};
+	38F71B5A12DAAD5200106573 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 38789C4312DA0FBE00998694 /* HTMLParser.h */;
+		name = "HTMLParser.h: 10";
+		rLen = 0;
+		rLoc = 172;
+		rType = 0;
+		vrLen = 491;
+		vrLoc = 0;
+	};
+	38F71B6712DAAE1A00106573 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 38789C4312DA0FBE00998694 /* HTMLParser.h */;
+		name = "HTMLParser.h: 10";
+		rLen = 0;
+		rLoc = 172;
+		rType = 0;
+		vrLen = 491;
+		vrLoc = 0;
+	};
+	38F71B6812DAAE1A00106573 /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 8D1107310486CEB800E47090 /* HowOld-Info.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+			CFBundleExecutable,
+		);
+		name = "/Users/Swizec/Documents/random-coding/HowOld/HowOld/HowOld-Info.plist";
+		rLen = 18;
+		rLoc = 0;
+	};
+	38F71B6912DAAE2300106573 /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 8D1107310486CEB800E47090 /* HowOld-Info.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+			CFBundleExecutable,
+		);
+		name = "/Users/Swizec/Documents/random-coding/HowOld/HowOld/HowOld-Info.plist";
+		rLen = 18;
+		rLoc = 0;
+	};
+	38F71B6A12DAAE3700106573 /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 8D1107310486CEB800E47090 /* HowOld-Info.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+			CFBundleExecutable,
+		);
+		name = "/Users/Swizec/Documents/random-coding/HowOld/HowOld/HowOld-Info.plist";
+		rLen = 18;
+		rLoc = 0;
+	};
+	38F71B7312DAAE7700106573 /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 8D1107310486CEB800E47090 /* HowOld-Info.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+			CFBundleExecutable,
+		);
+		name = "/Users/Swizec/Documents/random-coding/HowOld/HowOld/HowOld-Info.plist";
+		rLen = 18;
+		rLoc = 0;
 	};
 }
