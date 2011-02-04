@@ -111,10 +111,21 @@ def fitness(a, longest):
         except ZeroDivisionError:
             return 1
 
+    def redundancy():
+        map = {}
+        for s in a:
+            try:
+                map[s] += 1
+            except KeyError:
+                map[s] = 1
+        if sum(map.values()) > len(map.keys()):
+            return 0
+        return 1
+
     if len(a) == 0:
         return 0
     
-    return (shortnes()*2)*melody()*syllables()*phonology()*complexity()
+    return shortnes()*melody()*syllables()*phonology()*redundancy()*complexity()
 
 def longest(population):
     return len(reduce(lambda a,b: a if len(a) > len(b) else b,
