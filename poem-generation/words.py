@@ -1,6 +1,7 @@
 
 import random, pickle
 import constants, syllables
+from cmath import sqrt
 
 #SYLLABARY = syllables.syllabary()
 # generated one, easier for development, less waiting :)
@@ -77,7 +78,7 @@ def fitness(a, longest):
         return reduce(lambda a,b: a*b, [SYLLABARY[s]['score'] for s in a])
 
     def shortnes():
-        return 1-len(a)/float(longest)
+        return abs(1/(sqrt(len(a))*5))
 
     def melody():
         def delta(a, b):
@@ -132,9 +133,10 @@ def longest(population):
                       population))
 
 def compete(population):
-    max = longest(population)
-
-    population.sort(key=lambda a: fitness(a, max),
+    max_len = longest(population)
+    print max_len
+    
+    population.sort(key=lambda a: fitness(a, max_len),
                    reverse=True)
             
     return population
