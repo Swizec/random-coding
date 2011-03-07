@@ -10,12 +10,24 @@
   (loop [cnt (dec (count known)) acc []]
     (if (< cnt 0) (not (any? acc))
 	(recur (dec cnt) (concat acc [(zero? (mod n (nth known cnt)))])))))
-				       
-	
 
 (defn primes [n]
   (loop [cnt 3 p [2]]
+    (println p)
     (if (>= (count p) n) p
-      (recur (+ cnt 2) (if (prime? cnt p) (concat p [cnt]) p)))))
+	(recur (+ cnt 2) (if (prime? cnt p) (concat p [cnt]) p)))))
 
-(println (primes 500))
+(defn next-prime [primes]
+  (let [n (inc (count primes))]
+    (loop [cnt (inc (last primes)) p primes]
+      (if (>= (count p) n) (last p)
+	  (recur (+ cnt 2) (if (prime? cnt p) (concat p [cnt]) p))))))
+
+(defn factor [n]
+  (loop [cnt 1 p (primes 1)]
+  (if (== n (reduce * p)) p
+      (recur (inc cnt) (concat p (next-prime p))))))
+
+					;(println (factor 13195))
+
+(println (next-prime [2]))
