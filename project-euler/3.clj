@@ -18,16 +18,19 @@
 	(if (>= (count p) n) (last p)
 	    (recur (+ cnt 2) (if (prime? cnt p) (concat p [cnt]) p)))))))
 
+(memoize next-prime)
+
 (defn n-primes [n]
   (loop [cnt 1 p [2]]
     (if (>= cnt n) p
 	(recur (inc cnt) (concat p [(next-prime p)])))))
 
-(defn factor [n]
-  (loop [cnt 1 p (n-primes 1)]
-  (if (== n (reduce * p)) p
-      (recur (inc cnt) (concat p (next-prime p))))))
+(defn factor [n factors]
+  (if (== n 1) factors
+      (loop [p (n-primes 1)]
+	(if (== 0 (mod n (last p))) (factor (/ n (last p)) (concat [(last p)] factors))
+	    (recur (concat p [(next-prime p)]))))))
 
-					;(println (factor 13195))
+(println (factor 13195 []))
 
-(println (n-primes 15))
+;(println (n-primes 1))
