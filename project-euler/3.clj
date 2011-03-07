@@ -25,12 +25,13 @@
     (if (>= cnt n) p
 	(recur (inc cnt) (concat p [(next-prime p)])))))
 
-(defn factor [n factors]
+(defn factor [n factors primes]
   (if (== n 1) factors
-      (loop [p (n-primes 1)]
-	(if (== 0 (mod n (last p))) (factor (/ n (last p)) (concat [(last p)] factors))
+      (loop [p primes]
+	(if (== 0 (mod n (last p))) (factor
+				     (/ n (last p))
+				     (concat [(last p)] factors)
+				     p)
 	    (recur (concat p [(next-prime p)]))))))
 
-(println (factor 13195 []))
-
-;(println (n-primes 1))
+(println (factor 600851475143 [] (n-primes 1)))
