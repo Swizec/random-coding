@@ -18,4 +18,4 @@
     (if (>= (count p) n) p
       (recur (+ cnt 2) (if (prime? cnt p) (concat p [cnt]) p)))))
 
-(println (primes 50))
+(println (primes 500))
