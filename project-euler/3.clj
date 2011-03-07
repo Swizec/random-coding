@@ -30,4 +30,4 @@
 
 					;(println (factor 13195))
 
-(println (n-primes 5))
+(println (n-primes 15))
