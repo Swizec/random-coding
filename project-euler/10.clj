@@ -7,10 +7,12 @@
   (reduce #(or %1 %2) l))
 
 (defn prime? [n]
-  (loop [i (int (Math/sqrt n))]
-    (if (zero? (mod n i)) false
-	(if (< i 3) true
-	    (recur (dec (dec i)))))))
+  (if (even? n) false
+      (let [root (num (int (Math/sqrt n)))]
+	(loop [i 3]
+	  (if (> i root) true
+	      (if (zero? (mod n i)) false
+		  (recur (+ i 2))))))))
 
 (defn answer []
   (loop [i 2 s 0]
@@ -22,5 +24,6 @@
 
 (println (answer))
 
+;142913828920
 
 ;(println (answer))
