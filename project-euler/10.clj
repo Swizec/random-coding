@@ -16,14 +16,7 @@
 
 (defn answer []
   (loop [i 2 s 0]
-    (println i s)
-    (if (> i 2000000) s
+    (if (> i 2000000) (+ s 2)
 	(recur (inc i) (if (prime? i) (+ s i) s)))))
 
-;(println (prime? 19))
-
 (println (answer))
-
-;142913828920
-
-;(println (answer))
