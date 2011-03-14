@@ -31,7 +31,7 @@
 (def gridlen 20)
 
 (defn at [x y]
-  (if (or (>= x gridlen) (>= y gridlen)) 0
+  (if (or (>= x gridlen) (>= y gridlen) (< x 0) (< y 0)) 0
       (nth (nth grid y) x)))
 
 (defn adjacent-row [x y]
@@ -47,7 +47,12 @@
 (defn adjacent-diag [x y]
   (loop [i 0 acc []]
     (if (> i 3) acc
-	(recur (inc i) (concat acc[(at (+ x i) (+ y i))])))))
+	(recur (inc i) (concat acc [(at (+ x i) (+ y i))])))))
+
+(defn adjacent-rev-diag [x y]
+  (loop [i 0 acc []]
+    (if (> i 3) acc
+	(recur (inc i) (concat acc [(at (- x i) (+ y i))])))))
 
 (defn explore-row [y]
   (loop [x 0 acc []]
@@ -55,7 +60,8 @@
 	(recur (inc x) (concat acc
 			       [(apply * (adjacent-row x y))]
 			       [(apply * (adjacent-col x y))]
-			       [(apply * (adjacent-diag x y))])))))
+			       [(apply * (adjacent-diag x y))]
+			       [(apply * (adjacent-rev-diag x y))])))))
 
 (defn answer []
   (loop [y 0 acc []]
