@@ -1,17 +1,15 @@
 
-(defn smallest-div [n]
-  (loop [i 2]
-    (if (zero? (rem n i)) i
-	(recur (inc i)))))
+(def smallest-div
+     (memoize (fn [n]
+		(loop [i 2]
+		  (if (zero? (rem n i)) i
+		      (recur (inc i)))))))
 
 (def factorize 
-  (memoize (fn [n]
+     (memoize (fn [n]
 	     (if (<= n 1) nil
 		 (let [d (smallest-div n)]
 		   (concat [d] (factorize (/ n d))))))))
-
-	  
-;(println (factorize 5350))
 
 (defn divisors [n]
   (let [facts (factorize n)]
