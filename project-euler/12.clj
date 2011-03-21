@@ -27,7 +27,6 @@
 (defn groups [data]
   (loop [acc [] group [(first data)] l (next data)]
     (if (empty? l) (concat acc [group])
-	
 	(if (== (first group) (first l))
 	  (recur acc (concat group [(first l)]) (next l))
 	  (recur (concat acc [group]) [(first l)] (next l))))))
@@ -39,11 +38,7 @@
 
 (defn answer []
   (loop [i 0 n 0]
-    (println n (divisors n))
     (if (>= (divisors n) 500) n
 	(recur (inc i) (+ n i)))))
 
-(println (divisors 28))
-
-(println (divisors 2284102666))
-;(println (answer))
+(println (answer))
