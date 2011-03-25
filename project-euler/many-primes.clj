@@ -12,10 +12,10 @@
 		  (recur (+ i 2))))))))
 
 (defn primes [n]
-  (loop [i 2 acc []]
-    (if (> i n) (cons 2 acc)
+  (loop [i 2 acc [2]]
+    (if (> i n) acc
 	(if (prime? i)
-	  (recur (inc i) (concat acc [i]))
+	  (recur (inc i) (cons i acc))
 	  (recur (inc i) acc)))))
 
-(println (primes 100000))
+(println (primes 3000000))
