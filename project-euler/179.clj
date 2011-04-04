@@ -6,7 +6,7 @@
 		(if (<= n 1) nil
 		    (let [sqrt (Math/sqrt n)]
 		      (loop [i 0]
-			(let [p (nth first-1k-primes i)]
+			(let [p (nth primes-to-3M i)]
 			  (if (> i sqrt) p
 			      (if (zero? (rem n p)) p
 				  (recur (inc i)))))))))))
