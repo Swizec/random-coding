@@ -27,10 +27,11 @@ var primes = function (n, callback) {
     
     async.filter(acc, isPrime, function(results){
 	results.unshift(2);
-	console.log(results);
+	callback(results);
+	//console.log(results);
     });
 }
 
-primes(1000, function (result) {
-    console.log(result);
+primes(10000000, function (result) {
+    //console.log(result);
 });
