@@ -18,4 +18,5 @@
 	  (recur (inc i) (cons i acc))
 	  (recur (inc i) acc)))))
 
-(println (reverse (primes 4000000)))
+;(println (reverse (primes 4000000)))
+(println (reverse (primes 1000)))

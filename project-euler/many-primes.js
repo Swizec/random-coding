@@ -26,12 +26,11 @@ var primes = function (n, callback) {
 
     
     async.filter(acc, isPrime, function(results){
-	// results now equals an array of the existing files
-	console.log('bu');
+	results.unshift(2);
 	console.log(results);
     });
 }
 
-primes(100, function (result) {
+primes(1000, function (result) {
     console.log(result);
 });
