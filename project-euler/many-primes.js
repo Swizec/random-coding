@@ -32,6 +32,6 @@ var primes = function (n, callback) {
     });
 }
 
-primes(10000000, function (result) {
+primes(process.argv[2], function (result) {
     //console.log(result);
 });

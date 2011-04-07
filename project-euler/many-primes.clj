@@ -17,7 +17,5 @@
 		   (recur (inc i) (cons i acc))))]
     (concat (filter prime? nums) [2])))
 
-;(println (reverse (primes 4000000)))
-(primes 10000000)
 
-;(println (primes 100))
+(primes (Integer/parseInt (first *command-line-args*)))
