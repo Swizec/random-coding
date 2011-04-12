@@ -4,7 +4,7 @@ var http = require('http'),
 
 var options = {
   host: 'localhost',
-  port: 8124,
+  port: 8081,
   path: '/',
   method: 'POST'
 };
@@ -18,8 +18,11 @@ var benchmark = function (item, callback) {
 	});
     });
 
-    req.write(JSON.stringify({key: 'speed-benchmark',
-			      value: before}));
+    var body = JSON.stringify({key: 'speed-benchmark',
+			       value: before});
+
+    req.setHeader('Content-Length', body.length);
+    req.write(body);
     req.end();
 }
 
