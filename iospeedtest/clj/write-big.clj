@@ -20,7 +20,7 @@
 (defn write-a-lot2 [file-name]
   (spit file-name
 	       (loop [i 0 acc []]
-		 (if (> i 1024) acc
+		 (if (> i 10240000) acc
 		     (recur (inc i) (cons i acc))))))
 
 (println (write-a-lot2 "./crap/bla.txt"))
