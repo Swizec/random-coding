@@ -2,8 +2,11 @@
 var spawn = require('child_process').spawn,
     async = require('async');
 
+var ERRORS = 0;
+
 var run = function (item, callback) {
     var bench = spawn('node', ['benchmark.js']);
+    var error = false;
     
     bench.stdin.end();
 
@@ -16,24 +19,42 @@ var run = function (item, callback) {
     });
 
     bench.stderr.on('data', function (data) {
-	console.log('stderr: ' + data);
+	ERRORS += 1;
+	error = true;
     });
 
     bench.on('exit', function (code) {
-	callback(null, parseFloat((data+"").replace('\n', '')));
+	if (!error) {
+	    callback(null, parseFloat((data+"").replace('\n', '')));
+	}else{
+	    callback(null, 10);
+	}
     });
 }
 
-var benches = [];
-for (var i=0; i<10; benches.push(i++));
+var once = function (n, counter) {
+    var counter = counter || 1;
 
-var before = (new Date()).getTime();
+    var benches = [];
+    for (var i=0; i<n; benches.push(i++));
 
-async.map(benches, run, function (err, result) {
-    async.reduce(result, 0, function (memo, item, callback) {
-	callback(null, memo+item);
-    }, function (err, sum) {
-	console.log(sum/result.length);
-	console.log("Total time", ((new Date()).getTime()-before)/1000);
+    ERRORS = 0;
+
+    var before = (new Date()).getTime();
+    
+    async.map(benches, run, function (err, result) {
+	async.reduce(result, 0, function (memo, item, callback) {
+	    callback(null, memo+item);
+	}, function (err, sum) {
+	    console.log('N:', counter, 'Err:', ERRORS, 'Avg:', sum/result.length, 'Total: ', ((new Date()).getTime()-before)/1000);
+
+	    if (counter < n) { 
+		setTimeout(function () {
+		    once(n, counter+1);
+		}, 2000);
+	    }
+	});
     });
-});
+}
+
+once(10);

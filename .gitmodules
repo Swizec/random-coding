@@ -1,0 +1,21 @@
+[submodule "Generative-poetry"]
+	path = Generative-poetry
+	url = git@github.com:Swizec/Generative-poetry.git
+[submodule "node-unshortener"]
+	path = node-unshortener
+	url = https://github.com/Swizec/node-unshortener
+[submodule "GithubFriends"]
+	path = GithubFriends
+	url = git@github.com:Swizec/GithubFriends.git
+[submodule "nodestagram"]
+	path = nodestagram
+	url = git@github.com:Swizec/nodestagram.git
+[submodule "node-project-boilerplate"]
+	path = node-project-boilerplate
+	url = git@github.com:Swizec/node-project-boilerplate.git
+[submodule "JusThePics"]
+	path = JusThePics
+	url = git@github.com:Swizec/JusThePics.git
+[submodule "HipsterVision"]
+	path = HipsterVision
+	url = git@github.com:Swizec/HipsterVision.git
