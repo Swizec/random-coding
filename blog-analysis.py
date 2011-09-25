@@ -18,6 +18,14 @@ def memoize(fctn):
             memo.__doc__ = "\n".join([memo.__doc__,"This function is memoized."])
         return memo
 
+from hyphen import Hyphenator
+
+@memoize
+def syllables(word):
+    syllables = Hyphenator('hyph_en_GB.dic',
+                           directory=u'/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/hyphen/dicts').syllables(unicode(word))
+    return syllables if len(syllables) > 0 else [unicode(word)]
+
 def cleanup(data):
     def cleaned(entry):
         entry.content[0].value = ''.join(BeautifulSoup(entry.content[0].value).findAll(text=True))
@@ -28,14 +36,23 @@ def cleanup(data):
 def word_length(entry):
     @memoize
     def average():
-        return sum([len(w) for w in entry.content[0].value.split(" ")])\
+        return sum([len(syllables(w)) for w in entry.content[0].value.split(" ")])\
                    /entry.content[0].value.count(" ")
     def deviation():
-        return math.sqrt(sum([(len(w)-average())**2 for w in entry.content[0].value.split(" ")])\
-                             /entry.content[0].value.count(" "))
+        return math.sqrt(sum([(len(syllables(w))-average())**2 for w in entry.content[0].value.split(" ")])\
+                             /float(entry.content[0].value.count(" ")))
 
     return (average(), deviation())
 
+
+def vocabulary(entry):
+    d = {}
+    for w in entry.content[0].value.split(" "):
+        try:
+            d[w] += 1
+        except KeyError:
+            d[w] = 1
+    return (len(d.keys()), entry.content[0].value.count(" "))
 
 
 if __name__ == "__main__":
@@ -44,3 +61,4 @@ if __name__ == "__main__":
     data = cleanup(data)
 
     print map(word_length, data.entries)
+    #print map(vocabulary, data.entries)
