@@ -2,6 +2,7 @@
 import feedparser, math
 from BeautifulSoup import BeautifulSoup
 from nltk import word_tokenize
+import nltk.data
 
 import functools
 import cPickle
@@ -29,9 +30,17 @@ def syllables(word):
 
 @memoize
 def words(entry):
-    return entry.content[0].value.split()
+    if type(entry) == unicode:
+        return entry.split()
+    else:
+        return entry.content[0].value.split()
 #    return word_tokenize(entry.content[0].value)
 #    return entry.content[0].value.split(" ")
+
+@memoize
+def sentences(entry):
+    sent_detector = nltk.data.load('tokenizers/punkt/english.pickle')
+    return sent_detector.tokenize(entry.content[0].value)
 
 def cleanup(data):
     def cleaned(entry):
@@ -51,6 +60,16 @@ def word_length(entry):
 
     return (average(), deviation())
 
+def sentence_length(entry):
+    @memoize
+    def average():
+        return sum([len(words(s)) for s in sentences(entry)])\
+                   /len(sentences(entry))
+    def deviation():
+        return math.sqrt(sum([(len(words(s))-average())**2 for s in sentences(entry)])\
+                             /float(len(sentences(entry))))
+
+    return (average(), deviation())
 
 def vocabulary(entry):
     d = {}
@@ -66,6 +85,8 @@ if __name__ == "__main__":
     data = feedparser.parse('/Users/Swizec/Desktop/ageekwithahat.wordpress.2011-09-25.xml')
 
     data = cleanup(data)
+
+    print sentence_length(data.entries[0])
 
     #print map(word_length, data.entries)
     #print map(vocabulary, data.entries)
