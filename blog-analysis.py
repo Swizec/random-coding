@@ -73,12 +73,23 @@ def sentence_length(entry):
 
 def vocabulary(entry):
     d = {}
-    for w in entry.content[0].value.split(" "):
+    for w in words(" "):
         try:
             d[w] += 1
         except KeyError:
             d[w] = 1
     return (len(d.keys()), len(words(entry)))
+
+def flesch_kincaid(entry):
+    #http://en.wikipedia.org/wiki/Flesch%E2%80%93Kincaid_readability_test
+    def syllable_count():
+        return sum([len(syllables(w)) for w in words(entry)])
+
+    return 206.835-1.015*(
+           len(words(entry))/float(len(sentences(entry)))
+        )-84.6*(
+             syllable_count()/float(len(words(entry)))
+         )
 
 
 if __name__ == "__main__":
@@ -86,7 +97,7 @@ if __name__ == "__main__":
 
     data = cleanup(data)
 
-    print sentence_length(data.entries[0])
+    print flesch_kincaid(data.entries[0])
 
     #print map(word_length, data.entries)
     #print map(vocabulary, data.entries)
