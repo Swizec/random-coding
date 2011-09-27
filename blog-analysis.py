@@ -2,6 +2,7 @@
 import feedparser, math
 from BeautifulSoup import BeautifulSoup
 from nltk import word_tokenize
+from nltk.stem.porter import PorterStemmer
 import nltk.data
 
 import functools
@@ -73,7 +74,9 @@ def sentence_length(entry):
 
 def vocabulary(entry):
     d = {}
+    stemmer = PorterStemmer()
     for w in words(entry):
+        w = stemmer.stem(w).lower()
         try:
             d[w] += 1
         except KeyError:
@@ -104,4 +107,4 @@ if __name__ == "__main__":
     #print map(word_length, data.entries)
     #print map(vocabulary, data.entries)
 
-    print vocabulary(data.entries[0])
+    print vocabulary(data.entries[600])
