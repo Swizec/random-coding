@@ -73,11 +73,14 @@ def sentence_length(entry):
 
 def vocabulary(entry):
     d = {}
-    for w in words(" "):
+    for w in words(entry):
         try:
             d[w] += 1
         except KeyError:
             d[w] = 1
+
+    print d
+
     return (len(d.keys()), len(words(entry)))
 
 def flesch_kincaid(entry):
@@ -97,7 +100,9 @@ if __name__ == "__main__":
 
     data = cleanup(data)
 
-    print flesch_kincaid(data.entries[0])
+    #print flesch_kincaid(data.entries[0])
 
     #print map(word_length, data.entries)
     #print map(vocabulary, data.entries)
+
+    print vocabulary(data.entries[0])
