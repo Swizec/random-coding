@@ -25,7 +25,7 @@ from hyphen import Hyphenator
 @memoize
 def syllables(word):
     syllables = Hyphenator('hyph_en_GB.dic',
-                           directory=u'/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/hyphen/dicts').syllables(unicode(word))
+                           directory=u'/usr/share/hyphen/').syllables(unicode(word))
     return syllables if len(syllables) > 0 else [unicode(word)]
 
 @memoize
@@ -93,8 +93,7 @@ def flesch_kincaid(entry):
 
 
 if __name__ == "__main__":
-    data = feedparser.parse('/Users/Swizec/Desktop/ageekwithahat.wordpress.2011-09-25.xml')
-
+    data = feedparser.parse('ageekwithahat.wordpress.2011-09-25.xml')
     data = cleanup(data)
 
     print flesch_kincaid(data.entries[0])
