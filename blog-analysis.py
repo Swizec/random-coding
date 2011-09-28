@@ -4,6 +4,7 @@ from BeautifulSoup import BeautifulSoup
 from nltk import word_tokenize
 from nltk.stem.porter import PorterStemmer
 import nltk.data
+from itertools import groupby
 
 import functools
 import cPickle
@@ -75,7 +76,9 @@ def sentence_length(entry):
 
     return (average(), deviation())
 
-def vocabulary(entry):
+def yule(entry):
+    # yule's I measure (the inverse of yule's K measure)
+    # higher number is higher diversity
     d = {}
     stemmer = PorterStemmer()
     for w in words(entry):
@@ -85,9 +88,11 @@ def vocabulary(entry):
         except KeyError:
             d[w] = 1
 
-    print d
 
-    return (len(d.keys()), len(words(entry)))
+    M1 = float(len(d))
+    M2 = sum([len(list(g))*(freq**2) for freq,g in groupby(sorted(d.values()))])
+
+    return (M1*M1)/(M2-M1)
 
 def flesch_kincaid(entry):
     #http://en.wikipedia.org/wiki/Flesch%E2%80%93Kincaid_readability_test
@@ -110,4 +115,4 @@ if __name__ == "__main__":
     #print map(word_length, data.entries)
     #print map(vocabulary, data.entries)
 
-    print vocabulary(data.entries[600])
+    print yule(data.entries[600])
