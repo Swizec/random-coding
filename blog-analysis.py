@@ -114,12 +114,12 @@ if __name__ == "__main__":
     out = open('./blog-analysis.txt', 'w')
 
     def line(entry):
-        o = json.dumps({'flesch': flesch_kincaid(entry),
+        o = json.dumps({'flesch_kincaid': flesch_kincaid(entry),
                         'yule': yule(entry),
-                        'w_len': word_length(entry),
-                        's_len': sentence_length(entry),
+                        'word_len': word_length(entry),
+                        'sentence_len': sentence_length(entry),
                         'date': time.strftime('%Y-%m-%d', entry.updated_parsed)})
-        out.write(o)
+        out.write(o+"\n")
         print o
 
     map(line, data.entries)
