@@ -27,8 +27,11 @@ from hyphen import Hyphenator
 
 @memoize
 def syllables(word):
-    syllables = Hyphenator('hyph_en_GB.dic',
-                           directory=u'/usr/share/hyphen/').syllables(unicode(word))
+    try:
+        syllables = Hyphenator('hyph_en_GB.dic',
+                               directory=u'/usr/share/hyphen/').syllables(unicode(word))
+    except ValueError:
+        syllables = []
     return syllables if len(syllables) > 0 else [unicode(word)]
 
 @memoize
@@ -59,7 +62,7 @@ def word_length(entry):
     @memoize
     def average():
         return sum([len(syllables(w)) for w in words(entry)])\
-                   /entry.content[0].value.count(" ")
+                   /len(words(entry))
     def deviation():
         return math.sqrt(sum([(len(syllables(w))-average())**2 for w in words(entry)])\
                              /float(len(words(entry))))
@@ -93,7 +96,10 @@ def yule(entry):
     M1 = float(len(d))
     M2 = sum([len(list(g))*(freq**2) for freq,g in groupby(sorted(d.values()))])
 
-    return (M1*M1)/(M2-M1)
+    try:
+        return (M1*M1)/(M2-M1)
+    except ZeroDivisionError:
+        return 0
 
 def flesch_kincaid(entry):
     #http://en.wikipedia.org/wiki/Flesch%E2%80%93Kincaid_readability_test
@@ -114,11 +120,16 @@ if __name__ == "__main__":
     out = open('./blog-analysis.txt', 'w')
 
     def line(entry):
+        if len(words(entry)) == 0:
+            return None
+
         o = json.dumps({'flesch_kincaid': flesch_kincaid(entry),
                         'yule': yule(entry),
                         'word_len': word_length(entry),
                         'sentence_len': sentence_length(entry),
-                        'date': time.strftime('%Y-%m-%d', entry.updated_parsed)})
+                        'date': time.strftime('%Y-%m-%d', entry.updated_parsed),
+                        'words': len(words(entry)),
+                        'sentences': len(sentences(entry))})
         out.write(o+"\n")
         print o
 
