@@ -5,6 +5,7 @@ from nltk import word_tokenize
 from nltk.stem.porter import PorterStemmer
 import nltk.data
 from itertools import groupby
+import json, time
 
 import functools
 import cPickle
@@ -78,7 +79,7 @@ def sentence_length(entry):
 
 def yule(entry):
     # yule's I measure (the inverse of yule's K measure)
-    # higher number is higher diversity
+    # higher number is higher diversity - richer vocabulary
     d = {}
     stemmer = PorterStemmer()
     for w in words(entry):
@@ -110,9 +111,17 @@ if __name__ == "__main__":
     data = feedparser.parse('ageekwithahat.wordpress.2011-09-25.xml')
     data = cleanup(data)
 
-    #print flesch_kincaid(data.entries[0])
+    out = open('./blog-analysis.txt', 'w')
 
-    #print map(word_length, data.entries)
-    #print map(vocabulary, data.entries)
+    def line(entry):
+        o = json.dumps({'flesch': flesch_kincaid(entry),
+                        'yule': yule(entry),
+                        'w_len': word_length(entry),
+                        's_len': sentence_length(entry),
+                        'date': time.strftime('%Y-%m-%d', entry.updated_parsed)})
+        out.write(o)
+        print o
 
-    print yule(data.entries[600])
+    map(line, data.entries)
+
+    out.close()
