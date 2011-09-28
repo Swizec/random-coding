@@ -32,9 +32,12 @@ def syllables(word):
 @memoize
 def words(entry):
     if type(entry) == unicode:
-        return entry.split()
+        words = entry.split()
     else:
-        return entry.content[0].value.split()
+        words = entry.content[0].value.split()
+
+    return filter(lambda w: len(w) > 0,
+                  [w.strip("0123456789!:,.?(){}[]") for w in words])
 #    return word_tokenize(entry.content[0].value)
 #    return entry.content[0].value.split(" ")
 
