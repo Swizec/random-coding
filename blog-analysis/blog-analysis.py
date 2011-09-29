@@ -112,7 +112,9 @@ if __name__ == "__main__":
     data = feedparser.parse('ageekwithahat.wordpress.2011-09-28.xml')
     data = cleanup(data)
 
-    out = open('./blog-analysis.txt', 'w')
+    out = open('./blog-analysis.js', 'w')
+
+    out.write("analysys_data = [");
 
     def line(entry):
         if len(words(entry)) == 0:
@@ -125,9 +127,10 @@ if __name__ == "__main__":
                         'date': time.strftime('%Y-%m-%d', entry.updated_parsed),
                         'words': len(words(entry)),
                         'sentences': len(sentences(entry))})
-        out.write(o+"\n")
+        out.write(o+",\n")
         print o
 
     map(line, data.entries)
 
+    out.write("];");
     out.close()
