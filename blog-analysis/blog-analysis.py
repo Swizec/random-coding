@@ -109,7 +109,7 @@ def flesch_kincaid(entry):
 
 
 if __name__ == "__main__":
-    data = feedparser.parse('ageekwithahat.wordpress.2011-09-25.xml')
+    data = feedparser.parse('ageekwithahat.wordpress.2011-09-28.xml')
     data = cleanup(data)
 
     out = open('./blog-analysis.txt', 'w')
