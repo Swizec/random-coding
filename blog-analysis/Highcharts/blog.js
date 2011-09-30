@@ -96,4 +96,31 @@ var charts = [];
                     zIndex: -5
                 }]);
 
+        make_chart('sentence_len', 'Sentence length', 'Length of sentences measured by number of words',
+               'Length (N of words)',
+               [{
+                    name: '+stand. dev.',
+                    data: make_data(function (item) {
+                        return item.sentence_len[0]+item.sentence_len[1];
+                    }),
+                    fillOpacity:.2,
+                    zIndex: -5
+                }, {
+                    name: 'Mean',
+                    data: make_data(function (item) {
+                        return item.sentence_len[0];
+                    }),
+                    lineWidth:2,
+                    color:'#3c3',
+                    type:'line',
+                    zIndex: -5
+                }, {
+                    name: '-stand.dev',
+                    data: make_data(function (item) {
+                        return item.sentence_len[0]-item.sentence_len[1];
+                    }),
+                    fillColor: 'rgba(255, 255, 255, 0)',
+                    zIndex: -5
+                }]);
+
 })(jQuery);
