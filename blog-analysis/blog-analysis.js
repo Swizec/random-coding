@@ -1,4 +1,4 @@
-analysys_data = [{"flesch_kincaid": 70.7582122905028, "sentence_len": [25, 6.8660656232559525], "word_len": [1, 0.6768312630628242], "yule": 44.31123919308357, "words": 179, "sentences": 7, "date": "2006-05-01"},
+analysis_data = [{"flesch_kincaid": 70.7582122905028, "sentence_len": [25, 6.8660656232559525], "word_len": [1, 0.6768312630628242], "yule": 44.31123919308357, "words": 179, "sentences": 7, "date": "2006-05-01"},
 {"flesch_kincaid": 70.95578669910789, "sentence_len": [30, 16.6332999331662], "word_len": [1, 0.5667167574826766], "yule": 68.49612403100775, "words": 274, "sentences": 9, "date": "2006-04-28"},
 {"flesch_kincaid": 71.89843243243243, "sentence_len": [29, 14.690132742763083], "word_len": [1, 0.670316585147887], "yule": 29.979253112033195, "words": 296, "sentences": 10, "date": "2006-04-28"},
 {"flesch_kincaid": 90.09000000000002, "sentence_len": [15, 0.0], "word_len": [1, 0.5773502691896257], "yule": 65.33333333333333, "words": 15, "sentences": 1, "date": "1970-01-01"},
@@ -676,5 +676,5 @@ analysys_data = [{"flesch_kincaid": 70.7582122905028, "sentence_len": [25, 6.866
 {"flesch_kincaid": 61.92902339642484, "sentence_len": [26, 47.841753033656005], "word_len": [1, 0.8600858294783147], "yule": 21.791767554479417, "words": 634, "sentences": 24, "date": "2011-09-24"},
 {"flesch_kincaid": 83.04118407172997, "sentence_len": [16, 10.482127646618315], "word_len": [1, 0.7097869175706399], "yule": 30.045695364238412, "words": 395, "sentences": 24, "date": "2011-09-24"},
 {"flesch_kincaid": 75.0373305084746, "sentence_len": [21, 11.947304936181014], "word_len": [1, 0.7178121183764841], "yule": 13.992900120336943, "words": 885, "sentences": 42, "date": "2011-09-26"},
-{"flesch_kincaid": 78.14911504424781, "sentence_len": [16, 9.591663046625438], "word_len": [1, 0.8254792118542658], "yule": 40.49586776859504, "words": 226, "sentences": 14, "date": "2011-09-27"}
+{"flesch_kincaid": 78.14911504424781, "sentence_len": [16, 9.591663046625438], "word_len": [1, 0.8254792118542658], "yule": 40.49586776859504, "words": 226, "sentences": 14, "date": "2011-09-27"},
 ];

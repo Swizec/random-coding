@@ -114,7 +114,7 @@ if __name__ == "__main__":
 
     out = open('./blog-analysis.js', 'w')
 
-    out.write("analysys_data = [");
+    out.write("analysis_data = [");
 
     def line(entry):
         if len(words(entry)) == 0:
