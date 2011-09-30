@@ -17,7 +17,7 @@ var charts = [];
         return data;
     };
 
-    var make_chart = function (id, title, subtitle, yAxis, series) {
+    var make_chart = function (id, title, subtitle, yAxis, stacking, series) {
             var chart = new Highcharts.Chart({
 	        chart: {
 	            renderTo: id,
@@ -58,7 +58,7 @@ var charts = [];
                                 }
                             }
                         },
-                        stacking:'normal'
+                        stacking: stacking
                     }
                 },
 	        series: series
@@ -70,7 +70,7 @@ var charts = [];
     };
 
     make_chart('word_len', 'Word length', 'Length of words measured in syllables',
-               'Length (N of syllables)',
+               'Length (N of syllables)', 'normal',
                [{
                     name: '+stand. dev.',
                     data: make_data(function (item) {
@@ -96,8 +96,8 @@ var charts = [];
                     zIndex: -5
                 }]);
 
-        make_chart('sentence_len', 'Sentence length', 'Length of sentences measured by number of words',
-               'Length (N of words)',
+    make_chart('sentence_len', 'Sentence length', 'Length of sentences measured by number of words',
+               'Length (N of words)', 'normal',
                [{
                     name: '+stand. dev.',
                     data: make_data(function (item) {
@@ -122,5 +122,54 @@ var charts = [];
                     fillColor: 'rgba(255, 255, 255, 0)',
                     zIndex: -5
                 }]);
+
+    make_chart('flesch_kincaid', 'Flesch-kincaid', 'A popular measure of [ease of] readability',
+               'Higher is easier to read', null,
+               [{
+                    name: 'Flesch-kincaid',
+                    data: make_data(function (item) {
+                        return item.flesch_kincaid;
+                    }),
+                    lineWidth:1,
+                    color:'#3c3',
+                    type:'spline',
+                    zIndex: -5
+                }]);
+
+    make_chart('yule', 'Yule\'s I', 'A measure of vocabulary richness',
+               'Higher is richer', null,
+               [{
+                    name: 'Yule\'s',
+                    data: make_data(function (item) {
+                        return item.flesch_kincaid;
+                    }),
+                    lineWidth:1,
+                    color:'#3c3',
+                    type:'spline',
+                    zIndex: -5
+                }]);
+
+    make_chart('length', 'Length', 'Length of posts',
+               'N', null,
+               [{
+                    name: 'Sentences (+400)',
+                    data: make_data(function (item) {
+                        return item.sentences+400;
+                    }),
+                    lineWidth:2,
+                    color:'#3c3',
+                    type:'spline',
+                    zIndex: -5
+                },
+                {
+                    name: 'Words',
+                    data: make_data(function (item) {
+                        return item.words;
+                    }),
+                    lineWidth:0.5,
+                    type:'spline',
+                    zIndex: -5
+                }]);
+
 
 })(jQuery);
