@@ -149,27 +149,29 @@ var charts = [];
                     zIndex: -5
                 }]);
 
-    make_chart('length', 'Length', 'Length of posts',
+    make_chart('sentences', 'Sentences', 'Number of sentences per post',
                'N', null,
                [{
-                    name: 'Sentences (+400)',
+                    name: 'Sentences',
                     data: make_data(function (item) {
-                        return item.sentences+400;
+                        return item.sentences;
                     }),
-                    lineWidth:2,
+                    lineWidth:1,
                     color:'#3c3',
-                    type:'spline',
-                    zIndex: -5
-                },
-                {
-                    name: 'Words',
-                    data: make_data(function (item) {
-                        return item.words;
-                    }),
-                    lineWidth:0.5,
                     type:'spline',
                     zIndex: -5
                 }]);
 
+    make_chart('words', 'Words', 'Number of words per post',
+               'N', null,
+               [{
+                    name: 'Words',
+                    data: make_data(function (item) {
+                        return item.words;
+                    }),
+                    lineWidth:1,
+                    type:'spline',
+                    zIndex: -5
+                }]);
 
 })(jQuery);
