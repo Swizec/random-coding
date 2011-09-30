@@ -3,16 +3,14 @@ var chart;
 
 (function ($) {
     var get_date = function (i) {
-//        return analysis_data[i].date;
         var d = analysis_data[i].date.split("-");
-        return (new Date(parseInt(d[0]),
-                         parseInt(d[1]),
-                         parseInt(d[2]))).toLocaleDateString();
+        return (new Date(d[0],
+                         d[1]-1,
+                         d[2])).toLocaleDateString();
     };
 
     var make_data = function (value) {
         var data = [], d;
-        console.log(analysis_data.length);
         for (var i=0; i<analysis_data.length; i++) {
             //d = analysis_data[i].date.split("-");
             //data.push([Date.UTC(parseInt(d[0]), parseInt(d[1]), parseInt(d[2])),
