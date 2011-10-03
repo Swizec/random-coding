@@ -1,5 +1,5 @@
 
-import csv, collections
+import csv, collections, json
 from itertools import izip_longest, chain
 
 def extract(data, start):
@@ -40,5 +40,7 @@ if __name__ == '__main__':
     data = list(csv.reader(open("jun-aug.csv", 'rb')))
 
     swizec = extract(data, 6)
+    masa = extract(data, 21)
 
-    print swizec['horny']
+    open('./data.js', 'w').write('horny_data = '+json.dumps({'swizec': swizec,
+                                                             'masa': masa}))
