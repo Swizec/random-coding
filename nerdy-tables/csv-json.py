@@ -10,6 +10,10 @@ def extract(data, start):
     def flatten(listOfLists):
         "Flatten one level of nesting"
         return chain.from_iterable(listOfLists)
+    def col(col):
+        col = list(reversed(col))
+        chars = list("ABCDEFGHIJKLMNOPQRSTUVWXYZ")
+        return sum([(chars.index(col[i])+1)*(len(chars)**i) for i in range(len(col))])
 
     def days(row, combine=False):
         def clean(item):
@@ -19,18 +23,20 @@ def extract(data, start):
                 item.append(0)
             return sum(item) if combine else item
 
-        return list(flatten([map(clean, grouper(2, row[0:27])),
-                             map(clean, grouper(3, row[28:123])),
-                             map(clean, grouper(3, row[127:144]))]))
+        return list(flatten([map(clean, grouper(2, row[col('B')-1:col('BC')-1])),
+                             map(clean, grouper(3, row[col('BD')-1:col('EU')-1])),
+                             map(clean, grouper(3, row[col('EY'):col('FP')]))]))
     def combine(rows):
         def col(n, day):
             return [d[n] for d in day]
         def _index(val, data):
             return data.index(val) if val in data else -1
+        l = max([len(r) for r in rows])
+        rows = [r+[[0,0,0]]*(l-len(r)) for r in rows]
         return [[_index(1, col(0, [row[i] for row in rows])),
                  _index(1, col(1, [row[i] for row in rows])),
                  _index(1, col(2, [row[i] for row in rows]))]
-                for i in xrange(len(rows[0]))]
+                for i in xrange(l)]
 
     return {'horny': combine([days(r[1:]) for r in data[start:start+6]]),
             'cyber': days(data[start+7][1:], True),
