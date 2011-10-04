@@ -39,9 +39,12 @@ def extract(data, start):
                  _index(1, col(2, [row[i] for row in rows]))]
                 for i in xrange(l)]
 
-    return {'horny': combine([days(r) for r in data[start:start+6]]),
-            'cyber': days(data[start+7][1:], True),
-            'touchy': days(data[start+8][1:], True)}
+    l = max([len(r) for r in data[21:30]])
+    cleaned = [r+[0]*(l-len(r)) for r in data[start:start+9]]
+
+    return {'horny': combine([days(r) for r in cleaned[:6]]),
+            'cyber': days(cleaned[7], True),
+            'touchy': days(cleaned[8], True)}
 
 if __name__ == '__main__':
     data = list(csv.reader(open("jun-aug.csv", 'rb')))

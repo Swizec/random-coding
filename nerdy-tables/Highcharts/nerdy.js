@@ -62,7 +62,19 @@ var charts = [];
         'NHTD': function (name) { return _.map(horny_data[name].horny,
                                                function (day) { return day[2]; }); },
         'touchy': function (name) { return horny_data[name].touchy; },
-        'cyber': function (name) { return horny_data[name].cyber; }
+        'cyber': function (name) { return horny_data[name].cyber; },
+        'sexual': function (name) { console.log(_.zip(horny_data[name].cyber,
+                                                      horny_data[name].touchy));
+            var a = _.map(_.zip(horny_data[name].cyber,
+                                                      horny_data[name].touchy),
+                                                function (a) {
+                                                    return _.reduce(a,
+                                                                    function(memo, num){
+                                                                        return memo + num; },
+                                                                    0);
+                                                });
+                                  console.log(a);
+                                  return a;}
     };
 
     var pair = function (name, func1, func2) {
