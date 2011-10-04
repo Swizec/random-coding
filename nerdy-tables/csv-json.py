@@ -23,14 +23,17 @@ def extract(data, start):
                 item.append(0)
             return sum(item) if combine else item
 
-        return list(flatten([map(clean, grouper(2, row[col('B')-1:col('BC')-1])),
-                             map(clean, grouper(3, row[col('BD')-1:col('EU')-1])),
-                             map(clean, grouper(3, row[col('EY'):col('FP')]))]))
+        # something fishy here
+        return list(flatten([map(clean, grouper(2, row[col('B'):col('BC')-1]))]))
+                             #map(clean, grouper(3, row[col('BD')-1:col('EU')-1])),
+                             #map(clean, grouper(3, row[col('EY'):col('FP')]))]))
+
+    # more likely something fishy here
     def combine(rows):
         def col(n, day):
             return [d[n] for d in day]
         def _index(val, data):
-            return data.index(val) if val in data else -1
+            return data.index(val)+1 if val in data else -1
         l = max([len(r) for r in rows])
         rows = [r+[[0,0,0]]*(l-len(r)) for r in rows]
         return [[_index(1, col(0, [row[i] for row in rows])),
