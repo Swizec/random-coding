@@ -13,7 +13,7 @@ def extract(data, start):
     def col(col):
         col = list(reversed(col))
         chars = list("ABCDEFGHIJKLMNOPQRSTUVWXYZ")
-        return sum([(chars.index(col[i])+1)*(len(chars)**i) for i in range(len(col))])
+        return sum([(chars.index(col[i])+1)*(len(chars)**i) for i in range(len(col))])-1
 
     def days(row, combine=False):
         def clean(item):
@@ -23,12 +23,10 @@ def extract(data, start):
                 item.append(0)
             return sum(item) if combine else item
 
-        # something fishy here
-        return list(flatten([map(clean, grouper(2, row[col('B'):col('BC')-1]))]))
-                             #map(clean, grouper(3, row[col('BD')-1:col('EU')-1])),
-                             #map(clean, grouper(3, row[col('EY'):col('FP')]))]))
+        return list(flatten([map(clean, grouper(2, row[col('B'):col('BC')])),
+                             map(clean, grouper(3, row[col('BD'):col('EU')])),
+                             map(clean, grouper(3, row[col('EY'):col('FP')]))]))
 
-    # more likely something fishy here
     def combine(rows):
         def col(n, day):
             return [d[n] for d in day]
@@ -41,7 +39,7 @@ def extract(data, start):
                  _index(1, col(2, [row[i] for row in rows]))]
                 for i in xrange(l)]
 
-    return {'horny': combine([days(r[1:]) for r in data[start:start+6]]),
+    return {'horny': combine([days(r) for r in data[start:start+6]]),
             'cyber': days(data[start+7][1:], True),
             'touchy': days(data[start+8][1:], True)}
 
