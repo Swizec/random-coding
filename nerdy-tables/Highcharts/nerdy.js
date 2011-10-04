@@ -54,52 +54,63 @@ var charts = [];
         return chart;
     };
 
-    var person = function (name) {
-        make_chart(name, name, '',
-                   'Count/horniness', null,
+    var data_func = {
+        'morning': function (name) { return _.map(horny_data[name].horny,
+                                                  function (day) { return day[0]; }); },
+        'evening': function (name) { return _.map(horny_data[name].horny,
+                                                  function (day) { return day[1]; }); },
+        'NHTD': function (name) { return _.map(horny_data[name].horny,
+                                               function (day) { return day[2]; }); },
+        'touchy': function (name) { return horny_data[name].touchy; },
+        'cyber': function (name) { return horny_data[name].cyber; }
+    };
+
+    var pair = function (name, func1, func2) {
+        var id = _.toArray(arguments).join("-");
+        $("body").append($("<div></div>").attr("id", id)
+                                         .css({width: "800px",
+                                               height: "400px",
+                                               margin: "0 auto"}));
+        make_chart(id, id, '',
+                   'Value', null,
                    [{
-                       name: 'Morning',
-                       data: _.map(horny_data[name].horny,
-                                   function (day) { return day[0]; }),
+                       name: func1,
+                       data: data_func[func1](name),
                        lineWidth:1,
                        color:'#8e9ede',
                        type:'spline',
                        zIndex: -5
                    },
                     {
-                        name: 'Evening',
-                        data: _.map(horny_data[name].horny,
-                                    function (day) { return day[1]; }),
+                        name: func2,
+                        data: data_func[func2](name),
                         lineWidth:1,
                         color:'#3c3',
                         type:'spline',
                         zIndex: -5
-                    },
-                    {
-                        name: 'NHTD',
-                        data: _.map(horny_data[name].horny,
-                                    function (day) { return day[2]; }),
-                        lineWidth:1,
-                        color:'#e84157',
-                        type:'spline',
-                        zIndex: -5
-                    },
-                    {
-                        name: 'Touchy',
-                        data: horny_data[name].touchy,
-                        lineWidth:2.2,
-                        color:'#f5ebec',
-                        type:'spline',
-                        zIndex: -5
-                    },
-                    {
-                        name: 'Cyber',
-                        data: horny_data[name].cyber,
-                        lineWidth:2.2,
-                        color:'#c98f97',
-                        type:'spline',
-                        zIndex: -5
                     }]);
+    };
+
+    var person = function (name) {
+        // pair everything with everything
+        _.map(_.map(_.map(_.range(1, _.size(data_func)),
+                          function (i) {
+                              return _.zip(_.map(_.range(_.size(data_func)),
+                                                 function () {
+                                                     return _.keys(data_func)[i-1]; }),
+                                           _.rest(_.keys(data_func),
+                                                  i));}),
+                    function (pairs) {
+                        return _.select(pairs, function (pair) {
+                            return !_.include(pair, undefined);
+                        });
+                    }),
+              function (pairs) {
+                  _.map(pairs,
+                        function (funcs) {
+                            pair(name, funcs[0], funcs[1]);
+                            });
+              });
     };
 
     person('swizec');
