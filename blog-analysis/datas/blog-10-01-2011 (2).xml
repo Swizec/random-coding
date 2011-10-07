@@ -1,0 +1,1369 @@
+<?xml version='1.0' encoding='UTF-8'?><?xml-stylesheet href="http://www.blogger.com/styles/atom.css" type="text/css"?><feed xmlns='http://www.w3.org/2005/Atom' xmlns:openSearch='http://a9.com/-/spec/opensearchrss/1.0/' xmlns:georss='http://www.georss.org/georss' xmlns:gd='http://schemas.google.com/g/2005' xmlns:thr='http://purl.org/syndication/thread/1.0'><id>tag:blogger.com,1999:blog-4470717033668906745.archive</id><updated>2011-07-07T15:58:19.733-07:00</updated><title type='text'>WLGYLSTiYEaSfD</title><link rel='http://schemas.google.com/g/2005#feed' type='application/atom+xml' href='http://whatsdownnil.blogspot.com/feeds/archive'/><link rel='self' type='application/atom+xml' href='http://www.blogger.com/feeds/4470717033668906745/archive'/><link rel='http://schemas.google.com/g/2005#post' type='application/atom+xml' href='http://www.blogger.com/feeds/4470717033668906745/archive'/><link rel='alternate' type='text/html' href='http://whatsdownnil.blogspot.com/'/><author><name>Nil Athelion</name><uri>http://www.blogger.com/profile/16996018952758178741</uri><email>Featherless@gmail.com</email></author><generator version='7.00' uri='http://www.blogger.com'>Blogger</generator><entry><id>tag:blogger.com,1999:blog-4470717033668906745.layout</id><published>2009-03-11T11:53:38.263-07:00</published><updated>2011-07-07T15:58:19.733-07:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#template'/><title type='text'>Template: WLGYLSTiYEaSfD</title><content type='text'>&lt;?xml version="1.0" encoding="UTF-8" ?&gt;
+&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"&gt;
+&lt;html expr:dir='data:blog.languageDirection' xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'&gt;
+  &lt;head&gt;
+    &lt;b:include data='blog' name='all-head-content'/&gt;
+    &lt;title&gt;&lt;data:blog.pageTitle/&gt;&lt;/title&gt;
+    &lt;b:skin&gt;&lt;![CDATA[/*
+-----------------------------------------------
+Blogger Template Style
+Name:     Minima
+Date:     26 Feb 2004
+Updated by: Blogger Team
+----------------------------------------------- */
+
+/* Variable definitions
+   ====================
+   &lt;Variable name="bgcolor" description="Page Background Color"
+             type="color" default="#fff" value="#ffffff"&gt;
+   &lt;Variable name="textcolor" description="Text Color"
+             type="color" default="#333" value="#333333"&gt;
+   &lt;Variable name="linkcolor" description="Link Color"
+             type="color" default="#58a" value="#5588aa"&gt;
+   &lt;Variable name="pagetitlecolor" description="Blog Title Color"
+             type="color" default="#666" value="#666666"&gt;
+   &lt;Variable name="descriptioncolor" description="Blog Description Color"
+             type="color" default="#999" value="#999999"&gt;
+   &lt;Variable name="titlecolor" description="Post Title Color"
+             type="color" default="#c60" value="#cc6600"&gt;
+   &lt;Variable name="bordercolor" description="Border Color"
+             type="color" default="#ccc" value="#cccccc"&gt;
+   &lt;Variable name="sidebarcolor" description="Sidebar Title Color"
+             type="color" default="#999" value="#999999"&gt;
+   &lt;Variable name="sidebartextcolor" description="Sidebar Text Color"
+             type="color" default="#666" value="#666666"&gt;
+   &lt;Variable name="visitedlinkcolor" description="Visited Link Color"
+             type="color" default="#999" value="#999999"&gt;
+   &lt;Variable name="bodyfont" description="Text Font"
+             type="font" default="normal normal 100% Georgia, Serif" value="normal normal 100% Georgia, Serif"&gt;
+   &lt;Variable name="headerfont" description="Sidebar Title Font"
+             type="font"
+             default="normal normal 78% 'Trebuchet MS',Trebuchet,Arial,Verdana,Sans-serif" value="normal normal 78% 'Trebuchet MS',Trebuchet,Arial,Verdana,Sans-serif"&gt;
+   &lt;Variable name="pagetitlefont" description="Blog Title Font"
+             type="font"
+             default="normal normal 200% Georgia, Serif" value="normal normal 200% Georgia, Serif"&gt;
+   &lt;Variable name="descriptionfont" description="Blog Description Font"
+             type="font"
+             default="normal normal 78% 'Trebuchet MS', Trebuchet, Arial, Verdana, Sans-serif" value="normal normal 78% 'Trebuchet MS', Trebuchet, Arial, Verdana, Sans-serif"&gt;
+   &lt;Variable name="postfooterfont" description="Post Footer Font"
+             type="font"
+             default="normal normal 78% 'Trebuchet MS', Trebuchet, Arial, Verdana, Sans-serif" value="normal normal 78% 'Trebuchet MS', Trebuchet, Arial, Verdana, Sans-serif"&gt;
+   &lt;Variable name="startSide" description="Side where text starts in blog language"
+             type="automatic" default="left" value="left"&gt;
+   &lt;Variable name="endSide" description="Side where text ends in blog language"
+             type="automatic" default="right" value="right"&gt;
+*/
+
+/* Use this with templates/template-twocol.html */
+
+body {
+  background:$bgcolor;
+  margin:0;
+  color:$textcolor;
+  font:x-small Georgia Serif;
+  font-size/* */:/**/small;
+  font-size: /**/small;
+  text-align: center;
+  }
+a:link {
+  color:$linkcolor;
+  text-decoration:none;
+  }
+a:visited {
+  color:$visitedlinkcolor;
+  text-decoration:none;
+  }
+a:hover {
+  color:$titlecolor;
+  text-decoration:underline;
+}
+a img {
+  border-width:0;
+  }
+
+/* Header
+-----------------------------------------------
+ */
+
+#header-wrapper {
+  width:660px;
+  margin:0 auto 10px;
+  border:1px solid $bordercolor;
+  }
+
+#header-inner {
+  background-position: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#header { 
+  margin: 5px;
+  border: 1px solid $bordercolor;
+  text-align: center;
+  color:$pagetitlecolor;
+}
+
+#header h1 {
+  margin:5px 5px 0;
+  padding:15px 20px .25em;
+  line-height:1.2em;
+  text-transform:uppercase;
+  letter-spacing:.2em;
+  font: $pagetitlefont;
+}
+
+#header a {
+  color:$pagetitlecolor;
+  text-decoration:none;
+  }
+
+#header a:hover {
+  color:$pagetitlecolor;
+  }
+
+#header .description {
+  margin:0 5px 5px;
+  padding:0 20px 15px;
+  max-width:700px;
+  text-transform:uppercase;
+  letter-spacing:.2em;
+  line-height: 1.4em;
+  font: $descriptionfont;
+  color: $descriptioncolor;
+ }
+
+#header img {
+  margin-$startSide: auto;
+  margin-$endSide: auto;
+}
+
+
+/* Outer-Wrapper
+----------------------------------------------- */
+#outer-wrapper {
+  width: 660px;
+  margin:0 auto;
+  padding:10px;
+  text-align:$startSide;
+  font: $bodyfont;
+  }
+
+#main-wrapper {
+  width: 410px;
+  float: $startSide;
+  word-wrap: break-word; /* fix for long text breaking sidebar float in IE */
+  overflow: hidden;     /* fix for long non-text content breaking IE sidebar float */
+  }
+
+#sidebar-wrapper {
+  width: 220px;
+  float: $endSide;
+  word-wrap: break-word; /* fix for long text breaking sidebar float in IE */
+  overflow: hidden;      /* fix for long non-text content breaking IE sidebar float */
+}
+
+
+/* Headings
+----------------------------------------------- */
+
+h2 {
+  margin:1.5em 0 .75em;
+  font:$headerfont;
+  line-height: 1.4em;
+  text-transform:uppercase;
+  letter-spacing:.2em;
+  color:$sidebarcolor;
+}
+
+
+/* Posts
+-----------------------------------------------
+ */
+h2.date-header {
+  margin:1.5em 0 .5em;
+  }
+
+.post {
+  margin:.5em 0 1.5em;
+  border-bottom:1px dotted $bordercolor;
+  padding-bottom:1.5em;
+  }
+.post h3 {
+  margin:.25em 0 0;
+  padding:0 0 4px;
+  font-size:140%;
+  font-weight:normal;
+  line-height:1.4em;
+  color:$titlecolor;
+}
+
+.post h3 a, .post h3 a:visited, .post h3 strong {
+  display:block;
+  text-decoration:none;
+  color:$titlecolor;
+  font-weight:normal;
+}
+
+.post h3 strong, .post h3 a:hover {
+  color:$textcolor;
+}
+
+.post-body {
+  margin:0 0 .75em;
+  line-height:1.6em;
+}
+
+.post-body blockquote {
+  line-height:1.3em;  
+}
+
+.post-footer {
+  margin: .75em 0;
+  color:$sidebarcolor;
+  text-transform:uppercase;
+  letter-spacing:.1em;
+  font: $postfooterfont;
+  line-height: 1.4em;
+}
+
+.comment-link {
+  margin-$startSide:.6em;
+}
+.post img, table.tr-caption-container {
+  padding:4px;
+  border:1px solid $bordercolor;
+}
+.tr-caption-container img {
+  border: none;
+  padding: 0;
+}
+.post blockquote {
+  margin:1em 20px;
+}
+.post blockquote p {
+  margin:.75em 0;
+}
+
+/* Comments
+----------------------------------------------- */
+#comments h4 {
+  margin:1em 0;
+  font-weight: bold;
+  line-height: 1.4em;
+  text-transform:uppercase;
+  letter-spacing:.2em;
+  color: $sidebarcolor;
+  }
+
+#comments-block {
+  margin:1em 0 1.5em;
+  line-height:1.6em;
+  }
+#comments-block .comment-author {
+  margin:.5em 0;
+  }
+#comments-block .comment-body {
+  margin:.25em 0 0;
+  }
+#comments-block .comment-footer {
+  margin:-.25em 0 2em;
+  line-height: 1.4em;
+  text-transform:uppercase;
+  letter-spacing:.1em;
+  }
+#comments-block .comment-body p {
+  margin:0 0 .75em;
+  }
+.deleted-comment {
+  font-style:italic;
+  color:gray;
+  }
+
+#blog-pager-newer-link {
+  float: $startSide;
+ }
+ 
+#blog-pager-older-link {
+  float: $endSide;
+ }
+
+#blog-pager { 
+  text-align: center;
+ }
+
+.feed-links {
+  clear: both;
+  line-height: 2.5em;
+}
+
+/* Sidebar Content
+----------------------------------------------- */
+.sidebar { 
+  color: $sidebartextcolor;
+  line-height: 1.5em;
+ }
+
+.sidebar ul {
+  list-style:none;
+  margin:0 0 0;
+  padding:0 0 0;
+}
+.sidebar li {
+  margin:0;
+  padding-top:0;
+  padding-$endSide:0;
+  padding-bottom:.25em;
+  padding-$startSide:15px;
+  text-indent:-15px;
+  line-height:1.5em;
+  }
+
+.sidebar .widget, .main .widget { 
+  border-bottom:1px dotted $bordercolor;
+  margin:0 0 1.5em;
+  padding:0 0 1.5em;
+ }
+
+.main .Blog { 
+  border-bottom-width: 0;
+}
+
+
+/* Profile 
+----------------------------------------------- */
+.profile-img { 
+  float: $startSide;
+  margin-top: 0;
+  margin-$endSide: 5px;
+  margin-bottom: 5px;
+  margin-$startSide: 0;
+  padding: 4px;
+  border: 1px solid $bordercolor;
+}
+
+.profile-data {
+  margin:0;
+  text-transform:uppercase;
+  letter-spacing:.1em;
+  font: $postfooterfont;
+  color: $sidebarcolor;
+  font-weight: bold;
+  line-height: 1.6em;
+}
+
+.profile-datablock { 
+  margin:.5em 0 .5em;
+}
+
+.profile-textblock { 
+  margin: 0.5em 0;
+  line-height: 1.6em;
+}
+
+.profile-link { 
+  font: $postfooterfont;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+}
+
+/* Footer
+----------------------------------------------- */
+#footer {
+  width:660px;
+  clear:both;
+  margin:0 auto;
+  padding-top:15px;
+  line-height: 1.6em;
+  text-transform:uppercase;
+  letter-spacing:.1em;
+  text-align: center;
+}
+]]&gt;&lt;/b:skin&gt;
+  &lt;/head&gt;
+
+  &lt;body&gt;
+  &lt;div id='outer-wrapper'&gt;&lt;div id='wrap2'&gt;
+
+    &lt;!-- skip links for text browsers --&gt;
+    &lt;span id='skiplinks' style='display:none;'&gt;
+      &lt;a href='#main'&gt;skip to main &lt;/a&gt; |
+      &lt;a href='#sidebar'&gt;skip to sidebar&lt;/a&gt;
+    &lt;/span&gt;
+
+    &lt;div id='header-wrapper'&gt;
+      &lt;b:section class='header' id='header' maxwidgets='1' showaddelement='no'&gt;
+&lt;b:widget id='Header1' locked='true' title='WLGYLSTiYEaSfD (Header)' type='Header'&gt;
+&lt;b:includable id='main'&gt;
+
+  &lt;b:if cond='data:useImage'&gt;
+    &lt;b:if cond='data:imagePlacement == &amp;quot;BEHIND&amp;quot;'&gt;
+      &lt;!--
+      Show image as background to text. You can't really calculate the width
+      reliably in JS because margins are not taken into account by any of
+      clientWidth, offsetWidth or scrollWidth, so we don't force a minimum
+      width if the user is using shrink to fit.
+      This results in a margin-width's worth of pixels being cropped. If the
+      user is not using shrink to fit then we expand the header.
+      --&gt;
+      &lt;b:if cond='data:mobile'&gt;
+          &lt;div id='header-inner'&gt;
+            &lt;div class='titlewrapper' style='background: transparent'&gt;
+              &lt;h1 class='title' style='background: transparent; border-width: 0px'&gt;
+                &lt;b:include name='title'/&gt;
+              &lt;/h1&gt;
+            &lt;/div&gt;
+            &lt;b:include name='description'/&gt;
+          &lt;/div&gt;
+        &lt;b:else/&gt;
+          &lt;div expr:style='&amp;quot;background-image: url(\&amp;quot;&amp;quot; + data:sourceUrl + &amp;quot;\&amp;quot;); &amp;quot;                        + &amp;quot;background-position: &amp;quot;                        + data:backgroundPositionStyleStr + &amp;quot;; &amp;quot;                        + data:widthStyleStr                        + &amp;quot;min-height: &amp;quot; + data:height                        + &amp;quot;_height: &amp;quot; + data:height                        + &amp;quot;background-repeat: no-repeat; &amp;quot;' id='header-inner'&gt;
+            &lt;div class='titlewrapper' style='background: transparent'&gt;
+              &lt;h1 class='title' style='background: transparent; border-width: 0px'&gt;
+                &lt;b:include name='title'/&gt;
+              &lt;/h1&gt;
+            &lt;/div&gt;
+            &lt;b:include name='description'/&gt;
+          &lt;/div&gt;
+        &lt;/b:if&gt;
+    &lt;b:else/&gt;
+      &lt;!--Show the image only--&gt;
+      &lt;div id='header-inner'&gt;
+        &lt;a expr:href='data:blog.homepageUrl' style='display: block'&gt;
+          &lt;img expr:alt='data:title' expr:height='data:height' expr:id='data:widget.instanceId + &amp;quot;_headerimg&amp;quot;' expr:src='data:sourceUrl' expr:width='data:width' style='display: block'/&gt;
+        &lt;/a&gt;
+        &lt;!--Show the description--&gt;
+        &lt;b:if cond='data:imagePlacement == &amp;quot;BEFORE_DESCRIPTION&amp;quot;'&gt;
+          &lt;b:include name='description'/&gt;
+        &lt;/b:if&gt;
+      &lt;/div&gt;
+    &lt;/b:if&gt;
+  &lt;b:else/&gt;
+    &lt;!--No header image --&gt;
+    &lt;div id='header-inner'&gt;
+      &lt;div class='titlewrapper'&gt;
+        &lt;h1 class='title'&gt;
+          &lt;b:include name='title'/&gt;
+        &lt;/h1&gt;
+      &lt;/div&gt;
+      &lt;b:include name='description'/&gt;
+    &lt;/div&gt;
+  &lt;/b:if&gt;
+&lt;/b:includable&gt;
+&lt;b:includable id='title'&gt;
+  &lt;b:if cond='data:blog.url == data:blog.homepageUrl'&gt;
+    &lt;data:title/&gt;
+  &lt;b:else/&gt;
+    &lt;a expr:href='data:blog.homepageUrl'&gt;&lt;data:title/&gt;&lt;/a&gt;
+  &lt;/b:if&gt;
+&lt;/b:includable&gt;
+&lt;b:includable id='description'&gt;
+  &lt;div class='descriptionwrapper'&gt;
+    &lt;p class='description'&gt;&lt;span&gt;&lt;data:description/&gt;&lt;/span&gt;&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/b:includable&gt;
+&lt;/b:widget&gt;
+&lt;/b:section&gt;
+    &lt;/div&gt;
+ 
+    &lt;div id='content-wrapper'&gt;
+
+      &lt;div id='crosscol-wrapper' style='text-align:center'&gt;
+        &lt;b:section class='crosscol' id='crosscol'/&gt;
+      &lt;/div&gt;
+
+      &lt;div id='main-wrapper'&gt;
+        &lt;b:section class='main' id='main' showaddelement='no'&gt;
+&lt;b:widget id='Blog1' locked='true' title='Blog Posts' type='Blog'&gt;
+&lt;b:includable id='main' var='top'&gt;
+  &lt;b:if cond='data:mobile == &amp;quot;false&amp;quot;'&gt;
+
+    &lt;!-- posts --&gt;
+    &lt;div class='blog-posts hfeed'&gt;
+
+      &lt;b:include data='top' name='status-message'/&gt;
+
+      &lt;data:defaultAdStart/&gt;
+      &lt;b:loop values='data:posts' var='post'&gt;
+        &lt;b:if cond='data:post.isDateStart'&gt;
+          &lt;b:if cond='data:post.isFirstPost == &amp;quot;false&amp;quot;'&gt;
+            &amp;lt;/div&amp;gt;&amp;lt;/div&amp;gt;
+          &lt;/b:if&gt;
+        &lt;/b:if&gt;
+        &lt;b:if cond='data:post.isDateStart'&gt;
+          &amp;lt;div class=&amp;quot;date-outer&amp;quot;&amp;gt;
+        &lt;/b:if&gt;
+        &lt;b:if cond='data:post.dateHeader'&gt;
+          &lt;h2 class='date-header'&gt;&lt;span&gt;&lt;data:post.dateHeader/&gt;&lt;/span&gt;&lt;/h2&gt;
+        &lt;/b:if&gt;
+        &lt;b:if cond='data:post.isDateStart'&gt;
+          &amp;lt;div class=&amp;quot;date-posts&amp;quot;&amp;gt;
+        &lt;/b:if&gt;
+        &lt;div class='post-outer'&gt;
+        &lt;b:include data='post' name='post'/&gt;
+        &lt;b:if cond='data:blog.pageType == &amp;quot;static_page&amp;quot;'&gt;
+          &lt;b:include data='post' name='comments'/&gt;
+        &lt;/b:if&gt;
+        &lt;b:if cond='data:blog.pageType == &amp;quot;item&amp;quot;'&gt;
+          &lt;b:include data='post' name='comments'/&gt;
+        &lt;/b:if&gt;
+        &lt;/div&gt;
+        &lt;b:if cond='data:post.includeAd'&gt;
+          &lt;b:if cond='data:post.isFirstPost'&gt;
+            &lt;data:defaultAdEnd/&gt;
+          &lt;b:else/&gt;
+            &lt;data:adEnd/&gt;
+          &lt;/b:if&gt;
+          &lt;div class='inline-ad'&gt;
+            &lt;data:adCode/&gt;
+          &lt;/div&gt;
+          &lt;data:adStart/&gt;
+        &lt;/b:if&gt;
+        &lt;b:if cond='data:post.trackLatency'&gt;
+          &lt;data:post.latencyJs/&gt;
+        &lt;/b:if&gt;
+      &lt;/b:loop&gt;
+      &lt;b:if cond='data:numPosts != 0'&gt;
+        &amp;lt;/div&amp;gt;&amp;lt;/div&amp;gt;
+      &lt;/b:if&gt;
+      &lt;data:adEnd/&gt;
+    &lt;/div&gt;
+
+    &lt;!-- navigation --&gt;
+    &lt;b:include name='nextprev'/&gt;
+
+    &lt;!-- feed links --&gt;
+    &lt;b:include name='feedLinks'/&gt;
+
+    &lt;b:if cond='data:top.showStars'&gt;
+      &lt;script src='//www.google.com/jsapi' type='text/javascript'/&gt;
+      &lt;script type='text/javascript'&gt;
+        google.load(&amp;quot;annotations&amp;quot;, &amp;quot;1&amp;quot;, {&amp;quot;locale&amp;quot;: &amp;quot;&lt;data:top.languageCode/&gt;&amp;quot;});
+        function initialize() {
+          google.annotations.setApplicationId(&lt;data:top.blogspotReviews/&gt;);
+          google.annotations.createAll();
+          google.annotations.fetch();
+        }
+        google.setOnLoadCallback(initialize);
+      &lt;/script&gt;
+    &lt;/b:if&gt;
+
+  &lt;b:else/&gt;
+    &lt;b:include name='mobile-main'/&gt;
+  &lt;/b:if&gt;
+
+  &lt;b:if cond='data:top.showDummy'&gt;
+    &lt;data:top.dummyBootstrap/&gt;
+  &lt;/b:if&gt;
+
+&lt;/b:includable&gt;
+&lt;b:includable id='nextprev'&gt;
+  &lt;div class='blog-pager' id='blog-pager'&gt;
+    &lt;b:if cond='data:newerPageUrl'&gt;
+      &lt;span id='blog-pager-newer-link'&gt;
+      &lt;a class='blog-pager-newer-link' expr:href='data:newerPageUrl' expr:id='data:widget.instanceId + &amp;quot;_blog-pager-newer-link&amp;quot;' expr:title='data:newerPageTitle'&gt;&lt;data:newerPageTitle/&gt;&lt;/a&gt;
+      &lt;/span&gt;
+    &lt;/b:if&gt;
+
+    &lt;b:if cond='data:olderPageUrl'&gt;
+      &lt;span id='blog-pager-older-link'&gt;
+      &lt;a class='blog-pager-older-link' expr:href='data:olderPageUrl' expr:id='data:widget.instanceId + &amp;quot;_blog-pager-older-link&amp;quot;' expr:title='data:olderPageTitle'&gt;&lt;data:olderPageTitle/&gt;&lt;/a&gt;
+      &lt;/span&gt;
+    &lt;/b:if&gt;
+
+    &lt;a class='home-link' expr:href='data:blog.homepageUrl'&gt;&lt;data:homeMsg/&gt;&lt;/a&gt;
+
+    &lt;b:if cond='data:mobileLinkUrl'&gt;
+      &lt;div class='blog-mobile-link'&gt;
+        &lt;a expr:href='data:mobileLinkUrl'&gt;&lt;data:mobileLinkMsg/&gt;&lt;/a&gt;
+      &lt;/div&gt;
+    &lt;/b:if&gt;
+
+  &lt;/div&gt;
+  &lt;div class='clear'/&gt;
+&lt;/b:includable&gt;
+&lt;b:includable id='post' var='post'&gt;
+  &lt;div class='post hentry uncustomized-post-template'&gt;
+    &lt;a expr:name='data:post.id'/&gt;
+    &lt;b:if cond='data:post.title'&gt;
+      &lt;h3 class='post-title entry-title'&gt;
+      &lt;b:if cond='data:post.link'&gt;
+        &lt;a expr:href='data:post.link'&gt;&lt;data:post.title/&gt;&lt;/a&gt;
+      &lt;b:else/&gt;
+        &lt;b:if cond='data:post.url'&gt;
+          &lt;b:if cond='data:blog.url != data:post.url'&gt;
+            &lt;a expr:href='data:post.url'&gt;&lt;data:post.title/&gt;&lt;/a&gt;
+          &lt;b:else/&gt;
+            &lt;data:post.title/&gt;
+          &lt;/b:if&gt;
+        &lt;b:else/&gt;
+          &lt;data:post.title/&gt;
+        &lt;/b:if&gt;
+      &lt;/b:if&gt;
+      &lt;/h3&gt;
+    &lt;/b:if&gt;
+
+    &lt;div class='post-header'&gt;
+    &lt;div class='post-header-line-1'/&gt;
+    &lt;/div&gt;
+
+    &lt;div class='post-body entry-content' expr:id='&amp;quot;post-body-&amp;quot; + data:post.id'&gt;
+      &lt;data:post.body/&gt;
+      &lt;div style='clear: both;'/&gt; &lt;!-- clear for photos floats --&gt;
+    &lt;/div&gt;
+
+    &lt;b:if cond='data:post.hasJumpLink'&gt;
+      &lt;div class='jump-link'&gt;
+        &lt;a expr:href='data:post.url + &amp;quot;#more&amp;quot;' expr:title='data:post.title'&gt;&lt;data:post.jumpText/&gt;&lt;/a&gt;
+      &lt;/div&gt;
+    &lt;/b:if&gt;
+
+    &lt;div class='post-footer'&gt;
+    &lt;div class='post-footer-line post-footer-line-1'&gt;
+      &lt;span class='post-author vcard'&gt;
+        &lt;b:if cond='data:top.showAuthor'&gt;
+          &lt;data:top.authorLabel/&gt;
+          &lt;span class='fn'&gt;&lt;data:post.author/&gt;&lt;/span&gt;
+        &lt;/b:if&gt;
+      &lt;/span&gt;
+
+      &lt;span class='post-timestamp'&gt;
+        &lt;b:if cond='data:top.showTimestamp'&gt;
+          &lt;data:top.timestampLabel/&gt;
+        &lt;b:if cond='data:post.url'&gt;
+          &lt;a class='timestamp-link' expr:href='data:post.url' rel='bookmark' title='permanent link'&gt;&lt;abbr class='published' expr:title='data:post.timestampISO8601'&gt;&lt;data:post.timestamp/&gt;&lt;/abbr&gt;&lt;/a&gt;
+        &lt;/b:if&gt;
+        &lt;/b:if&gt;
+      &lt;/span&gt;
+
+      &lt;span class='reaction-buttons'&gt;
+        &lt;b:if cond='data:top.showReactions'&gt;
+          &lt;table border='0' cellpadding='0' cellspacing='0' width='100%'&gt;&lt;tr&gt;
+            &lt;td class='reactions-label-cell' nowrap='nowrap' valign='top' width='1%'&gt;
+              &lt;span class='reactions-label'&gt;
+              &lt;data:top.reactionsLabel/&gt;&lt;/span&gt;&amp;#160;&lt;/td&gt;
+            &lt;td&gt;&lt;iframe allowtransparency='true' class='reactions-iframe' expr:src='data:post.reactionsUrl' frameborder='0' name='reactions' scrolling='no'/&gt;&lt;/td&gt;
+           &lt;/tr&gt;&lt;/table&gt;
+        &lt;/b:if&gt;
+      &lt;/span&gt;
+
+      &lt;span class='star-ratings'&gt;
+        &lt;b:if cond='data:top.showStars'&gt;
+           &lt;div expr:g:background-color='data:backgroundColor' expr:g:text-color='data:textColor' expr:g:url='data:post.absoluteUrl' g:height='42' g:type='RatingPanel' g:width='280'/&gt;
+        &lt;/b:if&gt;
+      &lt;/span&gt;
+
+      &lt;span class='post-comment-link'&gt;
+        &lt;b:if cond='data:blog.pageType != &amp;quot;item&amp;quot;'&gt;
+          &lt;b:if cond='data:blog.pageType != &amp;quot;static_page&amp;quot;'&gt;
+            &lt;b:if cond='data:post.allowComments'&gt;
+              &lt;a class='comment-link' expr:href='data:post.addCommentUrl' expr:onclick='data:post.addCommentOnclick'&gt;&lt;b:if cond='data:post.numComments == 1'&gt;1 &lt;data:top.commentLabel/&gt;&lt;b:else/&gt;&lt;data:post.numComments/&gt; &lt;data:top.commentLabelPlural/&gt;&lt;/b:if&gt;&lt;/a&gt;
+            &lt;/b:if&gt;
+          &lt;/b:if&gt;
+        &lt;/b:if&gt;
+      &lt;/span&gt;
+
+       &lt;!-- backlinks --&gt;
+       &lt;span class='post-backlinks post-comment-link'&gt;
+         &lt;b:if cond='data:blog.pageType != &amp;quot;item&amp;quot;'&gt;
+           &lt;b:if cond='data:blog.pageType != &amp;quot;static_page&amp;quot;'&gt;
+             &lt;b:if cond='data:post.showBacklinks'&gt;
+               &lt;a class='comment-link' expr:href='data:post.url + &amp;quot;#links&amp;quot;'&gt;&lt;data:top.backlinkLabel/&gt;&lt;/a&gt;
+             &lt;/b:if&gt;
+           &lt;/b:if&gt;
+         &lt;/b:if&gt;
+       &lt;/span&gt;
+
+      &lt;span class='post-icons'&gt;
+        &lt;!-- email post links --&gt;
+        &lt;b:if cond='data:post.emailPostUrl'&gt;
+          &lt;span class='item-action'&gt;
+          &lt;a expr:href='data:post.emailPostUrl' expr:title='data:top.emailPostMsg'&gt;
+              &lt;img alt='' class='icon-action' height='13' src='http://img1.blogblog.com/img/icon18_email.gif' width='18'/&gt;
+          &lt;/a&gt;
+          &lt;/span&gt;
+        &lt;/b:if&gt;
+
+        &lt;!-- quickedit pencil --&gt;
+        &lt;b:include data='post' name='postQuickEdit'/&gt;
+      &lt;/span&gt;
+
+      &lt;!-- share buttons --&gt;
+      &lt;div class='post-share-buttons goog-inline-block'&gt;
+        &lt;b:if cond='data:post.sharePostUrl'&gt;
+          &lt;b:include data='post' name='shareButtons'/&gt;
+        &lt;/b:if&gt;
+      &lt;/div&gt;
+
+      &lt;/div&gt;
+
+      &lt;div class='post-footer-line post-footer-line-2'&gt;
+      &lt;span class='post-labels'&gt;
+        &lt;b:if cond='data:post.labels'&gt;
+          &lt;data:postLabelsLabel/&gt;
+          &lt;b:loop values='data:post.labels' var='label'&gt;
+            &lt;a expr:href='data:label.url' rel='tag'&gt;&lt;data:label.name/&gt;&lt;/a&gt;&lt;b:if cond='data:label.isLast != &amp;quot;true&amp;quot;'&gt;,&lt;/b:if&gt;
+          &lt;/b:loop&gt;
+        &lt;/b:if&gt;
+      &lt;/span&gt;
+      &lt;/div&gt;
+
+      &lt;div class='post-footer-line post-footer-line-3'&gt;
+      &lt;span class='post-location'&gt;
+        &lt;b:if cond='data:top.showLocation'&gt;
+          &lt;b:if cond='data:post.location'&gt;
+            &lt;data:postLocationLabel/&gt;
+            &lt;a expr:href='data:post.location.mapsUrl' target='_blank'&gt;&lt;data:post.location.name/&gt;&lt;/a&gt;
+          &lt;/b:if&gt;
+        &lt;/b:if&gt;
+      &lt;/span&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/b:includable&gt;
+&lt;b:includable id='postQuickEdit' var='post'&gt;
+  &lt;b:if cond='data:post.editUrl'&gt;
+    &lt;span expr:class='&amp;quot;item-control &amp;quot; + data:post.adminClass'&gt;
+      &lt;a expr:href='data:post.editUrl' expr:title='data:top.editPostMsg'&gt;
+        &lt;img alt='' class='icon-action' height='18' src='http://img2.blogblog.com/img/icon18_edit_allbkg.gif' width='18'/&gt;
+      &lt;/a&gt;
+    &lt;/span&gt;
+  &lt;/b:if&gt;
+&lt;/b:includable&gt;
+&lt;b:includable id='shareButtons' var='post'&gt;
+  &lt;b:if cond='data:top.showEmailButton'&gt;&lt;a class='goog-inline-block share-button sb-email' expr:href='data:post.sharePostUrl + &amp;quot;&amp;amp;target=email&amp;quot;' expr:title='data:top.emailThisMsg' target='_blank'&gt;&lt;span class='share-button-link-text'&gt;&lt;data:top.emailThisMsg/&gt;&lt;/span&gt;&lt;/a&gt;&lt;/b:if&gt;&lt;b:if cond='data:top.showBlogThisButton'&gt;&lt;a class='goog-inline-block share-button sb-blog' expr:href='data:post.sharePostUrl + &amp;quot;&amp;amp;target=blog&amp;quot;' expr:onclick='&amp;quot;window.open(this.href, \&amp;quot;_blank\&amp;quot;, \&amp;quot;height=270,width=475\&amp;quot;); return false;&amp;quot;' expr:title='data:top.blogThisMsg' target='_blank'&gt;&lt;span class='share-button-link-text'&gt;&lt;data:top.blogThisMsg/&gt;&lt;/span&gt;&lt;/a&gt;&lt;/b:if&gt;&lt;b:if cond='data:top.showTwitterButton'&gt;&lt;a class='goog-inline-block share-button sb-twitter' expr:href='data:post.sharePostUrl + &amp;quot;&amp;amp;target=twitter&amp;quot;' expr:title='data:top.shareToTwitterMsg' target='_blank'&gt;&lt;span class='share-button-link-text'&gt;&lt;data:top.shareToTwitterMsg/&gt;&lt;/span&gt;&lt;/a&gt;&lt;/b:if&gt;&lt;b:if cond='data:top.showFacebookButton'&gt;&lt;a class='goog-inline-block share-button sb-facebook' expr:href='data:post.sharePostUrl + &amp;quot;&amp;amp;target=facebook&amp;quot;' expr:onclick='&amp;quot;window.open(this.href, \&amp;quot;_blank\&amp;quot;, \&amp;quot;height=430,width=640\&amp;quot;); return false;&amp;quot;' expr:title='data:top.shareToFacebookMsg' target='_blank'&gt;&lt;span class='share-button-link-text'&gt;&lt;data:top.shareToFacebookMsg/&gt;&lt;/span&gt;&lt;/a&gt;&lt;/b:if&gt;&lt;b:if cond='data:top.showOrkutButton'&gt;&lt;a class='goog-inline-block share-button sb-orkut' expr:href='data:post.sharePostUrl + &amp;quot;&amp;amp;target=orkut&amp;quot;' expr:title='data:top.shareToOrkutMsg' target='_blank'&gt;&lt;span class='share-button-link-text'&gt;&lt;data:top.shareToOrkutMsg/&gt;&lt;/span&gt;&lt;/a&gt;&lt;/b:if&gt;&lt;b:if cond='data:top.showDummy'&gt;&lt;div class='goog-inline-block dummy-container'&gt;&lt;data:post.dummyTag/&gt;&lt;/div&gt;&lt;/b:if&gt;
+&lt;/b:includable&gt;
+&lt;b:includable id='commentDeleteIcon' var='comment'&gt;
+  &lt;span expr:class='&amp;quot;item-control &amp;quot; + data:comment.adminClass'&gt;
+    &lt;b:if cond='data:showCmtPopup'&gt;
+      &lt;div class='goog-toggle-button'&gt;
+        &lt;div class='goog-inline-block comment-action-icon'/&gt;
+      &lt;/div&gt;
+    &lt;b:else/&gt;
+      &lt;a class='comment-delete' expr:href='data:comment.deleteUrl' expr:title='data:top.deleteCommentMsg'&gt;
+        &lt;img src='//www.blogger.com/img/icon_delete13.gif'/&gt;
+      &lt;/a&gt;
+    &lt;/b:if&gt;
+  &lt;/span&gt;
+&lt;/b:includable&gt;
+&lt;b:includable id='backlinkDeleteIcon' var='backlink'&gt;
+  &lt;span expr:class='&amp;quot;item-control &amp;quot; + data:backlink.adminClass'&gt;
+    &lt;a expr:href='data:backlink.deleteUrl' expr:title='data:top.deleteBacklinkMsg'&gt;
+      &lt;img src='//www.blogger.com/img/icon_delete13.gif'/&gt;
+    &lt;/a&gt;
+  &lt;/span&gt;
+&lt;/b:includable&gt;
+&lt;b:includable id='comments' var='post'&gt;
+  &lt;div class='comments' id='comments'&gt;
+    &lt;a name='comments'/&gt;
+    &lt;b:if cond='data:post.allowComments'&gt;
+      &lt;h4&gt;
+        &lt;b:if cond='data:post.numComments == 1'&gt;
+          1 &lt;data:commentLabel/&gt;:
+        &lt;b:else/&gt;
+          &lt;data:post.numComments/&gt; &lt;data:commentLabelPlural/&gt;:
+        &lt;/b:if&gt;
+      &lt;/h4&gt;
+
+      &lt;b:if cond='data:post.commentPagingRequired'&gt;
+        &lt;span class='paging-control-container'&gt;
+          &lt;a expr:class='data:post.oldLinkClass' expr:href='data:post.oldestLinkUrl'&gt;&lt;data:post.oldestLinkText/&gt;&lt;/a&gt;
+          &amp;#160;
+          &lt;a expr:class='data:post.oldLinkClass' expr:href='data:post.olderLinkUrl'&gt;&lt;data:post.olderLinkText/&gt;&lt;/a&gt;
+          &amp;#160;
+          &lt;data:post.commentRangeText/&gt;
+          &amp;#160;
+          &lt;a expr:class='data:post.newLinkClass' expr:href='data:post.newerLinkUrl'&gt;&lt;data:post.newerLinkText/&gt;&lt;/a&gt;
+          &amp;#160;
+          &lt;a expr:class='data:post.newLinkClass' expr:href='data:post.newestLinkUrl'&gt;&lt;data:post.newestLinkText/&gt;&lt;/a&gt;
+        &lt;/span&gt;
+      &lt;/b:if&gt;
+
+      &lt;div expr:id='data:widget.instanceId + &amp;quot;_comments-block-wrapper&amp;quot;'&gt;
+        &lt;dl expr:class='data:post.avatarIndentClass' id='comments-block'&gt;
+          &lt;b:loop values='data:post.comments' var='comment'&gt;
+            &lt;dt expr:class='&amp;quot;comment-author &amp;quot; + data:comment.authorClass' expr:id='data:comment.anchorName'&gt;
+              &lt;b:if cond='data:comment.favicon'&gt;
+                &lt;img expr:src='data:comment.favicon' height='16px' style='margin-bottom:-2px;' width='16px'/&gt;
+              &lt;/b:if&gt;
+              &lt;a expr:name='data:comment.anchorName'/&gt;
+              &lt;b:if cond='data:blog.enabledCommentProfileImages'&gt;
+                &lt;data:comment.authorAvatarImage/&gt;
+              &lt;/b:if&gt;
+              &lt;b:if cond='data:comment.authorUrl'&gt;
+                &lt;a expr:href='data:comment.authorUrl' rel='nofollow'&gt;&lt;data:comment.author/&gt;&lt;/a&gt;
+              &lt;b:else/&gt;
+                &lt;data:comment.author/&gt;
+              &lt;/b:if&gt;
+              &lt;data:commentPostedByMsg/&gt;
+            &lt;/dt&gt;
+            &lt;dd class='comment-body' expr:id='data:widget.instanceId + data:comment.cmtBodyIdPostfix'&gt;
+              &lt;b:if cond='data:comment.isDeleted'&gt;
+                &lt;span class='deleted-comment'&gt;&lt;data:comment.body/&gt;&lt;/span&gt;
+              &lt;b:else/&gt;
+                &lt;p&gt;
+                  &lt;data:comment.body/&gt;
+                &lt;/p&gt;
+              &lt;/b:if&gt;
+            &lt;/dd&gt;
+            &lt;dd class='comment-footer'&gt;
+              &lt;span class='comment-timestamp'&gt;
+                &lt;a expr:href='data:comment.url' title='comment permalink'&gt;
+                  &lt;data:comment.timestamp/&gt;
+                &lt;/a&gt;
+                &lt;b:include data='comment' name='commentDeleteIcon'/&gt;
+              &lt;/span&gt;
+            &lt;/dd&gt;
+          &lt;/b:loop&gt;
+        &lt;/dl&gt;
+      &lt;/div&gt;
+
+      &lt;b:if cond='data:post.commentPagingRequired'&gt;
+        &lt;span class='paging-control-container'&gt;
+          &lt;a expr:class='data:post.oldLinkClass' expr:href='data:post.oldestLinkUrl'&gt;
+            &lt;data:post.oldestLinkText/&gt;
+          &lt;/a&gt;
+          &lt;a expr:class='data:post.oldLinkClass' expr:href='data:post.olderLinkUrl'&gt;
+            &lt;data:post.olderLinkText/&gt;
+          &lt;/a&gt;
+          &amp;#160;
+          &lt;data:post.commentRangeText/&gt;
+          &amp;#160;
+          &lt;a expr:class='data:post.newLinkClass' expr:href='data:post.newerLinkUrl'&gt;
+            &lt;data:post.newerLinkText/&gt;
+          &lt;/a&gt;
+          &lt;a expr:class='data:post.newLinkClass' expr:href='data:post.newestLinkUrl'&gt;
+            &lt;data:post.newestLinkText/&gt;
+          &lt;/a&gt;
+        &lt;/span&gt;
+      &lt;/b:if&gt;
+
+      &lt;p class='comment-footer'&gt;
+        &lt;b:if cond='data:post.embedCommentForm'&gt;
+          &lt;b:if cond='data:post.allowNewComments'&gt;
+            &lt;b:include data='post' name='comment-form'/&gt;
+          &lt;b:else/&gt;
+            &lt;data:post.noNewCommentsText/&gt;
+          &lt;/b:if&gt;
+        &lt;b:else/&gt;
+          &lt;b:if cond='data:post.allowComments'&gt;
+            &lt;a expr:href='data:post.addCommentUrl' expr:onclick='data:post.addCommentOnclick'&gt;&lt;data:postCommentMsg/&gt;&lt;/a&gt;
+          &lt;/b:if&gt;
+        &lt;/b:if&gt;
+
+      &lt;/p&gt;
+    &lt;/b:if&gt;
+    &lt;b:if cond='data:showCmtPopup'&gt;
+      &lt;div id='comment-popup'&gt;
+        &lt;iframe allowtransparency='true' frameborder='0' id='comment-actions' name='comment-actions' scrolling='no'&gt;
+        &lt;/iframe&gt;
+      &lt;/div&gt;
+    &lt;/b:if&gt;
+
+    &lt;div id='backlinks-container'&gt;
+    &lt;div expr:id='data:widget.instanceId + &amp;quot;_backlinks-container&amp;quot;'&gt;
+       &lt;b:if cond='data:post.showBacklinks'&gt;
+         &lt;b:include data='post' name='backlinks'/&gt;
+       &lt;/b:if&gt;
+    &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/b:includable&gt;
+&lt;b:includable id='comment-form' var='post'&gt;
+  &lt;div class='comment-form'&gt;
+    &lt;a name='comment-form'/&gt;
+    &lt;b:if cond='data:mobile'&gt;
+      &lt;h4 id='comment-post-message'&gt;
+        &lt;a expr:id='data:widget.instanceId + &amp;quot;_comment-editor-toggle-link&amp;quot;' href='javascript:void(0)'&gt;&lt;data:postCommentMsg/&gt;&lt;/a&gt;&lt;/h4&gt;
+      &lt;p&gt;&lt;data:blogCommentMessage/&gt;&lt;/p&gt;
+      &lt;data:blogTeamBlogMessage/&gt;
+      &lt;a expr:href='data:post.commentFormIframeSrc' id='comment-editor-src'/&gt;
+      &lt;iframe allowtransparency='true' class='blogger-iframe-colorize blogger-comment-from-post' frameborder='0' height='410' id='comment-editor' name='comment-editor' src='' style='display: none' width='100%'/&gt;
+    &lt;b:else/&gt;
+      &lt;h4 id='comment-post-message'&gt;&lt;data:postCommentMsg/&gt;&lt;/h4&gt;
+      &lt;p&gt;&lt;data:blogCommentMessage/&gt;&lt;/p&gt;
+      &lt;data:blogTeamBlogMessage/&gt;
+      &lt;a expr:href='data:post.commentFormIframeSrc' id='comment-editor-src'/&gt;
+      &lt;iframe allowtransparency='true' class='blogger-iframe-colorize blogger-comment-from-post' frameborder='0' height='410' id='comment-editor' name='comment-editor' src='' width='100%'/&gt;
+    &lt;/b:if&gt;
+    &lt;data:post.friendConnectJs/&gt;
+    &lt;data:post.cmtfpIframe/&gt;
+    &lt;script type='text/javascript'&gt;
+      BLOG_CMT_createIframe(&amp;#39;&lt;data:post.appRpcRelayPath/&gt;&amp;#39;, &amp;#39;&lt;data:post.communityId/&gt;&amp;#39;);
+    &lt;/script&gt;
+  &lt;/div&gt;
+&lt;/b:includable&gt;
+&lt;b:includable id='backlinks' var='post'&gt;
+  &lt;a name='links'/&gt;&lt;h4&gt;&lt;data:post.backlinksLabel/&gt;&lt;/h4&gt;
+  &lt;b:if cond='data:post.numBacklinks != 0'&gt;
+    &lt;dl class='comments-block' id='comments-block'&gt;
+      &lt;b:loop values='data:post.backlinks' var='backlink'&gt;
+        &lt;div class='collapsed-backlink backlink-control'&gt;
+          &lt;dt class='comment-title'&gt;
+            &lt;span class='backlink-toggle-zippy'&gt;&amp;#160;&lt;/span&gt;
+            &lt;a expr:href='data:backlink.url' rel='nofollow'&gt;&lt;data:backlink.title/&gt;&lt;/a&gt;
+            &lt;b:include data='backlink' name='backlinkDeleteIcon'/&gt;
+          &lt;/dt&gt;
+          &lt;dd class='comment-body collapseable'&gt;
+            &lt;data:backlink.snippet/&gt;
+          &lt;/dd&gt;
+          &lt;dd class='comment-footer collapseable'&gt;
+            &lt;span class='comment-author'&gt;&lt;data:post.authorLabel/&gt; &lt;data:backlink.author/&gt;&lt;/span&gt;
+            &lt;span class='comment-timestamp'&gt;&lt;data:post.timestampLabel/&gt; &lt;data:backlink.timestamp/&gt;&lt;/span&gt;
+          &lt;/dd&gt;
+        &lt;/div&gt;
+      &lt;/b:loop&gt;
+    &lt;/dl&gt;
+  &lt;/b:if&gt;
+  &lt;p class='comment-footer'&gt;
+    &lt;a class='comment-link' expr:href='data:post.createLinkUrl' expr:id='data:widget.instanceId + &amp;quot;_backlinks-create-link&amp;quot;' target='_blank'&gt;&lt;data:post.createLinkLabel/&gt;&lt;/a&gt;
+  &lt;/p&gt;
+&lt;/b:includable&gt;
+&lt;b:includable id='feedLinks'&gt;
+  &lt;b:if cond='data:blog.pageType != &amp;quot;item&amp;quot;'&gt; &lt;!-- Blog feed links --&gt;
+    &lt;b:if cond='data:feedLinks'&gt;
+      &lt;div class='blog-feeds'&gt;
+        &lt;b:include data='feedLinks' name='feedLinksBody'/&gt;
+      &lt;/div&gt;
+    &lt;/b:if&gt;
+
+    &lt;b:else/&gt; &lt;!--Post feed links --&gt;
+    &lt;div class='post-feeds'&gt;
+      &lt;b:loop values='data:posts' var='post'&gt;
+        &lt;b:if cond='data:post.allowComments'&gt;
+          &lt;b:if cond='data:post.feedLinks'&gt;
+            &lt;b:include data='post.feedLinks' name='feedLinksBody'/&gt;
+          &lt;/b:if&gt;
+        &lt;/b:if&gt;
+      &lt;/b:loop&gt;
+    &lt;/div&gt;
+  &lt;/b:if&gt;
+&lt;/b:includable&gt;
+&lt;b:includable id='feedLinksBody' var='links'&gt;
+  &lt;div class='feed-links'&gt;
+  &lt;data:feedLinksMsg/&gt;
+  &lt;b:loop values='data:links' var='f'&gt;
+     &lt;a class='feed-link' expr:href='data:f.url' expr:type='data:f.mimeType' target='_blank'&gt;&lt;data:f.name/&gt; (&lt;data:f.feedType/&gt;)&lt;/a&gt;
+  &lt;/b:loop&gt;
+  &lt;/div&gt;
+&lt;/b:includable&gt;
+&lt;b:includable id='status-message'&gt;
+  &lt;b:if cond='data:navMessage'&gt;
+  &lt;div class='status-msg-wrap'&gt;
+    &lt;div class='status-msg-body'&gt;
+      &lt;data:navMessage/&gt;
+    &lt;/div&gt;
+    &lt;div class='status-msg-border'&gt;
+      &lt;div class='status-msg-bg'&gt;
+        &lt;div class='status-msg-hidden'&gt;&lt;data:navMessage/&gt;&lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div style='clear: both;'/&gt;
+  &lt;/b:if&gt;
+&lt;/b:includable&gt;
+&lt;b:includable id='mobile-main' var='top'&gt;
+    &lt;!-- posts --&gt;
+    &lt;div class='blog-posts hfeed'&gt;
+
+      &lt;b:include data='top' name='status-message'/&gt;
+
+      &lt;b:if cond='data:blog.pageType == &amp;quot;index&amp;quot;'&gt;
+        &lt;b:loop values='data:posts' var='post'&gt;
+          &lt;b:include data='post' name='mobile-index-post'/&gt;
+        &lt;/b:loop&gt;
+      &lt;b:else/&gt;
+        &lt;b:loop values='data:posts' var='post'&gt;
+          &lt;b:include data='post' name='mobile-post'/&gt;
+        &lt;/b:loop&gt;
+      &lt;/b:if&gt;
+    &lt;/div&gt;
+
+   &lt;b:include name='mobile-nextprev'/&gt;
+&lt;/b:includable&gt;
+&lt;b:includable id='mobile-nextprev'&gt;
+  &lt;div class='blog-pager' id='blog-pager'&gt;
+    &lt;b:if cond='data:newerPageUrl'&gt;
+      &lt;div class='mobile-link-button' id='blog-pager-newer-link'&gt;
+      &lt;a class='blog-pager-newer-link' expr:href='data:newerPageUrl' expr:id='data:widget.instanceId + &amp;quot;_blog-pager-newer-link&amp;quot;' expr:title='data:newerPageTitle'&gt;&amp;amp;lsaquo;&lt;/a&gt;
+      &lt;/div&gt;
+    &lt;/b:if&gt;
+
+    &lt;b:if cond='data:olderPageUrl'&gt;
+      &lt;div class='mobile-link-button' id='blog-pager-older-link'&gt;
+      &lt;a class='blog-pager-older-link' expr:href='data:olderPageUrl' expr:id='data:widget.instanceId + &amp;quot;_blog-pager-older-link&amp;quot;' expr:title='data:olderPageTitle'&gt;&amp;amp;rsaquo;&lt;/a&gt;
+      &lt;/div&gt;
+    &lt;/b:if&gt;
+
+    &lt;div class='mobile-link-button' id='blog-pager-home-link'&gt;
+    &lt;a class='home-link' expr:href='data:blog.homepageUrl'&gt;&lt;data:homeMsg/&gt;&lt;/a&gt;
+    &lt;/div&gt;
+
+    &lt;div class='mobile-desktop-link'&gt;
+      &lt;a class='home-link' expr:href='data:desktopLinkUrl'&gt;&lt;data:desktopLinkMsg/&gt;&lt;/a&gt;
+    &lt;/div&gt;
+
+  &lt;/div&gt;
+  &lt;div class='clear'/&gt;
+&lt;/b:includable&gt;
+&lt;b:includable id='mobile-index-post' var='post'&gt;
+  &lt;div class='mobile-date-outer date-outer'&gt;
+    &lt;b:if cond='data:post.dateHeader'&gt;
+      &lt;div class='date-header'&gt;
+        &lt;span&gt;&lt;data:post.dateHeader/&gt;&lt;/span&gt;
+      &lt;/div&gt;
+    &lt;/b:if&gt;
+
+    &lt;div class='mobile-post-outer'&gt;
+      &lt;a expr:href='data:post.url'&gt;
+        &lt;h3 class='mobile-index-title entry-title'&gt;
+          &lt;data:post.title/&gt;
+        &lt;/h3&gt;
+
+        &lt;div class='mobile-index-arrow'&gt;&amp;amp;rsaquo;&lt;/div&gt;
+
+        &lt;div class='mobile-index-contents'&gt;
+          &lt;b:if cond='data:post.thumbnailUrl'&gt;
+            &lt;div class='mobile-index-thumbnail'&gt;
+              &lt;div class='Image'&gt;
+                &lt;img expr:src='data:post.thumbnailUrl'/&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/b:if&gt;
+
+          &lt;div class='post-body'&gt;
+            &lt;b:if cond='data:post.snippet'&gt;&lt;data:post.snippet/&gt;&lt;/b:if&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+
+        &lt;div style='clear: both;'/&gt;
+      &lt;/a&gt;
+
+      &lt;div class='mobile-index-comment'&gt;
+        &lt;b:if cond='data:blog.pageType != &amp;quot;static_page&amp;quot;'&gt;
+          &lt;b:if cond='data:post.allowComments'&gt;
+            &lt;b:if cond='data:post.numComments != 0'&gt;
+              &lt;a class='comment-link' expr:href='data:post.addCommentUrl' expr:onclick='data:post.addCommentOnclick'&gt;&lt;b:if cond='data:post.numComments == 1'&gt;1 &lt;data:top.commentLabel/&gt;&lt;b:else/&gt;&lt;data:post.numComments/&gt; &lt;data:top.commentLabelPlural/&gt;&lt;/b:if&gt;&lt;/a&gt;
+            &lt;/b:if&gt;
+          &lt;/b:if&gt;
+        &lt;/b:if&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/b:includable&gt;
+&lt;b:includable id='mobile-post' var='post'&gt;
+  &lt;div class='date-outer'&gt;
+    &lt;b:if cond='data:post.dateHeader'&gt;
+      &lt;h2 class='date-header'&gt;&lt;span&gt;&lt;data:post.dateHeader/&gt;&lt;/span&gt;&lt;/h2&gt;
+    &lt;/b:if&gt;
+    &lt;div class='date-posts'&gt;
+      &lt;div class='post-outer'&gt;
+
+        &lt;div class='post hentry uncustomized-post-template'&gt;
+          &lt;a expr:name='data:post.id'/&gt;
+          &lt;b:if cond='data:post.title'&gt;
+            &lt;h3 class='post-title entry-title'&gt;
+              &lt;b:if cond='data:post.link'&gt;
+                &lt;a expr:href='data:post.link'&gt;&lt;data:post.title/&gt;&lt;/a&gt;
+              &lt;b:else/&gt;
+                &lt;b:if cond='data:post.url'&gt;
+                  &lt;b:if cond='data:blog.url != data:post.url'&gt;
+                    &lt;a expr:href='data:post.url'&gt;&lt;data:post.title/&gt;&lt;/a&gt;
+                  &lt;b:else/&gt;
+                    &lt;data:post.title/&gt;
+                  &lt;/b:if&gt;
+                &lt;b:else/&gt;
+                  &lt;data:post.title/&gt;
+                &lt;/b:if&gt;
+              &lt;/b:if&gt;
+            &lt;/h3&gt;
+          &lt;/b:if&gt;
+
+          &lt;div class='post-header'&gt;
+            &lt;div class='post-header-line-1'/&gt;
+          &lt;/div&gt;
+
+          &lt;div class='post-body entry-content' expr:id='&amp;quot;post-body-&amp;quot; + data:post.id'&gt;
+            &lt;data:post.body/&gt;
+            &lt;div style='clear: both;'/&gt; &lt;!-- clear for photos floats --&gt;
+          &lt;/div&gt;
+
+          &lt;div class='post-footer'&gt;
+            &lt;div class='post-footer-line post-footer-line-1'&gt;
+              &lt;span class='post-author vcard'&gt;
+                &lt;b:if cond='data:top.showAuthor'&gt;
+                  &lt;data:top.authorLabel/&gt;
+                  &lt;span class='fn'&gt;&lt;data:post.author/&gt;&lt;/span&gt;
+                &lt;/b:if&gt;
+              &lt;/span&gt;
+
+              &lt;span class='post-timestamp'&gt;
+                &lt;b:if cond='data:top.showTimestamp'&gt;
+                  &lt;data:top.timestampLabel/&gt;
+                  &lt;b:if cond='data:post.url'&gt;
+                    &lt;a class='timestamp-link' expr:href='data:post.url' rel='bookmark' title='permanent link'&gt;&lt;abbr class='published' expr:title='data:post.timestampISO8601'&gt;&lt;data:post.timestamp/&gt;&lt;/abbr&gt;&lt;/a&gt;
+                  &lt;/b:if&gt;
+                &lt;/b:if&gt;
+              &lt;/span&gt;
+
+              &lt;span class='post-comment-link'&gt;
+                &lt;b:if cond='data:blog.pageType != &amp;quot;item&amp;quot;'&gt;
+                  &lt;b:if cond='data:blog.pageType != &amp;quot;static_page&amp;quot;'&gt;
+                    &lt;b:if cond='data:post.allowComments'&gt;
+                      &lt;a class='comment-link' expr:href='data:post.addCommentUrl' expr:onclick='data:post.addCommentOnclick'&gt;&lt;b:if cond='data:post.numComments == 1'&gt;1 &lt;data:top.commentLabel/&gt;&lt;b:else/&gt;&lt;data:post.numComments/&gt; &lt;data:top.commentLabelPlural/&gt;&lt;/b:if&gt;&lt;/a&gt;
+                    &lt;/b:if&gt;
+                  &lt;/b:if&gt;
+                &lt;/b:if&gt;
+              &lt;/span&gt;
+            &lt;/div&gt;
+
+            &lt;div class='post-footer-line post-footer-line-2'&gt;
+              &lt;b:if cond='data:top.showMobileShare'&gt;
+                &lt;div class='mobile-link-button goog-inline-block' id='mobile-share-button'&gt;
+                  &lt;a href='javascript:void(0);'&gt;&lt;data:shareMsg/&gt;&lt;/a&gt;
+                &lt;/div&gt;
+              &lt;/b:if&gt;
+              &lt;b:if cond='data:top.showDummy'&gt;
+                &lt;div class='goog-inline-block dummy-container'&gt;&lt;data:post.dummyTag/&gt;&lt;/div&gt;
+              &lt;/b:if&gt;
+            &lt;/div&gt;
+
+          &lt;/div&gt;
+        &lt;/div&gt;
+
+        &lt;b:if cond='data:blog.pageType == &amp;quot;static_page&amp;quot;'&gt;
+          &lt;b:include data='post' name='comments'/&gt;
+        &lt;/b:if&gt;
+        &lt;b:if cond='data:blog.pageType == &amp;quot;item&amp;quot;'&gt;
+          &lt;b:include data='post' name='comments'/&gt;
+        &lt;/b:if&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/b:includable&gt;
+&lt;/b:widget&gt;
+&lt;/b:section&gt;
+      &lt;/div&gt;
+
+      &lt;div id='sidebar-wrapper'&gt;
+        &lt;b:section class='sidebar' id='sidebar' preferred='yes'&gt;
+&lt;b:widget id='Followers2' locked='false' title='Followers' type='Followers'&gt;
+&lt;b:includable id='main'&gt;
+  &lt;b:if cond='data:title != &amp;quot;&amp;quot;'&gt;
+    &lt;b:if cond='data:codeSnippet != &amp;quot;&amp;quot;'&gt;
+      &lt;h2 class='title'&gt;&lt;data:title/&gt;&lt;/h2&gt;
+    &lt;b:else/&gt;
+      &lt;b:if cond='data:totalFollowerCount != &amp;quot;&amp;quot;'&gt;
+        &lt;h2 class='title'&gt;&lt;data:title/&gt; (&lt;data:totalFollowerCount/&gt;)&lt;/h2&gt;
+      &lt;/b:if&gt;
+    &lt;/b:if&gt;  
+  &lt;/b:if&gt;
+  &lt;div class='widget-content'&gt;
+    &lt;div expr:id='data:widget.instanceId + &amp;quot;-wrapper&amp;quot;'&gt;
+      &lt;b:if cond='data:codeSnippet != &amp;quot;&amp;quot;'&gt;
+        &lt;div style='margin-right:2px;'&gt;
+          &lt;data:codeSnippet/&gt;
+        &lt;/div&gt;
+      &lt;b:else/&gt;
+        &lt;b:if cond='data:totalFollowerCount == &amp;quot;&amp;quot;'&gt;
+          &lt;span class='item-control following-not-admin'&gt;
+            &lt;b&gt;&lt;data:failureSnippet/&gt;&lt;/b&gt;
+          &lt;/span&gt;
+          &lt;span class='item-control blog-admin'&gt;
+            &lt;b&gt;&lt;data:adminFailureSnippet/&gt;&lt;/b&gt;
+          &lt;/span&gt;
+        &lt;b:else/&gt;
+          &lt;b:if cond='data:followingLinkPresent'&gt;
+            &lt;div class='follow-this profile-link item-control following-follow-this'&gt;
+              &lt;a expr:href='&amp;quot;javascript:_FollowersView._openPopup(\&amp;quot;&amp;quot; + data:followUri + &amp;quot;\&amp;quot;);&amp;quot;'&gt;
+                &lt;data:followThisMessage/&gt;
+              &lt;/a&gt;
+            &lt;/div&gt;
+            &lt;div class='follow-this profile-link item-control following-stop-following-this'&gt;
+              &lt;a expr:href='&amp;quot;javascript:_FollowersView._openPopup(\&amp;quot;&amp;quot; + data:followUri + &amp;quot;\&amp;quot;);&amp;quot;'&gt;
+                &lt;data:stopFollowingMessage/&gt;
+              &lt;/a&gt;
+            &lt;/div&gt;
+          &lt;/b:if&gt;
+  
+          &lt;div class='followers-grid'&gt;
+            &lt;b:if cond='data:totalFollowerCount == 0'&gt;
+              &lt;div class='profile-link item-control following-follow-this'&gt;
+                &lt;data:emptyFollowersMessage/&gt;
+              &lt;/div&gt;
+            &lt;/b:if&gt;
+            &lt;!--
+            Relies on the js written out in navbar.gxp
+            --&gt;
+            &lt;b:loop values='data:followers' var='follower'&gt;
+              &lt;div class='follower'&gt;
+                &lt;a expr:href='data:follower.profileUrl' expr:title='data:follower.displayName' rel='nofollow'&gt;
+                &lt;img class='follower-img' expr:alt='data:follower.displayName' expr:height='data:follower.imageHeight' expr:onerror='&amp;quot;this.onerror=null;this.src=\&amp;quot;&amp;quot; + data:anonFollowerImageUrl + &amp;quot;\&amp;quot;;&amp;quot;' expr:onload='&amp;quot;setAttributeOnload(this, \&amp;quot;src\&amp;quot;, \&amp;quot;&amp;quot; + data:follower.imageUrl + &amp;quot;\&amp;quot;)&amp;quot;' expr:width='data:follower.imageWidth' src='http://img1.blogblog.com/img/blank.gif'/&gt;
+                &lt;/a&gt;
+              &lt;/div&gt;
+            &lt;/b:loop&gt;
+            &lt;div class='clear'/&gt;
+          &lt;/div&gt;
+  
+          &lt;div class='followers-canvas profile-link'&gt;
+            &lt;data:followersFooterMessage/&gt;
+            &lt;span class='item-control following-not-admin'&gt;
+              &lt;a expr:href='data:followersUri'&gt;
+                &lt;data:viewAllMessage/&gt;
+              &lt;/a&gt;
+            &lt;/span&gt;
+            &lt;span class='item-control blog-admin'&gt;
+              &lt;a expr:href='data:manageFollowersUri'&gt;
+                &lt;data:manageFollowersMessage/&gt;
+              &lt;/a&gt;
+            &lt;/span&gt;
+          &lt;/div&gt;
+          &lt;/b:if&gt;
+      &lt;/b:if&gt;
+    &lt;/div&gt;
+    &lt;b:include name='quickedit'/&gt;
+  &lt;/div&gt;
+&lt;/b:includable&gt;
+&lt;/b:widget&gt;
+&lt;b:widget id='BlogArchive2' locked='false' title='Blog Archive' type='BlogArchive'&gt;
+&lt;b:includable id='main'&gt;
+  &lt;b:if cond='data:title'&gt;
+    &lt;h2&gt;&lt;data:title/&gt;&lt;/h2&gt;
+  &lt;/b:if&gt;
+  &lt;div class='widget-content'&gt;
+  &lt;div id='ArchiveList'&gt;
+  &lt;div expr:id='data:widget.instanceId + &amp;quot;_ArchiveList&amp;quot;'&gt;
+    &lt;b:if cond='data:style == &amp;quot;HIERARCHY&amp;quot;'&gt;
+     &lt;b:include data='data' name='interval'/&gt;
+    &lt;/b:if&gt;
+    &lt;b:if cond='data:style == &amp;quot;FLAT&amp;quot;'&gt;
+      &lt;b:include data='data' name='flat'/&gt;
+    &lt;/b:if&gt;
+    &lt;b:if cond='data:style == &amp;quot;MENU&amp;quot;'&gt;
+      &lt;b:include data='data' name='menu'/&gt;
+    &lt;/b:if&gt;
+  &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;b:include name='quickedit'/&gt;
+  &lt;/div&gt;
+&lt;/b:includable&gt;
+&lt;b:includable id='flat' var='data'&gt;
+  &lt;ul class='flat'&gt;
+    &lt;b:loop values='data:data' var='i'&gt;
+      &lt;li class='archivedate'&gt;
+        &lt;a expr:href='data:i.url'&gt;&lt;data:i.name/&gt;&lt;/a&gt; (&lt;data:i.post-count/&gt;)
+      &lt;/li&gt;
+    &lt;/b:loop&gt;
+  &lt;/ul&gt;
+&lt;/b:includable&gt;
+&lt;b:includable id='menu' var='data'&gt;
+  &lt;select expr:id='data:widget.instanceId + &amp;quot;_ArchiveMenu&amp;quot;'&gt;
+    &lt;option value=''&gt;&lt;data:title/&gt;&lt;/option&gt;
+    &lt;b:loop values='data:data' var='i'&gt;
+      &lt;option expr:value='data:i.url'&gt;&lt;data:i.name/&gt; (&lt;data:i.post-count/&gt;)&lt;/option&gt;
+    &lt;/b:loop&gt;
+  &lt;/select&gt;
+&lt;/b:includable&gt;
+&lt;b:includable id='interval' var='intervalData'&gt;
+  &lt;b:loop values='data:intervalData' var='i'&gt;
+      &lt;ul class='hierarchy'&gt;
+        &lt;li expr:class='&amp;quot;archivedate &amp;quot; + data:i.expclass'&gt;
+          &lt;b:include data='i' name='toggle'/&gt;
+          &lt;a class='post-count-link' expr:href='data:i.url'&gt;&lt;data:i.name/&gt;&lt;/a&gt;
+            &lt;span class='post-count' dir='ltr'&gt;(&lt;data:i.post-count/&gt;)&lt;/span&gt;
+          &lt;b:if cond='data:i.data'&gt;
+            &lt;b:include data='i.data' name='interval'/&gt;
+          &lt;/b:if&gt;
+          &lt;b:if cond='data:i.posts'&gt;
+            &lt;b:include data='i.posts' name='posts'/&gt;
+          &lt;/b:if&gt;
+        &lt;/li&gt;
+      &lt;/ul&gt;
+  &lt;/b:loop&gt;
+&lt;/b:includable&gt;
+&lt;b:includable id='toggle' var='interval'&gt;
+  &lt;b:if cond='data:interval.toggleId'&gt;
+  &lt;b:if cond='data:interval.expclass == &amp;quot;expanded&amp;quot;'&gt;
+    &lt;a class='toggle' href='javascript:void(0)'&gt;
+      &lt;span class='zippy toggle-open'&gt;&amp;#9660;&amp;#160;&lt;/span&gt;
+    &lt;/a&gt;
+  &lt;b:else/&gt;
+    &lt;a class='toggle' href='javascript:void(0)'&gt;
+      &lt;span class='zippy'&gt;
+        &lt;b:if cond='data:blog.languageDirection == &amp;quot;rtl&amp;quot;'&gt;
+          &amp;#9668;&amp;#160;
+        &lt;b:else/&gt;
+          &amp;#9658;&amp;#160;
+        &lt;/b:if&gt;
+      &lt;/span&gt;
+    &lt;/a&gt;
+  &lt;/b:if&gt;
+ &lt;/b:if&gt;
+&lt;/b:includable&gt;
+&lt;b:includable id='posts' var='posts'&gt;
+  &lt;ul class='posts'&gt;
+    &lt;b:loop values='data:posts' var='i'&gt;
+      &lt;li&gt;&lt;a expr:href='data:i.url'&gt;&lt;data:i.title/&gt;&lt;/a&gt;&lt;/li&gt;
+    &lt;/b:loop&gt;
+  &lt;/ul&gt;
+&lt;/b:includable&gt;
+&lt;/b:widget&gt;
+&lt;b:widget id='Profile2' locked='false' title='About Me' type='Profile'&gt;
+&lt;b:includable id='main'&gt;
+    &lt;b:if cond='data:title != &amp;quot;&amp;quot;'&gt;
+      &lt;h2&gt;&lt;data:title/&gt;&lt;/h2&gt;
+    &lt;/b:if&gt;
+    &lt;div class='widget-content'&gt;
+    &lt;b:if cond='data:team == &amp;quot;true&amp;quot;'&gt; &lt;!-- team blog profile --&gt;
+      &lt;ul&gt;
+        &lt;b:loop values='data:authors' var='i'&gt;
+          &lt;li&gt;&lt;a expr:href='data:i.userUrl'&gt;&lt;data:i.display-name/&gt;&lt;/a&gt;&lt;/li&gt;
+        &lt;/b:loop&gt;
+      &lt;/ul&gt;
+
+      &lt;b:else/&gt; &lt;!-- normal blog profile --&gt;
+
+      &lt;b:if cond='data:photo.url != &amp;quot;&amp;quot;'&gt;
+        &lt;a expr:href='data:userUrl'&gt;&lt;img class='profile-img' expr:alt='data:photo.alt' expr:height='data:photo.height' expr:src='data:photo.url' expr:width='data:photo.width'/&gt;&lt;/a&gt;
+      &lt;/b:if&gt;
+
+      &lt;dl class='profile-datablock'&gt;
+        &lt;dt class='profile-data'&gt;
+          &lt;a class='profile-name-link' expr:href='data:userUrl' rel='author'&gt;
+            &lt;data:displayname/&gt;
+          &lt;/a&gt;
+        &lt;/dt&gt;
+
+        &lt;b:if cond='data:showlocation == &amp;quot;true&amp;quot;'&gt;
+          &lt;dd class='profile-data'&gt;&lt;data:location/&gt;&lt;/dd&gt;
+        &lt;/b:if&gt;
+
+        &lt;b:if cond='data:aboutme != &amp;quot;&amp;quot;'&gt;&lt;dd class='profile-textblock'&gt;&lt;data:aboutme/&gt;&lt;/dd&gt;&lt;/b:if&gt;
+      &lt;/dl&gt;
+      &lt;a class='profile-link' expr:href='data:userUrl' rel='author'&gt;&lt;data:viewProfileMsg/&gt;&lt;/a&gt;
+    &lt;/b:if&gt;
+
+     &lt;b:include name='quickedit'/&gt;
+    &lt;/div&gt;
+  &lt;/b:includable&gt;
+&lt;/b:widget&gt;
+&lt;/b:section&gt;
+      &lt;/div&gt;
+
+      &lt;!-- spacer for skins that want sidebar and main to be the same height--&gt;
+      &lt;div class='clear'&gt;&amp;#160;&lt;/div&gt;
+
+    &lt;/div&gt; &lt;!-- end content-wrapper --&gt;
+
+    &lt;div id='footer-wrapper'&gt;
+      &lt;b:section class='footer' id='footer'/&gt;
+    &lt;/div&gt;
+
+  &lt;/div&gt;&lt;/div&gt; &lt;!-- end outer-wrapper --&gt;
+&lt;/body&gt;
+&lt;/html&gt;</content><link rel='edit' type='application/atom+xml' href='http://www.blogger.com/feeds/4470717033668906745/template/default'/><link rel='self' type='application/atom+xml' href='http://www.blogger.com/feeds/4470717033668906745/template/default'/><link rel='alternate' type='text/html' href='http://whatsdownnil.blogspot.com/'/><author><name>Nil Athelion</name><uri>http://www.blogger.com/profile/16996018952758178741</uri><email>Featherless@gmail.com</email></author></entry><entry><id>tag:blogger.com,1999:blog-4470717033668906745.post-7855954637041732696</id><published>2010-01-04T17:49:00.002-07:00</published><updated>2010-01-04T17:50:57.198-07:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#post'/><title type='text'>Diarrhea</title><content type='html'>Diarrhea sucks.  I don't like having diarrhea.  Especially paired with cramps.  And traveling all around Bali in a car.  And disgusting public restrooms.&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;I get diarrhea every time I travel.  I guess this is normal, but it still sucks.  I hope it goes away today.&lt;/div&gt;&lt;div class="blogger-post-footer"&gt;&lt;img width='1' height='1' src='https://blogger.googleusercontent.com/tracker/4470717033668906745-7855954637041732696?l=whatsdownnil.blogspot.com' alt='' /&gt;&lt;/div&gt;</content><link rel='replies' type='application/atom+xml' href='http://whatsdownnil.blogspot.com/feeds/7855954637041732696/comments/default' title='Post Comments'/><link rel='replies' type='text/html' href='http://whatsdownnil.blogspot.com/2010/01/diarrhea.html#comment-form' title='2 Comments'/><link rel='edit' type='application/atom+xml' href='http://www.blogger.com/feeds/4470717033668906745/posts/default/7855954637041732696'/><link rel='self' type='application/atom+xml' href='http://www.blogger.com/feeds/4470717033668906745/posts/default/7855954637041732696'/><link rel='alternate' type='text/html' href='http://whatsdownnil.blogspot.com/2010/01/diarrhea.html' title='Diarrhea'/><author><name>Nil Athelion</name><uri>http://www.blogger.com/profile/16996018952758178741</uri><email>featherless@gmail.com</email></author><thr:total>2</thr:total></entry><entry><id>tag:blogger.com,1999:blog-4470717033668906745.post-380958404913402028</id><published>2009-07-24T20:13:00.004-07:00</published><updated>2009-07-24T20:35:12.430-07:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#post'/><title type='text'>I don't know how to live with this.</title><content type='html'>So here I sit, crying.  Sitting in the room that used to be mine, next to the big wet stain where all my tears were rolling off my face onto the quilt before I sat up, composed myself, went to go get dinner, and then wound up coming back here to cry some more.  This time with typing.&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;Why?  My mother.&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;Does she every have anything nice to say?  She spent the vast majority of the time I was eating my salad telling me off about using the ATM, rather than cashing travellers checks.&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;This is what she does.  She goes on and on about my flaws, my mistakes, tries to get me to me say them in my own words, tells me what to do, and how to do it, critizes me for any mistake I make, or even the things that are not mistakes.  Things like not drinking the apple/peach/passion fruit drink that was sitting on the ground, buried under some papers.  How was I supposed to know she was saving that for going to Pinion Pines?&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;We disagreed about making food.  I want to make my own food.  It's simpler, and I don't have to interact with mother.  She said I could, but not this time, because she had already cooked the rice (which, on reflection, doesn't matter at all).  So I plunged my hands into a dead chicken and ripped off all the flesh I could, putting it into a small dish.  (An amount that wasn't enough to satisfy her, apparently.)  So I can eat on my own.  In fact, we have agreed that it is the default.&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;Caveat:  Talking with her after the juice incident, I am apparently supposed to ask her permission for which foods I can use to make food.  For every item.  How am I supposed to make my meals like that?  Wait until she is around, and bring her over to the fridge and ask her about all the items in the fridge, hoping that there is enough food in the fridge that she does not have plans for so I can make my meal?  This would be easier if I could buy my own food, and put it in my own fridge, but I am making dinner off of the family stockpile, like mother would, except she knows what food can be used, and I don't.  This is going to be fun like nails.&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;But back to the criticism.  She constantly does it.  Constantly, constantly, constantly.  Towards me, towards the kiddos, etc.  Telling people what that what they are doing is "unacceptable" or telling them what to do, telling them how to do things.&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;Freedom:  Freedom needs sovereignty.  It really does.  If I am not the sovereign controller of my own actions, then I cannot excercise my freedom.  Putting it into practice, I'm sitting around, constantly on call.  I'm glad that things have been segregated into work days and non-work days, but she seems to believe that her plans, created with no imput from other parties, override whatever other people want to do, or are doing.  Dad doesn't even know what the plans are, he just takes his instructions, and does them, completely engulfed in her choices.  I get dragged along as well - I spent from noon onwards yesterday simply in the car, following her around, because she decided I needed to go to the Honk rehearsal, in a somewhat revisionist version of policy.  I think she wanted me under her thumb to supervise.&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;Honk: Originally, she was trying to contact Ammi and Danny, and I could go hang with them during the Honk rehearsal.  They live in the area, three miles from the rehearsal spot.  After my dental appointment, she decided that I was going along with her to pick up Kerria, bring Kerria to Speech, bring Kerria to her playdate thing in the park, and bring Kerria to the rehearsal.  Golden - I expressed my belief that I was completely superfluous in all of those things - I had no role in any of it.  She told me that she thought I should go to the Honk rehearsal.  This made little sense, but.&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;Blargh, have to get ready to go to Pinion Pines.  Microwave food, go.  Hell, I know I'll be waiting.&lt;/div&gt;&lt;div class="blogger-post-footer"&gt;&lt;img width='1' height='1' src='https://blogger.googleusercontent.com/tracker/4470717033668906745-380958404913402028?l=whatsdownnil.blogspot.com' alt='' /&gt;&lt;/div&gt;</content><link rel='replies' type='application/atom+xml' href='http://whatsdownnil.blogspot.com/feeds/380958404913402028/comments/default' title='Post Comments'/><link rel='replies' type='text/html' href='http://whatsdownnil.blogspot.com/2009/07/i-dont-know-how-to-live-with-this.html#comment-form' title='3 Comments'/><link rel='edit' type='application/atom+xml' href='http://www.blogger.com/feeds/4470717033668906745/posts/default/380958404913402028'/><link rel='self' type='application/atom+xml' href='http://www.blogger.com/feeds/4470717033668906745/posts/default/380958404913402028'/><link rel='alternate' type='text/html' href='http://whatsdownnil.blogspot.com/2009/07/i-dont-know-how-to-live-with-this.html' title='I don&apos;t know how to live with this.'/><author><name>Nil Athelion</name><uri>http://www.blogger.com/profile/16996018952758178741</uri><email>featherless@gmail.com</email></author><thr:total>3</thr:total></entry><entry><id>tag:blogger.com,1999:blog-4470717033668906745.post-4965549286988129085</id><published>2009-07-04T07:28:00.002-07:00</published><updated>2009-07-04T07:34:33.673-07:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#post'/><title type='text'>People leaving.</title><content type='html'>A lot of my fellow EUSA students left today.&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;Carolyn is off to Spain, Carissa and Megan are on their way back to the US.&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;There go a bunch of cool people...&lt;/div&gt;&lt;div class="blogger-post-footer"&gt;&lt;img width='1' height='1' src='https://blogger.googleusercontent.com/tracker/4470717033668906745-4965549286988129085?l=whatsdownnil.blogspot.com' alt='' /&gt;&lt;/div&gt;</content><link rel='replies' type='application/atom+xml' href='http://whatsdownnil.blogspot.com/feeds/4965549286988129085/comments/default' title='Post Comments'/><link rel='replies' type='text/html' href='http://whatsdownnil.blogspot.com/2009/07/people-leaving.html#comment-form' title='0 Comments'/><link rel='edit' type='application/atom+xml' href='http://www.blogger.com/feeds/4470717033668906745/posts/default/4965549286988129085'/><link rel='self' type='application/atom+xml' href='http://www.blogger.com/feeds/4470717033668906745/posts/default/4965549286988129085'/><link rel='alternate' type='text/html' href='http://whatsdownnil.blogspot.com/2009/07/people-leaving.html' title='People leaving.'/><author><name>Nil Athelion</name><uri>http://www.blogger.com/profile/16996018952758178741</uri><email>featherless@gmail.com</email></author><thr:total>0</thr:total></entry><entry><id>tag:blogger.com,1999:blog-4470717033668906745.post-4858952611908344118</id><published>2009-07-02T20:12:00.001-07:00</published><updated>2009-07-02T20:14:04.237-07:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#post'/><title type='text'>Sleep Fail.</title><content type='html'>Last night, I went to bed late.  About 1am.  Go me.  I was working on a paper.&lt;br /&gt;&lt;br /&gt;Today, at 3am, I finished said paper.  I did not think I would be mobile in the morning to print it out before class.  Walked several blocks to get to the computer lab, printed term paper out.&lt;br /&gt;&lt;br /&gt;It is now raining.  Hard.&lt;br /&gt;&lt;br /&gt;Fuck my life.&lt;br /&gt;&lt;br /&gt;(Hard.)&lt;div class="blogger-post-footer"&gt;&lt;img width='1' height='1' src='https://blogger.googleusercontent.com/tracker/4470717033668906745-4858952611908344118?l=whatsdownnil.blogspot.com' alt='' /&gt;&lt;/div&gt;</content><link rel='replies' type='application/atom+xml' href='http://whatsdownnil.blogspot.com/feeds/4858952611908344118/comments/default' title='Post Comments'/><link rel='replies' type='text/html' href='http://whatsdownnil.blogspot.com/2009/07/sleep-fail.html#comment-form' title='0 Comments'/><link rel='edit' type='application/atom+xml' href='http://www.blogger.com/feeds/4470717033668906745/posts/default/4858952611908344118'/><link rel='self' type='application/atom+xml' href='http://www.blogger.com/feeds/4470717033668906745/posts/default/4858952611908344118'/><link rel='alternate' type='text/html' href='http://whatsdownnil.blogspot.com/2009/07/sleep-fail.html' title='Sleep Fail.'/><author><name>Nil Athelion</name><uri>http://www.blogger.com/profile/16996018952758178741</uri><email>featherless@gmail.com</email></author><thr:total>0</thr:total></entry><entry><id>tag:blogger.com,1999:blog-4470717033668906745.post-1226010939580641191</id><published>2009-07-01T00:19:00.002-07:00</published><updated>2009-07-01T00:32:52.864-07:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#post'/><title type='text'>Paper</title><content type='html'>I do not like this paper.  I do not like it in a box.  I do not like it with a fox. I...&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;The funny thing is, if I were at ASU, this paper would be rediculously easy.  My internet would be fast enough to run ASU's journal database, and I would have the ASU library to borrow books from.  It's a four page paper.  I would write it the night before.&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;But I don't have those resources. The books I have are off-topic, and I have to hunt through them for what I need.  I can't find journals to explain everything I need to know.  I just don't have the resources.&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;And then there's the question of additional reasons for Do Not Want.  I have my internship, which takes time and tires me out.  I am in London, and I would rather be doing something more interesting.  It is the summer, and I don't feel like I should be writing papers.&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;Also, it is on a topic that I don't have very much knowledge about, and am relatively ambivalent to.  Youth culture is not something I know much about in the US, and not something I know very much about in the UK.  Not the history of it from the 1960s until now, and not current youth culture.  I'm supposed to mention genres of music and fashion that existed in youth culture.  I don't know how music sounds in the proper time period.  Classical, big-band, salsa, boogie-woogie... this is not the music I need.  My dad's time period, and thus the music I overhear, is unhelpfully &lt;i&gt;before&lt;/i&gt; the time period I need, and I don't think that &lt;i&gt;Roar of the Earth&lt;/i&gt; or the Lord of the Rings soundtrack or the Hyrule Symphony are things I can talk about.&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;I do not like this paper.&lt;/div&gt;&lt;div class="blogger-post-footer"&gt;&lt;img width='1' height='1' src='https://blogger.googleusercontent.com/tracker/4470717033668906745-1226010939580641191?l=whatsdownnil.blogspot.com' alt='' /&gt;&lt;/div&gt;</content><link rel='replies' type='application/atom+xml' href='http://whatsdownnil.blogspot.com/feeds/1226010939580641191/comments/default' title='Post Comments'/><link rel='replies' type='text/html' href='http://whatsdownnil.blogspot.com/2009/07/paper.html#comment-form' title='2 Comments'/><link rel='edit' type='application/atom+xml' href='http://www.blogger.com/feeds/4470717033668906745/posts/default/1226010939580641191'/><link rel='self' type='application/atom+xml' href='http://www.blogger.com/feeds/4470717033668906745/posts/default/1226010939580641191'/><link rel='alternate' type='text/html' href='http://whatsdownnil.blogspot.com/2009/07/paper.html' title='Paper'/><author><name>Nil Athelion</name><uri>http://www.blogger.com/profile/16996018952758178741</uri><email>featherless@gmail.com</email></author><thr:total>2</thr:total></entry><entry><id>tag:blogger.com,1999:blog-4470717033668906745.post-5999277800012719961</id><published>2009-07-01T00:12:00.003-07:00</published><updated>2009-07-01T00:16:10.680-07:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#post'/><title type='text'>What the hell?</title><content type='html'>Does the world not want me to ever get a good night's sleep?&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;I went to bed tonight, things were not too hot, and it only took a while to fall asleep... and then I was woken up my some of my roommates coming back, talking not-hushed-at-all, and the like.&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;Then woke up at 7:30, not 8am.&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;What the hell?&lt;/div&gt;&lt;div class="blogger-post-footer"&gt;&lt;img width='1' height='1' src='https://blogger.googleusercontent.com/tracker/4470717033668906745-5999277800012719961?l=whatsdownnil.blogspot.com' alt='' /&gt;&lt;/div&gt;</content><link rel='replies' type='application/atom+xml' href='http://whatsdownnil.blogspot.com/feeds/5999277800012719961/comments/default' title='Post Comments'/><link rel='replies' type='text/html' href='http://whatsdownnil.blogspot.com/2009/07/what-hell.html#comment-form' title='0 Comments'/><link rel='edit' type='application/atom+xml' href='http://www.blogger.com/feeds/4470717033668906745/posts/default/5999277800012719961'/><link rel='self' type='application/atom+xml' href='http://www.blogger.com/feeds/4470717033668906745/posts/default/5999277800012719961'/><link rel='alternate' type='text/html' href='http://whatsdownnil.blogspot.com/2009/07/what-hell.html' title='What the hell?'/><author><name>Nil Athelion</name><uri>http://www.blogger.com/profile/16996018952758178741</uri><email>featherless@gmail.com</email></author><thr:total>0</thr:total></entry><entry><id>tag:blogger.com,1999:blog-4470717033668906745.post-3586006019130683661</id><published>2009-06-29T16:14:00.001-07:00</published><updated>2009-06-29T16:18:20.665-07:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#post'/><title type='text'>I fail at sleep.</title><content type='html'>So last night I couldn't get to bed.  Weather was too hot and sticky.&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;This night, I was going to go to bed, but wait!  I had forgotten to put the laundry into the drier.  Darn, had to wait some time.&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;Went down there, and found my laundry was already in the drier.  And was dry.&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;I realized that I had put my laundry in, put the detergent blocks in, and then left.  I had forgotten to put money in and press the button.&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;So now my clothes are in the washing machine.  Go me.&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;Fuck, I might just go to sleep now, and do the drying business in the morning.  At least I'll have a shiney dry new shirt...&lt;/div&gt;&lt;div class="blogger-post-footer"&gt;&lt;img width='1' height='1' src='https://blogger.googleusercontent.com/tracker/4470717033668906745-3586006019130683661?l=whatsdownnil.blogspot.com' alt='' /&gt;&lt;/div&gt;</content><link rel='replies' type='application/atom+xml' href='http://whatsdownnil.blogspot.com/feeds/3586006019130683661/comments/default' title='Post Comments'/><link rel='replies' type='text/html' href='http://whatsdownnil.blogspot.com/2009/06/i-fail-at-sleep.html#comment-form' title='0 Comments'/><link rel='edit' type='application/atom+xml' href='http://www.blogger.com/feeds/4470717033668906745/posts/default/3586006019130683661'/><link rel='self' type='application/atom+xml' href='http://www.blogger.com/feeds/4470717033668906745/posts/default/3586006019130683661'/><link rel='alternate' type='text/html' href='http://whatsdownnil.blogspot.com/2009/06/i-fail-at-sleep.html' title='I fail at sleep.'/><author><name>Nil Athelion</name><uri>http://www.blogger.com/profile/16996018952758178741</uri><email>featherless@gmail.com</email></author><thr:total>0</thr:total></entry><entry><id>tag:blogger.com,1999:blog-4470717033668906745.post-5538293760716603610</id><published>2009-06-28T15:57:00.001-07:00</published><updated>2009-06-28T16:03:31.245-07:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#post'/><title type='text'>Can't sleep.</title><content type='html'>Too hot, can't sleep.&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;...in Lodon?!  WTF.  Why is the temperature affecting me so much?&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;This makes no sense.&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;Need to sleep, have work tomorrow.&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;Gah.&lt;/div&gt;&lt;div class="blogger-post-footer"&gt;&lt;img width='1' height='1' src='https://blogger.googleusercontent.com/tracker/4470717033668906745-5538293760716603610?l=whatsdownnil.blogspot.com' alt='' /&gt;&lt;/div&gt;</content><link rel='replies' type='application/atom+xml' href='http://whatsdownnil.blogspot.com/feeds/5538293760716603610/comments/default' title='Post Comments'/><link rel='replies' type='text/html' href='http://whatsdownnil.blogspot.com/2009/06/cant-sleep.html#comment-form' title='0 Comments'/><link rel='edit' type='application/atom+xml' href='http://www.blogger.com/feeds/4470717033668906745/posts/default/5538293760716603610'/><link rel='self' type='application/atom+xml' href='http://www.blogger.com/feeds/4470717033668906745/posts/default/5538293760716603610'/><link rel='alternate' type='text/html' href='http://whatsdownnil.blogspot.com/2009/06/cant-sleep.html' title='Can&apos;t sleep.'/><author><name>Nil Athelion</name><uri>http://www.blogger.com/profile/16996018952758178741</uri><email>featherless@gmail.com</email></author><thr:total>0</thr:total></entry><entry><id>tag:blogger.com,1999:blog-4470717033668906745.post-5717895655828061851</id><published>2009-06-19T18:01:00.002-07:00</published><updated>2009-06-19T18:33:03.380-07:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#post'/><title type='text'>Youth Culture?</title><content type='html'>So we were talking about Youth Culture in class again today.  I feel like I missed the boat on American youth culture, and all of the comparisons of British youth culture to American youth culture really goes over my head.&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;Have I failed somehow?&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;I spent my childhood... going to college, on the internet, and reading/writing.  No music, no TV (save PBS, which really isn't youth culture), not even videogames until much later.  Childhood friends seem to all be pursuing videogames creation now.&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;I guess I missed out on music and culture and all that kind of stuff.  Too much listening to my dad's generation... which was right before the start of youth culture in America.&lt;/div&gt;&lt;div class="blogger-post-footer"&gt;&lt;img width='1' height='1' src='https://blogger.googleusercontent.com/tracker/4470717033668906745-5717895655828061851?l=whatsdownnil.blogspot.com' alt='' /&gt;&lt;/div&gt;</content><link rel='replies' type='application/atom+xml' href='http://whatsdownnil.blogspot.com/feeds/5717895655828061851/comments/default' title='Post Comments'/><link rel='replies' type='text/html' href='http://whatsdownnil.blogspot.com/2009/06/youth-culture.html#comment-form' title='2 Comments'/><link rel='edit' type='application/atom+xml' href='http://www.blogger.com/feeds/4470717033668906745/posts/default/5717895655828061851'/><link rel='self' type='application/atom+xml' href='http://www.blogger.com/feeds/4470717033668906745/posts/default/5717895655828061851'/><link rel='alternate' type='text/html' href='http://whatsdownnil.blogspot.com/2009/06/youth-culture.html' title='Youth Culture?'/><author><name>Nil Athelion</name><uri>http://www.blogger.com/profile/16996018952758178741</uri><email>featherless@gmail.com</email></author><thr:total>2</thr:total></entry><entry><id>tag:blogger.com,1999:blog-4470717033668906745.post-3693163974452111263</id><published>2009-06-17T16:08:00.002-07:00</published><updated>2009-06-17T16:10:29.086-07:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#post'/><title type='text'>I can't sleep.</title><content type='html'>I have to work tomorrow at 10am.  I was goint to go to bed at 11pm.   Well, I did.  But then I lay in bed for an entire hour.  Too hot, not tired at all.  Drinking water currently.  Don't know what else to do.&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;Not being able to sleep when I need a good night's rest is very annoying.&lt;/div&gt;&lt;div class="blogger-post-footer"&gt;&lt;img width='1' height='1' src='https://blogger.googleusercontent.com/tracker/4470717033668906745-3693163974452111263?l=whatsdownnil.blogspot.com' alt='' /&gt;&lt;/div&gt;</content><link rel='replies' type='application/atom+xml' href='http://whatsdownnil.blogspot.com/feeds/3693163974452111263/comments/default' title='Post Comments'/><link rel='replies' type='text/html' href='http://whatsdownnil.blogspot.com/2009/06/i-cant-sleep.html#comment-form' title='0 Comments'/><link rel='edit' type='application/atom+xml' href='http://www.blogger.com/feeds/4470717033668906745/posts/default/3693163974452111263'/><link rel='self' type='application/atom+xml' href='http://www.blogger.com/feeds/4470717033668906745/posts/default/3693163974452111263'/><link rel='alternate' type='text/html' href='http://whatsdownnil.blogspot.com/2009/06/i-cant-sleep.html' title='I can&apos;t sleep.'/><author><name>Nil Athelion</name><uri>http://www.blogger.com/profile/16996018952758178741</uri><email>featherless@gmail.com</email></author><thr:total>0</thr:total></entry><entry><id>tag:blogger.com,1999:blog-4470717033668906745.post-2515158291341334221</id><published>2009-06-14T15:53:00.001-07:00</published><updated>2009-06-14T15:59:15.634-07:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#post'/><title type='text'>Communication</title><content type='html'>Communication (From the SGS class Journal)&lt;br /&gt;&lt;br /&gt;My first internship (with Entelechy1) was a flop, and there is not much to say about it.  When I arrived for the interview, they were in the middle of a production, and could not spare the resources to train and supervise me.  So that didn't work.&lt;br /&gt;&lt;br /&gt;My next internship was with Willow Dene2, a primary school for children with disabilities.  The first day I went there, I was instructed by Carolyn Vagg, the school's liason with EUSA, that my role was primarily to observe and learn what to do, and help out where I could.  I was placed into “Rose,” a classroom with 7 autistic children.  There was the teacher, plus three other classroom assistants.&lt;br /&gt;&lt;br /&gt;The teacher was very friendly, and she explained what was going on as we went through the day, and I did my best to help where I could.  I was not sure how to do a lot of the tasks, and since Carolyn had instructed me that it was better to watch and learn the first time than experiment and risk a mistake, I did not act in a variety of circumstances.  Additionally, I wasn't very good at what I did do.  That said, everyone was friendly after the class, and they asked me if I was going to stay, and I said yes, and I headed home (which was a two hour commute).&lt;br /&gt;&lt;br /&gt;That's where things got messy.  I was quite pleased to finally be placed, and placed in a setting where there was a lot I could learn.  However, on the train ride home, Joe, my internship coordinator with EUSA, called my cellphone.  He told me that he had been contacted by the Willow Dene Liason, and that she had indicated that the teacher did not want me to be back the next day.&lt;br /&gt;&lt;br /&gt;I was completely shocked, and I thought that there must have been a mistake.  First, I was primarily there as an observer that first day.  Second, I had no training, and so my lack of abilities was understandable.  Third, if I had messed up, then someone would have told me, so I could correct it.  Fourth, nobody said anything, or gave any indication that something was the matter.  Joe's wording was indefinite (“she indicated”), so perhaps there had been a misunderstanding... miscommunication somewhere along the line.&lt;br /&gt;&lt;br /&gt;According to Joe, who had heard it from Carolyn, the teacher's reason was that I “did not seem interested enough.”  I wasn't sure what they meant – as far as I could tell, I was indeed interested, and I figured that was something I would know better than most.  Had my actions not been assertive enough in caring with the children?  The teacher had warned me not to overstimulate them with unnecessary interaction, and Carolyn had told me that my role was primarily to observe and see whether it was right for me – I hadn't thought that I was expected to interact more than I had.  But if that was the case, then why didn't anyone tell me to interact more?&lt;br /&gt;&lt;br /&gt;Or—and as an aspie I am paranoid about this—could it be that something else was the matter, and they had felt it would be more polite not to tell it to my face.  For me, only letting me know that I had messed up the internship while I was on the train back from the school seemed highly insulting.  Not giving me the chance to learn from my mistakes was cruel, but that they would not tell me directly was more horrifying to my sensibilities.  Had I done something tactless that the British would not tell me about?  Was this a cultural non-dialogue?  What was I expected to do?  Would this be a problem in the future?&lt;br /&gt;&lt;br /&gt;I had Joe talk to Carolyn about my point of view on my actions in the classroom, specifically me being unsure of what I was supposed to do.  She said to Joe that she would find a placement for me, but that it would be in a different classroom, with more manageable kids.  I had preferred to work with autistic kids, as I have a personal interest in the disorder, but higher-functioning children would be fine as well.  I accepted, and I was to start work with the “Yellow” class the next morning at 8:30am.&lt;br /&gt;&lt;br /&gt;I got there early, and met the teachers of Yellow class.  The class was very different; the kids were all FLKs to some degree, but there was no uniformity to their afflictions – all different disabilities that I wrote down and resolved to research back at home.  Relations with the teachers were all friendly, but I could not get over the haunting similarities to the day before.  I hadn't noticed anything the first time – what was there to look for the second time.  We finished class and I reported to Carolyn, and went home.&lt;br /&gt;&lt;br /&gt;No phone call on the way back, this time.&lt;br /&gt;&lt;br /&gt;That night, I was not able to work on researching the disabilities.  My instructor for the EUSA class had missed the first class, so the make-up class had been rescheduled for Tuesday night.  Due to the commute, I got back relatively late, and then went to the class, which lasted for three hours, and ate right into my sleeping time.&lt;br /&gt;&lt;br /&gt;To get to class, I had to wake up at 6am.  Normally, I need about 9 hours of sleep if I'm not going to be taking naps during the day.  At the flat I am living at, there is constant light and sound coming in the window, regardless of the blinds.  And now with the class, I couldn't get those nine hours of sleep.&lt;br /&gt;&lt;br /&gt;I was a bit tired on Wednesday, my second day with Yellow, and I helped them throughout the day, more actively this time.  People were slightly different, as the classroom assistants had been shuffled, but I got to know the new people, and it was all very friendly at the end.  We shared a small tea after class was done, and I specifically asked whether they thought I was going to be staying on – I wanted to buy a zone 4 monthly transportation pass, as the commute cost me about 10 pounds each day.  They said that they would be glad to have me there.&lt;br /&gt;&lt;br /&gt;I was quite happy, and I went home without any damning phone call.  The paranoia was starting to subside.  I missed getting a train pass on the way back, though – skipped my mind, and I didn't go back to get one, instead napping.&lt;br /&gt;&lt;br /&gt;The next day was a teacher training day.  My class's teacher said I didn't have to go to school that Thursday, but I talked with Carolyn, and she entered me in for a six hour presentation on Sensory Intergration Dysfunction (another personal interest of mine, as I had been diagnosed with it as a child).  I figured it couldn't hurt – learning was why I was there, it would demonstrate commitment, and I could get to know the other faculty who were taking the class.  The class was long, but very interesting and informative.&lt;br /&gt;&lt;br /&gt;Friday morning, I found an email from Joe, asking me to visit him at the EUSA office.  I did, hoping there wasn't some sort of bad news there.  I mean, I had asked the teachers.  Maybe it was something good.&lt;br /&gt;&lt;br /&gt;But no, it was not good.&lt;br /&gt;&lt;br /&gt;Apparently he had been contacted by Carolyn.  It was the same complaint – that I didn't seem interested enough, and again, coming from the teacher through Carolyn.  Again, I was horrified.  I had asked the teachers to be sure, and everything was in order.  How could this be?&lt;br /&gt;&lt;br /&gt;Joe gave me Carolyn's number, and said that I could call her and figure it out with her, but that we probably should start looking for other options.  I pocketed the number, and talked with Joe for a while.&lt;br /&gt;&lt;br /&gt;When I went home, I pondered calling the number to figure out things internship-wise, but I decided that I shouldn't be crying while calling, and put it off for a bit.  When I had composed myself, I realized that I probably wouldn't be able to comfortably work there anymore.  The paranoia from the first time was bad enough, but now a second time?  Again with no warning signs, no feed-back, nothing?  I decided that even if I could somehow convince Carolyn to place me somewhere, I would not be comfortable working at the school anymore.&lt;br /&gt;&lt;br /&gt;So how had this all come about?  Naturally, I suspect that it had to do with bad non-verbal cues on my part, and me not reading non-verbal cues they gave.  The weekend prior, I had met with two Londoner friends I knew from the Internet, and our conversation about British communication had pointed a lot towards avoiding saying what was impolite, instead indicating it by non-verbal cues (looks, gestures), and by implication (euphemisms, but also just implying in general).  Since I can't read social cues very well at all naturally, and that the cues were probably different here, I probably missed what it was that should have warned me that things were going wrong, or even cues to go and correct my behavior there.  However, the two of them had also noted that all the British rules really didn't apply to foreigners, for the comforting reason that, “Everyone knows that foreigners are crazy.”&lt;br /&gt;&lt;br /&gt;I am not a socially energetic person.  Unlike many people, my presence does not energize others, but rather it calms and slows them down.  I am not naturally social, but rather it is something that I have chosen to do.  My natural state is observing and thinking, not actively seeking participation.  I am not good at forming the appropriate facial expressions for situations.  That these traits are generally maladaptive is not directly the question.  Most of the time, I seem to manage decently well – why not here?  I worry that my quiet, passive, and unemotional manner had something to do with not seeming interested.  I would reserve the quality of “being interested” as a choice one makes, rather than something that is inherently one way or the other.  Perhaps the Willow Dene people thought differently.&lt;br /&gt;I feel that I have been wronged in this whole matter, but more than seeking to right some wrong, I really, really want to understand how this all happened.  I don't, and I can't seem to figure it out with the knowledge at my command.  Maybe I'll figure it out next week.&lt;br /&gt;&lt;br /&gt;At least I didn't buy the monthly pass.&lt;div class="blogger-post-footer"&gt;&lt;img width='1' height='1' src='https://blogger.googleusercontent.com/tracker/4470717033668906745-2515158291341334221?l=whatsdownnil.blogspot.com' alt='' /&gt;&lt;/div&gt;</content><link rel='replies' type='application/atom+xml' href='http://whatsdownnil.blogspot.com/feeds/2515158291341334221/comments/default' title='Post Comments'/><link rel='replies' type='text/html' href='http://whatsdownnil.blogspot.com/2009/06/communication.html#comment-form' title='1 Comments'/><link rel='edit' type='application/atom+xml' href='http://www.blogger.com/feeds/4470717033668906745/posts/default/2515158291341334221'/><link rel='self' type='application/atom+xml' href='http://www.blogger.com/feeds/4470717033668906745/posts/default/2515158291341334221'/><link rel='alternate' type='text/html' href='http://whatsdownnil.blogspot.com/2009/06/communication.html' title='Communication'/><author><name>Nil Athelion</name><uri>http://www.blogger.com/profile/16996018952758178741</uri><email>featherless@gmail.com</email></author><thr:total>1</thr:total></entry><entry><id>tag:blogger.com,1999:blog-4470717033668906745.post-8400259201259553117</id><published>2009-06-06T12:49:00.003-07:00</published><updated>2009-06-06T12:56:01.793-07:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#post'/><title type='text'>You know what sucks?</title><content type='html'>Pervasive Social Disorders suck, that's what.&lt;br /&gt;&lt;br /&gt;Sometimes I hate being an aspie, and this is one of those times.  Most of the time I have sanctuaries where it does not matter, understanding people I can be with for whom it is no problem.  Most of the time my success is not affected by my inabilities.&lt;br /&gt;&lt;br /&gt;Well, right now I'm stuck.  I don't have any of that, and the aspie stuff keeps tripping me up.  How bad?  I can' be sure.  But I really wish I had all the mind-reading of a normal person.&lt;div class="blogger-post-footer"&gt;&lt;img width='1' height='1' src='https://blogger.googleusercontent.com/tracker/4470717033668906745-8400259201259553117?l=whatsdownnil.blogspot.com' alt='' /&gt;&lt;/div&gt;</content><link rel='replies' type='application/atom+xml' href='http://whatsdownnil.blogspot.com/feeds/8400259201259553117/comments/default' title='Post Comments'/><link rel='replies' type='text/html' href='http://whatsdownnil.blogspot.com/2009/06/you-know-what-sucks.html#comment-form' title='1 Comments'/><link rel='edit' type='application/atom+xml' href='http://www.blogger.com/feeds/4470717033668906745/posts/default/8400259201259553117'/><link rel='self' type='application/atom+xml' href='http://www.blogger.com/feeds/4470717033668906745/posts/default/8400259201259553117'/><link rel='alternate' type='text/html' href='http://whatsdownnil.blogspot.com/2009/06/you-know-what-sucks.html' title='You know what sucks?'/><author><name>Nil Athelion</name><uri>http://www.blogger.com/profile/16996018952758178741</uri><email>featherless@gmail.com</email></author><thr:total>1</thr:total></entry><entry><id>tag:blogger.com,1999:blog-4470717033668906745.post-5057696973963416341</id><published>2009-06-05T05:19:00.003-07:00</published><updated>2009-06-05T05:46:09.843-07:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#post'/><title type='text'>ARGH.</title><content type='html'>So Willow Dene apparently does not want to keep me.  Again, without warning - the teacher told the school's internship manager, and the manager contacted EUSA's internship placement manager, who broke the news to me today.&lt;br /&gt;&lt;br /&gt;You know how things make me sad?  This makes me sad.&lt;br /&gt;&lt;br /&gt;You know how things don't make me mad? Well...&lt;br /&gt;&lt;br /&gt;My issue with this is the complete lack of warning or feedback.  Both times.  The first time, things went okay, and then I got a message (same route as this time) while on the train ride home.  The second time, the first day went well, the second day seemed good too, and then Thursday was a teacher-training thing - six hour seminar.  And I find out on... Friday?  That the teacher doesn't think that things are working out?&lt;br /&gt;&lt;br /&gt;I can understand if things don't work.  But if there are problems, then could people please tell me about them?  So, you know, I can learn and improve?  So that I gain from my experience in the internship?&lt;br /&gt;&lt;br /&gt;But both the first time and the second time, I didn't even know there was a problem until after I had left.  And even when I was notified, I didn't get to know much about what the problem was, due to not being told directly by the people who saw the problems.&lt;br /&gt;&lt;br /&gt;Also - no second chances.  After the teacher in the first classroom decided she didn't want me back, I didn't get a second chance to see if I could do anything about it.  Same thing with the second time...&lt;br /&gt;&lt;br /&gt;Is it really the case that I have been found so unacceptable during one day (or in the second case two days) that there is no reason to see how I might act later, that there is no value in letting me know exactly what went wrong, that I just need to be let go at a distance?&lt;br /&gt;&lt;br /&gt;And yet despite being that bad, I got no indication while at the school.  People asked me if I was going to be around for a while, everyone said "See you Monday!" etc.&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;Also - it's kind of pathetic that even if I work for free, nobody wants my help.&lt;br /&gt;&lt;br /&gt;Feeling pretty shitty currently.&lt;div class="blogger-post-footer"&gt;&lt;img width='1' height='1' src='https://blogger.googleusercontent.com/tracker/4470717033668906745-5057696973963416341?l=whatsdownnil.blogspot.com' alt='' /&gt;&lt;/div&gt;</content><link rel='replies' type='application/atom+xml' href='http://whatsdownnil.blogspot.com/feeds/5057696973963416341/comments/default' title='Post Comments'/><link rel='replies' type='text/html' href='http://whatsdownnil.blogspot.com/2009/06/argh.html#comment-form' title='0 Comments'/><link rel='edit' type='application/atom+xml' href='http://www.blogger.com/feeds/4470717033668906745/posts/default/5057696973963416341'/><link rel='self' type='application/atom+xml' href='http://www.blogger.com/feeds/4470717033668906745/posts/default/5057696973963416341'/><link rel='alternate' type='text/html' href='http://whatsdownnil.blogspot.com/2009/06/argh.html' title='ARGH.'/><author><name>Nil Athelion</name><uri>http://www.blogger.com/profile/16996018952758178741</uri><email>featherless@gmail.com</email></author><thr:total>0</thr:total></entry><entry><id>tag:blogger.com,1999:blog-4470717033668906745.post-268959228042102233</id><published>2009-05-26T16:10:00.002-07:00</published><updated>2009-05-26T16:39:51.045-07:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#post'/><title type='text'>Urgh.</title><content type='html'>Spats with Edelweiss are not fun.  Worse now that we aren't together, as I fear it will have more permanent damages.&lt;br /&gt;&lt;br /&gt;In other news:&lt;br /&gt;I'm worried about interviews, I'm worried about being able to do my internship well enough.  I'm worried that I will waste away with no friends here, and I'm worried that if I spent my time online waiting for friends to appear, I will waste this trip here.  I'm worried that my flat-mates quietly resent me, and I'm worried that the British quietly resent me.&lt;br /&gt;&lt;br /&gt;Urgh.&lt;div class="blogger-post-footer"&gt;&lt;img width='1' height='1' src='https://blogger.googleusercontent.com/tracker/4470717033668906745-268959228042102233?l=whatsdownnil.blogspot.com' alt='' /&gt;&lt;/div&gt;</content><link rel='replies' type='application/atom+xml' href='http://whatsdownnil.blogspot.com/feeds/268959228042102233/comments/default' title='Post Comments'/><link rel='replies' type='text/html' href='http://whatsdownnil.blogspot.com/2009/05/urgh.html#comment-form' title='1 Comments'/><link rel='edit' type='application/atom+xml' href='http://www.blogger.com/feeds/4470717033668906745/posts/default/268959228042102233'/><link rel='self' type='application/atom+xml' href='http://www.blogger.com/feeds/4470717033668906745/posts/default/268959228042102233'/><link rel='alternate' type='text/html' href='http://whatsdownnil.blogspot.com/2009/05/urgh.html' title='Urgh.'/><author><name>Nil Athelion</name><uri>http://www.blogger.com/profile/16996018952758178741</uri><email>featherless@gmail.com</email></author><thr:total>1</thr:total></entry><entry><id>tag:blogger.com,1999:blog-4470717033668906745.post-3433316146071296689</id><published>2009-05-19T09:45:00.002-07:00</published><updated>2009-05-19T09:47:55.270-07:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#post'/><title type='text'>Hum.</title><content type='html'>Edelweiss and I just broke up.  Currently a bit numb and a bit confused.  I would say more, but I don't like knee-jerk blog-post reactions to life.  I'll mention more once I figure life you.  Until then, it is naptime.&lt;div class="blogger-post-footer"&gt;&lt;img width='1' height='1' src='https://blogger.googleusercontent.com/tracker/4470717033668906745-3433316146071296689?l=whatsdownnil.blogspot.com' alt='' /&gt;&lt;/div&gt;</content><link rel='replies' type='application/atom+xml' href='http://whatsdownnil.blogspot.com/feeds/3433316146071296689/comments/default' title='Post Comments'/><link rel='replies' type='text/html' href='http://whatsdownnil.blogspot.com/2009/05/hum.html#comment-form' title='0 Comments'/><link rel='edit' type='application/atom+xml' href='http://www.blogger.com/feeds/4470717033668906745/posts/default/3433316146071296689'/><link rel='self' type='application/atom+xml' href='http://www.blogger.com/feeds/4470717033668906745/posts/default/3433316146071296689'/><link rel='alternate' type='text/html' href='http://whatsdownnil.blogspot.com/2009/05/hum.html' title='Hum.'/><author><name>Nil Athelion</name><uri>http://www.blogger.com/profile/16996018952758178741</uri><email>featherless@gmail.com</email></author><thr:total>0</thr:total></entry><entry><id>tag:blogger.com,1999:blog-4470717033668906745.post-5714495720551096780</id><published>2009-04-27T10:55:00.001-07:00</published><updated>2009-04-27T10:56:43.858-07:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#post'/><title type='text'>ASL</title><content type='html'>Urgh... I got A's on the first three classes... why is SHS 202 so hard?&lt;div class="blogger-post-footer"&gt;&lt;img width='1' height='1' src='https://blogger.googleusercontent.com/tracker/4470717033668906745-5714495720551096780?l=whatsdownnil.blogspot.com' alt='' /&gt;&lt;/div&gt;</content><link rel='replies' type='application/atom+xml' href='http://whatsdownnil.blogspot.com/feeds/5714495720551096780/comments/default' title='Post Comments'/><link rel='replies' type='text/html' href='http://whatsdownnil.blogspot.com/2009/04/asl.html#comment-form' title='1 Comments'/><link rel='edit' type='application/atom+xml' href='http://www.blogger.com/feeds/4470717033668906745/posts/default/5714495720551096780'/><link rel='self' type='application/atom+xml' href='http://www.blogger.com/feeds/4470717033668906745/posts/default/5714495720551096780'/><link rel='alternate' type='text/html' href='http://whatsdownnil.blogspot.com/2009/04/asl.html' title='ASL'/><author><name>Nil Athelion</name><uri>http://www.blogger.com/profile/16996018952758178741</uri><email>featherless@gmail.com</email></author><thr:total>1</thr:total></entry><entry><id>tag:blogger.com,1999:blog-4470717033668906745.post-6014526440559848027</id><published>2009-04-15T09:36:00.003-07:00</published><updated>2009-04-15T09:45:45.592-07:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#post'/><title type='text'>DnD rant</title><content type='html'>&lt;div&gt;Last time I complained/worried about what Tim thinks about me.  I may have mentioned DnD.&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;Well here's a DnD focused rant on the differences between Tim and I.&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;In DnD the difference in our vision is greatest, and thus the most conflicts emerge.&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;I want to play slow and savor the role-playing, the talking, the planning.  He wants to go in and crush the enemy with overwhelming strength, and resolve it through the fastest means possible.  I originally thought this was him wanting to go to bed, but he seems to play this way regardlessly.&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;In combat, I would like to accept surrender, capture not kill, and use diplomacy, coalition-building, and conflict-resolution as the primary tools.  For both myself and 2/3 characters, once combat is joined you have already lost.  Conflict and violence is the last resort.  For Tim and his characters, it seems to be the solve-all tool.  Again, I thought this was his characters at first--a vindictive holy knight and a angry barbarian--but I'm starting to think that the characters thoughts are excuses for this sort of action - I have seen him act against his character's personality, using an excuse, several times.  We were fighting pirates, and he(barbarian) was raging at the pirates, and slaughtering them.  Their ship started ship sinking, and he quickly found an excuse to take the chest full of gold, rather than finish off the pirates.  It could be that his character is ill-defined enough that I have not noticed this trait?&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;Metagame-wise, I like to play by the rules, and I will point things out that are not apparent.  I like to give suggestions to anyone interested, which largely means the DM, Zeno.  The more knowledge the DM has, the more tools he has at his disposal, the better he can DM.  Tim hates this, says that helping the DM is bad DnD.  For me, my character is loyal to the party, but what I the person does is not under the same restrictions.  If Zeno would like my help, then I will give it to him.  I will suggest encounter situations, I will remind him of his options.  I think that Tim's argument that this makes the game harder is foolish - the DM can throw whatever he wants at us, with whatever power level he choses the encounter to be.  Giving the DM more tools means that he can provide a more exact encounter to the level that he wishes, as high or as low as that might be.  Am I missing something in Tim's argument?&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;My knowledge and my character's knowledge are different.  For example, last encounter we were fighting against a dragonborn warlock.  I know the warlock class, having read it, and so I had a pretty decent idea of what he might throw at us.  Does my character?  Hell no.  I don't think he's ever run into a warlock before.  So he is surprised when he can use his combat superiorty and combat challenge to keep the Warlock from running away.  Tim's old paladin was a dragonborn, so he had read the racial paragon class for dragonborn.  He recognised it from the wings, etc.  However, his character, a minotaur barbarian probably has not - a paragon would be extremely rare, being more powerful than even our set of nearly-paragon level characters.  And we are just about the only in the land.  His reasoning is that his character is the same drifting soul as his previous one, and thus can recognise it just the same.  This works reasonably well, if it weren't for the fact that his previous character probably never saw a dragonborn racial paragon, and was a good 6 or so levels away from ever being a paragon himself.  A better excuse, in my mind, is that the Motherland is a land of predominantly humans and dragonborn, and the history of that land probably includes some rather epic dragonborne heroes.  But the question should be whether the character knows it, not how does the character know what he knows.  (Player knowledge would be extreme for a rule-savy, DM chatting guy like me.)&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;I want my characters to be interesting people.  I give them detailed backgrounds that can be used liberally, I give them room for character growth (Mae finding his place in the world, and strenght to act on the goodness of his heart; Shensu learning that revenge against the parties that have wronged her and her people is not as important as leading her people to freedom; Selnar learning more about the world than his slave upbringing and his effect on it; etc.)  I want my characters to be learning and growing every encounter.  But the way this game has been working, very little has been happening.  Relationships with the other character don't grow much, and the only character growth since he took the place of his sister was last session.  Some guards died because the party asked them to guard against a high-level bounty-hunter.  What effect will that have on him?  He's not as introspective as Mae, so probably a minor effect.   ...but Tim?  He seems to think that complicatedness, people, and the like are extraneous and slow the game down.  To him, the guards outside were just tools he could use because Wilhelm's Templar (us) are heroes to the people, not people whom we abused the trust and reverence of to fight against an opponent they had no chance against.  If this happens again Selnar will ask for other people not to get involved, even ask them to stay away so that they don't get caught in the crossfire.  But I think that the character growth won't have an effect because Tim is the defacto leader, and he will want to use guards for the group's advantage.  Ruins the relevance of my character's growth and pushes things into the mold of a game, not an alternate world.&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;Part of this is that my player motivations are different than his.  As described by the Dungeon Master Guide (Pg. 8), my motivation falls between storyteller and thinker.  Tim, on the other hand, is mostly slayer, with a hint of power-gamer (as seen in his interest in picking up wealth to become more powerful, which is in addition to the optimization of bashing in heads that slayers and powergamers share).  Scott and Bryan are power-gamery actors, Alex is a watcher, and our (generally absent) leader Tucker is an actor, which I am very thankful for... while he's there.  I'm not much of an explorer, but the true lack of explorers in our group makes me hunger for rich setting every now and then.  In theory, it should be up to the DM to make the adventure fun for all parties, but Tim and Bryan do a pretty strong case for they way DnD should be played - going out, slaying monsters, getting treasure, etc.  The game is created that way on the DM end of things - Zeno is used to catering to these tastes.  However, this creates an over-balance where the game is played the way that Tim and Bryan prefer it, and the other options aren't apparent.  Winning in combat is fun, sure, but that's all we enjoy.  We don't explore the spectacles, cultural or physical of the land our characters live in.  NPCs are dry and functional, only existing when the players look for them.  The main plot doesn't have much effect on game-play, and encounter-based plots basically don't exist - we have objectives, not plot.  The other players don't get much of a taste of these things, and I don't know how to change it.  If I did change it, it would be Tim's loss, and I don't know how to convince him otherwise.  If I didn't talk to him, and talked with Zeno, he would deride the changes as unfun - this last encounter had a bounty hunter trying to capture us, one at a time, which, while combat, was a lot less mindlessly and continually violent as the previous three - fighting a dragon, fighting a cypt of skeletons, and fighting a vampire lord in his lair.  Instead he attacked us while we were unrested from the vampire lord, escaped when we threatened to overpower him, attacked us while we were staying in a more-defendable inn, but got curb-stomped when we jumped from the inn to the roof he was shooting acid at us from.  I enjoyed it more, though it wasn't as detailed as it could be, but Tim specifically complained about the style after the session ended...&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;Tim accuses me of trying to be the DM at times, with suggesting and informing Zeno.  This is more true outside of the session than what he sees inside - I have shot a dozen senarios past Zeno to give him ideas, we talk about possiblities, etc.  Am I trying to be the DM?  Zeno notes that I'm better at strategy and a few other things, but the way I see it... ...I would be a very good DM for myself.  I could provide rich setting, provide personable characters that Selnar could simply enjoy a chat with, provide tactically varient encounters, and a ongoing plot that drives the action.  All of that I could probably do better than Zeno.  But would that be what this group, sans me, would prefer?  If I were the DM, who would I be catering to?  Besides, I can never be a DM if Tim does not respect me in the position, and I don't have the time for the numbers.&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;How do I resolve this?  How do I play the same game as Tim, yet have it satify us both?  Perhaps Tim has a Story-teller side thus unrevealed?  I dunno.  I hope that I'm seeing things all wrong, and there isn't as much of a difference as I currently percieve.&lt;/div&gt;&lt;div class="blogger-post-footer"&gt;&lt;img width='1' height='1' src='https://blogger.googleusercontent.com/tracker/4470717033668906745-6014526440559848027?l=whatsdownnil.blogspot.com' alt='' /&gt;&lt;/div&gt;</content><link rel='replies' type='application/atom+xml' href='http://whatsdownnil.blogspot.com/feeds/6014526440559848027/comments/default' title='Post Comments'/><link rel='replies' type='text/html' href='http://whatsdownnil.blogspot.com/2009/04/dnd-rant.html#comment-form' title='5 Comments'/><link rel='edit' type='application/atom+xml' href='http://www.blogger.com/feeds/4470717033668906745/posts/default/6014526440559848027'/><link rel='self' type='application/atom+xml' href='http://www.blogger.com/feeds/4470717033668906745/posts/default/6014526440559848027'/><link rel='alternate' type='text/html' href='http://whatsdownnil.blogspot.com/2009/04/dnd-rant.html' title='DnD rant'/><author><name>Nil Athelion</name><uri>http://www.blogger.com/profile/16996018952758178741</uri><email>featherless@gmail.com</email></author><thr:total>5</thr:total></entry><entry><id>tag:blogger.com,1999:blog-4470717033668906745.post-3043267384442049401</id><published>2009-04-15T01:20:00.002-07:00</published><updated>2009-04-15T02:47:43.624-07:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#post'/><title type='text'>Respect.</title><content type='html'>I don't feel that Tim respects me.&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;Am I being paranoid?  Am I reading him wrong?&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;We clash, with differing opinions.  I am okay with that.  But he doesn't seem to care much about my opinion, and doesn't seem interested in even searching for a compromise in action.  We have different views, and, as I see it, he considers that his view is right, and my view is wrong.&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;Maybe this is me seeing it all wrong.&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;Maybe it's a problem with me - I know that I get contray and absolute when someone tries to tell I am meritlessly wrong.  Perhaps I am not seeking compromise to as full and extent as I could.&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;Or maybe it's a question of the situation - he makes decisions unquestioningly, and acts on them, as I see it.  I think of possible courses of action, try to gather information, build a concensus on a good action, and then implement it.  Not a matter of respect, just the fact that his style acts before mine is ready at all, and is in the middle of action by the time I say anything.&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;But the same question applies as always:  What do I do?&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;What to do, what to do...&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div class="blogger-post-footer"&gt;&lt;img width='1' height='1' src='https://blogger.googleusercontent.com/tracker/4470717033668906745-3043267384442049401?l=whatsdownnil.blogspot.com' alt='' /&gt;&lt;/div&gt;</content><link rel='replies' type='application/atom+xml' href='http://whatsdownnil.blogspot.com/feeds/3043267384442049401/comments/default' title='Post Comments'/><link rel='replies' type='text/html' href='http://whatsdownnil.blogspot.com/2009/04/respect.html#comment-form' title='0 Comments'/><link rel='edit' type='application/atom+xml' href='http://www.blogger.com/feeds/4470717033668906745/posts/default/3043267384442049401'/><link rel='self' type='application/atom+xml' href='http://www.blogger.com/feeds/4470717033668906745/posts/default/3043267384442049401'/><link rel='alternate' type='text/html' href='http://whatsdownnil.blogspot.com/2009/04/respect.html' title='Respect.'/><author><name>Nil Athelion</name><uri>http://www.blogger.com/profile/16996018952758178741</uri><email>featherless@gmail.com</email></author><thr:total>0</thr:total></entry><entry><id>tag:blogger.com,1999:blog-4470717033668906745.post-640367806132786015</id><published>2009-03-27T10:42:00.002-07:00</published><updated>2009-03-27T10:50:14.212-07:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#post'/><title type='text'>Oh gods tests</title><content type='html'>Tests this week realy stressed me out.&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;I'm not doing well in ASL, and I had videotaped interview with my teacher in it.  Also a group debate project that will be presenting next week after the quiz.  Middle of semester ownage, apparently.&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;Not entirely happy with my Philosophy class, now not happy with the midterm.  I can understand if you class has a really boring topic (we have been going over theories in whether words refer to things or not half the year so far), but that's no excuse for writing bad tests.  Apparently there were serveral test versions running around.  Maybe this was why some of your questions looked like really incoherent editing - like some parts were just changed with no concern for the whole.  Maybe this was why the numbering on my test went 1,2,3,3,4,5... ...19,20 for a total of 21 questions.  That's right, not just misnumbering your questions, accidentally putting in one more than the other tests.&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;*sigh*&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;Is there something wrong that my gold standard in tests comes from my community college Intro to Psychology class?&lt;/div&gt;&lt;div class="blogger-post-footer"&gt;&lt;img width='1' height='1' src='https://blogger.googleusercontent.com/tracker/4470717033668906745-640367806132786015?l=whatsdownnil.blogspot.com' alt='' /&gt;&lt;/div&gt;</content><link rel='replies' type='application/atom+xml' href='http://whatsdownnil.blogspot.com/feeds/640367806132786015/comments/default' title='Post Comments'/><link rel='replies' type='text/html' href='http://whatsdownnil.blogspot.com/2009/03/oh-gods-tests.html#comment-form' title='2 Comments'/><link rel='edit' type='application/atom+xml' href='http://www.blogger.com/feeds/4470717033668906745/posts/default/640367806132786015'/><link rel='self' type='application/atom+xml' href='http://www.blogger.com/feeds/4470717033668906745/posts/default/640367806132786015'/><link rel='alternate' type='text/html' href='http://whatsdownnil.blogspot.com/2009/03/oh-gods-tests.html' title='Oh gods tests'/><author><name>Nil Athelion</name><uri>http://www.blogger.com/profile/16996018952758178741</uri><email>featherless@gmail.com</email></author><thr:total>2</thr:total></entry><entry><id>tag:blogger.com,1999:blog-4470717033668906745.post-1358595790442196428</id><published>2009-03-18T22:05:00.002-07:00</published><updated>2009-03-18T22:10:40.286-07:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#post'/><title type='text'>Fainting</title><content type='html'>Fainted in jujitsu.  WTH, Wilford?  You faint because you didn't bend over properly?&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;In detail:&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;I was annoyed at the 90 degree stretch, because I can't get my back to be at 90 degrees from my legs.  Wondered if locking the legs would improve the stretch, so I tried that.&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;Next were arm stretches, and then head tilts/rolls.  During the last set of rolls, ever time I rolled my head the world kept getting brighter and blurier, and their was this ringing in my ears.  I worried briefly that I had some clot stuck in my arteries to my head (which is silly, because the blood pressure on the main artery would blast any clot to smithereens), and then collapsed to the ground.  People were talking around me, and things got slightly clearer, and I found that Sensei was standing over me, telling me to breath.  I evaculated the mat when I could walk, and I hobbled over to a chair.  Everything was a bit glowy, and ringing.  I sat there for a while, flexing my legs to help the circulation, and when I was clear I drank some water and joined in the ukemi.&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;Sensei says it was because I locked my legs, which left the blood down there not circulating.&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;Don't want to do this again.  Will do better in future.&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;Also worried a few people.&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;So yeah.  What the hell, Wilford.&lt;/div&gt;&lt;div class="blogger-post-footer"&gt;&lt;img width='1' height='1' src='https://blogger.googleusercontent.com/tracker/4470717033668906745-1358595790442196428?l=whatsdownnil.blogspot.com' alt='' /&gt;&lt;/div&gt;</content><link rel='replies' type='application/atom+xml' href='http://whatsdownnil.blogspot.com/feeds/1358595790442196428/comments/default' title='Post Comments'/><link rel='replies' type='text/html' href='http://whatsdownnil.blogspot.com/2009/03/fainting.html#comment-form' title='4 Comments'/><link rel='edit' type='application/atom+xml' href='http://www.blogger.com/feeds/4470717033668906745/posts/default/1358595790442196428'/><link rel='self' type='application/atom+xml' href='http://www.blogger.com/feeds/4470717033668906745/posts/default/1358595790442196428'/><link rel='alternate' type='text/html' href='http://whatsdownnil.blogspot.com/2009/03/fainting.html' title='Fainting'/><author><name>Nil Athelion</name><uri>http://www.blogger.com/profile/16996018952758178741</uri><email>featherless@gmail.com</email></author><thr:total>4</thr:total></entry><entry><id>tag:blogger.com,1999:blog-4470717033668906745.post-280835976888217497</id><published>2009-03-18T11:10:00.003-07:00</published><updated>2009-03-18T11:14:27.554-07:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#post'/><title type='text'>Planning and Smoking</title><content type='html'>I meant to complain about this a few days back when it happened, but procrastination is my hallmark.&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;Anyway:&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;I was getting off the plane at Sky Harbor (PHX), and taking the bus over to ASU before my first class on Monday.  Most of my arrivals at PHX are at night, and my only worry is that I will miss the last bus.  Not so this time.&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;I got my bus, of course, and even got to class on time.  But that's not the point.&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;Who the hell decided that the designated Smoking area should be situated directly &lt;span class="Apple-style-span" style="font-style: italic;"&gt;beside the bus stop.&lt;/span&gt;  What the hell, Sky Harbor Planner Person.&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;I guess I never noticed it before because there's nobody smoking there when I normally am waiting for the bus.  Maybe once or twice someone, but not multiples of people the whole time.&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;What the hell, Sky Harbor Planner Person.&lt;/div&gt;&lt;div class="blogger-post-footer"&gt;&lt;img width='1' height='1' src='https://blogger.googleusercontent.com/tracker/4470717033668906745-280835976888217497?l=whatsdownnil.blogspot.com' alt='' /&gt;&lt;/div&gt;</content><link rel='replies' type='application/atom+xml' href='http://whatsdownnil.blogspot.com/feeds/280835976888217497/comments/default' title='Post Comments'/><link rel='replies' type='text/html' href='http://whatsdownnil.blogspot.com/2009/03/planning-and-smoking.html#comment-form' title='2 Comments'/><link rel='edit' type='application/atom+xml' href='http://www.blogger.com/feeds/4470717033668906745/posts/default/280835976888217497'/><link rel='self' type='application/atom+xml' href='http://www.blogger.com/feeds/4470717033668906745/posts/default/280835976888217497'/><link rel='alternate' type='text/html' href='http://whatsdownnil.blogspot.com/2009/03/planning-and-smoking.html' title='Planning and Smoking'/><author><name>Nil Athelion</name><uri>http://www.blogger.com/profile/16996018952758178741</uri><email>featherless@gmail.com</email></author><thr:total>2</thr:total></entry><entry><id>tag:blogger.com,1999:blog-4470717033668906745.post-6293500544400950367</id><published>2009-03-11T20:39:00.000-07:00</published><updated>2009-03-12T11:54:52.845-07:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#post'/><category scheme='http://www.blogger.com/atom/ns#' term='the kiddos'/><category scheme='http://www.blogger.com/atom/ns#' term='parental practices'/><category scheme='http://www.blogger.com/atom/ns#' term='mother'/><title type='text'>Parental Practices.</title><content type='html'>So you know that thing?&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;No, you don't.&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;Kid: "Give me my [X] now!"&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;Parent: "How do you say that?"&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;Kid: "...May I have that please?"&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;Parent: "Okay."&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;So there's the thing.&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;Now here's my problem with it - it doesn't teach kids to be polite.  Instead it teaches them to try the normal way first, and if that doesn't work, then say it the polite way as instructed.&lt;/div&gt;&lt;div&gt;Unfortunately in real situations, it doesn't work like that.  Instead, they say it the impolite way, and people think they are rude.&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;So instead, I didn't give my little bro the milk he demanded.  My mother asked him to ask again politely, and he did.  I told him that asking me a second time was too late, and that he would have to find some one else to ask politely the first time.&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;Mother agreed with me, and Liam started screaming and making threats to get the milk himself (the carton was full, so we knew he couldn't pull it off: he knew it, so he was actually threatening to spill the milk, but we knew he wouldn't do it).  He kept screaming, and I left to help my dad with his computer.  A bit later mother sent him in for a second chance, and he asked nicely, and I got the milk for him because mother wanted it.&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;Makes me wonder, the whole thing does...&lt;/div&gt;&lt;div class="blogger-post-footer"&gt;&lt;img width='1' height='1' src='https://blogger.googleusercontent.com/tracker/4470717033668906745-6293500544400950367?l=whatsdownnil.blogspot.com' alt='' /&gt;&lt;/div&gt;</content><link rel='replies' type='application/atom+xml' href='http://whatsdownnil.blogspot.com/feeds/6293500544400950367/comments/default' title='Post Comments'/><link rel='replies' type='text/html' href='http://whatsdownnil.blogspot.com/2009/03/parental-practices.html#comment-form' title='1 Comments'/><link rel='edit' type='application/atom+xml' href='http://www.blogger.com/feeds/4470717033668906745/posts/default/6293500544400950367'/><link rel='self' type='application/atom+xml' href='http://www.blogger.com/feeds/4470717033668906745/posts/default/6293500544400950367'/><link rel='alternate' type='text/html' href='http://whatsdownnil.blogspot.com/2009/03/parental-practices.html' title='Parental Practices.'/><author><name>Nil Athelion</name><uri>http://www.blogger.com/profile/16996018952758178741</uri><email>featherless@gmail.com</email></author><thr:total>1</thr:total></entry><entry><id>tag:blogger.com,1999:blog-4470717033668906745.post-329171963322328684</id><published>2009-03-11T11:55:00.000-07:00</published><updated>2009-03-11T11:59:31.205-07:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#post'/><category scheme='http://www.blogger.com/atom/ns#' term='metablog'/><title type='text'>That new Blog smell.</title><content type='html'>Kudos to anyone who understands my choice of temporary title.&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;Anyway, this is the down blog, as inspired by Leah's like/dislike blogs.&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;Anyway, now it's time to go make that other blog.  Need to figure out a title.&lt;/div&gt;&lt;div class="blogger-post-footer"&gt;&lt;img width='1' height='1' src='https://blogger.googleusercontent.com/tracker/4470717033668906745-329171963322328684?l=whatsdownnil.blogspot.com' alt='' /&gt;&lt;/div&gt;</content><link rel='replies' type='application/atom+xml' href='http://whatsdownnil.blogspot.com/feeds/329171963322328684/comments/default' title='Post Comments'/><link rel='replies' type='text/html' href='http://whatsdownnil.blogspot.com/2009/03/that-new-blog-smell.html#comment-form' title='0 Comments'/><link rel='edit' type='application/atom+xml' href='http://www.blogger.com/feeds/4470717033668906745/posts/default/329171963322328684'/><link rel='self' type='application/atom+xml' href='http://www.blogger.com/feeds/4470717033668906745/posts/default/329171963322328684'/><link rel='alternate' type='text/html' href='http://whatsdownnil.blogspot.com/2009/03/that-new-blog-smell.html' title='That new Blog smell.'/><author><name>Nil Athelion</name><uri>http://www.blogger.com/profile/16996018952758178741</uri><email>featherless@gmail.com</email></author><thr:total>0</thr:total></entry><entry><id>tag:blogger.com,1999:blog-4470717033668906745.post-6814926397591113325</id><published>2010-01-05T05:53:02.383-07:00</published><updated>2010-01-05T05:53:02.383-07:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#comment'/><title type='text'>Well, it&amp;#39;s not really the diarrhea itself that...</title><content type='html'>Well, it&amp;#39;s not really the diarrhea itself that is getting me this time.  Diarrhea always happens, but I normally am able to camp out in a bathroom for the day or so it lasts.  Combine that with superb bodily control, and it&amp;#39;s just unpleasant, never problematic.&lt;br /&gt;&lt;br /&gt;It&amp;#39;s just that this time I am traveling around while this is happening, not staying with family.&lt;br /&gt;&lt;br /&gt;(Nausea and upset stomachs are nothing new to me, as I am lactose intolerant, and yet love non-milk dairy products.)</content><link rel='edit' type='application/atom+xml' href='http://www.blogger.com/feeds/4470717033668906745/7855954637041732696/comments/default/6814926397591113325'/><link rel='self' type='application/atom+xml' href='http://www.blogger.com/feeds/4470717033668906745/7855954637041732696/comments/default/6814926397591113325'/><link rel='alternate' type='text/html' href='http://whatsdownnil.blogspot.com/2010/01/diarrhea.html?showComment=1262695982383#c6814926397591113325' title=''/><author><name>Nil Athelion</name><uri>http://www.blogger.com/profile/16996018952758178741</uri><email>Featherless@gmail.com</email></author><thr:in-reply-to href='http://whatsdownnil.blogspot.com/2010/01/diarrhea.html' ref='tag:blogger.com,1999:blog-4470717033668906745.post-7855954637041732696' source='http://www.blogger.com/feeds/4470717033668906745/posts/default/7855954637041732696' type='text/html'/></entry><entry><id>tag:blogger.com,1999:blog-4470717033668906745.post-3711783242520386558</id><published>2010-01-04T18:45:35.037-07:00</published><updated>2010-01-04T18:45:35.037-07:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#comment'/><title type='text'>I get an upset stomach and mild to moderate nausea...</title><content type='html'>I get an upset stomach and mild to moderate nausea every time I travel, but I think you have got it worse.</content><link rel='edit' type='application/atom+xml' href='http://www.blogger.com/feeds/4470717033668906745/7855954637041732696/comments/default/3711783242520386558'/><link rel='self' type='application/atom+xml' href='http://www.blogger.com/feeds/4470717033668906745/7855954637041732696/comments/default/3711783242520386558'/><link rel='alternate' type='text/html' href='http://whatsdownnil.blogspot.com/2010/01/diarrhea.html?showComment=1262655935037#c3711783242520386558' title=''/><author><name>rfn</name><uri>http://www.blogger.com/profile/17484889157205723602</uri><email>thedamnisland@gmail.com</email></author><thr:in-reply-to href='http://whatsdownnil.blogspot.com/2010/01/diarrhea.html' ref='tag:blogger.com,1999:blog-4470717033668906745.post-7855954637041732696' source='http://www.blogger.com/feeds/4470717033668906745/posts/default/7855954637041732696' type='text/html'/></entry><entry><id>tag:blogger.com,1999:blog-4470717033668906745.post-1369157331203127495</id><published>2009-07-26T11:58:57.911-07:00</published><updated>2009-07-26T11:58:57.911-07:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#comment'/><title type='text'>Oh, Nil...  *hugs tightly*
+
+My mom is like that ab...</title><content type='html'>Oh, Nil...  *hugs tightly*&lt;br /&gt;&lt;br /&gt;My mom is like that about food in the fridge.  Why is it so important to you to cook your own food?  You know that you can do it, so it&amp;#39;s not something that you have to prove that you can do.  Maybe it would be best to focus your efforts on something that matters more?&lt;br /&gt;&lt;br /&gt;I wish I knew what to tell you that might make things better....  Perhaps just refuse to do things that you don&amp;#39;t want to do and don&amp;#39;t need to do?  E.g. running around with her on her errands with Kerria.&lt;br /&gt;&lt;br /&gt;Again I have to suggest that you get a job, just a small part-time one, to start saving money so that you can become financially independent.  Obviously not for this summer, because there&amp;#39;s not enough time left, but during the school year, if you can.  Also, learning to drive.&lt;br /&gt;&lt;br /&gt;Come visit so I can comfort you...</content><link rel='edit' type='application/atom+xml' href='http://www.blogger.com/feeds/4470717033668906745/380958404913402028/comments/default/1369157331203127495'/><link rel='self' type='application/atom+xml' href='http://www.blogger.com/feeds/4470717033668906745/380958404913402028/comments/default/1369157331203127495'/><link rel='alternate' type='text/html' href='http://whatsdownnil.blogspot.com/2009/07/i-dont-know-how-to-live-with-this.html?showComment=1248634737911#c1369157331203127495' title=''/><author><name>Edelweiss</name><uri>http://www.blogger.com/profile/09726206517515400622</uri><email>noreply@blogger.com</email></author><thr:in-reply-to href='http://whatsdownnil.blogspot.com/2009/07/i-dont-know-how-to-live-with-this.html' ref='tag:blogger.com,1999:blog-4470717033668906745.post-380958404913402028' source='http://www.blogger.com/feeds/4470717033668906745/posts/default/380958404913402028' type='text/html'/></entry><entry><id>tag:blogger.com,1999:blog-4470717033668906745.post-8173540295582091572</id><published>2009-07-25T15:36:38.104-07:00</published><updated>2009-07-25T15:36:38.104-07:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#comment'/><title type='text'>Dearest Wilford...
+
+I am going to mess up if I tal...</title><content type='html'>Dearest Wilford...&lt;br /&gt;&lt;br /&gt;I am going to mess up if I talk to much. Mmm. *Hugs Wilford tightly* (Krystal, that&amp;#39;s a good idea, hugs are a good idea).&lt;br /&gt;&lt;br /&gt;Mmm, it sounds sad that you would not eat with your family, but cook your own food. I would be sad not eating with my family.&lt;br /&gt;Take care and don&amp;#39;t cry. xo</content><link rel='edit' type='application/atom+xml' href='http://www.blogger.com/feeds/4470717033668906745/380958404913402028/comments/default/8173540295582091572'/><link rel='self' type='application/atom+xml' href='http://www.blogger.com/feeds/4470717033668906745/380958404913402028/comments/default/8173540295582091572'/><link rel='alternate' type='text/html' href='http://whatsdownnil.blogspot.com/2009/07/i-dont-know-how-to-live-with-this.html?showComment=1248561398104#c8173540295582091572' title=''/><author><name>Bubble B</name><email>noreply@blogger.com</email></author><thr:in-reply-to href='http://whatsdownnil.blogspot.com/2009/07/i-dont-know-how-to-live-with-this.html' ref='tag:blogger.com,1999:blog-4470717033668906745.post-380958404913402028' source='http://www.blogger.com/feeds/4470717033668906745/posts/default/380958404913402028' type='text/html'/></entry><entry><id>tag:blogger.com,1999:blog-4470717033668906745.post-2913311127888751457</id><published>2009-07-25T15:10:40.946-07:00</published><updated>2009-07-25T15:10:40.946-07:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#comment'/><title type='text'>Oh, Wilford...
+
+*hugs tightly*</title><content type='html'>Oh, Wilford...&lt;br /&gt;&lt;br /&gt;*hugs tightly*</content><link rel='edit' type='application/atom+xml' href='http://www.blogger.com/feeds/4470717033668906745/380958404913402028/comments/default/2913311127888751457'/><link rel='self' type='application/atom+xml' href='http://www.blogger.com/feeds/4470717033668906745/380958404913402028/comments/default/2913311127888751457'/><link rel='alternate' type='text/html' href='http://whatsdownnil.blogspot.com/2009/07/i-dont-know-how-to-live-with-this.html?showComment=1248559840946#c2913311127888751457' title=''/><author><name>Krystal Angel</name><uri>http://www.blogger.com/profile/14933851188160401673</uri><email>noreply@blogger.com</email></author><thr:in-reply-to href='http://whatsdownnil.blogspot.com/2009/07/i-dont-know-how-to-live-with-this.html' ref='tag:blogger.com,1999:blog-4470717033668906745.post-380958404913402028' source='http://www.blogger.com/feeds/4470717033668906745/posts/default/380958404913402028' type='text/html'/></entry><entry><id>tag:blogger.com,1999:blog-4470717033668906745.post-5309968075791294560</id><published>2009-07-01T15:25:04.150-07:00</published><updated>2009-07-01T15:25:04.150-07:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#comment'/><title type='text'>I&amp;#39;ve been researching up until now.  I wrote t...</title><content type='html'>I&amp;#39;ve been researching up until now.  I wrote the introduction this night, and tomorrow night I will write the rest of the paper.  I have to go to work tomorrow, and to a cultural event, so it might be tricky.&lt;br /&gt;&lt;br /&gt;Culture, as I am writing it, is a set of behaviors that is transmitted and creates uniformity and cohesion in a group.  The difference between youth culture and traditional culture is that youth culture is transmitted peer-to-peer, while traditional culture is transmitted down the generations.&lt;br /&gt;&lt;br /&gt;It is hot in London, and since I hail from the urban desert, I bemoan the lack of AC.  Still, it&amp;#39;s 41 degrees over in Phoenix, so I&amp;#39;m glad I&amp;#39;m not there...</content><link rel='edit' type='application/atom+xml' href='http://www.blogger.com/feeds/4470717033668906745/1226010939580641191/comments/default/5309968075791294560'/><link rel='self' type='application/atom+xml' href='http://www.blogger.com/feeds/4470717033668906745/1226010939580641191/comments/default/5309968075791294560'/><link rel='alternate' type='text/html' href='http://whatsdownnil.blogspot.com/2009/07/paper.html?showComment=1246487104150#c5309968075791294560' title=''/><author><name>Nil Athelion</name><uri>http://www.blogger.com/profile/16996018952758178741</uri><email>Featherless@gmail.com</email></author><thr:in-reply-to href='http://whatsdownnil.blogspot.com/2009/07/paper.html' ref='tag:blogger.com,1999:blog-4470717033668906745.post-1226010939580641191' source='http://www.blogger.com/feeds/4470717033668906745/posts/default/1226010939580641191' type='text/html'/></entry><entry><id>tag:blogger.com,1999:blog-4470717033668906745.post-2818547364338118724</id><published>2009-07-01T13:48:08.299-07:00</published><updated>2009-07-01T13:48:08.299-07:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#comment'/><title type='text'>Hi. I understand how this paper must suck. Four pa...</title><content type='html'>Hi. I understand how this paper must suck. Four pages is also the kind of paper I would write the night before it is due, but probably made some research for, for a couple of days.&lt;br /&gt;I find it hard to give it a proper definition of &amp;quot;youth culture&amp;quot; but I am sure you have thought about what the concept means.&lt;br /&gt;I tend to think of culture as a set of traditions and other stuff that parents transmit to their children, and children to their own children, and so on for generations. Of course this definition of culture does not apply to youth culture, since &amp;quot;youth&amp;quot; are grown-up, and no longer youngesters by the time they have children.&lt;br /&gt;&lt;br /&gt;Good luck with the heat (if it is still hot in London). It is hot at my place too... I don&amp;#39;t have air-conditioning, but I have an electric fan. I plugged it, switched it on, and enjoy it. &lt;br /&gt;xoxo</content><link rel='edit' type='application/atom+xml' href='http://www.blogger.com/feeds/4470717033668906745/1226010939580641191/comments/default/2818547364338118724'/><link rel='self' type='application/atom+xml' href='http://www.blogger.com/feeds/4470717033668906745/1226010939580641191/comments/default/2818547364338118724'/><link rel='alternate' type='text/html' href='http://whatsdownnil.blogspot.com/2009/07/paper.html?showComment=1246481288299#c2818547364338118724' title=''/><author><name>Bubble B</name><email>noreply@blogger.com</email></author><thr:in-reply-to href='http://whatsdownnil.blogspot.com/2009/07/paper.html' ref='tag:blogger.com,1999:blog-4470717033668906745.post-1226010939580641191' source='http://www.blogger.com/feeds/4470717033668906745/posts/default/1226010939580641191' type='text/html'/></entry><entry><id>tag:blogger.com,1999:blog-4470717033668906745.post-1024894842603159402</id><published>2009-06-25T23:12:50.153-07:00</published><updated>2009-06-25T23:12:50.153-07:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#comment'/><title type='text'>I&amp;#39;m with you on this.  I don&amp;#39;t find it suf...</title><content type='html'>I&amp;#39;m with you on this.  I don&amp;#39;t find it sufficiently worthwhile but rarely.</content><link rel='edit' type='application/atom+xml' href='http://www.blogger.com/feeds/4470717033668906745/5717895655828061851/comments/default/1024894842603159402'/><link rel='self' type='application/atom+xml' href='http://www.blogger.com/feeds/4470717033668906745/5717895655828061851/comments/default/1024894842603159402'/><link rel='alternate' type='text/html' href='http://whatsdownnil.blogspot.com/2009/06/youth-culture.html?showComment=1245996770153#c1024894842603159402' title=''/><author><name>Edelweiss</name><uri>http://www.blogger.com/profile/09726206517515400622</uri><email>noreply@blogger.com</email></author><thr:in-reply-to href='http://whatsdownnil.blogspot.com/2009/06/youth-culture.html' ref='tag:blogger.com,1999:blog-4470717033668906745.post-5717895655828061851' source='http://www.blogger.com/feeds/4470717033668906745/posts/default/5717895655828061851' type='text/html'/></entry><entry><id>tag:blogger.com,1999:blog-4470717033668906745.post-915018344092339318</id><published>2009-06-21T11:48:00.211-07:00</published><updated>2009-06-21T11:48:00.211-07:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#comment'/><title type='text'>There is no shame in being disconnected from popul...</title><content type='html'>There is no shame in being disconnected from popular culture.  I am one of those people, and honestly, I see nothing wrong with it.  It&amp;#39;s a waste of time and brain space.  Not to mention energy expended ranting about the stupidity of the celebrities.</content><link rel='edit' type='application/atom+xml' href='http://www.blogger.com/feeds/4470717033668906745/5717895655828061851/comments/default/915018344092339318'/><link rel='self' type='application/atom+xml' href='http://www.blogger.com/feeds/4470717033668906745/5717895655828061851/comments/default/915018344092339318'/><link rel='alternate' type='text/html' href='http://whatsdownnil.blogspot.com/2009/06/youth-culture.html?showComment=1245610080211#c915018344092339318' title=''/><author><name>Krystal Angel</name><uri>http://www.blogger.com/profile/14933851188160401673</uri><email>noreply@blogger.com</email></author><thr:in-reply-to href='http://whatsdownnil.blogspot.com/2009/06/youth-culture.html' ref='tag:blogger.com,1999:blog-4470717033668906745.post-5717895655828061851' source='http://www.blogger.com/feeds/4470717033668906745/posts/default/5717895655828061851' type='text/html'/></entry><entry><id>tag:blogger.com,1999:blog-4470717033668906745.post-2190913020385978065</id><published>2009-06-17T08:50:47.168-07:00</published><updated>2009-06-17T08:50:47.168-07:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#comment'/><title type='text'>I like this comment box so much better than the co...</title><content type='html'>I like this comment box so much better than the comment for your blog about London -- I was forced to log on Livejournal that I no longer use to be able to comment on your London blog.&lt;br /&gt;&lt;br /&gt;Anyway...&lt;br /&gt;Maybe the problem that Carolyn has with you is that you observed quietly and did not ask questions?&lt;br /&gt;Also, maybe it would have made things better if after the session you had thanked the instructors, told them you had enjoyed seeing the kids, and felt you had learned something from observing them and interacting with them. Maybe they just expected you to manifest enthusiasm after the session. Perhaps it would have helped if you had expressed your personal interests in working with autistic children (and thus shown you knew what it was about, and had already thought about it, etc).&lt;br /&gt;&lt;br /&gt;I don&amp;#39;t know what they find wrong with you, but thanking and expressing interest (verbally) might help. In terms of body language, I am not sure if I can give you any advice. I guess you must not yawn... but I imagine you already know that.</content><link rel='edit' type='application/atom+xml' href='http://www.blogger.com/feeds/4470717033668906745/2515158291341334221/comments/default/2190913020385978065'/><link rel='self' type='application/atom+xml' href='http://www.blogger.com/feeds/4470717033668906745/2515158291341334221/comments/default/2190913020385978065'/><link rel='alternate' type='text/html' href='http://whatsdownnil.blogspot.com/2009/06/communication.html?showComment=1245253847168#c2190913020385978065' title=''/><author><name>Bubble B</name><email>noreply@blogger.com</email></author><thr:in-reply-to href='http://whatsdownnil.blogspot.com/2009/06/communication.html' ref='tag:blogger.com,1999:blog-4470717033668906745.post-2515158291341334221' source='http://www.blogger.com/feeds/4470717033668906745/posts/default/2515158291341334221' type='text/html'/></entry><entry><id>tag:blogger.com,1999:blog-4470717033668906745.post-8846430696485726775</id><published>2009-06-08T19:02:51.004-07:00</published><updated>2009-06-08T19:02:51.004-07:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#comment'/><title type='text'>I wish I could help.....</title><content type='html'>I wish I could help.....</content><link rel='edit' type='application/atom+xml' href='http://www.blogger.com/feeds/4470717033668906745/8400259201259553117/comments/default/8846430696485726775'/><link rel='self' type='application/atom+xml' href='http://www.blogger.com/feeds/4470717033668906745/8400259201259553117/comments/default/8846430696485726775'/><link rel='alternate' type='text/html' href='http://whatsdownnil.blogspot.com/2009/06/you-know-what-sucks.html?showComment=1244512971004#c8846430696485726775' title=''/><author><name>Edelweiss</name><uri>http://www.blogger.com/profile/09726206517515400622</uri><email>noreply@blogger.com</email></author><thr:in-reply-to href='http://whatsdownnil.blogspot.com/2009/06/you-know-what-sucks.html' ref='tag:blogger.com,1999:blog-4470717033668906745.post-8400259201259553117' source='http://www.blogger.com/feeds/4470717033668906745/posts/default/8400259201259553117' type='text/html'/></entry><entry><id>tag:blogger.com,1999:blog-4470717033668906745.post-481653257940435707</id><published>2009-05-26T22:37:34.478-07:00</published><updated>2009-05-26T22:37:34.478-07:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#comment'/><title type='text'>My dear friend, why would your flat-mates resent y...</title><content type='html'>My dear friend, why would your flat-mates resent you?  Why, in fact, should the British resent you?  You're a wonderful person!&lt;br /&gt;&lt;br /&gt;At any rate, if you can't connect with your flat mates, try to find someone else there who you can connect with.  Go out and try to enjoy London and this chance that you have been given!  I realize that it is probably much easier said than done, but try not to worry so much about doing things well enough.  Do your best and be proud of what you can do.  &lt;br /&gt;&lt;br /&gt;Go out and take a few chances, my friend.</content><link rel='edit' type='application/atom+xml' href='http://www.blogger.com/feeds/4470717033668906745/268959228042102233/comments/default/481653257940435707'/><link rel='self' type='application/atom+xml' href='http://www.blogger.com/feeds/4470717033668906745/268959228042102233/comments/default/481653257940435707'/><link rel='alternate' type='text/html' href='http://whatsdownnil.blogspot.com/2009/05/urgh.html?showComment=1243402654478#c481653257940435707' title=''/><author><name>Krystal Angel</name><uri>http://www.blogger.com/profile/14933851188160401673</uri><email>noreply@blogger.com</email></author><thr:in-reply-to href='http://whatsdownnil.blogspot.com/2009/05/urgh.html' ref='tag:blogger.com,1999:blog-4470717033668906745.post-268959228042102233' source='http://www.blogger.com/feeds/4470717033668906745/posts/default/268959228042102233' type='text/html'/></entry><entry><id>tag:blogger.com,1999:blog-4470717033668906745.post-324432654459392735</id><published>2009-04-27T20:28:00.000-07:00</published><updated>2009-04-27T20:28:49.001-07:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#comment'/><title type='text'>Poor dear.  Do you know what's changed?</title><content type='html'>Poor dear.  Do you know what's changed?</content><link rel='edit' type='application/atom+xml' href='http://www.blogger.com/feeds/4470717033668906745/5714495720551096780/comments/default/324432654459392735'/><link rel='self' type='application/atom+xml' href='http://www.blogger.com/feeds/4470717033668906745/5714495720551096780/comments/default/324432654459392735'/><link rel='alternate' type='text/html' href='http://whatsdownnil.blogspot.com/2009/04/asl.html?showComment=1240889280000#c324432654459392735' title=''/><author><name>Edelweiss</name><uri>http://www.blogger.com/profile/09726206517515400622</uri><email>noreply@blogger.com</email></author><thr:in-reply-to href='http://whatsdownnil.blogspot.com/2009/04/asl.html' ref='tag:blogger.com,1999:blog-4470717033668906745.post-5714495720551096780' source='http://www.blogger.com/feeds/4470717033668906745/posts/default/5714495720551096780' type='text/html'/></entry><entry><id>tag:blogger.com,1999:blog-4470717033668906745.post-991712715061890659</id><published>2009-04-20T10:41:00.000-07:00</published><updated>2009-04-20T10:41:58.342-07:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#comment'/><title type='text'>I think that the fact that the books exhaustively ...</title><content type='html'>I think that the fact that the books exhaustively catalogue combat mechanics and spends a paragraph on the diplomacy skill has nothing to do with the nature of the primary game mechanic.  Instead, I think it has to do with what players need.  Without reading the books, I can hold a perfectly decent conversation with an NPC, ask questions to find out all sorts of mysteries, and do it all without needing a game mechanic.  All the diplomacy skill does is add a bit of randomness in. (This is partly a matter of playstyle too - if I ever am DM, be aware that I dole out circumstantial bonuses and penalties like candy corn.  Make good points, and the diplomacy will be easier.)  Combat, however, is not as natural to players, as the characters will be doing lots of things they don't know how to do, from casting spells to various combat tactics.  Without the options in front of them, a player often wouldn't know which ways he can and cannot attack.  This is not true of conversation.&lt;br /&gt;&lt;br /&gt;Consider the Wolf Pack, where I first started playing this sort of game.  It was DnDish - we rode around on Spelljammers, fought with monsters from the 3.5 monster manual and the one before that.  We didn't have character sheets.  Heck, we didn't even have stats.  Combat was us saying we were trying to do something, the DM setting a number based on how hard it would be for our characters to do it, and rolling a die to see how it played out.  You might have noticed me asking earlier if Spencer could teleport one monster on top of a monster in a pit - that's very much Wolf  Pack style.  So would be dropping a lift on someone, or rigging a immovable rod for time-delay and throwing it down something's throat.  Game mechanics are hardly necessary - that's what DMs are for.&lt;br /&gt;&lt;br /&gt;Now, DnD is a bit more legislated than my anarchic upbringing.  But that doesn't mean that the non-legislated parts somehow don't work.  If you read the DMG, 3 out of 10 chapters on combat.  The majority are on how to make the game seem alive, how to build adventures (episodic plots), how to build campaigns (story arcs), how the terrain matters, and of course non-combat encounters.  Most of that is squishy qualitative tips, not math-crunching number questions.  (There is a chapter on combat encounters, a chapter on encounters, and the chapter on the DM's toolbox are the cases I am counting.  Two of them are only partly combat-based.)&lt;br /&gt;&lt;br /&gt;That in mind, I don't think that combat roles defines group roles either.  People often match their character personalities to the roles the character plays in combat.  People's character's personalities create group dynamic.  But to say that combat dynamics and group dynamics are the same thing is fallacious.  The group is both a combat party and a group of friends/rivals/comrades.  Nobody says that character's personalities have to be based around the way their character plays.  Hell, there are warnings in the DMG to remind leaders that just because they are the leaders in combat doesn't mean they get to order people around in combat, much less outside of combat.  Your character happens to be a leader in every way, but that's a character trait.  Shensu (whom you never met) was a Shaman, also a leader-type, but hardly a leader in character.  My characters are affected by their upbringing, but not necessarily in stereotypical ways.  Maehadros became a fighter through growing up in the town guard.  This doesn't mean he is beat-happy or thinking of himself as an impenetrable bulwark - his personality lends itself to a defender in his concern for others, but as a former cop turned into a vigilante, he has all manner of qualms about killing monsters.  Selnar grew up as a slave-soldier to the Enemy, trained from a young age only to fight as part of an elite strike force.  Does this mean that he knows how to fight, how to tie his wounds, how to endure everything, and how to be an athletic bad-ass?  Sure it does.  Does this mean he is uneducated and un-worldly?  Yeah it does.  Does this mean that he is not curious?  Hell no.  Of the people currently in the party, he is quite possibly the most curious, specifically _because_ he grew up with no chance to see anything outside of a training facility.  Maybe he's not smart enough to learn a second language (the feat needs Int 13), so he bought himself some magic glasses that let him read any language.  He goes into a tomb, and while he will deal with the monsters on hand, as per his training, he's very interested in what the carvings on the wall mean, or how the traps were built, or what knowledge a vampire lord has of ages past.  He's not that bright, but he values knowledge as precious over everything else.  If he were in a peaceful world, he would be an anthropologist, both physical anthro and social/cultural anthro.&lt;br /&gt;&lt;br /&gt;Personalities don't have to match with combat roles, nor do in-group interactions have to match with combat roles.  One thing that nearly drove Selnar and Rusty to blows was Selnar's desire to interview the warlock bounty hunter about who hired him, and probably digress into learning about how warlock magic works.  Unfortunately, the warlock apparently wound up dead (how did that happen, anyway - someone told me that Wilhelm was involved, and Selnar is interested enough to know), so nothing will come of that.&lt;br /&gt;&lt;br /&gt;I think that each character having a strong and distinct personality helps group dynamic more than having combat roles helps it.</content><link rel='edit' type='application/atom+xml' href='http://www.blogger.com/feeds/4470717033668906745/6014526440559848027/comments/default/991712715061890659'/><link rel='self' type='application/atom+xml' href='http://www.blogger.com/feeds/4470717033668906745/6014526440559848027/comments/default/991712715061890659'/><link rel='alternate' type='text/html' href='http://whatsdownnil.blogspot.com/2009/04/dnd-rant.html?showComment=1240249260000#c991712715061890659' title=''/><author><name>Nil Athelion</name><uri>http://www.blogger.com/profile/16996018952758178741</uri><email>Featherless@gmail.com</email></author><thr:in-reply-to href='http://whatsdownnil.blogspot.com/2009/04/dnd-rant.html' ref='tag:blogger.com,1999:blog-4470717033668906745.post-6014526440559848027' source='http://www.blogger.com/feeds/4470717033668906745/posts/default/6014526440559848027' type='text/html'/></entry><entry><id>tag:blogger.com,1999:blog-4470717033668906745.post-5594040327213200985</id><published>2009-04-20T01:36:00.000-07:00</published><updated>2009-04-20T01:36:33.985-07:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#comment'/><title type='text'>it's late, and a lot of those sentences are not se...</title><content type='html'>it's late, and a lot of those sentences are not sentences.  I apologize.</content><link rel='edit' type='application/atom+xml' href='http://www.blogger.com/feeds/4470717033668906745/6014526440559848027/comments/default/5594040327213200985'/><link rel='self' type='application/atom+xml' href='http://www.blogger.com/feeds/4470717033668906745/6014526440559848027/comments/default/5594040327213200985'/><link rel='alternate' type='text/html' href='http://whatsdownnil.blogspot.com/2009/04/dnd-rant.html?showComment=1240216560000#c5594040327213200985' title=''/><author><name>Tucky</name><uri>http://www.blogger.com/profile/17352584057899804272</uri><email>noreply@blogger.com</email></author><thr:in-reply-to href='http://whatsdownnil.blogspot.com/2009/04/dnd-rant.html' ref='tag:blogger.com,1999:blog-4470717033668906745.post-6014526440559848027' source='http://www.blogger.com/feeds/4470717033668906745/posts/default/6014526440559848027' type='text/html'/></entry><entry><id>tag:blogger.com,1999:blog-4470717033668906745.post-8310952572944088060</id><published>2009-04-20T01:35:00.000-07:00</published><updated>2009-04-20T01:35:29.449-07:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#comment'/><title type='text'>The thing about the player types in DnD is that th...</title><content type='html'>The thing about the player types in DnD is that they do not exclude one another.  I love creating a story, but the game lends itself to creating story mainly through violent conflict.  That the books exhaustively catalogue the rules for combat and give the diplomacy skill about a paragraph and a half suggests the main game mechanic is.  By having character classes who differ mainly in their combat capabilities, our roles within the group are best defined inside combat.  It's an aide to group dynamics.  And the feeling of accomplishment is greater for most people when victory is clear cut according to a set of rules, as opposed to a winding story where the repercussions and rewards of an action aren't apparent at first, if ever.&lt;br /&gt;&lt;br /&gt;As for talking to Zeno goes, Mid-encounter it slows the action considerably, and I've always had a problem with making suggestions to someone who isn't supposed to exist.  The actions he carries out are supposed to reflect the thought processes of all the individual characters he controls, and telling him about a play error removes the ability of those characters to make mistakes.</content><link rel='edit' type='application/atom+xml' href='http://www.blogger.com/feeds/4470717033668906745/6014526440559848027/comments/default/8310952572944088060'/><link rel='self' type='application/atom+xml' href='http://www.blogger.com/feeds/4470717033668906745/6014526440559848027/comments/default/8310952572944088060'/><link rel='alternate' type='text/html' href='http://whatsdownnil.blogspot.com/2009/04/dnd-rant.html?showComment=1240216500000#c8310952572944088060' title=''/><author><name>Tucky</name><uri>http://www.blogger.com/profile/17352584057899804272</uri><email>noreply@blogger.com</email></author><thr:in-reply-to href='http://whatsdownnil.blogspot.com/2009/04/dnd-rant.html' ref='tag:blogger.com,1999:blog-4470717033668906745.post-6014526440559848027' source='http://www.blogger.com/feeds/4470717033668906745/posts/default/6014526440559848027' type='text/html'/></entry><entry><id>tag:blogger.com,1999:blog-4470717033668906745.post-2615569000370154843</id><published>2009-04-15T14:12:00.000-07:00</published><updated>2009-04-15T14:12:27.557-07:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#comment'/><title type='text'>Well, the differences with Tim are greatest during...</title><content type='html'>Well, the differences with Tim are greatest during DnD - my worry is that we don&amp;#39;t work it out, as noted in the previous post.  I wouldn&amp;#39;t mind having differences with people if those differences could be worked out and used constructively.  Diversity builds strength, fracturing does not.&lt;br /&gt;&lt;br /&gt;On the differing motivations: Interesting that you said it that way.  Here is what the Dungeon Master Guide says on the Slayer Archetype:&lt;br /&gt;&lt;br /&gt;Slayer&lt;br /&gt;The slayer is like the power gamer, but she is even easier to please. She emphasizes kicking the tar out of monsters. Maybe she does so to let off a little steam in a safe way, or she likes the joy of feeling superior. Perhaps&lt;br /&gt;it’s the pleasure of having the power to mete out punishment to villains. D&amp;amp;D combat is thrilling. Few other aspects of the game put a character in such apparent jeopardy. Beating the bad guys is a clear success. Most players enjoy these D&amp;amp;D elements, but the slayer seeks them foremost.&lt;br /&gt;A slayer . . .&lt;br /&gt;✦ O ptimizes like a power gamer.&lt;br /&gt;✦ Might pick simple options to get into the action quicker.&lt;br /&gt;✦ Spends less time on story and roleplaying elements.&lt;br /&gt;✦ Wants to fight monsters and take bold action all the time.&lt;br /&gt;En gage the slayer by . . .&lt;br /&gt;✦ Springing an unexpected battle when the slayer looks bored.&lt;br /&gt;✦ Making some battles simple and others more complex.&lt;br /&gt;✦ Vividly describing the havoc the slayer wreaks with powers.&lt;br /&gt;✦ Recruiting her to track initiative during combat.&lt;br /&gt;Be sure that the slayer doesn’t . . .&lt;br /&gt;✦ Ruin adventures by killing monsters the characters should talk to.&lt;br /&gt;✦ Rush past social and skill challenge encounters to the next&lt;br /&gt;fight.&lt;br /&gt;&lt;br /&gt;Apparently the DMG is pretty good about these archetyping things.  I know that Storyteller and Thinker peg me pretty well.&lt;br /&gt;&lt;br /&gt;As for suggesting things to Zeno... I suppose I could keep it to facebook or something.  I don&amp;#39;t know if I could run facebook and the PDFs at the same time.  Seems a bit underhanded, though.  I don&amp;#39;t really understand the loyalty thing, though... DnD isn&amp;#39;t about the players vs the DM.  The DM is a judge and is there to provide challenges for the players.  If he thinks the encounters are too strong, then he could ask for them to be less challenging.  On my end of things, I feel that they could be stronger - my character isn&amp;#39;t being pushed to his fullest at all.&lt;br /&gt;&lt;br /&gt;I&amp;#39;ll try talking to him, primarily about the interpersonal stuff, but the DnD things too, if they come up.</content><link rel='edit' type='application/atom+xml' href='http://www.blogger.com/feeds/4470717033668906745/6014526440559848027/comments/default/2615569000370154843'/><link rel='self' type='application/atom+xml' href='http://www.blogger.com/feeds/4470717033668906745/6014526440559848027/comments/default/2615569000370154843'/><link rel='alternate' type='text/html' href='http://whatsdownnil.blogspot.com/2009/04/dnd-rant.html?showComment=1239829920000#c2615569000370154843' title=''/><author><name>Nil Athelion</name><uri>http://www.blogger.com/profile/16996018952758178741</uri><email>Featherless@gmail.com</email></author><thr:in-reply-to href='http://whatsdownnil.blogspot.com/2009/04/dnd-rant.html' ref='tag:blogger.com,1999:blog-4470717033668906745.post-6014526440559848027' source='http://www.blogger.com/feeds/4470717033668906745/posts/default/6014526440559848027' type='text/html'/></entry><entry><id>tag:blogger.com,1999:blog-4470717033668906745.post-5651698441961728630</id><published>2009-04-15T11:31:00.000-07:00</published><updated>2009-04-15T11:31:16.917-07:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#comment'/><title type='text'>I think the different motivations may be what's ca...</title><content type='html'>I think the different motivations may be what's causing conflict between you two.  I think that Tim may even use DnD to vent real-life frustrations, so he really enjoys destroying things.&lt;br /&gt;&lt;br /&gt;And I think the thing he was complaining about during the game was that you were giving Zeno suggestions DURING the game, when Zeno didn't ask for them.  As far as I can tell, it's fine talking with Zeno about strategies, scenarios, and other such things outside of the actual gameplay, but when everyone's gathered together playing and trying to defeat whatever enemy Zeno's throwing at them, it's very frustrating when a member of the party's helping the DM out and telling him how to better defeat the party.  To them, it's like you're playing both sides and have divided loyalties.  &lt;br /&gt;&lt;br /&gt;Perhaps if you want to do that kind of thing in the middle of gameplay, facebook chat with Zeno?  That way he's the only one who sees what you're suggesting and the rest of the party's not going to get as frustrated with you.  Gigantor did that during one game, so there's a precedent.  Work that out with Zeno (preferably when the other gamers arent' around to hear it).&lt;br /&gt;&lt;br /&gt;As far as frustrations with Tim, it might be good for you to talk to him about it.  Then again, I don't know how'd he react, but it might be worth a shot.</content><link rel='edit' type='application/atom+xml' href='http://www.blogger.com/feeds/4470717033668906745/6014526440559848027/comments/default/5651698441961728630'/><link rel='self' type='application/atom+xml' href='http://www.blogger.com/feeds/4470717033668906745/6014526440559848027/comments/default/5651698441961728630'/><link rel='alternate' type='text/html' href='http://whatsdownnil.blogspot.com/2009/04/dnd-rant.html?showComment=1239820260000#c5651698441961728630' title=''/><author><name>Krystal Angel</name><uri>http://www.blogger.com/profile/14933851188160401673</uri><email>noreply@blogger.com</email></author><thr:in-reply-to href='http://whatsdownnil.blogspot.com/2009/04/dnd-rant.html' ref='tag:blogger.com,1999:blog-4470717033668906745.post-6014526440559848027' source='http://www.blogger.com/feeds/4470717033668906745/posts/default/6014526440559848027' type='text/html'/></entry><entry><id>tag:blogger.com,1999:blog-4470717033668906745.post-1556227541681425079</id><published>2009-03-29T16:47:00.000-07:00</published><updated>2009-03-29T16:47:59.767-07:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#comment'/><title type='text'>I don't think so.  Some teachers are just horrible...</title><content type='html'>I don't think so.  Some teachers are just horrible test writers, and unfortunately it is the student who suffers.</content><link rel='edit' type='application/atom+xml' href='http://www.blogger.com/feeds/4470717033668906745/640367806132786015/comments/default/1556227541681425079'/><link rel='self' type='application/atom+xml' href='http://www.blogger.com/feeds/4470717033668906745/640367806132786015/comments/default/1556227541681425079'/><link rel='alternate' type='text/html' href='http://whatsdownnil.blogspot.com/2009/03/oh-gods-tests.html?showComment=1238370420000#c1556227541681425079' title=''/><author><name>Krystal Angel</name><uri>http://www.blogger.com/profile/14933851188160401673</uri><email>noreply@blogger.com</email></author><thr:in-reply-to href='http://whatsdownnil.blogspot.com/2009/03/oh-gods-tests.html' ref='tag:blogger.com,1999:blog-4470717033668906745.post-640367806132786015' source='http://www.blogger.com/feeds/4470717033668906745/posts/default/640367806132786015' type='text/html'/></entry><entry><id>tag:blogger.com,1999:blog-4470717033668906745.post-5397110481517281217</id><published>2009-03-27T20:51:00.000-07:00</published><updated>2009-03-27T20:51:36.777-07:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#comment'/><title type='text'>&amp;gt;.&amp;lt;  Poor dear....</title><content type='html'>&amp;gt;.&amp;lt;  Poor dear....</content><link rel='edit' type='application/atom+xml' href='http://www.blogger.com/feeds/4470717033668906745/640367806132786015/comments/default/5397110481517281217'/><link rel='self' type='application/atom+xml' href='http://www.blogger.com/feeds/4470717033668906745/640367806132786015/comments/default/5397110481517281217'/><link rel='alternate' type='text/html' href='http://whatsdownnil.blogspot.com/2009/03/oh-gods-tests.html?showComment=1238212260000#c5397110481517281217' title=''/><author><name>Edelweiss</name><uri>http://www.blogger.com/profile/09726206517515400622</uri><email>noreply@blogger.com</email></author><thr:in-reply-to href='http://whatsdownnil.blogspot.com/2009/03/oh-gods-tests.html' ref='tag:blogger.com,1999:blog-4470717033668906745.post-640367806132786015' source='http://www.blogger.com/feeds/4470717033668906745/posts/default/640367806132786015' type='text/html'/></entry><entry><id>tag:blogger.com,1999:blog-4470717033668906745.post-8731116784966243854</id><published>2009-03-23T16:05:00.000-07:00</published><updated>2009-03-23T16:05:46.012-07:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#comment'/><title type='text'>I don't think I've ever fainted.  Felt faint, yeah...</title><content type='html'>I don't think I've ever fainted.  Felt faint, yeah.  Been knocked out, yeah.  Gotten concussed and fallen over, yeah, but I don't think I actually got knocked out then.&lt;BR/&gt;&lt;BR/&gt;There was one time when I was working at my computer and the next thing I knew I was in bed and it was dark outside, and I'm not sure WHAT happened, but somehow I got myself from my desk to my bed, so I don't think I fainted.&lt;BR/&gt;&lt;BR/&gt;The time I got knocked out was during soccer, when I trapped a ball with an un-tensed abdomen.  Woke up chewing grass with everybody freaking out.&lt;BR/&gt;&lt;BR/&gt;Locking your legs shouldn't make you faint, though.  Also, dear, next time you start feeling faint like that SIT DOWN AND BREATHE.  Also, don't keep your legs locked for that long.  Also, take care of yourself, dear.  I'll help you get to stretching right if you help me get back in shape? ;P</content><link rel='edit' type='application/atom+xml' href='http://www.blogger.com/feeds/4470717033668906745/1358595790442196428/comments/default/8731116784966243854'/><link rel='self' type='application/atom+xml' href='http://www.blogger.com/feeds/4470717033668906745/1358595790442196428/comments/default/8731116784966243854'/><link rel='alternate' type='text/html' href='http://whatsdownnil.blogspot.com/2009/03/fainting.html?showComment=1237849500000#c8731116784966243854' title=''/><author><name>Edelweiss</name><uri>http://www.blogger.com/profile/09726206517515400622</uri><email>noreply@blogger.com</email></author><thr:in-reply-to href='http://whatsdownnil.blogspot.com/2009/03/fainting.html' ref='tag:blogger.com,1999:blog-4470717033668906745.post-1358595790442196428' source='http://www.blogger.com/feeds/4470717033668906745/posts/default/1358595790442196428' type='text/html'/></entry><entry><id>tag:blogger.com,1999:blog-4470717033668906745.post-3157489598513247602</id><published>2009-03-20T10:28:00.000-07:00</published><updated>2009-03-20T10:28:10.916-07:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#comment'/><title type='text'>Dang, man, I&amp;#39;m glad you&amp;#39;re ok.  &lt;br&gt;&lt;br&gt;I&amp;...</title><content type='html'>Dang, man, I&amp;#39;m glad you&amp;#39;re ok.  &lt;BR/&gt;&lt;BR/&gt;I&amp;#39;ve fainted once from lack of oxygen after high school PE.  I have asthma, and we had been playing basketball in a dusty gym (constuction taking over half of it, you see), so my breathing wasn&amp;#39;t really working out so well.  I tried using my inhaler on the way down to the locker room, but I ended up fainting right in front of the locker room door.  &lt;BR/&gt;&lt;BR/&gt;I don&amp;#39;t know how long I was out, but apparently it wasn&amp;#39;t long because no one actually realized that I had passed out.  I guess it looked like I just tripped and sprawled out in front of the door?  It was pretty scary, though, even more so that no one really knew that I had just lost consciousness for a bit.  Makes me loose trust in people sometimes.  &amp;gt;_&amp;lt;</content><link rel='edit' type='application/atom+xml' href='http://www.blogger.com/feeds/4470717033668906745/1358595790442196428/comments/default/3157489598513247602'/><link rel='self' type='application/atom+xml' href='http://www.blogger.com/feeds/4470717033668906745/1358595790442196428/comments/default/3157489598513247602'/><link rel='alternate' type='text/html' href='http://whatsdownnil.blogspot.com/2009/03/fainting.html?showComment=1237570080000#c3157489598513247602' title=''/><author><name>Krystal Angel</name><uri>http://www.blogger.com/profile/14933851188160401673</uri><email>noreply@blogger.com</email></author><thr:in-reply-to href='http://whatsdownnil.blogspot.com/2009/03/fainting.html' ref='tag:blogger.com,1999:blog-4470717033668906745.post-1358595790442196428' source='http://www.blogger.com/feeds/4470717033668906745/posts/default/1358595790442196428' type='text/html'/></entry><entry><id>tag:blogger.com,1999:blog-4470717033668906745.post-6267876308028023498</id><published>2009-03-18T22:47:00.000-07:00</published><updated>2009-03-18T22:47:27.108-07:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#comment'/><title type='text'>Ick.  Sickness is not so fun.&lt;br&gt;&lt;br&gt;For me, the s...</title><content type='html'>Ick.  Sickness is not so fun.&lt;BR/&gt;&lt;BR/&gt;For me, the scary part wasn't that something was wrong with me (aside from the fainting) but that there was nothing wrong with me, so far as I could tell.&lt;BR/&gt;&lt;BR/&gt;If it were caused by sickness, I would be cooler with it, because I know that it's just sickness and will suck for a while, then go away.&lt;BR/&gt;&lt;BR/&gt;But I had no idea what it was!  I ticked it off in my head--sickness(which is my main mechanism of fainting these days), tiredness, dehydration, exhaustion... nothing was there.  And so I started freaking, or at least as much as you can freak as you are slowly, slowly creeping towards fainting.&lt;BR/&gt;&lt;BR/&gt;That's the other thing, too.  It wasn't BAM and finding myself on the ground;  I was getting fainter and fainter over the course of nearly a minute, which was really worrisome.  Also it took me a while to get back to normal.</content><link rel='edit' type='application/atom+xml' href='http://www.blogger.com/feeds/4470717033668906745/1358595790442196428/comments/default/6267876308028023498'/><link rel='self' type='application/atom+xml' href='http://www.blogger.com/feeds/4470717033668906745/1358595790442196428/comments/default/6267876308028023498'/><link rel='alternate' type='text/html' href='http://whatsdownnil.blogspot.com/2009/03/fainting.html?showComment=1237441620000#c6267876308028023498' title=''/><author><name>Nil Athelion</name><uri>http://www.blogger.com/profile/16996018952758178741</uri><email>Featherless@gmail.com</email></author><thr:in-reply-to href='http://whatsdownnil.blogspot.com/2009/03/fainting.html' ref='tag:blogger.com,1999:blog-4470717033668906745.post-1358595790442196428' source='http://www.blogger.com/feeds/4470717033668906745/posts/default/1358595790442196428' type='text/html'/></entry><entry><id>tag:blogger.com,1999:blog-4470717033668906745.post-60702561605848245</id><published>2009-03-18T22:38:00.000-07:00</published><updated>2009-03-18T22:38:59.841-07:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#comment'/><title type='text'>I only fainted once in class, but it was really sc...</title><content type='html'>I only fainted once in class, but it was really scary. It wasn't in karate, though. It was just in regular class, but we had really fun morning exercises, as a whole class. We stood up to do those, and suddenly BAM everyone was gathered around and asking if I was okay. And then the teacher told me to go home because I was sick, and then several people offered to walk me home which was really really nice so he walked me back to my dorm and it was really great except that I was actually really, really, really sick and ended up missing a lot of class and throwing up and that was really annoying.... &lt;BR/&gt;&lt;BR/&gt;I think that's all I'm going to rant right now so you have a chance to read it all... &lt;BR/&gt;&lt;BR/&gt;~ Tabs</content><link rel='edit' type='application/atom+xml' href='http://www.blogger.com/feeds/4470717033668906745/1358595790442196428/comments/default/60702561605848245'/><link rel='self' type='application/atom+xml' href='http://www.blogger.com/feeds/4470717033668906745/1358595790442196428/comments/default/60702561605848245'/><link rel='alternate' type='text/html' href='http://whatsdownnil.blogspot.com/2009/03/fainting.html?showComment=1237441080000#c60702561605848245' title=''/><author><name>Tabby</name><email>noreply@blogger.com</email></author><thr:in-reply-to href='http://whatsdownnil.blogspot.com/2009/03/fainting.html' ref='tag:blogger.com,1999:blog-4470717033668906745.post-1358595790442196428' source='http://www.blogger.com/feeds/4470717033668906745/posts/default/1358595790442196428' type='text/html'/></entry><entry><id>tag:blogger.com,1999:blog-4470717033668906745.post-3722744035204520437</id><published>2009-03-18T20:29:00.000-07:00</published><updated>2009-03-18T20:29:07.685-07:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#comment'/><title type='text'>It's the same at Cleveland.  And for some nasty re...</title><content type='html'>It's the same at Cleveland.  And for some nasty reason, the tobacco here is the worst I've ever smelt.  Normally I have issues, think it's disgusting, and cough a lot.  Here it's just overpoweringly noxious.</content><link rel='edit' type='application/atom+xml' href='http://www.blogger.com/feeds/4470717033668906745/280835976888217497/comments/default/3722744035204520437'/><link rel='self' type='application/atom+xml' href='http://www.blogger.com/feeds/4470717033668906745/280835976888217497/comments/default/3722744035204520437'/><link rel='alternate' type='text/html' href='http://whatsdownnil.blogspot.com/2009/03/planning-and-smoking.html?showComment=1237433340000#c3722744035204520437' title=''/><author><name>Edelweiss</name><uri>http://www.blogger.com/profile/09726206517515400622</uri><email>noreply@blogger.com</email></author><thr:in-reply-to href='http://whatsdownnil.blogspot.com/2009/03/planning-and-smoking.html' ref='tag:blogger.com,1999:blog-4470717033668906745.post-280835976888217497' source='http://www.blogger.com/feeds/4470717033668906745/posts/default/280835976888217497' type='text/html'/></entry><entry><id>tag:blogger.com,1999:blog-4470717033668906745.post-6049889003083779560</id><published>2009-03-18T16:54:00.000-07:00</published><updated>2009-03-18T16:54:26.803-07:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#comment'/><title type='text'>The Sky Harbor Planner Person knows that if he put...</title><content type='html'>The Sky Harbor Planner Person knows that if he put the smoking area farther away from the bus stop, the smokers would have to run to catch their busses and then would die from not being able to breathe after their sprint to the city chariots.  He put the smoking area where it is so as to minimize the amount of dead bodies around the airports.</content><link rel='edit' type='application/atom+xml' href='http://www.blogger.com/feeds/4470717033668906745/280835976888217497/comments/default/6049889003083779560'/><link rel='self' type='application/atom+xml' href='http://www.blogger.com/feeds/4470717033668906745/280835976888217497/comments/default/6049889003083779560'/><link rel='alternate' type='text/html' href='http://whatsdownnil.blogspot.com/2009/03/planning-and-smoking.html?showComment=1237420440000#c6049889003083779560' title=''/><author><name>Krystal Angel</name><uri>http://www.blogger.com/profile/14933851188160401673</uri><email>noreply@blogger.com</email></author><thr:in-reply-to href='http://whatsdownnil.blogspot.com/2009/03/planning-and-smoking.html' ref='tag:blogger.com,1999:blog-4470717033668906745.post-280835976888217497' source='http://www.blogger.com/feeds/4470717033668906745/posts/default/280835976888217497' type='text/html'/></entry><entry><id>tag:blogger.com,1999:blog-4470717033668906745.post-6611981071297216958</id><published>2009-03-11T22:08:00.000-07:00</published><updated>2009-03-11T22:08:25.385-07:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#comment'/><title type='text'>What you did was a good idea.  I'm rather impresse...</title><content type='html'>What you did was a good idea.  I'm rather impressed, actually.  I've noticed that pattern myself with my brother.  Hmm...</content><link rel='edit' type='application/atom+xml' href='http://www.blogger.com/feeds/4470717033668906745/6293500544400950367/comments/default/6611981071297216958'/><link rel='self' type='application/atom+xml' href='http://www.blogger.com/feeds/4470717033668906745/6293500544400950367/comments/default/6611981071297216958'/><link rel='alternate' type='text/html' href='http://whatsdownnil.blogspot.com/2009/03/parental-practices.html?showComment=1236834480000#c6611981071297216958' title=''/><author><name>Krystal Angel</name><uri>http://www.blogger.com/profile/14933851188160401673</uri><email>noreply@blogger.com</email></author><thr:in-reply-to href='http://whatsdownnil.blogspot.com/2009/03/parental-practices.html' ref='tag:blogger.com,1999:blog-4470717033668906745.post-6293500544400950367' source='http://www.blogger.com/feeds/4470717033668906745/posts/default/6293500544400950367' type='text/html'/></entry></feed>

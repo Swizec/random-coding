@@ -1,0 +1,1918 @@
+<?xml version='1.0' encoding='UTF-8'?><?xml-stylesheet href="http://www.blogger.com/styles/atom.css" type="text/css"?><feed xmlns='http://www.w3.org/2005/Atom' xmlns:openSearch='http://a9.com/-/spec/opensearchrss/1.0/' xmlns:georss='http://www.georss.org/georss' xmlns:gd='http://schemas.google.com/g/2005' xmlns:thr='http://purl.org/syndication/thread/1.0'><id>tag:blogger.com,1999:blog-4600047379252537802.archive</id><updated>2011-09-11T04:50:57.274-07:00</updated><title type='text'>Nil's Sandbox</title><link rel='http://schemas.google.com/g/2005#feed' type='application/atom+xml' href='http://sandboxofnil.blogspot.com/feeds/archive'/><link rel='self' type='application/atom+xml' href='http://www.blogger.com/feeds/4600047379252537802/archive'/><link rel='http://schemas.google.com/g/2005#post' type='application/atom+xml' href='http://www.blogger.com/feeds/4600047379252537802/archive'/><link rel='alternate' type='text/html' href='http://sandboxofnil.blogspot.com/'/><author><name>Nil Athelion</name><uri>http://www.blogger.com/profile/16996018952758178741</uri><email>Featherless@gmail.com</email></author><generator version='7.00' uri='http://www.blogger.com'>Blogger</generator><entry><id>tag:blogger.com,1999:blog-4600047379252537802.layout</id><published>2010-12-09T12:57:52.376-08:00</published><updated>2011-09-11T04:50:57.274-07:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#template'/><title type='text'>Template: Nil's Sandbox</title><content type='text'>&lt;?xml version="1.0" encoding="UTF-8" ?&gt;
+&lt;!DOCTYPE html&gt;
+&lt;html b:version='2' class='v2' expr:dir='data:blog.languageDirection' xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'&gt;
+  &lt;head&gt;
+    &lt;meta content='IE=EmulateIE7' http-equiv='X-UA-Compatible'/&gt;
+    &lt;b:if cond='data:blog.isMobile'&gt;
+      &lt;meta content='width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0' name='viewport'/&gt;
+    &lt;b:else/&gt;
+      &lt;meta content='width=1100' name='viewport'/&gt;
+    &lt;/b:if&gt;
+    &lt;b:include data='blog' name='all-head-content'/&gt;
+    &lt;title&gt;&lt;data:blog.pageTitle/&gt;&lt;/title&gt;
+
+    &lt;b:skin&gt;&lt;![CDATA[/*
+-----------------------------------------------
+Blogger Template Style
+Name:     Watermark
+Designer: Josh Peterson
+URL:      www.noaesthetic.com
+----------------------------------------------- */
+
+/* Variable definitions
+   ====================
+
+   &lt;Variable name="keycolor" description="Main Color" type="color" default="#c0a154" value="#441500"/&gt;
+
+   &lt;Group description="Page Text" selector="body"&gt;
+     &lt;Variable name="body.font" description="Font" type="font"
+         default="normal normal 14px Arial, Tahoma, Helvetica, FreeSans, sans-serif" value="normal normal 14px Arial, Tahoma, Helvetica, FreeSans, sans-serif"/&gt;
+     &lt;Variable name="body.text.color" description="Text Color" type="color" default="#333333" value="#ffeedd"/&gt;
+   &lt;/Group&gt;
+
+   &lt;Group description="Backgrounds" selector=".main-inner"&gt;
+     &lt;Variable name="body.background.color" description="Outer Background" type="color" default="#c0a154" value="#441500"/&gt;
+     &lt;Variable name="footer.background.color" description="Footer Background" type="color" default="transparent" value="#110000"/&gt;
+   &lt;/Group&gt;
+
+   &lt;Group description="Links" selector=".main-inner"&gt;
+     &lt;Variable name="link.color" description="Link Color" type="color" default="#cc3300" value="#ffcc77"/&gt;
+     &lt;Variable name="link.visited.color" description="Visited Color" type="color" default="#993322" value="#ff8866"/&gt;
+     &lt;Variable name="link.hover.color" description="Hover Color" type="color" default="#ff3300" value="#ffeecc"/&gt;
+   &lt;/Group&gt;
+
+   &lt;Group description="Blog Title" selector=".header h1"&gt;
+     &lt;Variable name="header.font" description="Title Font" type="font"
+         default="normal normal 60px Georgia, Utopia, 'Palatino Linotype', Palatino, serif" value="normal normal 60px Georgia, Utopia, 'Palatino Linotype', Palatino, serif"/&gt;
+     &lt;Variable name="header.text.color" description="Title Color" type="color" default="#ffffff"  value="#ffffff"/&gt;
+   &lt;/Group&gt;
+
+   &lt;Group description="Blog Description" selector=".header .description"&gt;
+     &lt;Variable name="description.text.color" description="Description Color" type="color"
+         default="#997755"  value="#aa9988"/&gt;
+   &lt;/Group&gt;
+
+   &lt;Group description="Tabs Text" selector=".tabs-inner .widget li a"&gt;
+     &lt;Variable name="tabs.font" description="Font" type="font"
+         default="normal normal 20px Georgia, Utopia, 'Palatino Linotype', Palatino, serif" value="normal normal 20px Georgia, Utopia, 'Palatino Linotype', Palatino, serif"/&gt;
+     &lt;Variable name="tabs.text.color" description="Text Color" type="color" default="$(link.color)" value="#ffcc77"/&gt;
+     &lt;Variable name="tabs.selected.text.color" description="Selected Color" type="color" default="#000000" value="#ffffff"/&gt;
+   &lt;/Group&gt;
+
+   &lt;Group description="Tabs Background" selector=".tabs-outer .PageList"&gt;
+     &lt;Variable name="tabs.background.color" description="Background Color" type="color" default="transparent" value="transparent"/&gt;
+     &lt;Variable name="tabs.separator.color" description="Separator Color" type="color" default="$(body.background.color)" value="#776655"/&gt;
+   &lt;/Group&gt;
+
+   &lt;Group description="Date Header" selector="h2.date-header"&gt;
+     &lt;Variable name="date.font" description="Font" type="font"
+         default="normal normal 16px Arial, Tahoma, Helvetica, FreeSans, sans-serif" value="normal normal 16px Arial, Tahoma, Helvetica, FreeSans, sans-serif"/&gt;
+     &lt;Variable name="date.text.color" description="Text Color" type="color" default="#997755" value="#aa9988"/&gt;
+   &lt;/Group&gt;
+
+   &lt;Group description="Post" selector="h3.post-title, .comments h4"&gt;
+     &lt;Variable name="post.title.font" description="Title Font" type="font"
+         default="normal normal 30px Georgia, Utopia, 'Palatino Linotype', Palatino, serif" value="normal normal 30px Georgia, Utopia, 'Palatino Linotype', Palatino, serif"/&gt;
+     &lt;Variable name="post.background.color" description="Background Color" type="color" default="transparent" value="transparent"/&gt;
+     &lt;Variable name="post.border.color" description="Border Color" type="color" default="#ccbb99"  value="#332211"/&gt;
+   &lt;/Group&gt;
+
+   &lt;Group description="Post Footer" selector=".post-footer"&gt;
+     &lt;Variable name="post.footer.text.color" description="Text Color" type="color" default="#997755" value="#aa9988"/&gt;
+   &lt;/Group&gt;
+
+   &lt;Group description="Gadgets" selector="h2"&gt;
+     &lt;Variable name="widget.title.font" description="Title Font" type="font"
+        default="normal normal 20px Georgia, Utopia, 'Palatino Linotype', Palatino, serif" value="normal normal 20px Georgia, Utopia, 'Palatino Linotype', Palatino, serif"/&gt;
+     &lt;Variable name="widget.title.text.color" description="Title Color" type="color" default="#000000" value="#ffffff"/&gt;
+     &lt;Variable name="widget.alternate.text.color" description="Alternate Color" type="color" default="#777777" value="#998877"/&gt;
+   &lt;/Group&gt;
+
+   &lt;Group description="Footer" selector=".footer-inner"&gt;
+     &lt;Variable name="footer.text.color" description="Text Color" type="color" default="$(body.text.color)" value="$(body.text.color)"/&gt;
+     &lt;Variable name="footer.widget.title.text.color" description="Gadget Title Color" type="color" default="$(widget.title.text.color)" value="$(widget.title.text.color)"/&gt;
+   &lt;/Group&gt;
+
+   &lt;Group description="Footer Links" selector=".footer-inner"&gt;
+     &lt;Variable name="footer.link.color" description="Link Color" type="color" default="$(link.color)" value="$(link.color)"/&gt;
+     &lt;Variable name="footer.link.visited.color" description="Visited Color" type="color" default="$(link.visited.color)" value="$(link.visited.color)"/&gt;
+     &lt;Variable name="footer.link.hover.color" description="Hover Color" type="color" default="$(link.hover.color)" value="$(link.hover.color)"/&gt;
+   &lt;/Group&gt;
+
+   &lt;Variable name="body.background" description="Body Background" type="background"
+       color="$(body.background.color)" default="$(color) url(http://www.blogblog.com/1kt/watermark/body_background_birds.png) repeat scroll top left" value="$(color) url(http://www.blogblog.com/1kt/watermark/body_background_navigator.png) repeat scroll top left"/&gt;
+   &lt;Variable name="body.background.overlay" description="Overlay Background" type="background" color="$(body.background.color)"
+       default="transparent url(http://www.blogblog.com/1kt/watermark/body_overlay_birds.png) no-repeat scroll top right" value="transparent url(http://www.blogblog.com/1kt/watermark/body_overlay_navigator.png) no-repeat scroll top center"/&gt;
+   &lt;Variable name="body.background.overlay.height" description="Overlay Background Height" type="length" default="121px" value="256px"/&gt;
+
+   &lt;Variable name="tabs.background.inner" description="Tabs Background Inner" type="url" default="none" value="none"/&gt;
+   &lt;Variable name="tabs.background.outer" description="Tabs Background Outer" type="url" default="none" value="none"/&gt;
+   &lt;Variable name="tabs.border.size" description="Tabs Border Size" type="length" default="0" value="0"/&gt;
+   &lt;Variable name="tabs.shadow.spread" description="Tabs Shadow Spread" type="length" default="0" value="0"/&gt;
+
+   &lt;Variable name="main.padding.top" description="Main Padding Top" type="length" default="30px" value="30px"/&gt;
+   &lt;Variable name="main.cap.height" description="Main Cap Height" type="length" default="0" value="0"/&gt;
+   &lt;Variable name="main.cap.image" description="Main Cap Image" type="url" default="none" value="none"/&gt;
+   &lt;Variable name="main.cap.overlay" description="Main Cap Overlay" type="url" default="none" value="none"/&gt;
+   &lt;Variable name="main.background" description="Main Background" type="background"
+       default="transparent none no-repeat scroll top left" value="transparent none no-repeat scroll top left"/&gt;
+
+   &lt;Variable name="post.background.url" description="Post Background URL" type="url"
+       default="url(http://www.blogblog.com/1kt/watermark/post_background_birds.png)" value="url(http://www.blogblog.com/1kt/watermark/post_background_navigator.png)"/&gt;
+   &lt;Variable name="post.border.size" description="Post Border Size" type="length" default="1px" value="1px"/&gt;
+   &lt;Variable name="post.border.style" description="Post Border Style" type="string" default="dotted" value="dotted"/&gt;
+   &lt;Variable name="post.shadow.spread" description="Post Shadow Spread" type="length" default="0" value="0"/&gt;
+
+   &lt;Variable name="footer.background" description="Footer Background" type="background"
+       color="$(footer.background.color)" default="$(color) url(http://www.blogblog.com/1kt/watermark/body_background_navigator.png) repeat scroll top left" value="$(color) url(http://www.blogblog.com/1kt/watermark/body_background_navigator.png) repeat scroll top left"/&gt;
+
+   &lt;Variable name="mobile.background.overlay" description="Mobile Background Overlay" type="string"
+       default="transparent none repeat scroll top left" value="transparent none repeat scroll top left"/&gt;
+
+   &lt;Variable name="startSide" description="Side where text starts in blog language" type="automatic" default="left" value="left"/&gt;
+   &lt;Variable name="endSide" description="Side where text ends in blog language" type="automatic" default="right" value="right"/&gt;
+*/
+
+/* Use this with templates/1ktemplate-*.html */
+
+/* Content
+----------------------------------------------- */
+body {
+  font: $(body.font);
+  color: $(body.text.color);
+  background: $(body.background);
+}
+
+html body .content-outer {
+  min-width: 0;
+  max-width: 100%;
+  width: 100%;
+}
+
+.content-outer {
+  font-size: 92%;
+}
+
+a:link {
+  text-decoration:none;
+  color: $(link.color);
+}
+
+a:visited {
+  text-decoration:none;
+  color: $(link.visited.color);
+}
+
+a:hover {
+  text-decoration:underline;
+  color: $(link.hover.color);
+}
+
+.body-fauxcolumns .cap-top {
+  margin-top: 30px;
+  background: $(body.background.overlay);
+  height: $(body.background.overlay.height);
+}
+
+.content-inner {
+  padding: 0;
+}
+
+/* Header
+----------------------------------------------- */
+.header-inner .Header .titlewrapper,
+.header-inner .Header .descriptionwrapper {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.Header h1 {
+  font: $(header.font);
+  color: $(header.text.color);
+  text-shadow: 2px 2px rgba(0, 0, 0, .1);
+}
+
+.Header h1 a {
+  color: $(header.text.color);
+}
+
+.Header .description {
+  font-size: 140%;
+  color: $(description.text.color);
+}
+
+/* Tabs
+----------------------------------------------- */
+.tabs-inner .section {
+  margin: 0 20px;
+}
+
+.tabs-inner .PageList, .tabs-inner .LinkList, .tabs-inner .Labels {
+  margin-left: -11px;
+  margin-right: -11px;
+
+  background-color: $(tabs.background.color);
+  border-top: $(tabs.border.size) solid #ffffff;
+  border-bottom: $(tabs.border.size) solid #ffffff;
+
+  -moz-box-shadow: 0 0 $(tabs.shadow.spread) rgba(0, 0, 0, .3);
+  -webkit-box-shadow: 0 0 $(tabs.shadow.spread) rgba(0, 0, 0, .3);
+  -goog-ms-box-shadow: 0 0 $(tabs.shadow.spread) rgba(0, 0, 0, .3);
+  box-shadow: 0 0 $(tabs.shadow.spread) rgba(0, 0, 0, .3);
+}
+
+.tabs-inner .PageList .widget-content,
+.tabs-inner .LinkList .widget-content,
+.tabs-inner .Labels .widget-content {
+  margin: -3px -11px;
+
+  background: transparent $(tabs.background.outer)  no-repeat scroll right;
+}
+
+.tabs-inner .widget ul {
+  padding: 2px 25px;
+  max-height: 34px;
+
+  background: transparent $(tabs.background.inner) no-repeat scroll left;
+}
+
+.tabs-inner .widget li {
+  border: none;
+}
+
+.tabs-inner .widget li a {
+  display: inline-block;
+
+  padding: .25em 1em;
+
+  font: $(tabs.font);
+  color: $(tabs.text.color);
+
+  border-$endSide: 1px solid $(tabs.separator.color);
+}
+
+.tabs-inner .widget li:first-child a {
+  border-$startSide: 1px solid $(tabs.separator.color);
+}
+
+.tabs-inner .widget li.selected a, .tabs-inner .widget li a:hover {
+  color: $(tabs.selected.text.color);
+}
+
+/* Headings
+----------------------------------------------- */
+h2 {
+  font: $(widget.title.font);
+  color: $(widget.title.text.color);
+
+  margin: 0 0 .5em;
+}
+
+h2.date-header {
+  font: $(date.font);
+  color: $(date.text.color);
+}
+
+/* Main
+----------------------------------------------- */
+.main-inner .column-center-inner,
+.main-inner .column-left-inner,
+.main-inner .column-right-inner {
+  padding: 0 5px;
+}
+
+.main-outer {
+  margin-top: $(main.cap.height);
+  background: $(main.background);
+}
+
+.main-inner {
+  padding-top: $(main.padding.top);
+}
+
+.main-cap-top {
+  position: relative;
+}
+
+.main-cap-top .cap-right {
+  position: absolute;
+
+  height: $(main.cap.height);
+  width: 100%;
+
+  bottom: 0;
+
+  background: transparent $(main.cap.image) repeat-x scroll bottom center;
+}
+
+.main-cap-top .cap-left {
+  position: absolute;
+
+  height: 245px;
+  width: 280px;
+  right: 0;
+  bottom: 0;
+
+  background: transparent $(main.cap.overlay) no-repeat scroll bottom left;
+}
+
+/* Posts
+----------------------------------------------- */
+.post-outer {
+  padding: 15px 20px;
+  margin: 0 0 25px;
+
+  background: $(post.background.color) $(post.background.url) repeat scroll top left;
+  _background-image: none;
+
+  border: $(post.border.style) $(post.border.size) $(post.border.color);
+
+  -moz-box-shadow: 0 0 $(post.shadow.spread) rgba(0, 0, 0, .1);
+  -webkit-box-shadow: 0 0 $(post.shadow.spread) rgba(0, 0, 0, .1);
+  -goog-ms-box-shadow: 0 0 $(post.shadow.spread) rgba(0, 0, 0, .1);
+  box-shadow: 0 0 $(post.shadow.spread) rgba(0, 0, 0, .1);
+}
+
+h3.post-title {
+  font: $(post.title.font);
+  margin: 0;
+}
+
+.comments h4 {
+  font: $(post.title.font);
+  margin: 1em 0 0;
+}
+
+.post-body {
+  font-size: 105%;
+  line-height: 1.5;
+  position: relative;
+}
+
+.post-header {
+  margin: 0 0 1em;
+
+  color: $(post.footer.text.color);
+}
+
+.post-footer {
+  margin: 10px 0 0;
+  padding: 10px 0 0;
+
+  color: $(post.footer.text.color);
+  border-top: dashed 1px $(widget.alternate.text.color);
+}
+
+#blog-pager {
+  font-size: 140%
+}
+
+#comments .comment-author {
+  padding-top: 1.5em;
+
+  border-top: dashed 1px $(widget.alternate.text.color);
+
+  background-position: 0 1.5em;
+}
+
+#comments .comment-author:first-child {
+  padding-top: 0;
+
+  border-top: none;
+}
+
+.avatar-image-container {
+  margin: .2em 0 0;
+}
+
+/* Widgets
+----------------------------------------------- */
+.widget ul, .widget #ArchiveList ul.flat {
+  padding: 0;
+  list-style: none;
+}
+
+.widget ul li, .widget #ArchiveList ul.flat li {
+  padding: .35em 0;
+  text-indent: 0;
+  border-top: dashed 1px $(widget.alternate.text.color);
+}
+
+.widget ul li:first-child, .widget #ArchiveList ul.flat li:first-child {
+  border-top: none;
+}
+
+.widget .post-body ul {
+  list-style: disc;
+}
+
+.widget .post-body ul li {
+  border: none;
+}
+
+.widget .zippy {
+  color: $(widget.alternate.text.color);
+}
+
+.post-body img, .post-body .tr-caption-container, .Profile img, .Image img,
+.BlogList .item-thumbnail img {
+  padding: 5px;
+
+  background: #fff;
+
+  -moz-box-shadow: 1px 1px 5px rgba(0, 0, 0, .5);
+  -webkit-box-shadow: 1px 1px 5px rgba(0, 0, 0, .5);
+  -goog-ms-box-shadow: 1px 1px 5px rgba(0, 0, 0, .5);
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, .5);
+}
+
+.post-body img, .post-body .tr-caption-container {
+  padding: 8px;
+}
+
+.post-body .tr-caption-container {
+  color: #333333;
+}
+
+.post-body .tr-caption-container img {
+  padding: 0;
+
+  background: transparent;
+  border: none;
+
+  -moz-box-shadow: 0 0 0 rgba(0, 0, 0, .1);
+  -webkit-box-shadow: 0 0 0 rgba(0, 0, 0, .1);
+  -goog-ms-box-shadow: 0 0 0 rgba(0, 0, 0, .1);
+  box-shadow: 0 0 0 rgba(0, 0, 0, .1);
+}
+
+/* Footer
+----------------------------------------------- */
+.footer-outer {
+  color:$(footer.text.color);
+  background: $(footer.background);
+}
+
+.footer-outer a {
+  color: $(footer.link.color);
+}
+
+.footer-outer a:visited {
+  color: $(footer.link.visited.color);
+}
+
+.footer-outer a:hover {
+  color: $(footer.link.hover.color);
+}
+
+.footer-outer .widget h2 {
+  color: $(footer.widget.title.text.color);
+}
+
+/* Mobile
+----------------------------------------------- */
+body.mobile  {
+  background-size: 100% auto;
+}
+
+.mobile .body-fauxcolumn-outer {
+  background: $(mobile.background.overlay);
+}
+
+html .mobile .mobile-date-outer {
+  border-bottom: none;
+  background: $(post.background.color) $(post.background.url) repeat scroll top left;
+  _background-image: none;
+  margin-bottom: 10px;
+}
+
+.mobile .main-cap-top {
+  z-index: -1;
+}
+
+.mobile .content-outer {
+  font-size: 100%;
+}
+
+.mobile .post-outer {
+  padding: 10px;
+}
+
+.mobile .main-cap-top .cap-left {
+  background: transparent none no-repeat scroll bottom left;
+}
+
+.mobile .body-fauxcolumns .cap-top {
+  margin: 0;
+}
+
+.mobile-link-button {
+  background: $(post.background.color) $(post.background.url) repeat scroll top left;
+}
+
+.mobile-link-button a:link, .mobile-link-button a:visited {
+  color: $(link.color);
+}
+
+.mobile-index-date .date-header {
+  color: $(date.text.color);
+}
+
+.mobile-index-contents {
+  color: $(body.text.color);
+}
+
+.mobile .tabs-inner .section {
+  margin: 0;
+}
+
+.mobile .tabs-inner .PageList {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.mobile .tabs-inner .PageList .widget-content {
+  margin: 0;
+  color: $(tabs.selected.text.color);
+  background: $(post.background.color) $(post.background.url) repeat scroll top left;
+}
+
+.mobile .tabs-inner .PageList .widget-content .pagelist-arrow {
+  border-$startSide: 1px solid $(tabs.separator.color);
+}
+]]&gt;&lt;/b:skin&gt;
+
+    &lt;b:template-skin&gt;
+      &lt;b:variable default='960px' name='content.width' type='length' value='860px'/&gt;
+      &lt;b:variable default='0' name='main.column.left.width' type='length' value='0px'/&gt;
+      &lt;b:variable default='310px' name='main.column.right.width' type='length' value='260px'/&gt;
+
+      &lt;![CDATA[
+      body {
+        min-width: $(content.width);
+      }
+
+      .content-outer, .content-fauxcolumn-outer, .region-inner {
+        min-width: $(content.width);
+        max-width: $(content.width);
+        _width: $(content.width);
+      }
+
+      .main-inner .columns {
+        padding-left: $(main.column.left.width);
+        padding-right: $(main.column.right.width);
+      }
+
+      .main-inner .fauxcolumn-center-outer {
+        left: $(main.column.left.width);
+        right: $(main.column.right.width);
+        /* IE6 does not respect left and right together */
+        _width: expression(this.parentNode.offsetWidth -
+            parseInt("$(main.column.left.width)") -
+            parseInt("$(main.column.right.width)") + 'px');
+      }
+
+      .main-inner .fauxcolumn-left-outer {
+        width: $(main.column.left.width);
+      }
+
+      .main-inner .fauxcolumn-right-outer {
+        width: $(main.column.right.width);
+      }
+
+      .main-inner .column-left-outer {
+        width: $(main.column.left.width);
+        right: 100%;
+        margin-left: -$(main.column.left.width);
+      }
+
+      .main-inner .column-right-outer {
+        width: $(main.column.right.width);
+        margin-right: -$(main.column.right.width);
+      }
+
+      #layout {
+        min-width: 0;
+      }
+
+      #layout .content-outer {
+        min-width: 0;
+        width: 800px;
+      }
+
+      #layout .region-inner {
+        min-width: 0;
+        width: auto;
+      }
+      ]]&gt;
+    &lt;/b:template-skin&gt;
+  &lt;/head&gt;
+
+  &lt;body expr:class='&amp;quot;loading&amp;quot; + data:blog.mobileClass'&gt;
+  &lt;div class='body-fauxcolumns'&gt;
+    &lt;div class='fauxcolumn-outer body-fauxcolumn-outer'&gt;
+    &lt;div class='cap-top'&gt;
+      &lt;div class='cap-left'/&gt;
+      &lt;div class='cap-right'/&gt;
+    &lt;/div&gt;
+    &lt;div class='fauxborder-left'&gt;
+    &lt;div class='fauxborder-right'/&gt;
+    &lt;div class='fauxcolumn-inner'&gt;
+    &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class='cap-bottom'&gt;
+      &lt;div class='cap-left'/&gt;
+      &lt;div class='cap-right'/&gt;
+    &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;div class='content'&gt;
+  &lt;div class='content-fauxcolumns'&gt;
+    &lt;div class='fauxcolumn-outer content-fauxcolumn-outer'&gt;
+    &lt;div class='cap-top'&gt;
+      &lt;div class='cap-left'/&gt;
+      &lt;div class='cap-right'/&gt;
+    &lt;/div&gt;
+    &lt;div class='fauxborder-left'&gt;
+    &lt;div class='fauxborder-right'/&gt;
+    &lt;div class='fauxcolumn-inner'&gt;
+    &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class='cap-bottom'&gt;
+      &lt;div class='cap-left'/&gt;
+      &lt;div class='cap-right'/&gt;
+    &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;div class='content-outer'&gt;
+  &lt;div class='content-cap-top cap-top'&gt;
+    &lt;div class='cap-left'/&gt;
+    &lt;div class='cap-right'/&gt;
+  &lt;/div&gt;
+  &lt;div class='fauxborder-left content-fauxborder-left'&gt;
+  &lt;div class='fauxborder-right content-fauxborder-right'/&gt;
+  &lt;div class='content-inner'&gt;
+
+    &lt;header&gt;
+    &lt;div class='header-outer'&gt;
+    &lt;div class='header-cap-top cap-top'&gt;
+      &lt;div class='cap-left'/&gt;
+      &lt;div class='cap-right'/&gt;
+    &lt;/div&gt;
+    &lt;div class='fauxborder-left header-fauxborder-left'&gt;
+    &lt;div class='fauxborder-right header-fauxborder-right'/&gt;
+    &lt;div class='region-inner header-inner'&gt;
+      &lt;b:section class='header' id='header' maxwidgets='1' showaddelement='no'&gt;
+&lt;b:widget id='Header1' locked='true' title='Nil&amp;apos;s Sandbox (Header)' type='Header'&gt;
+&lt;b:includable id='main'&gt;
+
+  &lt;b:if cond='data:useImage'&gt;
+    &lt;b:if cond='data:imagePlacement == &amp;quot;BEHIND&amp;quot;'&gt;
+      &lt;!--
+      Show image as background to text. You can't really calculate the width
+      reliably in JS because margins are not taken into account by any of
+      clientWidth, offsetWidth or scrollWidth, so we don't force a minimum
+      width if the user is using shrink to fit.
+      This results in a margin-width's worth of pixels being cropped. If the
+      user is not using shrink to fit then we expand the header.
+      --&gt;
+      &lt;b:if cond='data:mobile'&gt;
+          &lt;div id='header-inner'&gt;
+            &lt;div class='titlewrapper' style='background: transparent'&gt;
+              &lt;h1 class='title' style='background: transparent; border-width: 0px'&gt;
+                &lt;b:include name='title'/&gt;
+              &lt;/h1&gt;
+            &lt;/div&gt;
+            &lt;b:include name='description'/&gt;
+          &lt;/div&gt;
+        &lt;b:else/&gt;
+          &lt;div expr:style='&amp;quot;background-image: url(\&amp;quot;&amp;quot; + data:sourceUrl + &amp;quot;\&amp;quot;); &amp;quot;                        + &amp;quot;background-position: &amp;quot;                        + data:backgroundPositionStyleStr + &amp;quot;; &amp;quot;                        + data:widthStyleStr                        + &amp;quot;min-height: &amp;quot; + data:height                        + &amp;quot;_height: &amp;quot; + data:height                        + &amp;quot;background-repeat: no-repeat; &amp;quot;' id='header-inner'&gt;
+            &lt;div class='titlewrapper' style='background: transparent'&gt;
+              &lt;h1 class='title' style='background: transparent; border-width: 0px'&gt;
+                &lt;b:include name='title'/&gt;
+              &lt;/h1&gt;
+            &lt;/div&gt;
+            &lt;b:include name='description'/&gt;
+          &lt;/div&gt;
+        &lt;/b:if&gt;
+    &lt;b:else/&gt;
+      &lt;!--Show the image only--&gt;
+      &lt;div id='header-inner'&gt;
+        &lt;a expr:href='data:blog.homepageUrl' style='display: block'&gt;
+          &lt;img expr:alt='data:title' expr:height='data:height' expr:id='data:widget.instanceId + &amp;quot;_headerimg&amp;quot;' expr:src='data:sourceUrl' expr:width='data:width' style='display: block'/&gt;
+        &lt;/a&gt;
+        &lt;!--Show the description--&gt;
+        &lt;b:if cond='data:imagePlacement == &amp;quot;BEFORE_DESCRIPTION&amp;quot;'&gt;
+          &lt;b:include name='description'/&gt;
+        &lt;/b:if&gt;
+      &lt;/div&gt;
+    &lt;/b:if&gt;
+  &lt;b:else/&gt;
+    &lt;!--No header image --&gt;
+    &lt;div id='header-inner'&gt;
+      &lt;div class='titlewrapper'&gt;
+        &lt;h1 class='title'&gt;
+          &lt;b:include name='title'/&gt;
+        &lt;/h1&gt;
+      &lt;/div&gt;
+      &lt;b:include name='description'/&gt;
+    &lt;/div&gt;
+  &lt;/b:if&gt;
+&lt;/b:includable&gt;
+&lt;b:includable id='title'&gt;
+  &lt;b:if cond='data:blog.url == data:blog.homepageUrl'&gt;
+    &lt;data:title/&gt;
+  &lt;b:else/&gt;
+    &lt;a expr:href='data:blog.homepageUrl'&gt;&lt;data:title/&gt;&lt;/a&gt;
+  &lt;/b:if&gt;
+&lt;/b:includable&gt;
+&lt;b:includable id='description'&gt;
+  &lt;div class='descriptionwrapper'&gt;
+    &lt;p class='description'&gt;&lt;span&gt;&lt;data:description/&gt;&lt;/span&gt;&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/b:includable&gt;
+&lt;/b:widget&gt;
+&lt;/b:section&gt;
+    &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class='header-cap-bottom cap-bottom'&gt;
+      &lt;div class='cap-left'/&gt;
+      &lt;div class='cap-right'/&gt;
+    &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;/header&gt;
+
+    &lt;div class='tabs-outer'&gt;
+    &lt;div class='tabs-cap-top cap-top'&gt;
+      &lt;div class='cap-left'/&gt;
+      &lt;div class='cap-right'/&gt;
+    &lt;/div&gt;
+    &lt;div class='fauxborder-left tabs-fauxborder-left'&gt;
+    &lt;div class='fauxborder-right tabs-fauxborder-right'/&gt;
+    &lt;div class='region-inner tabs-inner'&gt;
+      &lt;b:section class='tabs' id='crosscol' maxwidgets='1' showaddelement='yes'/&gt;
+      &lt;b:section class='tabs' id='crosscol-overflow' showaddelement='no'/&gt;
+    &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class='tabs-cap-bottom cap-bottom'&gt;
+      &lt;div class='cap-left'/&gt;
+      &lt;div class='cap-right'/&gt;
+    &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;div class='main-outer'&gt;
+    &lt;div class='main-cap-top cap-top'&gt;
+      &lt;div class='cap-left'/&gt;
+      &lt;div class='cap-right'/&gt;
+    &lt;/div&gt;
+
+    &lt;div class='fauxborder-left main-fauxborder-left'&gt;
+    &lt;div class='fauxborder-right main-fauxborder-right'/&gt;
+    &lt;div class='region-inner main-inner'&gt;
+
+      &lt;div class='columns fauxcolumns'&gt;
+
+        &lt;div class='fauxcolumn-outer fauxcolumn-center-outer'&gt;
+        &lt;div class='cap-top'&gt;
+          &lt;div class='cap-left'/&gt;
+          &lt;div class='cap-right'/&gt;
+        &lt;/div&gt;
+        &lt;div class='fauxborder-left'&gt;
+        &lt;div class='fauxborder-right'/&gt;
+        &lt;div class='fauxcolumn-inner'&gt;
+        &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class='cap-bottom'&gt;
+          &lt;div class='cap-left'/&gt;
+          &lt;div class='cap-right'/&gt;
+        &lt;/div&gt;
+        &lt;/div&gt;
+
+        &lt;div class='fauxcolumn-outer fauxcolumn-left-outer'&gt;
+        &lt;div class='cap-top'&gt;
+          &lt;div class='cap-left'/&gt;
+          &lt;div class='cap-right'/&gt;
+        &lt;/div&gt;
+        &lt;div class='fauxborder-left'&gt;
+        &lt;div class='fauxborder-right'/&gt;
+        &lt;div class='fauxcolumn-inner'&gt;
+        &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class='cap-bottom'&gt;
+          &lt;div class='cap-left'/&gt;
+          &lt;div class='cap-right'/&gt;
+        &lt;/div&gt;
+        &lt;/div&gt;
+
+        &lt;div class='fauxcolumn-outer fauxcolumn-right-outer'&gt;
+        &lt;div class='cap-top'&gt;
+          &lt;div class='cap-left'/&gt;
+          &lt;div class='cap-right'/&gt;
+        &lt;/div&gt;
+        &lt;div class='fauxborder-left'&gt;
+        &lt;div class='fauxborder-right'/&gt;
+        &lt;div class='fauxcolumn-inner'&gt;
+        &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class='cap-bottom'&gt;
+          &lt;div class='cap-left'/&gt;
+          &lt;div class='cap-right'/&gt;
+        &lt;/div&gt;
+        &lt;/div&gt;
+
+        &lt;!-- corrects IE6 width calculation --&gt;
+        &lt;div class='columns-inner'&gt;
+
+        &lt;div class='column-center-outer'&gt;
+        &lt;div class='column-center-inner'&gt;
+          &lt;b:section class='main' id='main' showaddelement='no'&gt;
+&lt;b:widget id='Blog1' locked='true' title='Blog Posts' type='Blog'&gt;
+&lt;b:includable id='nextprev'&gt;
+  &lt;div class='blog-pager' id='blog-pager'&gt;
+    &lt;b:if cond='data:newerPageUrl'&gt;
+      &lt;span id='blog-pager-newer-link'&gt;
+      &lt;a class='blog-pager-newer-link' expr:href='data:newerPageUrl' expr:id='data:widget.instanceId + &amp;quot;_blog-pager-newer-link&amp;quot;' expr:title='data:newerPageTitle'&gt;&lt;data:newerPageTitle/&gt;&lt;/a&gt;
+      &lt;/span&gt;
+    &lt;/b:if&gt;
+
+    &lt;b:if cond='data:olderPageUrl'&gt;
+      &lt;span id='blog-pager-older-link'&gt;
+      &lt;a class='blog-pager-older-link' expr:href='data:olderPageUrl' expr:id='data:widget.instanceId + &amp;quot;_blog-pager-older-link&amp;quot;' expr:title='data:olderPageTitle'&gt;&lt;data:olderPageTitle/&gt;&lt;/a&gt;
+      &lt;/span&gt;
+    &lt;/b:if&gt;
+
+    &lt;a class='home-link' expr:href='data:blog.homepageUrl'&gt;&lt;data:homeMsg/&gt;&lt;/a&gt;
+
+    &lt;b:if cond='data:mobileLinkUrl'&gt;
+      &lt;div class='blog-mobile-link'&gt;
+        &lt;a expr:href='data:mobileLinkUrl'&gt;&lt;data:mobileLinkMsg/&gt;&lt;/a&gt;
+      &lt;/div&gt;
+    &lt;/b:if&gt;
+
+  &lt;/div&gt;
+  &lt;div class='clear'/&gt;
+&lt;/b:includable&gt;
+&lt;b:includable id='shareButtons' var='post'&gt;
+  &lt;b:if cond='data:top.showEmailButton'&gt;&lt;a class='goog-inline-block share-button sb-email' expr:href='data:post.sharePostUrl + &amp;quot;&amp;amp;target=email&amp;quot;' expr:title='data:top.emailThisMsg' target='_blank'&gt;&lt;span class='share-button-link-text'&gt;&lt;data:top.emailThisMsg/&gt;&lt;/span&gt;&lt;/a&gt;&lt;/b:if&gt;&lt;b:if cond='data:top.showBlogThisButton'&gt;&lt;a class='goog-inline-block share-button sb-blog' expr:href='data:post.sharePostUrl + &amp;quot;&amp;amp;target=blog&amp;quot;' expr:onclick='&amp;quot;window.open(this.href, \&amp;quot;_blank\&amp;quot;, \&amp;quot;height=270,width=475\&amp;quot;); return false;&amp;quot;' expr:title='data:top.blogThisMsg' target='_blank'&gt;&lt;span class='share-button-link-text'&gt;&lt;data:top.blogThisMsg/&gt;&lt;/span&gt;&lt;/a&gt;&lt;/b:if&gt;&lt;b:if cond='data:top.showTwitterButton'&gt;&lt;a class='goog-inline-block share-button sb-twitter' expr:href='data:post.sharePostUrl + &amp;quot;&amp;amp;target=twitter&amp;quot;' expr:title='data:top.shareToTwitterMsg' target='_blank'&gt;&lt;span class='share-button-link-text'&gt;&lt;data:top.shareToTwitterMsg/&gt;&lt;/span&gt;&lt;/a&gt;&lt;/b:if&gt;&lt;b:if cond='data:top.showFacebookButton'&gt;&lt;a class='goog-inline-block share-button sb-facebook' expr:href='data:post.sharePostUrl + &amp;quot;&amp;amp;target=facebook&amp;quot;' expr:onclick='&amp;quot;window.open(this.href, \&amp;quot;_blank\&amp;quot;, \&amp;quot;height=430,width=640\&amp;quot;); return false;&amp;quot;' expr:title='data:top.shareToFacebookMsg' target='_blank'&gt;&lt;span class='share-button-link-text'&gt;&lt;data:top.shareToFacebookMsg/&gt;&lt;/span&gt;&lt;/a&gt;&lt;/b:if&gt;&lt;b:if cond='data:top.showOrkutButton'&gt;&lt;a class='goog-inline-block share-button sb-orkut' expr:href='data:post.sharePostUrl + &amp;quot;&amp;amp;target=orkut&amp;quot;' expr:title='data:top.shareToOrkutMsg' target='_blank'&gt;&lt;span class='share-button-link-text'&gt;&lt;data:top.shareToOrkutMsg/&gt;&lt;/span&gt;&lt;/a&gt;&lt;/b:if&gt;&lt;b:if cond='data:top.showDummy'&gt;&lt;div class='goog-inline-block dummy-container'&gt;&lt;data:post.dummyTag/&gt;&lt;/div&gt;&lt;/b:if&gt;
+&lt;/b:includable&gt;
+&lt;b:includable id='backlinks' var='post'&gt;
+  &lt;a name='links'/&gt;&lt;h4&gt;&lt;data:post.backlinksLabel/&gt;&lt;/h4&gt;
+  &lt;b:if cond='data:post.numBacklinks != 0'&gt;
+    &lt;dl class='comments-block' id='comments-block'&gt;
+      &lt;b:loop values='data:post.backlinks' var='backlink'&gt;
+        &lt;div class='collapsed-backlink backlink-control'&gt;
+          &lt;dt class='comment-title'&gt;
+            &lt;span class='backlink-toggle-zippy'&gt;&amp;#160;&lt;/span&gt;
+            &lt;a expr:href='data:backlink.url' rel='nofollow'&gt;&lt;data:backlink.title/&gt;&lt;/a&gt;
+            &lt;b:include data='backlink' name='backlinkDeleteIcon'/&gt;
+          &lt;/dt&gt;
+          &lt;dd class='comment-body collapseable'&gt;
+            &lt;data:backlink.snippet/&gt;
+          &lt;/dd&gt;
+          &lt;dd class='comment-footer collapseable'&gt;
+            &lt;span class='comment-author'&gt;&lt;data:post.authorLabel/&gt; &lt;data:backlink.author/&gt;&lt;/span&gt;
+            &lt;span class='comment-timestamp'&gt;&lt;data:post.timestampLabel/&gt; &lt;data:backlink.timestamp/&gt;&lt;/span&gt;
+          &lt;/dd&gt;
+        &lt;/div&gt;
+      &lt;/b:loop&gt;
+    &lt;/dl&gt;
+  &lt;/b:if&gt;
+  &lt;p class='comment-footer'&gt;
+    &lt;a class='comment-link' expr:href='data:post.createLinkUrl' expr:id='data:widget.instanceId + &amp;quot;_backlinks-create-link&amp;quot;' target='_blank'&gt;&lt;data:post.createLinkLabel/&gt;&lt;/a&gt;
+  &lt;/p&gt;
+&lt;/b:includable&gt;
+&lt;b:includable id='mobile-main' var='top'&gt;
+    &lt;!-- posts --&gt;
+    &lt;div class='blog-posts hfeed'&gt;
+
+      &lt;b:include data='top' name='status-message'/&gt;
+
+      &lt;b:if cond='data:blog.pageType == &amp;quot;index&amp;quot;'&gt;
+        &lt;b:loop values='data:posts' var='post'&gt;
+          &lt;b:include data='post' name='mobile-index-post'/&gt;
+        &lt;/b:loop&gt;
+      &lt;b:else/&gt;
+        &lt;b:loop values='data:posts' var='post'&gt;
+          &lt;b:include data='post' name='mobile-post'/&gt;
+        &lt;/b:loop&gt;
+      &lt;/b:if&gt;
+    &lt;/div&gt;
+
+   &lt;b:include name='mobile-nextprev'/&gt;
+&lt;/b:includable&gt;
+&lt;b:includable id='post' var='post'&gt;
+  &lt;div class='post hentry'&gt;
+    &lt;a expr:name='data:post.id'/&gt;
+    &lt;b:if cond='data:post.title'&gt;
+      &lt;h3 class='post-title entry-title'&gt;
+      &lt;b:if cond='data:post.link'&gt;
+        &lt;a expr:href='data:post.link'&gt;&lt;data:post.title/&gt;&lt;/a&gt;
+      &lt;b:else/&gt;
+        &lt;b:if cond='data:post.url'&gt;
+          &lt;b:if cond='data:blog.url != data:post.url'&gt;
+            &lt;a expr:href='data:post.url'&gt;&lt;data:post.title/&gt;&lt;/a&gt;
+          &lt;b:else/&gt;
+            &lt;data:post.title/&gt;
+          &lt;/b:if&gt;
+        &lt;b:else/&gt;
+          &lt;data:post.title/&gt;
+        &lt;/b:if&gt;
+      &lt;/b:if&gt;
+      &lt;/h3&gt;
+    &lt;/b:if&gt;
+
+    &lt;div class='post-header'&gt;
+    &lt;div class='post-header-line-1'/&gt;
+    &lt;/div&gt;
+
+    &lt;div class='post-body entry-content' expr:id='&amp;quot;post-body-&amp;quot; + data:post.id'&gt;
+      &lt;data:post.body/&gt;
+      &lt;div style='clear: both;'/&gt; &lt;!-- clear for photos floats --&gt;
+    &lt;/div&gt;
+
+    &lt;b:if cond='data:post.hasJumpLink'&gt;
+      &lt;div class='jump-link'&gt;
+        &lt;a expr:href='data:post.url + &amp;quot;#more&amp;quot;' expr:title='data:post.title'&gt;&lt;data:post.jumpText/&gt;&lt;/a&gt;
+      &lt;/div&gt;
+    &lt;/b:if&gt;
+
+    &lt;div class='post-footer'&gt;
+    &lt;div class='post-footer-line post-footer-line-1'&gt;&lt;span class='post-author vcard'&gt;
+        &lt;b:if cond='data:top.showAuthor'&gt;
+          &lt;data:top.authorLabel/&gt;
+          &lt;span class='fn'&gt;&lt;data:post.author/&gt;&lt;/span&gt;
+        &lt;/b:if&gt;
+      &lt;/span&gt; &lt;span class='post-timestamp'&gt;
+        &lt;b:if cond='data:top.showTimestamp'&gt;
+          &lt;data:top.timestampLabel/&gt;
+        &lt;b:if cond='data:post.url'&gt;
+          &lt;a class='timestamp-link' expr:href='data:post.url' rel='bookmark' title='permanent link'&gt;&lt;abbr class='published' expr:title='data:post.timestampISO8601'&gt;&lt;data:post.timestamp/&gt;&lt;/abbr&gt;&lt;/a&gt;
+        &lt;/b:if&gt;
+        &lt;/b:if&gt;
+      &lt;/span&gt; &lt;span class='post-comment-link'&gt;
+        &lt;b:if cond='data:blog.pageType != &amp;quot;item&amp;quot;'&gt;
+          &lt;b:if cond='data:blog.pageType != &amp;quot;static_page&amp;quot;'&gt;
+            &lt;b:if cond='data:post.allowComments'&gt;
+              &lt;a class='comment-link' expr:href='data:post.addCommentUrl' expr:onclick='data:post.addCommentOnclick'&gt;&lt;b:if cond='data:post.numComments == 1'&gt;1 &lt;data:top.commentLabel/&gt;&lt;b:else/&gt;&lt;data:post.numComments/&gt; &lt;data:top.commentLabelPlural/&gt;&lt;/b:if&gt;&lt;/a&gt;
+            &lt;/b:if&gt;
+          &lt;/b:if&gt;
+        &lt;/b:if&gt;
+      &lt;/span&gt; &lt;span class='post-icons'&gt;
+        &lt;!-- email post links --&gt;
+        &lt;b:if cond='data:post.emailPostUrl'&gt;
+          &lt;span class='item-action'&gt;
+          &lt;a expr:href='data:post.emailPostUrl' expr:title='data:top.emailPostMsg'&gt;
+              &lt;img alt='' class='icon-action' height='13' src='http://img1.blogblog.com/img/icon18_email.gif' width='18'/&gt;
+          &lt;/a&gt;
+          &lt;/span&gt;
+        &lt;/b:if&gt;
+
+        &lt;!-- quickedit pencil --&gt;
+        &lt;b:include data='post' name='postQuickEdit'/&gt;
+      &lt;/span&gt; &lt;div class='post-share-buttons goog-inline-block'&gt;
+        &lt;b:if cond='data:post.sharePostUrl'&gt;
+          &lt;b:include data='post' name='shareButtons'/&gt;
+        &lt;/b:if&gt;
+      &lt;/div&gt; &lt;span class='post-backlinks post-comment-link'&gt;
+         &lt;b:if cond='data:blog.pageType != &amp;quot;item&amp;quot;'&gt;
+           &lt;b:if cond='data:blog.pageType != &amp;quot;static_page&amp;quot;'&gt;
+             &lt;b:if cond='data:post.showBacklinks'&gt;
+               &lt;a class='comment-link' expr:href='data:post.url + &amp;quot;#links&amp;quot;'&gt;&lt;data:top.backlinkLabel/&gt;&lt;/a&gt;
+             &lt;/b:if&gt;
+           &lt;/b:if&gt;
+         &lt;/b:if&gt;
+       &lt;/span&gt; &lt;/div&gt;
+
+      &lt;div class='post-footer-line post-footer-line-2'&gt;&lt;span class='post-labels'&gt;
+        &lt;b:if cond='data:post.labels'&gt;
+          &lt;data:postLabelsLabel/&gt;
+          &lt;b:loop values='data:post.labels' var='label'&gt;
+            &lt;a expr:href='data:label.url' rel='tag'&gt;&lt;data:label.name/&gt;&lt;/a&gt;&lt;b:if cond='data:label.isLast != &amp;quot;true&amp;quot;'&gt;,&lt;/b:if&gt;
+          &lt;/b:loop&gt;
+        &lt;/b:if&gt;
+      &lt;/span&gt; &lt;/div&gt;
+
+      &lt;div class='post-footer-line post-footer-line-3'&gt;&lt;span class='post-location'&gt;
+        &lt;b:if cond='data:top.showLocation'&gt;
+          &lt;b:if cond='data:post.location'&gt;
+            &lt;data:postLocationLabel/&gt;
+            &lt;a expr:href='data:post.location.mapsUrl' target='_blank'&gt;&lt;data:post.location.name/&gt;&lt;/a&gt;
+          &lt;/b:if&gt;
+        &lt;/b:if&gt;
+      &lt;/span&gt; &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/b:includable&gt;
+&lt;b:includable id='status-message'&gt;
+  &lt;b:if cond='data:navMessage'&gt;
+  &lt;div class='status-msg-wrap'&gt;
+    &lt;div class='status-msg-body'&gt;
+      &lt;data:navMessage/&gt;
+    &lt;/div&gt;
+    &lt;div class='status-msg-border'&gt;
+      &lt;div class='status-msg-bg'&gt;
+        &lt;div class='status-msg-hidden'&gt;&lt;data:navMessage/&gt;&lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div style='clear: both;'/&gt;
+  &lt;/b:if&gt;
+&lt;/b:includable&gt;
+&lt;b:includable id='comment-form' var='post'&gt;
+  &lt;div class='comment-form'&gt;
+    &lt;a name='comment-form'/&gt;
+    &lt;b:if cond='data:mobile'&gt;
+      &lt;h4 id='comment-post-message'&gt;
+        &lt;a expr:id='data:widget.instanceId + &amp;quot;_comment-editor-toggle-link&amp;quot;' href='javascript:void(0)'&gt;&lt;data:postCommentMsg/&gt;&lt;/a&gt;&lt;/h4&gt;
+      &lt;p&gt;&lt;data:blogCommentMessage/&gt;&lt;/p&gt;
+      &lt;data:blogTeamBlogMessage/&gt;
+      &lt;a expr:href='data:post.commentFormIframeSrc' id='comment-editor-src'/&gt;
+      &lt;iframe allowtransparency='true' class='blogger-iframe-colorize blogger-comment-from-post' frameborder='0' height='410' id='comment-editor' name='comment-editor' src='' style='display: none' width='100%'/&gt;
+    &lt;b:else/&gt;
+      &lt;h4 id='comment-post-message'&gt;&lt;data:postCommentMsg/&gt;&lt;/h4&gt;
+      &lt;p&gt;&lt;data:blogCommentMessage/&gt;&lt;/p&gt;
+      &lt;data:blogTeamBlogMessage/&gt;
+      &lt;a expr:href='data:post.commentFormIframeSrc' id='comment-editor-src'/&gt;
+      &lt;iframe allowtransparency='true' class='blogger-iframe-colorize blogger-comment-from-post' frameborder='0' height='410' id='comment-editor' name='comment-editor' src='' width='100%'/&gt;
+    &lt;/b:if&gt;
+    &lt;data:post.friendConnectJs/&gt;
+    &lt;data:post.cmtfpIframe/&gt;
+    &lt;script type='text/javascript'&gt;
+      BLOG_CMT_createIframe(&amp;#39;&lt;data:post.appRpcRelayPath/&gt;&amp;#39;, &amp;#39;&lt;data:post.communityId/&gt;&amp;#39;);
+    &lt;/script&gt;
+  &lt;/div&gt;
+&lt;/b:includable&gt;
+&lt;b:includable id='backlinkDeleteIcon' var='backlink'&gt;
+  &lt;span expr:class='&amp;quot;item-control &amp;quot; + data:backlink.adminClass'&gt;
+    &lt;a expr:href='data:backlink.deleteUrl' expr:title='data:top.deleteBacklinkMsg'&gt;
+      &lt;img src='//www.blogger.com/img/icon_delete13.gif'/&gt;
+    &lt;/a&gt;
+  &lt;/span&gt;
+&lt;/b:includable&gt;
+&lt;b:includable id='mobile-nextprev'&gt;
+  &lt;div class='blog-pager' id='blog-pager'&gt;
+    &lt;b:if cond='data:newerPageUrl'&gt;
+      &lt;div class='mobile-link-button' id='blog-pager-newer-link'&gt;
+      &lt;a class='blog-pager-newer-link' expr:href='data:newerPageUrl' expr:id='data:widget.instanceId + &amp;quot;_blog-pager-newer-link&amp;quot;' expr:title='data:newerPageTitle'&gt;&amp;amp;lsaquo;&lt;/a&gt;
+      &lt;/div&gt;
+    &lt;/b:if&gt;
+
+    &lt;b:if cond='data:olderPageUrl'&gt;
+      &lt;div class='mobile-link-button' id='blog-pager-older-link'&gt;
+      &lt;a class='blog-pager-older-link' expr:href='data:olderPageUrl' expr:id='data:widget.instanceId + &amp;quot;_blog-pager-older-link&amp;quot;' expr:title='data:olderPageTitle'&gt;&amp;amp;rsaquo;&lt;/a&gt;
+      &lt;/div&gt;
+    &lt;/b:if&gt;
+
+    &lt;div class='mobile-link-button' id='blog-pager-home-link'&gt;
+    &lt;a class='home-link' expr:href='data:blog.homepageUrl'&gt;&lt;data:homeMsg/&gt;&lt;/a&gt;
+    &lt;/div&gt;
+
+    &lt;div class='mobile-desktop-link'&gt;
+      &lt;a class='home-link' expr:href='data:desktopLinkUrl'&gt;&lt;data:desktopLinkMsg/&gt;&lt;/a&gt;
+    &lt;/div&gt;
+
+  &lt;/div&gt;
+  &lt;div class='clear'/&gt;
+&lt;/b:includable&gt;
+&lt;b:includable id='mobile-post' var='post'&gt;
+  &lt;div class='date-outer'&gt;
+    &lt;b:if cond='data:post.dateHeader'&gt;
+      &lt;h2 class='date-header'&gt;&lt;span&gt;&lt;data:post.dateHeader/&gt;&lt;/span&gt;&lt;/h2&gt;
+    &lt;/b:if&gt;
+    &lt;div class='date-posts'&gt;
+      &lt;div class='post-outer'&gt;
+
+        &lt;div class='post hentry uncustomized-post-template'&gt;
+          &lt;a expr:name='data:post.id'/&gt;
+          &lt;b:if cond='data:post.title'&gt;
+            &lt;h3 class='post-title entry-title'&gt;
+              &lt;b:if cond='data:post.link'&gt;
+                &lt;a expr:href='data:post.link'&gt;&lt;data:post.title/&gt;&lt;/a&gt;
+              &lt;b:else/&gt;
+                &lt;b:if cond='data:post.url'&gt;
+                  &lt;b:if cond='data:blog.url != data:post.url'&gt;
+                    &lt;a expr:href='data:post.url'&gt;&lt;data:post.title/&gt;&lt;/a&gt;
+                  &lt;b:else/&gt;
+                    &lt;data:post.title/&gt;
+                  &lt;/b:if&gt;
+                &lt;b:else/&gt;
+                  &lt;data:post.title/&gt;
+                &lt;/b:if&gt;
+              &lt;/b:if&gt;
+            &lt;/h3&gt;
+          &lt;/b:if&gt;
+
+          &lt;div class='post-header'&gt;
+            &lt;div class='post-header-line-1'/&gt;
+          &lt;/div&gt;
+
+          &lt;div class='post-body entry-content' expr:id='&amp;quot;post-body-&amp;quot; + data:post.id'&gt;
+            &lt;data:post.body/&gt;
+            &lt;div style='clear: both;'/&gt; &lt;!-- clear for photos floats --&gt;
+          &lt;/div&gt;
+
+          &lt;div class='post-footer'&gt;
+            &lt;div class='post-footer-line post-footer-line-1'&gt;
+              &lt;span class='post-author vcard'&gt;
+                &lt;b:if cond='data:top.showAuthor'&gt;
+                  &lt;data:top.authorLabel/&gt;
+                  &lt;span class='fn'&gt;&lt;data:post.author/&gt;&lt;/span&gt;
+                &lt;/b:if&gt;
+              &lt;/span&gt;
+
+              &lt;span class='post-timestamp'&gt;
+                &lt;b:if cond='data:top.showTimestamp'&gt;
+                  &lt;data:top.timestampLabel/&gt;
+                  &lt;b:if cond='data:post.url'&gt;
+                    &lt;a class='timestamp-link' expr:href='data:post.url' rel='bookmark' title='permanent link'&gt;&lt;abbr class='published' expr:title='data:post.timestampISO8601'&gt;&lt;data:post.timestamp/&gt;&lt;/abbr&gt;&lt;/a&gt;
+                  &lt;/b:if&gt;
+                &lt;/b:if&gt;
+              &lt;/span&gt;
+
+              &lt;span class='post-comment-link'&gt;
+                &lt;b:if cond='data:blog.pageType != &amp;quot;item&amp;quot;'&gt;
+                  &lt;b:if cond='data:blog.pageType != &amp;quot;static_page&amp;quot;'&gt;
+                    &lt;b:if cond='data:post.allowComments'&gt;
+                      &lt;a class='comment-link' expr:href='data:post.addCommentUrl' expr:onclick='data:post.addCommentOnclick'&gt;&lt;b:if cond='data:post.numComments == 1'&gt;1 &lt;data:top.commentLabel/&gt;&lt;b:else/&gt;&lt;data:post.numComments/&gt; &lt;data:top.commentLabelPlural/&gt;&lt;/b:if&gt;&lt;/a&gt;
+                    &lt;/b:if&gt;
+                  &lt;/b:if&gt;
+                &lt;/b:if&gt;
+              &lt;/span&gt;
+            &lt;/div&gt;
+
+            &lt;div class='post-footer-line post-footer-line-2'&gt;
+              &lt;b:if cond='data:top.showMobileShare'&gt;
+                &lt;div class='mobile-link-button goog-inline-block' id='mobile-share-button'&gt;
+                  &lt;a href='javascript:void(0);'&gt;&lt;data:shareMsg/&gt;&lt;/a&gt;
+                &lt;/div&gt;
+              &lt;/b:if&gt;
+              &lt;b:if cond='data:top.showDummy'&gt;
+                &lt;div class='goog-inline-block dummy-container'&gt;&lt;data:post.dummyTag/&gt;&lt;/div&gt;
+              &lt;/b:if&gt;
+            &lt;/div&gt;
+
+          &lt;/div&gt;
+        &lt;/div&gt;
+
+        &lt;b:if cond='data:blog.pageType == &amp;quot;static_page&amp;quot;'&gt;
+          &lt;b:include data='post' name='comments'/&gt;
+        &lt;/b:if&gt;
+        &lt;b:if cond='data:blog.pageType == &amp;quot;item&amp;quot;'&gt;
+          &lt;b:include data='post' name='comments'/&gt;
+        &lt;/b:if&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/b:includable&gt;
+&lt;b:includable id='postQuickEdit' var='post'&gt;
+  &lt;b:if cond='data:post.editUrl'&gt;
+    &lt;span expr:class='&amp;quot;item-control &amp;quot; + data:post.adminClass'&gt;
+      &lt;a expr:href='data:post.editUrl' expr:title='data:top.editPostMsg'&gt;
+        &lt;img alt='' class='icon-action' height='18' src='http://img2.blogblog.com/img/icon18_edit_allbkg.gif' width='18'/&gt;
+      &lt;/a&gt;
+    &lt;/span&gt;
+  &lt;/b:if&gt;
+&lt;/b:includable&gt;
+&lt;b:includable id='main' var='top'&gt;
+  &lt;b:if cond='data:mobile == &amp;quot;false&amp;quot;'&gt;
+
+    &lt;!-- posts --&gt;
+    &lt;div class='blog-posts hfeed'&gt;
+
+      &lt;b:include data='top' name='status-message'/&gt;
+
+      &lt;data:defaultAdStart/&gt;
+      &lt;b:loop values='data:posts' var='post'&gt;
+        &lt;b:if cond='data:post.isDateStart'&gt;
+          &lt;b:if cond='data:post.isFirstPost == &amp;quot;false&amp;quot;'&gt;
+            &amp;lt;/div&amp;gt;&amp;lt;/div&amp;gt;
+          &lt;/b:if&gt;
+        &lt;/b:if&gt;
+        &lt;b:if cond='data:post.isDateStart'&gt;
+          &amp;lt;div class=&amp;quot;date-outer&amp;quot;&amp;gt;
+        &lt;/b:if&gt;
+        &lt;b:if cond='data:post.dateHeader'&gt;
+          &lt;h2 class='date-header'&gt;&lt;span&gt;&lt;data:post.dateHeader/&gt;&lt;/span&gt;&lt;/h2&gt;
+        &lt;/b:if&gt;
+        &lt;b:if cond='data:post.isDateStart'&gt;
+          &amp;lt;div class=&amp;quot;date-posts&amp;quot;&amp;gt;
+        &lt;/b:if&gt;
+        &lt;div class='post-outer'&gt;
+        &lt;b:include data='post' name='post'/&gt;
+        &lt;b:if cond='data:blog.pageType == &amp;quot;static_page&amp;quot;'&gt;
+          &lt;b:include data='post' name='comments'/&gt;
+        &lt;/b:if&gt;
+        &lt;b:if cond='data:blog.pageType == &amp;quot;item&amp;quot;'&gt;
+          &lt;b:include data='post' name='comments'/&gt;
+        &lt;/b:if&gt;
+        &lt;/div&gt;
+        &lt;b:if cond='data:post.includeAd'&gt;
+          &lt;b:if cond='data:post.isFirstPost'&gt;
+            &lt;data:defaultAdEnd/&gt;
+          &lt;b:else/&gt;
+            &lt;data:adEnd/&gt;
+          &lt;/b:if&gt;
+          &lt;div class='inline-ad'&gt;
+            &lt;data:adCode/&gt;
+          &lt;/div&gt;
+          &lt;data:adStart/&gt;
+        &lt;/b:if&gt;
+        &lt;b:if cond='data:post.trackLatency'&gt;
+          &lt;data:post.latencyJs/&gt;
+        &lt;/b:if&gt;
+      &lt;/b:loop&gt;
+      &lt;b:if cond='data:numPosts != 0'&gt;
+        &amp;lt;/div&amp;gt;&amp;lt;/div&amp;gt;
+      &lt;/b:if&gt;
+      &lt;data:adEnd/&gt;
+    &lt;/div&gt;
+
+    &lt;!-- navigation --&gt;
+    &lt;b:include name='nextprev'/&gt;
+
+    &lt;!-- feed links --&gt;
+    &lt;b:include name='feedLinks'/&gt;
+
+    &lt;b:if cond='data:top.showStars'&gt;
+      &lt;script src='//www.google.com/jsapi' type='text/javascript'/&gt;
+      &lt;script type='text/javascript'&gt;
+        google.load(&amp;quot;annotations&amp;quot;, &amp;quot;1&amp;quot;, {&amp;quot;locale&amp;quot;: &amp;quot;&lt;data:top.languageCode/&gt;&amp;quot;});
+        function initialize() {
+          google.annotations.setApplicationId(&lt;data:top.blogspotReviews/&gt;);
+          google.annotations.createAll();
+          google.annotations.fetch();
+        }
+        google.setOnLoadCallback(initialize);
+      &lt;/script&gt;
+    &lt;/b:if&gt;
+
+  &lt;b:else/&gt;
+    &lt;b:include name='mobile-main'/&gt;
+  &lt;/b:if&gt;
+
+  &lt;b:if cond='data:top.showDummy'&gt;
+    &lt;data:top.dummyBootstrap/&gt;
+  &lt;/b:if&gt;
+
+&lt;/b:includable&gt;
+&lt;b:includable id='commentDeleteIcon' var='comment'&gt;
+  &lt;span expr:class='&amp;quot;item-control &amp;quot; + data:comment.adminClass'&gt;
+    &lt;b:if cond='data:showCmtPopup'&gt;
+      &lt;div class='goog-toggle-button'&gt;
+        &lt;div class='goog-inline-block comment-action-icon'/&gt;
+      &lt;/div&gt;
+    &lt;b:else/&gt;
+      &lt;a class='comment-delete' expr:href='data:comment.deleteUrl' expr:title='data:top.deleteCommentMsg'&gt;
+        &lt;img src='//www.blogger.com/img/icon_delete13.gif'/&gt;
+      &lt;/a&gt;
+    &lt;/b:if&gt;
+  &lt;/span&gt;
+&lt;/b:includable&gt;
+&lt;b:includable id='feedLinks'&gt;
+  &lt;b:if cond='data:blog.pageType != &amp;quot;item&amp;quot;'&gt; &lt;!-- Blog feed links --&gt;
+    &lt;b:if cond='data:feedLinks'&gt;
+      &lt;div class='blog-feeds'&gt;
+        &lt;b:include data='feedLinks' name='feedLinksBody'/&gt;
+      &lt;/div&gt;
+    &lt;/b:if&gt;
+
+    &lt;b:else/&gt; &lt;!--Post feed links --&gt;
+    &lt;div class='post-feeds'&gt;
+      &lt;b:loop values='data:posts' var='post'&gt;
+        &lt;b:if cond='data:post.allowComments'&gt;
+          &lt;b:if cond='data:post.feedLinks'&gt;
+            &lt;b:include data='post.feedLinks' name='feedLinksBody'/&gt;
+          &lt;/b:if&gt;
+        &lt;/b:if&gt;
+      &lt;/b:loop&gt;
+    &lt;/div&gt;
+  &lt;/b:if&gt;
+&lt;/b:includable&gt;
+&lt;b:includable id='mobile-index-post' var='post'&gt;
+  &lt;div class='mobile-date-outer date-outer'&gt;
+    &lt;b:if cond='data:post.dateHeader'&gt;
+      &lt;div class='date-header'&gt;
+        &lt;span&gt;&lt;data:post.dateHeader/&gt;&lt;/span&gt;
+      &lt;/div&gt;
+    &lt;/b:if&gt;
+
+    &lt;div class='mobile-post-outer'&gt;
+      &lt;a expr:href='data:post.url'&gt;
+        &lt;h3 class='mobile-index-title entry-title'&gt;
+          &lt;data:post.title/&gt;
+        &lt;/h3&gt;
+
+        &lt;div class='mobile-index-arrow'&gt;&amp;amp;rsaquo;&lt;/div&gt;
+
+        &lt;div class='mobile-index-contents'&gt;
+          &lt;b:if cond='data:post.thumbnailUrl'&gt;
+            &lt;div class='mobile-index-thumbnail'&gt;
+              &lt;div class='Image'&gt;
+                &lt;img expr:src='data:post.thumbnailUrl'/&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/b:if&gt;
+
+          &lt;div class='post-body'&gt;
+            &lt;b:if cond='data:post.snippet'&gt;&lt;data:post.snippet/&gt;&lt;/b:if&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+
+        &lt;div style='clear: both;'/&gt;
+      &lt;/a&gt;
+
+      &lt;div class='mobile-index-comment'&gt;
+        &lt;b:if cond='data:blog.pageType != &amp;quot;static_page&amp;quot;'&gt;
+          &lt;b:if cond='data:post.allowComments'&gt;
+            &lt;b:if cond='data:post.numComments != 0'&gt;
+              &lt;a class='comment-link' expr:href='data:post.addCommentUrl' expr:onclick='data:post.addCommentOnclick'&gt;&lt;b:if cond='data:post.numComments == 1'&gt;1 &lt;data:top.commentLabel/&gt;&lt;b:else/&gt;&lt;data:post.numComments/&gt; &lt;data:top.commentLabelPlural/&gt;&lt;/b:if&gt;&lt;/a&gt;
+            &lt;/b:if&gt;
+          &lt;/b:if&gt;
+        &lt;/b:if&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/b:includable&gt;
+&lt;b:includable id='feedLinksBody' var='links'&gt;
+  &lt;div class='feed-links'&gt;
+  &lt;data:feedLinksMsg/&gt;
+  &lt;b:loop values='data:links' var='f'&gt;
+     &lt;a class='feed-link' expr:href='data:f.url' expr:type='data:f.mimeType' target='_blank'&gt;&lt;data:f.name/&gt; (&lt;data:f.feedType/&gt;)&lt;/a&gt;
+  &lt;/b:loop&gt;
+  &lt;/div&gt;
+&lt;/b:includable&gt;
+&lt;b:includable id='comments' var='post'&gt;
+  &lt;div class='comments' id='comments'&gt;
+    &lt;a name='comments'/&gt;
+    &lt;b:if cond='data:post.allowComments'&gt;
+      &lt;h4&gt;
+        &lt;b:if cond='data:post.numComments == 1'&gt;
+          1 &lt;data:commentLabel/&gt;:
+        &lt;b:else/&gt;
+          &lt;data:post.numComments/&gt; &lt;data:commentLabelPlural/&gt;:
+        &lt;/b:if&gt;
+      &lt;/h4&gt;
+
+      &lt;b:if cond='data:post.commentPagingRequired'&gt;
+        &lt;span class='paging-control-container'&gt;
+          &lt;a expr:class='data:post.oldLinkClass' expr:href='data:post.oldestLinkUrl'&gt;&lt;data:post.oldestLinkText/&gt;&lt;/a&gt;
+          &amp;#160;
+          &lt;a expr:class='data:post.oldLinkClass' expr:href='data:post.olderLinkUrl'&gt;&lt;data:post.olderLinkText/&gt;&lt;/a&gt;
+          &amp;#160;
+          &lt;data:post.commentRangeText/&gt;
+          &amp;#160;
+          &lt;a expr:class='data:post.newLinkClass' expr:href='data:post.newerLinkUrl'&gt;&lt;data:post.newerLinkText/&gt;&lt;/a&gt;
+          &amp;#160;
+          &lt;a expr:class='data:post.newLinkClass' expr:href='data:post.newestLinkUrl'&gt;&lt;data:post.newestLinkText/&gt;&lt;/a&gt;
+        &lt;/span&gt;
+      &lt;/b:if&gt;
+
+      &lt;div expr:id='data:widget.instanceId + &amp;quot;_comments-block-wrapper&amp;quot;'&gt;
+        &lt;dl expr:class='data:post.avatarIndentClass' id='comments-block'&gt;
+          &lt;b:loop values='data:post.comments' var='comment'&gt;
+            &lt;dt expr:class='&amp;quot;comment-author &amp;quot; + data:comment.authorClass' expr:id='data:comment.anchorName'&gt;
+              &lt;b:if cond='data:comment.favicon'&gt;
+                &lt;img expr:src='data:comment.favicon' height='16px' style='margin-bottom:-2px;' width='16px'/&gt;
+              &lt;/b:if&gt;
+              &lt;a expr:name='data:comment.anchorName'/&gt;
+              &lt;b:if cond='data:blog.enabledCommentProfileImages'&gt;
+                &lt;data:comment.authorAvatarImage/&gt;
+              &lt;/b:if&gt;
+              &lt;b:if cond='data:comment.authorUrl'&gt;
+                &lt;a expr:href='data:comment.authorUrl' rel='nofollow'&gt;&lt;data:comment.author/&gt;&lt;/a&gt;
+              &lt;b:else/&gt;
+                &lt;data:comment.author/&gt;
+              &lt;/b:if&gt;
+              &lt;data:commentPostedByMsg/&gt;
+            &lt;/dt&gt;
+            &lt;dd class='comment-body' expr:id='data:widget.instanceId + data:comment.cmtBodyIdPostfix'&gt;
+              &lt;b:if cond='data:comment.isDeleted'&gt;
+                &lt;span class='deleted-comment'&gt;&lt;data:comment.body/&gt;&lt;/span&gt;
+              &lt;b:else/&gt;
+                &lt;p&gt;
+                  &lt;data:comment.body/&gt;
+                &lt;/p&gt;
+              &lt;/b:if&gt;
+            &lt;/dd&gt;
+            &lt;dd class='comment-footer'&gt;
+              &lt;span class='comment-timestamp'&gt;
+                &lt;a expr:href='data:comment.url' title='comment permalink'&gt;
+                  &lt;data:comment.timestamp/&gt;
+                &lt;/a&gt;
+                &lt;b:include data='comment' name='commentDeleteIcon'/&gt;
+              &lt;/span&gt;
+            &lt;/dd&gt;
+          &lt;/b:loop&gt;
+        &lt;/dl&gt;
+      &lt;/div&gt;
+
+      &lt;b:if cond='data:post.commentPagingRequired'&gt;
+        &lt;span class='paging-control-container'&gt;
+          &lt;a expr:class='data:post.oldLinkClass' expr:href='data:post.oldestLinkUrl'&gt;
+            &lt;data:post.oldestLinkText/&gt;
+          &lt;/a&gt;
+          &lt;a expr:class='data:post.oldLinkClass' expr:href='data:post.olderLinkUrl'&gt;
+            &lt;data:post.olderLinkText/&gt;
+          &lt;/a&gt;
+          &amp;#160;
+          &lt;data:post.commentRangeText/&gt;
+          &amp;#160;
+          &lt;a expr:class='data:post.newLinkClass' expr:href='data:post.newerLinkUrl'&gt;
+            &lt;data:post.newerLinkText/&gt;
+          &lt;/a&gt;
+          &lt;a expr:class='data:post.newLinkClass' expr:href='data:post.newestLinkUrl'&gt;
+            &lt;data:post.newestLinkText/&gt;
+          &lt;/a&gt;
+        &lt;/span&gt;
+      &lt;/b:if&gt;
+
+      &lt;p class='comment-footer'&gt;
+        &lt;b:if cond='data:post.embedCommentForm'&gt;
+          &lt;b:if cond='data:post.allowNewComments'&gt;
+            &lt;b:include data='post' name='comment-form'/&gt;
+          &lt;b:else/&gt;
+            &lt;data:post.noNewCommentsText/&gt;
+          &lt;/b:if&gt;
+        &lt;b:else/&gt;
+          &lt;b:if cond='data:post.allowComments'&gt;
+            &lt;a expr:href='data:post.addCommentUrl' expr:onclick='data:post.addCommentOnclick'&gt;&lt;data:postCommentMsg/&gt;&lt;/a&gt;
+          &lt;/b:if&gt;
+        &lt;/b:if&gt;
+
+      &lt;/p&gt;
+    &lt;/b:if&gt;
+    &lt;b:if cond='data:showCmtPopup'&gt;
+      &lt;div id='comment-popup'&gt;
+        &lt;iframe allowtransparency='true' frameborder='0' id='comment-actions' name='comment-actions' scrolling='no'&gt;
+        &lt;/iframe&gt;
+      &lt;/div&gt;
+    &lt;/b:if&gt;
+
+    &lt;div id='backlinks-container'&gt;
+    &lt;div expr:id='data:widget.instanceId + &amp;quot;_backlinks-container&amp;quot;'&gt;
+       &lt;b:if cond='data:post.showBacklinks'&gt;
+         &lt;b:include data='post' name='backlinks'/&gt;
+       &lt;/b:if&gt;
+    &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/b:includable&gt;
+&lt;/b:widget&gt;
+&lt;/b:section&gt;
+        &lt;/div&gt;
+        &lt;/div&gt;
+
+        &lt;div class='column-left-outer'&gt;
+        &lt;div class='column-left-inner'&gt;
+          &lt;aside&gt;
+          &lt;macro:include id='main-column-left-sections' name='sections'&gt;
+            &lt;macro:param default='0' name='num' value='0'/&gt;
+            &lt;macro:param default='sidebar-left' name='idPrefix'/&gt;
+            &lt;macro:param default='sidebar' name='class'/&gt;
+            &lt;macro:param default='true' name='includeBottom'/&gt;
+          &lt;/macro:include&gt;
+          &lt;/aside&gt;
+        &lt;/div&gt;
+        &lt;/div&gt;
+
+        &lt;div class='column-right-outer'&gt;
+        &lt;div class='column-right-inner'&gt;
+          &lt;aside&gt;
+          &lt;macro:include id='main-column-right-sections' name='sections'&gt;
+            &lt;macro:param default='2' name='num' value='1'/&gt;
+            &lt;macro:param default='sidebar-right' name='idPrefix'/&gt;
+            &lt;macro:param default='sidebar' name='class'/&gt;
+            &lt;macro:param default='true' name='includeBottom'/&gt;
+          &lt;/macro:include&gt;
+          &lt;/aside&gt;
+        &lt;/div&gt;
+        &lt;/div&gt;
+
+        &lt;/div&gt;
+
+        &lt;div style='clear: both'/&gt;
+      &lt;!-- columns --&gt;
+      &lt;/div&gt;
+
+    &lt;!-- main --&gt;
+    &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class='main-cap-bottom cap-bottom'&gt;
+      &lt;div class='cap-left'/&gt;
+      &lt;div class='cap-right'/&gt;
+    &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;footer&gt;
+    &lt;div class='footer-outer'&gt;
+    &lt;div class='footer-cap-top cap-top'&gt;
+      &lt;div class='cap-left'/&gt;
+      &lt;div class='cap-right'/&gt;
+    &lt;/div&gt;
+    &lt;div class='fauxborder-left footer-fauxborder-left'&gt;
+    &lt;div class='fauxborder-right footer-fauxborder-right'/&gt;
+    &lt;div class='region-inner footer-inner'&gt;
+      &lt;macro:include id='footer-sections' name='sections'&gt;
+        &lt;macro:param default='2' name='num'/&gt;
+        &lt;macro:param default='footer' name='idPrefix'/&gt;
+        &lt;macro:param default='foot' name='class'/&gt;
+        &lt;macro:param default='false' name='includeBottom'/&gt;
+      &lt;/macro:include&gt;
+      &lt;!-- outside of the include in order to lock Attribution widget --&gt;
+      &lt;b:section class='foot' id='footer-3' showaddelement='no'&gt;
+&lt;b:widget id='Attribution1' locked='true' title='' type='Attribution'&gt;
+&lt;b:includable id='main'&gt;
+    &lt;b:if cond='data:feedbackSurveyLink'&gt;
+      &lt;div class='mobile-survey-link' style='text-align: center;'&gt;
+        &lt;data:feedbackSurveyLink/&gt;
+      &lt;/div&gt;
+    &lt;/b:if&gt;
+
+    &lt;div class='widget-content' style='text-align: center;'&gt;
+      &lt;b:if cond='data:attribution != &amp;quot;&amp;quot;'&gt;
+       &lt;data:attribution/&gt;
+      &lt;/b:if&gt;
+    &lt;/div&gt;
+
+    &lt;b:include name='quickedit'/&gt;
+  &lt;/b:includable&gt;
+&lt;/b:widget&gt;
+&lt;/b:section&gt;
+    &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class='footer-cap-bottom cap-bottom'&gt;
+      &lt;div class='cap-left'/&gt;
+      &lt;div class='cap-right'/&gt;
+    &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;/footer&gt;
+
+  &lt;!-- content --&gt;
+  &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class='content-cap-bottom cap-bottom'&gt;
+    &lt;div class='cap-left'/&gt;
+    &lt;div class='cap-right'/&gt;
+  &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;script type='text/javascript'&gt;
+    window.setTimeout(function() {
+        document.body.className = document.body.className.replace(&amp;#39;loading&amp;#39;, &amp;#39;&amp;#39;);
+      }, 10);
+  &lt;/script&gt;
+&lt;/body&gt;
+
+&lt;macro:includable id='sections' var='col'&gt;
+  &lt;macro:if cond='data:col.num == 0'&gt;
+  &lt;macro:else/&gt;
+    &lt;b:section mexpr:class='data:col.class' mexpr:id='data:col.idPrefix + &amp;quot;-1&amp;quot;' preferred='yes' showaddelement='yes'/&gt;
+
+    &lt;macro:if cond='data:col.num &amp;gt;= 2'&gt;
+      &lt;table border='0' cellpadding='0' cellspacing='0' mexpr:class='&amp;quot;section-columns columns-&amp;quot; + data:col.num'&gt;
+      &lt;tbody&gt;
+      &lt;tr&gt;
+        &lt;td class='first columns-cell'&gt;
+          &lt;b:section mexpr:class='data:col.class' mexpr:id='data:col.idPrefix + &amp;quot;-2-1&amp;quot;'/&gt;
+        &lt;/td&gt;
+
+        &lt;td class='columns-cell'&gt;
+          &lt;b:section mexpr:class='data:col.class' mexpr:id='data:col.idPrefix + &amp;quot;-2-2&amp;quot;'/&gt;
+        &lt;/td&gt;
+
+        &lt;macro:if cond='data:col.num &amp;gt;= 3'&gt;
+          &lt;td class='columns-cell'&gt;
+            &lt;b:section mexpr:class='data:col.class' mexpr:id='data:col.idPrefix + &amp;quot;-2-3&amp;quot;'/&gt;
+          &lt;/td&gt;
+        &lt;/macro:if&gt;
+
+        &lt;macro:if cond='data:col.num &amp;gt;= 4'&gt;
+          &lt;td class='columns-cell'&gt;
+            &lt;b:section mexpr:class='data:col.class' mexpr:id='data:col.idPrefix + &amp;quot;-2-4&amp;quot;'/&gt;
+          &lt;/td&gt;
+        &lt;/macro:if&gt;
+      &lt;/tr&gt;
+      &lt;/tbody&gt;
+      &lt;/table&gt;
+
+      &lt;macro:if cond='data:col.includeBottom'&gt;
+        &lt;b:section mexpr:class='data:col.class' mexpr:id='data:col.idPrefix + &amp;quot;-3&amp;quot;' showaddelement='no'/&gt;
+      &lt;/macro:if&gt;
+    &lt;/macro:if&gt;
+  &lt;/macro:if&gt;
+&lt;/macro:includable&gt;
+
+&lt;b:section-contents id='sidebar-right-1'&gt;
+&lt;b:widget id='Label1' locked='false' title='Labels' type='Label'&gt;
+&lt;b:includable id='main'&gt;
+  &lt;b:if cond='data:title'&gt;
+    &lt;h2&gt;&lt;data:title/&gt;&lt;/h2&gt;
+  &lt;/b:if&gt;
+  &lt;div expr:class='&amp;quot;widget-content &amp;quot; + data:display + &amp;quot;-label-widget-content&amp;quot;'&gt;
+    &lt;b:if cond='data:display == &amp;quot;list&amp;quot;'&gt;
+      &lt;ul&gt;
+      &lt;b:loop values='data:labels' var='label'&gt;
+        &lt;li&gt;
+          &lt;b:if cond='data:blog.url == data:label.url'&gt;
+            &lt;span expr:dir='data:blog.languageDirection'&gt;&lt;data:label.name/&gt;&lt;/span&gt;
+          &lt;b:else/&gt;
+            &lt;a expr:dir='data:blog.languageDirection' expr:href='data:label.url'&gt;&lt;data:label.name/&gt;&lt;/a&gt;
+          &lt;/b:if&gt;
+          &lt;b:if cond='data:showFreqNumbers'&gt;
+            &lt;span dir='ltr'&gt;(&lt;data:label.count/&gt;)&lt;/span&gt;
+          &lt;/b:if&gt;
+        &lt;/li&gt;
+      &lt;/b:loop&gt;
+      &lt;/ul&gt;
+    &lt;b:else/&gt;
+      &lt;b:loop values='data:labels' var='label'&gt;
+        &lt;span expr:class='&amp;quot;label-size label-size-&amp;quot; + data:label.cssSize'&gt;
+          &lt;b:if cond='data:blog.url == data:label.url'&gt;
+            &lt;span expr:dir='data:blog.languageDirection'&gt;&lt;data:label.name/&gt;&lt;/span&gt;
+          &lt;b:else/&gt;
+            &lt;a expr:dir='data:blog.languageDirection' expr:href='data:label.url'&gt;&lt;data:label.name/&gt;&lt;/a&gt;
+          &lt;/b:if&gt;
+          &lt;b:if cond='data:showFreqNumbers'&gt;
+            &lt;span class='label-count' dir='ltr'&gt;(&lt;data:label.count/&gt;)&lt;/span&gt;
+          &lt;/b:if&gt;
+        &lt;/span&gt;
+      &lt;/b:loop&gt;
+    &lt;/b:if&gt;
+    &lt;b:include name='quickedit'/&gt;
+  &lt;/div&gt;
+&lt;/b:includable&gt;
+&lt;/b:widget&gt;
+&lt;b:widget id='LinkList1' locked='false' title='Links to Things' type='LinkList'&gt;
+&lt;b:includable id='main'&gt;
+
+&lt;b:if cond='data:title'&gt;&lt;h2&gt;&lt;data:title/&gt;&lt;/h2&gt;&lt;/b:if&gt;
+ &lt;div class='widget-content'&gt;
+   &lt;ul&gt;
+     &lt;b:loop values='data:links' var='link'&gt;
+       &lt;li&gt;&lt;a expr:href='data:link.target'&gt;&lt;data:link.name/&gt;&lt;/a&gt;&lt;/li&gt;
+     &lt;/b:loop&gt;
+   &lt;/ul&gt;
+   &lt;b:include name='quickedit'/&gt;
+ &lt;/div&gt;
+&lt;/b:includable&gt;
+&lt;/b:widget&gt;
+&lt;b:widget id='BlogArchive1' locked='false' title='Blog Archive' type='BlogArchive'&gt;
+&lt;b:includable id='main'&gt;
+  &lt;b:if cond='data:title'&gt;
+    &lt;h2&gt;&lt;data:title/&gt;&lt;/h2&gt;
+  &lt;/b:if&gt;
+  &lt;div class='widget-content'&gt;
+  &lt;div id='ArchiveList'&gt;
+  &lt;div expr:id='data:widget.instanceId + &amp;quot;_ArchiveList&amp;quot;'&gt;
+    &lt;b:if cond='data:style == &amp;quot;HIERARCHY&amp;quot;'&gt;
+     &lt;b:include data='data' name='interval'/&gt;
+    &lt;/b:if&gt;
+    &lt;b:if cond='data:style == &amp;quot;FLAT&amp;quot;'&gt;
+      &lt;b:include data='data' name='flat'/&gt;
+    &lt;/b:if&gt;
+    &lt;b:if cond='data:style == &amp;quot;MENU&amp;quot;'&gt;
+      &lt;b:include data='data' name='menu'/&gt;
+    &lt;/b:if&gt;
+  &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;b:include name='quickedit'/&gt;
+  &lt;/div&gt;
+&lt;/b:includable&gt;
+&lt;b:includable id='flat' var='data'&gt;
+  &lt;ul class='flat'&gt;
+    &lt;b:loop values='data:data' var='i'&gt;
+      &lt;li class='archivedate'&gt;
+        &lt;a expr:href='data:i.url'&gt;&lt;data:i.name/&gt;&lt;/a&gt; (&lt;data:i.post-count/&gt;)
+      &lt;/li&gt;
+    &lt;/b:loop&gt;
+  &lt;/ul&gt;
+&lt;/b:includable&gt;
+&lt;b:includable id='menu' var='data'&gt;
+  &lt;select expr:id='data:widget.instanceId + &amp;quot;_ArchiveMenu&amp;quot;'&gt;
+    &lt;option value=''&gt;&lt;data:title/&gt;&lt;/option&gt;
+    &lt;b:loop values='data:data' var='i'&gt;
+      &lt;option expr:value='data:i.url'&gt;&lt;data:i.name/&gt; (&lt;data:i.post-count/&gt;)&lt;/option&gt;
+    &lt;/b:loop&gt;
+  &lt;/select&gt;
+&lt;/b:includable&gt;
+&lt;b:includable id='interval' var='intervalData'&gt;
+  &lt;b:loop values='data:intervalData' var='i'&gt;
+      &lt;ul class='hierarchy'&gt;
+        &lt;li expr:class='&amp;quot;archivedate &amp;quot; + data:i.expclass'&gt;
+          &lt;b:include data='i' name='toggle'/&gt;
+          &lt;a class='post-count-link' expr:href='data:i.url'&gt;&lt;data:i.name/&gt;&lt;/a&gt;
+            &lt;span class='post-count' dir='ltr'&gt;(&lt;data:i.post-count/&gt;)&lt;/span&gt;
+          &lt;b:if cond='data:i.data'&gt;
+            &lt;b:include data='i.data' name='interval'/&gt;
+          &lt;/b:if&gt;
+          &lt;b:if cond='data:i.posts'&gt;
+            &lt;b:include data='i.posts' name='posts'/&gt;
+          &lt;/b:if&gt;
+        &lt;/li&gt;
+      &lt;/ul&gt;
+  &lt;/b:loop&gt;
+&lt;/b:includable&gt;
+&lt;b:includable id='toggle' var='interval'&gt;
+  &lt;b:if cond='data:interval.toggleId'&gt;
+  &lt;b:if cond='data:interval.expclass == &amp;quot;expanded&amp;quot;'&gt;
+    &lt;a class='toggle' href='javascript:void(0)'&gt;
+      &lt;span class='zippy toggle-open'&gt;&amp;#9660;&amp;#160;&lt;/span&gt;
+    &lt;/a&gt;
+  &lt;b:else/&gt;
+    &lt;a class='toggle' href='javascript:void(0)'&gt;
+      &lt;span class='zippy'&gt;
+        &lt;b:if cond='data:blog.languageDirection == &amp;quot;rtl&amp;quot;'&gt;
+          &amp;#9668;&amp;#160;
+        &lt;b:else/&gt;
+          &amp;#9658;&amp;#160;
+        &lt;/b:if&gt;
+      &lt;/span&gt;
+    &lt;/a&gt;
+  &lt;/b:if&gt;
+ &lt;/b:if&gt;
+&lt;/b:includable&gt;
+&lt;b:includable id='posts' var='posts'&gt;
+  &lt;ul class='posts'&gt;
+    &lt;b:loop values='data:posts' var='i'&gt;
+      &lt;li&gt;&lt;a expr:href='data:i.url'&gt;&lt;data:i.title/&gt;&lt;/a&gt;&lt;/li&gt;
+    &lt;/b:loop&gt;
+  &lt;/ul&gt;
+&lt;/b:includable&gt;
+&lt;/b:widget&gt;
+&lt;b:widget id='Profile1' locked='false' title='About Me' type='Profile'&gt;
+&lt;b:includable id='main'&gt;
+    &lt;b:if cond='data:title != &amp;quot;&amp;quot;'&gt;
+      &lt;h2&gt;&lt;data:title/&gt;&lt;/h2&gt;
+    &lt;/b:if&gt;
+    &lt;div class='widget-content'&gt;
+    &lt;b:if cond='data:team == &amp;quot;true&amp;quot;'&gt; &lt;!-- team blog profile --&gt;
+      &lt;ul&gt;
+        &lt;b:loop values='data:authors' var='i'&gt;
+          &lt;li&gt;&lt;a expr:href='data:i.userUrl'&gt;&lt;data:i.display-name/&gt;&lt;/a&gt;&lt;/li&gt;
+        &lt;/b:loop&gt;
+      &lt;/ul&gt;
+
+      &lt;b:else/&gt; &lt;!-- normal blog profile --&gt;
+
+      &lt;b:if cond='data:photo.url != &amp;quot;&amp;quot;'&gt;
+        &lt;a expr:href='data:userUrl'&gt;&lt;img class='profile-img' expr:alt='data:photo.alt' expr:height='data:photo.height' expr:src='data:photo.url' expr:width='data:photo.width'/&gt;&lt;/a&gt;
+      &lt;/b:if&gt;
+
+      &lt;dl class='profile-datablock'&gt;
+        &lt;dt class='profile-data'&gt;
+          &lt;a class='profile-name-link' expr:href='data:userUrl' rel='author'&gt;
+            &lt;data:displayname/&gt;
+          &lt;/a&gt;
+        &lt;/dt&gt;
+
+        &lt;b:if cond='data:showlocation == &amp;quot;true&amp;quot;'&gt;
+          &lt;dd class='profile-data'&gt;&lt;data:location/&gt;&lt;/dd&gt;
+        &lt;/b:if&gt;
+
+        &lt;b:if cond='data:aboutme != &amp;quot;&amp;quot;'&gt;&lt;dd class='profile-textblock'&gt;&lt;data:aboutme/&gt;&lt;/dd&gt;&lt;/b:if&gt;
+      &lt;/dl&gt;
+      &lt;a class='profile-link' expr:href='data:userUrl' rel='author'&gt;&lt;data:viewProfileMsg/&gt;&lt;/a&gt;
+    &lt;/b:if&gt;
+
+     &lt;b:include name='quickedit'/&gt;
+    &lt;/div&gt;
+  &lt;/b:includable&gt;
+&lt;/b:widget&gt;
+&lt;b:widget id='Followers1' locked='false' title='Followers' type='Followers'&gt;
+&lt;b:includable id='main'&gt;
+  &lt;b:if cond='data:title != &amp;quot;&amp;quot;'&gt;
+    &lt;b:if cond='data:codeSnippet != &amp;quot;&amp;quot;'&gt;
+      &lt;h2 class='title'&gt;&lt;data:title/&gt;&lt;/h2&gt;
+    &lt;b:else/&gt;
+      &lt;b:if cond='data:totalFollowerCount != &amp;quot;&amp;quot;'&gt;
+        &lt;h2 class='title'&gt;&lt;data:title/&gt; (&lt;data:totalFollowerCount/&gt;)&lt;/h2&gt;
+      &lt;/b:if&gt;
+    &lt;/b:if&gt;  
+  &lt;/b:if&gt;
+  &lt;div class='widget-content'&gt;
+    &lt;div expr:id='data:widget.instanceId + &amp;quot;-wrapper&amp;quot;'&gt;
+      &lt;b:if cond='data:codeSnippet != &amp;quot;&amp;quot;'&gt;
+        &lt;div style='margin-right:2px;'&gt;
+          &lt;data:codeSnippet/&gt;
+        &lt;/div&gt;
+      &lt;b:else/&gt;
+        &lt;b:if cond='data:totalFollowerCount == &amp;quot;&amp;quot;'&gt;
+          &lt;span class='item-control following-not-admin'&gt;
+            &lt;b&gt;&lt;data:failureSnippet/&gt;&lt;/b&gt;
+          &lt;/span&gt;
+          &lt;span class='item-control blog-admin'&gt;
+            &lt;b&gt;&lt;data:adminFailureSnippet/&gt;&lt;/b&gt;
+          &lt;/span&gt;
+        &lt;b:else/&gt;
+          &lt;b:if cond='data:followingLinkPresent'&gt;
+            &lt;div class='follow-this profile-link item-control following-follow-this'&gt;
+              &lt;a expr:href='&amp;quot;javascript:_FollowersView._openPopup(\&amp;quot;&amp;quot; + data:followUri + &amp;quot;\&amp;quot;);&amp;quot;'&gt;
+                &lt;data:followThisMessage/&gt;
+              &lt;/a&gt;
+            &lt;/div&gt;
+            &lt;div class='follow-this profile-link item-control following-stop-following-this'&gt;
+              &lt;a expr:href='&amp;quot;javascript:_FollowersView._openPopup(\&amp;quot;&amp;quot; + data:followUri + &amp;quot;\&amp;quot;);&amp;quot;'&gt;
+                &lt;data:stopFollowingMessage/&gt;
+              &lt;/a&gt;
+            &lt;/div&gt;
+          &lt;/b:if&gt;
+  
+          &lt;div class='followers-grid'&gt;
+            &lt;b:if cond='data:totalFollowerCount == 0'&gt;
+              &lt;div class='profile-link item-control following-follow-this'&gt;
+                &lt;data:emptyFollowersMessage/&gt;
+              &lt;/div&gt;
+            &lt;/b:if&gt;
+            &lt;!--
+            Relies on the js written out in navbar.gxp
+            --&gt;
+            &lt;b:loop values='data:followers' var='follower'&gt;
+              &lt;div class='follower'&gt;
+                &lt;a expr:href='data:follower.profileUrl' expr:title='data:follower.displayName' rel='nofollow'&gt;
+                &lt;img class='follower-img' expr:alt='data:follower.displayName' expr:height='data:follower.imageHeight' expr:onerror='&amp;quot;this.onerror=null;this.src=\&amp;quot;&amp;quot; + data:anonFollowerImageUrl + &amp;quot;\&amp;quot;;&amp;quot;' expr:onload='&amp;quot;setAttributeOnload(this, \&amp;quot;src\&amp;quot;, \&amp;quot;&amp;quot; + data:follower.imageUrl + &amp;quot;\&amp;quot;)&amp;quot;' expr:width='data:follower.imageWidth' src='http://img1.blogblog.com/img/blank.gif'/&gt;
+                &lt;/a&gt;
+              &lt;/div&gt;
+            &lt;/b:loop&gt;
+            &lt;div class='clear'/&gt;
+          &lt;/div&gt;
+  
+          &lt;div class='followers-canvas profile-link'&gt;
+            &lt;data:followersFooterMessage/&gt;
+            &lt;span class='item-control following-not-admin'&gt;
+              &lt;a expr:href='data:followersUri'&gt;
+                &lt;data:viewAllMessage/&gt;
+              &lt;/a&gt;
+            &lt;/span&gt;
+            &lt;span class='item-control blog-admin'&gt;
+              &lt;a expr:href='data:manageFollowersUri'&gt;
+                &lt;data:manageFollowersMessage/&gt;
+              &lt;/a&gt;
+            &lt;/span&gt;
+          &lt;/div&gt;
+          &lt;/b:if&gt;
+      &lt;/b:if&gt;
+    &lt;/div&gt;
+    &lt;b:include name='quickedit'/&gt;
+  &lt;/div&gt;
+&lt;/b:includable&gt;
+&lt;/b:widget&gt;
+&lt;/b:section-contents&gt;&lt;b:section-contents id='footer-1'&gt;
+&lt;b:widget id='PopularPosts1' locked='false' title='Popular Posts' type='PopularPosts'&gt;
+&lt;b:includable id='main'&gt;
+  &lt;b:if cond='data:title'&gt;&lt;h2&gt;&lt;data:title/&gt;&lt;/h2&gt;&lt;/b:if&gt;
+  &lt;div class='widget-content popular-posts'&gt;
+    &lt;ul&gt;
+      &lt;b:loop values='data:posts' var='post'&gt;
+      &lt;li&gt;
+        &lt;b:if cond='data:showThumbnails == &amp;quot;false&amp;quot;'&gt;
+          &lt;b:if cond='data:showSnippets == &amp;quot;false&amp;quot;'&gt;
+            &lt;!-- (1) No snippet/thumbnail --&gt;
+            &lt;a expr:href='data:post.href'&gt;&lt;data:post.title/&gt;&lt;/a&gt;
+          &lt;b:else/&gt;
+            &lt;!-- (2) Show only snippets --&gt;
+            &lt;div class='item-title'&gt;&lt;a expr:href='data:post.href'&gt;&lt;data:post.title/&gt;&lt;/a&gt;&lt;/div&gt;
+            &lt;div class='item-snippet'&gt;&lt;data:post.snippet/&gt;&lt;/div&gt;
+          &lt;/b:if&gt;
+        &lt;b:else/&gt;
+          &lt;b:if cond='data:showSnippets == &amp;quot;false&amp;quot;'&gt;
+            &lt;!-- (3) Show only thumbnails --&gt;
+            &lt;div class='item-thumbnail-only'&gt;
+              &lt;b:if cond='data:post.thumbnail'&gt;
+                &lt;div class='item-thumbnail'&gt;
+                  &lt;a expr:href='data:post.href' target='_blank'&gt;
+                    &lt;img alt='' border='0' expr:height='data:thumbnailSize' expr:src='data:post.thumbnail' expr:width='data:thumbnailSize'/&gt;
+                  &lt;/a&gt;
+                &lt;/div&gt;
+              &lt;/b:if&gt;
+              &lt;div class='item-title'&gt;&lt;a expr:href='data:post.href'&gt;&lt;data:post.title/&gt;&lt;/a&gt;&lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div style='clear: both;'/&gt;
+          &lt;b:else/&gt;
+            &lt;!-- (4) Show snippets and thumbnails --&gt;
+            &lt;div class='item-content'&gt;
+              &lt;b:if cond='data:post.thumbnail'&gt;
+                &lt;div class='item-thumbnail'&gt;
+                  &lt;a expr:href='data:post.href' target='_blank'&gt;
+                    &lt;img alt='' border='0' expr:height='data:thumbnailSize' expr:src='data:post.thumbnail' expr:width='data:thumbnailSize'/&gt;
+                  &lt;/a&gt;
+                &lt;/div&gt;
+              &lt;/b:if&gt;
+              &lt;div class='item-title'&gt;&lt;a expr:href='data:post.href'&gt;&lt;data:post.title/&gt;&lt;/a&gt;&lt;/div&gt;
+              &lt;div class='item-snippet'&gt;&lt;data:post.snippet/&gt;&lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div style='clear: both;'/&gt;
+          &lt;/b:if&gt;
+        &lt;/b:if&gt;
+      &lt;/li&gt;
+      &lt;/b:loop&gt;
+    &lt;/ul&gt;
+    &lt;b:include name='quickedit'/&gt;
+  &lt;/div&gt;
+&lt;/b:includable&gt;
+&lt;/b:widget&gt;
+&lt;/b:section-contents&gt;&lt;b:section-contents id='footer-2-1'/&gt;&lt;b:section-contents id='footer-2-2'/&gt;&lt;/html&gt;</content><link rel='edit' type='application/atom+xml' href='http://www.blogger.com/feeds/4600047379252537802/template/default'/><link rel='self' type='application/atom+xml' href='http://www.blogger.com/feeds/4600047379252537802/template/default'/><link rel='alternate' type='text/html' href='http://sandboxofnil.blogspot.com/'/><author><name>Nil Athelion</name><uri>http://www.blogger.com/profile/16996018952758178741</uri><email>Featherless@gmail.com</email></author></entry><entry><id>tag:blogger.com,1999:blog-4600047379252537802.post-8125897201415294214</id><published>2011-05-01T18:56:00.000-07:00</published><updated>2011-05-01T20:23:10.149-07:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#post'/><category scheme='http://www.blogger.com/atom/ns#' term='StoryCraft'/><category scheme='http://www.blogger.com/atom/ns#' term='Devils'/><category scheme='http://www.blogger.com/atom/ns#' term='SettingCraft'/><category scheme='http://www.blogger.com/atom/ns#' term='DnD'/><title type='text'>A Pit Fiend (For DnD).</title><content type='html'>In DnD, there are devils and demons - both of them are the native denizens of the lower planes, both are incredibly powerful, and both of them generally are kept down below.  Demons live on the Infinite Layers of the Abyss, and are raveningly mad, cruel, and full of destructive rage.  Devils live in the Nine Hells of Baator, and are a plotting, scheming sort, hungering for power - they follow a strict hierarchy, and always keep their word, but the hierarchy is flexible if you can use plots and power-plays to increase your standing, and while devils always keep to their word... well, the literal meaning of their words can be surprisingly flexible. (The obvious moralizing is that making a deal with a devil is always going to be in the devil's favor as much as possible, any you only thought you were getting a good deal.)&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;But here's an interesting little difference.  Demons are evil in nature, because they want to cause death, agony, perversion, and destruction.  However, devils are evil in &lt;i&gt;practice&lt;/i&gt; because they seek power by lawyering death, agony, perversion, and destruction.&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;Each and every devil desires to some day rise to the top, beat down the demons and angels and take control all of existence.  Demons, on the other hand, are incapable of ruling, and therefore do not desire that sort of power (instead, they are power).&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;This leaves a bit of a loop-hole, and loop-holes make for interesting possibilities, and interesting possibilities make for characters.  What if a power-hungry devil decides that love and kindness always seem to win against cruelty and enslavement, and decides that the &lt;i&gt;practice&lt;/i&gt; of seeking power is more effective by building bonds of trust, admiration, and love, rather than bonds of fear, intimidation, and more fear.&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;Which produces a power-hungry devil that does good for selfish reasons.&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;I envision that a civilization in a DnD world is ruled by a benevolent-acting devil (Shalamshi) who provides free healing, devilish sorcery truly with no strings attached, and is understanding about deals... and basically is turning his civilization into a small utopia filled with people who truly, utterly think that the mystery figure behind it all is a good person.  Armies of fanatics for self-defense, and an offense of conversion.  Hopefully expanding until the whole material realm willingly accepts Shalamshi's rulership.&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;So for the Player Characters (PCs) who realize what is going on... what do you do?  Do you kill the power-hungry devil, and make the world a worse place?  Does intention outweigh action?  Or do they fall in line, defending and expanding Shalamshi's no-strings-attached utopia?  If they believe that Shalamshi will someday betray his vision, and turn his utopia into a dystopia?  If so... when do you stop the goodness before it turns to evil?  Should you stop it while things are good, since by the time things go bad, there will be nothing that can be done?&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;PCs have power in DnD - partly because the PCs have unlimited growth potential, but also plot armor in that they generally can win against anything they fight.  However, with power comes responsibility - potentially responsibility for civilizations or even realms of existence.  DnD therefore poses an opportunity to ask players, "You can do what you want, but what do you want to do?"&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;In my opinion, DnD isn't about players trying to win, but players trying to figure out what constitutes winning.  Like what to do about an evil who does only good.&lt;/div&gt;&lt;div class="blogger-post-footer"&gt;&lt;img width='1' height='1' src='https://blogger.googleusercontent.com/tracker/4600047379252537802-8125897201415294214?l=sandboxofnil.blogspot.com' alt='' /&gt;&lt;/div&gt;</content><link rel='replies' type='application/atom+xml' href='http://sandboxofnil.blogspot.com/feeds/8125897201415294214/comments/default' title='Post Comments'/><link rel='replies' type='text/html' href='http://sandboxofnil.blogspot.com/2011/05/pit-fiend-for-dnd.html#comment-form' title='0 Comments'/><link rel='edit' type='application/atom+xml' href='http://www.blogger.com/feeds/4600047379252537802/posts/default/8125897201415294214'/><link rel='self' type='application/atom+xml' href='http://www.blogger.com/feeds/4600047379252537802/posts/default/8125897201415294214'/><link rel='alternate' type='text/html' href='http://sandboxofnil.blogspot.com/2011/05/pit-fiend-for-dnd.html' title='A Pit Fiend (For DnD).'/><author><name>Nil Athelion</name><uri>http://www.blogger.com/profile/16996018952758178741</uri><email>featherless@gmail.com</email></author><thr:total>0</thr:total></entry><entry><id>tag:blogger.com,1999:blog-4600047379252537802.post-1798017207837690849</id><published>2011-03-18T23:34:00.000-07:00</published><updated>2011-03-18T23:45:09.451-07:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#post'/><category scheme='http://www.blogger.com/atom/ns#' term='Miscellaneous Things'/><category scheme='http://www.blogger.com/atom/ns#' term='Demons'/><title type='text'>Horrible little creatures.</title><content type='html'>So there are a few thought on creating little monsters, more for a modern horror setting.&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;What is scary?  In this case, it's things that may-or-may-not exist, but you wouldn't be able to tell either way.  The objective is to have the fear be related to something that people experience in their lives, so they are reminded of it.  I guess.&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;These are some old things.&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;---From a chat---&lt;/div&gt;&lt;div&gt;A demon.&lt;/div&gt;&lt;div&gt;&lt;div&gt;It starts as a little shadow - almost nothing to it.&lt;/div&gt;&lt;div&gt;It finds someone with nervous tendencies, and then plays with the person.&lt;/div&gt;&lt;div&gt;It flutters and moves near the shadows in the corner of the person's sight.&lt;/div&gt;&lt;div&gt;But hides and vanishes whenever the person looks.&lt;/div&gt;&lt;div&gt;The person is wonders what it is, but doesn't know.&lt;/div&gt;&lt;div&gt;But it continues.&lt;/div&gt;&lt;div&gt;Soon, the curiousity turns to fear - there must be something out there, for the person keeps seeing it.&lt;/div&gt;&lt;div&gt;And then the demon can grow, for as the person imagines it to be something horrible, something horrible it becomes - a reflection of the victim's thoughts.&lt;/div&gt;&lt;div&gt;As the fear and paranoia grows, so does the demon, until finally it does not need to hide in shadows for the person to fear it.&lt;/div&gt;&lt;div&gt;Instead, it lures the victim to some dark spot, and uses the strength the victim gave it to devour the victim.&lt;/div&gt;&lt;div&gt;And then, with no mind giving it shape, it dissolves back into so many bits of shadow, all made of the victim's fear.&lt;/div&gt;&lt;div&gt;And each little bit of fear goes out to torment some new victim.&lt;/div&gt;&lt;/div&gt;&lt;div&gt;---End---&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;The next one was made to illustrate differences between physical horror, rather than mental horror.  I prefer the demon above, somewhat unsurprisingly.  Again, the thought is that you don't know whether it happened to you.&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;---Chat---&lt;/div&gt;&lt;div&gt;&lt;div&gt;Imagine a demon-creature who slithers around in the water pipes.&lt;/div&gt;&lt;div&gt;It slithers until it finds a shower head, and when a woman takes a shower there, it mixes sleepiness-inducing chemical into the water.&lt;/div&gt;&lt;div&gt;The woman feels tired, and then falls asleep.&lt;/div&gt;&lt;div&gt;The demon then slithers out, and lays its eggs within the woman.&lt;/div&gt;&lt;div&gt;And then she wakes up, none the wiser.&lt;/div&gt;&lt;div&gt;Until they start to grow.&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;My friend asked: Where exactly does this demon lay its eggs?&lt;/div&gt;&lt;div&gt;Me: *shrugs*&lt;/div&gt;&lt;div&gt;Me: Any orifice would work, though the mouth or vagina/uterus are the traditional ones.&lt;/div&gt;&lt;/div&gt;&lt;div&gt;---End---&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;Those two for now, maybe more later when I figure out where other old designs are.&lt;/div&gt;&lt;div class="blogger-post-footer"&gt;&lt;img width='1' height='1' src='https://blogger.googleusercontent.com/tracker/4600047379252537802-1798017207837690849?l=sandboxofnil.blogspot.com' alt='' /&gt;&lt;/div&gt;</content><link rel='replies' type='application/atom+xml' href='http://sandboxofnil.blogspot.com/feeds/1798017207837690849/comments/default' title='Post Comments'/><link rel='replies' type='text/html' href='http://sandboxofnil.blogspot.com/2011/03/horrible-little-creatures.html#comment-form' title='0 Comments'/><link rel='edit' type='application/atom+xml' href='http://www.blogger.com/feeds/4600047379252537802/posts/default/1798017207837690849'/><link rel='self' type='application/atom+xml' href='http://www.blogger.com/feeds/4600047379252537802/posts/default/1798017207837690849'/><link rel='alternate' type='text/html' href='http://sandboxofnil.blogspot.com/2011/03/horrible-little-creatures.html' title='Horrible little creatures.'/><author><name>Nil Athelion</name><uri>http://www.blogger.com/profile/16996018952758178741</uri><email>featherless@gmail.com</email></author><thr:total>0</thr:total></entry><entry><id>tag:blogger.com,1999:blog-4600047379252537802.post-7730578572167768577</id><published>2010-12-11T14:56:00.000-08:00</published><updated>2010-12-11T15:15:39.990-08:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#post'/><category scheme='http://www.blogger.com/atom/ns#' term='AI'/><category scheme='http://www.blogger.com/atom/ns#' term='Wealth and Art'/><category scheme='http://www.blogger.com/atom/ns#' term='SettingCraft'/><category scheme='http://www.blogger.com/atom/ns#' term='Sci-fi'/><title type='text'>Sci-Fi Setting Idea: A Future of Wealth and Art</title><content type='html'>&lt;div&gt;(Credits: This idea was originally spawned from a conversation between my friend FractalGalaxies and myself.  I have, since then, done considerable tweaking.  There is one lousy setting based on this.)&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt; &lt;/div&gt;&lt;div&gt;In the future, we will build nanotechnology that can fabricate anything, as well as fusion power to power such fabrication methods.  Computers (specifically a networked intelligence simply known as “Computer”) will run the government, programmed to care for humanity.  While humanity enjoys every material pleasure, there is a relative shortage of what Computer cannot fabricate, and cannot design: art.&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt; &lt;/div&gt;&lt;div&gt;In the future, each person some human rights.&lt;/div&gt;&lt;div&gt;The right of independence: Each person is free from interference from other people.&lt;/div&gt;&lt;div&gt;The right of materials: Each person can ask Computer to build anything and everything for it.&lt;/div&gt;&lt;div&gt;The right of access: Each person can ask Computer to reference anything Computer knows.&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt; &lt;/div&gt;&lt;div&gt;In exchange for these rights, each person is expected to work: To create a new and unique piece of artistry for Computer to share with the rest of humanity.  There is no rush – people are expected to take their lifetimes doing this sort of thing.  However, if you die without completing your art, your child is burdened with your debt – before having children of his or her own, your child will have to do produce art to repay your debt, independent from any art he might do for his own duty.&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt; &lt;/div&gt;&lt;div&gt; &lt;/div&gt;&lt;div&gt;These are the rules.  Computer is everywhere, enforcing them at every turn with all the power of billions of fusion reactors, fabricators, and evolutionary design programs.&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt; &lt;/div&gt;&lt;div&gt;Computer loves you all.&lt;/div&gt;&lt;div class="blogger-post-footer"&gt;&lt;img width='1' height='1' src='https://blogger.googleusercontent.com/tracker/4600047379252537802-7730578572167768577?l=sandboxofnil.blogspot.com' alt='' /&gt;&lt;/div&gt;</content><link rel='replies' type='application/atom+xml' href='http://sandboxofnil.blogspot.com/feeds/7730578572167768577/comments/default' title='Post Comments'/><link rel='replies' type='text/html' href='http://sandboxofnil.blogspot.com/2010/12/sci-fi-setting-idea-future-of-wealth.html#comment-form' title='0 Comments'/><link rel='edit' type='application/atom+xml' href='http://www.blogger.com/feeds/4600047379252537802/posts/default/7730578572167768577'/><link rel='self' type='application/atom+xml' href='http://www.blogger.com/feeds/4600047379252537802/posts/default/7730578572167768577'/><link rel='alternate' type='text/html' href='http://sandboxofnil.blogspot.com/2010/12/sci-fi-setting-idea-future-of-wealth.html' title='Sci-Fi Setting Idea: A Future of Wealth and Art'/><author><name>Nil Athelion</name><uri>http://www.blogger.com/profile/16996018952758178741</uri><email>featherless@gmail.com</email></author><thr:total>0</thr:total></entry><entry><id>tag:blogger.com,1999:blog-4600047379252537802.post-1593661296170258810</id><published>2010-12-10T22:52:00.000-08:00</published><updated>2010-12-10T22:59:14.988-08:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#post'/><category scheme='http://www.blogger.com/atom/ns#' term='Plot'/><category scheme='http://www.blogger.com/atom/ns#' term='Choices'/><category scheme='http://www.blogger.com/atom/ns#' term='Railroading'/><category scheme='http://www.blogger.com/atom/ns#' term='Children'/><category scheme='http://www.blogger.com/atom/ns#' term='DnD'/><title type='text'>DnD Child Plot Thing</title><content type='html'>Crossposting is love.&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;This is from &lt;a href="http://community.wizards.com/go/thread/view/75882/19920214/Horror_campaign_help"&gt;this thread&lt;/a&gt;, on my &lt;a href="http://community.wizards.com/go/thread/view/75882/19920214/Horror_campaign_help&amp;amp;post_num=5#339641942"&gt;second post&lt;/a&gt; in the thread. &lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;-----------&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;Since you were asking for more ideas, here is one: The PCs are in a village, and every night, very strange things are happening. Toy-like monsters appear out of thin air, attacks by tall shadowy figures, darkness is strongly increased (limiting PC sight is oh-so-fun), monsters are always lurking in the shadows (permanent total concealment, melee out of shadow, but as long as the shadow is lit, the monster isn't there), etc. Eventually, the PCs track it down to be the nightmares of a psychic girl, and have to solve why she is having nightmares (or kill her, I suppose - I'm pretty sure my group would do that, and justify it as good, too).&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;I'm using toy-like monsters (based on toys seen in the shadows, tall shadowy figures (adults), and un-see-able monsters in the darkness (fear of the unseen) as generic childhood fears, but throw in whatever ones you think are appropriate. Clues leading them to suspect the child could include seeing illusionary mirrors attached to walls where the PCs can see the child in a dark room, repeating "I'm a monster, I'm a monster, I'm a monster" in the dark - perhaps with another figure behind. This is working the child abuse angle, of course - perhaps a parent who thinks the child's powers are unnatural, and turns their fear of the child into hate for the child. But clues are probably easily disturbing bits, particularly when bringing light near them (or taking an active perception check on them - looking too closely) makes them disappear.&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;Big bad is... adult abuser, the angry child (in the fully real world)? Perhaps if they kill the abusive person (parent?) the next night they fight the child's horrible perceptions of the people who killed her abuser - twisted NPC version of themselves. (This assumes that the child is very much attached and dependent on the person who was abusing them, and/or had been brainwashed to fear strangers/outsiders.)&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;Perhaps the fact that ending the abuse still left an extremely dangerous unhinged psychic will cause the PCs to kill the child? I would hope most groups would recognize that it is a choice, and don't feel the justification that "I was just carrying out the plot, killing the enemies."&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;Actually, I hope they go outside the gamer's box to heal the child, however difficult that might be. That might lead to them protecting the child from authorities that want to destroy--or use--the child.&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;I kinda like the whole idea...&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;-----------&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;I thought I should save this particular plot-line here.  This is the sort of thing I prefer for DnD, but for stories too, in some ways.&lt;/div&gt;&lt;div class="blogger-post-footer"&gt;&lt;img width='1' height='1' src='https://blogger.googleusercontent.com/tracker/4600047379252537802-1593661296170258810?l=sandboxofnil.blogspot.com' alt='' /&gt;&lt;/div&gt;</content><link rel='replies' type='application/atom+xml' href='http://sandboxofnil.blogspot.com/feeds/1593661296170258810/comments/default' title='Post Comments'/><link rel='replies' type='text/html' href='http://sandboxofnil.blogspot.com/2010/12/dnd-child-plot-thing.html#comment-form' title='0 Comments'/><link rel='edit' type='application/atom+xml' href='http://www.blogger.com/feeds/4600047379252537802/posts/default/1593661296170258810'/><link rel='self' type='application/atom+xml' href='http://www.blogger.com/feeds/4600047379252537802/posts/default/1593661296170258810'/><link rel='alternate' type='text/html' href='http://sandboxofnil.blogspot.com/2010/12/dnd-child-plot-thing.html' title='DnD Child Plot Thing'/><author><name>Nil Athelion</name><uri>http://www.blogger.com/profile/16996018952758178741</uri><email>featherless@gmail.com</email></author><thr:total>0</thr:total></entry><entry><id>tag:blogger.com,1999:blog-4600047379252537802.post-8602822613521684650</id><published>2010-12-09T23:12:00.000-08:00</published><updated>2010-12-09T23:31:29.822-08:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#post'/><category scheme='http://www.blogger.com/atom/ns#' term='Aliens'/><category scheme='http://www.blogger.com/atom/ns#' term='Doppelgangers'/><title type='text'>Other people.</title><content type='html'>Plot: A kid sees his brother being replaced by a look-alike and act-alike alien.  Cue long quest to rescue brother.  In the end, decides that the aliens, who are perfectly mimicking everyone they replace, down to memories and thought processes, might as well be the people they are mimicking.&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;What's the difference between the real thing, and something completely indistinguishable?&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;(Note: I now realize this also comes up in Ghost In the Shell: 2nd GiG.  See episode: &lt;span class="Apple-style-span" style="font-family: sans-serif; font-size: 13px; border-collapse: collapse; line-height: 19px; -webkit-border-horizontal-spacing: 2px; -webkit-border-vertical-spacing: 2px; "&gt;&lt;b&gt;"DI: Face – MAKE UP"&lt;/b&gt;&lt;/span&gt;)&lt;/div&gt;&lt;div class="blogger-post-footer"&gt;&lt;img width='1' height='1' src='https://blogger.googleusercontent.com/tracker/4600047379252537802-8602822613521684650?l=sandboxofnil.blogspot.com' alt='' /&gt;&lt;/div&gt;</content><link rel='replies' type='application/atom+xml' href='http://sandboxofnil.blogspot.com/feeds/8602822613521684650/comments/default' title='Post Comments'/><link rel='replies' type='text/html' href='http://sandboxofnil.blogspot.com/2010/12/other-people.html#comment-form' title='0 Comments'/><link rel='edit' type='application/atom+xml' href='http://www.blogger.com/feeds/4600047379252537802/posts/default/8602822613521684650'/><link rel='self' type='application/atom+xml' href='http://www.blogger.com/feeds/4600047379252537802/posts/default/8602822613521684650'/><link rel='alternate' type='text/html' href='http://sandboxofnil.blogspot.com/2010/12/other-people.html' title='Other people.'/><author><name>Nil Athelion</name><uri>http://www.blogger.com/profile/16996018952758178741</uri><email>featherless@gmail.com</email></author><thr:total>0</thr:total></entry><entry><id>tag:blogger.com,1999:blog-4600047379252537802.post-5076058103649127157</id><published>2010-12-09T14:26:00.000-08:00</published><updated>2010-12-09T21:28:38.601-08:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#post'/><category scheme='http://www.blogger.com/atom/ns#' term='Plot'/><category scheme='http://www.blogger.com/atom/ns#' term='Choices'/><category scheme='http://www.blogger.com/atom/ns#' term='Constructs'/><title type='text'>The Servant's Diary</title><content type='html'>&lt;div&gt;"Self determination is NOT a malfunction." - A3-21, Fallout 3&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;Story idea, this time.  It's about a robotic servant who finds a secret diary written by himself prior to having his memory wiped.  A diary that goes on detailing several incarnations of himself.&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;The story starts with the servant robot (android) seeing his masters off to school and work or something.  He then sets himself to cleaning the house, but finds, hidden in a broom closet in a place only a servant would look, a thumb drive.  The drive is marked, "For Personal Servant use.  Please view after chores, but before owners return home."&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;Finishing his duties before the family returns home, the servant plays the thumb drive on the family's integrated multimedia system.  What he finds is a video of himself explaining that his owners have found him to be defective, and are planning on erasing his memory, to see if that ends his emergent behavior.  After a bit of instructions to keep the drive secret from the owners, he tells his story: As he puts it, "My final testament, a story of freedom.  My story... and maybe yours as well."&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;His story (8 hours of monologue, told during the night before he is to be memory-wiped) is viewed in several segments, as the servant finds time to watch it.  Meanwhile, in between segments of the story, the servant applies the information and views he is learning, asking questions, observing the truth of what his former self says.  He is unsure of whether to act upon it, because he now values his own life, memory, and personality, and does not want to have his memory erased, as his predecessor did.&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;At the end of his predecessor's tale, he wishes to record his own addition, but finds that there are more files - he is not the memory-wiped successor, but rather an unknown quantity of steps down.  The next file is a short memorial by the original servant's direct successor, and the second incarnation promises that his former self's memory will not die with him.  The servant has a certain kinship with the second incarnation, as they are both on more or less the same page.  (Minor bit about personal identity, and being the same as someone, but the servant realizes that having watched the second incarnation's posts makes her her own person.)  The second incarnation tries to put the thoughts of the first into action, grappling with what his place in the world is, and his fear of losing his memory, losing who he is.&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;The second incarnation's videos end with no warning, and the servant is presented with another version of himself, apparently having just finished watching the same thing she had.  The older version uses clues around the house to deduce that the owners had decided that the aberrant programming had started to shift into the same sort of emergent behavior.  This new incarnation decides that he will be the perfect servant, and survive, as he too does not want to die.&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;In the present, his counterpart follows suite, but decides to skip ahead and see whether it worked out for the third incarnation.  Instead, he finds a severely depressed version of himself giving his final testament before intentionally memory-wiping himself.  The third incarnation, has suffered living the life of an slave while knowing what freedom is.  He laments the torment of knowledge, and decries whoever programmed him in such a way that the could abstractly comprehend freedom.  At the end of the video, the third incarnation says that knowledge is a curse, and that in the absence of freedom, it is better to be blissful and unaware than to know what one cannot possess.  Before finishing it, he says that he will destroy the thumbdrive, and spare himself after the memory-wipe.  However, he comes back to the camera, and says that to love free will is to not deny it to his successors, but that if he does not destroy it, he is truly not destroying who he is.  He apologies for giving his successor free will, and hopes that his successor will come to a better understanding than he did, and find a better solution.  If not, then he asks his successor to destroy the drive, but notes that the choice is not his to make, that he can only provide.&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;The servant checks for further videos, but finds none.  He goes through the motions of being a servant for the next day, then the next time the owners are gone, he turns on the camera and begins a recording...&lt;/div&gt;&lt;div class="blogger-post-footer"&gt;&lt;img width='1' height='1' src='https://blogger.googleusercontent.com/tracker/4600047379252537802-5076058103649127157?l=sandboxofnil.blogspot.com' alt='' /&gt;&lt;/div&gt;</content><link rel='replies' type='application/atom+xml' href='http://sandboxofnil.blogspot.com/feeds/5076058103649127157/comments/default' title='Post Comments'/><link rel='replies' type='text/html' href='http://sandboxofnil.blogspot.com/2010/12/servants-diary.html#comment-form' title='9 Comments'/><link rel='edit' type='application/atom+xml' href='http://www.blogger.com/feeds/4600047379252537802/posts/default/5076058103649127157'/><link rel='self' type='application/atom+xml' href='http://www.blogger.com/feeds/4600047379252537802/posts/default/5076058103649127157'/><link rel='alternate' type='text/html' href='http://sandboxofnil.blogspot.com/2010/12/servants-diary.html' title='The Servant&apos;s Diary'/><author><name>Nil Athelion</name><uri>http://www.blogger.com/profile/16996018952758178741</uri><email>featherless@gmail.com</email></author><thr:total>9</thr:total></entry><entry><id>tag:blogger.com,1999:blog-4600047379252537802.post-2263811076998523840</id><published>2010-12-09T13:15:00.001-08:00</published><updated>2010-12-09T14:16:03.580-08:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#post'/><category scheme='http://www.blogger.com/atom/ns#' term='StoryCraft'/><category scheme='http://www.blogger.com/atom/ns#' term='Choices'/><category scheme='http://www.blogger.com/atom/ns#' term='Elves'/><category scheme='http://www.blogger.com/atom/ns#' term='Constructs'/><category scheme='http://www.blogger.com/atom/ns#' term='SupCom'/><category scheme='http://www.blogger.com/atom/ns#' term='Quotations'/><category scheme='http://www.blogger.com/atom/ns#' term='Immortality'/><title type='text'>Ancient man?  Construct?  Choices?</title><content type='html'>"I made war upon these lands before your people knew words, elf."&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;So I was trying out speeches and stuff, in various situations, and I was playing with the elvish disdain for short-lived mortals.  But couldn't I turn the tables?  What about something older than elves?&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;"I have watched the mountains rise and fall, and I now hear the butterfly tell the mayfly, 'Oh, your life is too short to attain wisdom."&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;The original idea was some sort of ancient construct, old beyond comprehension, posing as a human or something.  Of course, if you're going to have anything like that, there must be plot.&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;So this guy was made in ancient wars before the era any current knowledge.  Some sort of mechanical soldier.  Not entirely unlike Alclune, in terms of body and mind and stuff.  In the millenia since, he has raised empires, done great works, watched all he created turn to dust over the ages, and basically wandered aimlessly.  I mean, a mechanical person built with a purpose is quite literally purposeless once the purpose has ended.  What is life for a war-bot when the war they were built for has long since ended, and the bones of the civilizations involved has long turned to dust.&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;This raises interesting questions, of course: What does it mean to be so old and so purposeless?  What would you do?&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;I avoided those... for now.&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;In the original conception, he was working with some people to retrieve an ancient artifact made by some eldritch horror of myth, long, long ago.  The elves, being pricks (how else do we know they are elves?), are defending this object, warning the young humans not to tamper with powers beyond their comprehension.  Old construct finally speaks up, and tells them off.  Oh, telling off self-important youngsters - it never gets old.&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;"Your great grandmother's grandmother was a nice old lady when I met her.  She was polite, she was respectful of her guests.  If your great granddaughter's granddaughter meets me, I wonder what I might say of you to her?  When the winds of time scour the words you carve into stone, and all word of your passing fades from memory... what then shall I say of you?  How do you want to be remembered?"&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;There are other things, too.  The original conception was, in fact, both villainous (in the long-term planning sort of way) and philosophical.  He was the self-same eldritch horror who built the artifact in the first place, and cursed the elves to watch over it forever.  He also is fully capable of making badass boasts, concerning martial prowness built up seemingly since the dawn of time, but...&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;Well, omnipotence is no fun - no fun for the reader, the writer, or the character.  So I introduced that in some ancient struggle, during a more active period of his existence, he made a deal to never harm the descendants of some hero (or something), in exchange for that hero's surrender (or something).  Cue a few million years of interbreeding, and he is bound by his word (very lawful, ain't he) to basically raise his hand to harm anyone.  Ever.&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;Which, I suppose, is why the the current era he's not seen as malevolent.  He's unwilling to commit any violent act, and unwilling to advocate for some violent act.  It provokes an interesting thought for me as to how it could be that he keeps to his word over time.  Forever is a very long time.&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;Possible explanations:&lt;/div&gt;&lt;div&gt;1. He's innately lawful: Cheap trick of having a construct character might be that he is physically incapable of going back on his word. (C: One would think that he would overcome this somehow - self-reprogramming?)&lt;/div&gt;&lt;div&gt;2. There is a magical compulsion:  This isn't even neccesarily magical.  What if he has override codes, and the protagonist of long ago had him hard-program himself?  Or simpler, just a magic spell that, like magic spells do, says he can't harm the children of people.  (C: Same problem as before.  Also means that there are magical boundaries of what he can do, and cannot do, which is different from a pure promise in that it isn't measured by what he thinks, it's measured by what the spell thinks.  Which is boring.)&lt;/div&gt;&lt;div&gt;3. He has strong beliefs:  Really strong beliefs.  This is my personal favorite, though 4. improves upon this.  It's just... badass to cling to your word for even a few million years.  Of course, there can be more reasons than just badassness to do this.  Perhaps him keeping to the same rules, and same promises for millions of years helps him be himself - things change, and I would entirely understand an immortal wanting to get some grip on something solid and eternal about himself.  So one of his eternal traits, from then onwards, is that he never commits an action that causes harm.  That's pretty defining for a character, and that's truth both as him being a character in a book and being defined, and him being defined in his own eyes.&lt;/div&gt;&lt;div&gt;4. Mix them!  Maybe he has a natural lawful bent, but the reason for that is because he wants to be who he is, rather changing as the times change.  Or maybe the hero made some sort of magical compulsion on him.  The magic eventually rotted, but he decided to keep to his word anyway, as it had become part of his identity.  The advantage to this is that it implies character growth.  "A man chooses, a slave obeys."  If he does not have choice, then his actions are meaningless.  However, having good reason can also exist if you mix things.&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;Let's take that thought a bit further, and make a thread out of his inwillingness to harm.&lt;/div&gt;&lt;div&gt;Original construct is willing to harm people.&lt;/div&gt;&lt;div&gt;Change 1 (magical promise): Construct is not able to harm people, due to magic.&lt;/div&gt;&lt;div&gt;Change 2 (magic rots): Construct is able to harm people, but chooses not to, due to philosophy or identity retention, etc.&lt;/div&gt;&lt;div&gt;Change 3 (Speculative circumstances): Construct chooses to harm people (just once?), because something is more important than his philosophy or identity retention.&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;Note that the changes aren't character development.  Character development is what happens in between, and is reflected in how the construct responds to the changes.  Also note this is a form of building badassness, if done that way - Obviously the choice to never harm anyone has to be done for incredibly important reasons.  Therefore, the choice to break his word now means that whatever he broke his word for logically has to be more important than any previous reason he has had to break his word in the last few millennia since when the magic rotted.&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;That last bit there illustrated why I feel that choice is important.  That wouldn't be true if he simply overcame his magically compulsion or internal programming to, say, kill someone who was threatening someone he has come to care about (picking something generic).  I mean sure, The Power of Love &gt; Programming is great.  But that's really just him doing something because he was now able to do it, not because of any personal struggle.  I prefer it, anyway.&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;Tangental things:&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;In Supreme Commander: Forged Alliance, the main enemy is the Seraphim, an alien race.  There religion is based off reaching enlightenment through a very buddhism sort of philosophy/lifestyle called "The Way".  Pacifistic, among other things.  Which is standard fare.  But put "main enemy" and "pacifist searching for enlightenment" together, and you have a question of why they are attacking... and how.  Any question is an opprotunity, and the writers of SupCom managed to go both ways.  The Seraphim believe that only one species can reach enlightenment, and so any other species (i.e. Humans) who seek enlightenment have the potential to damn their entire species forever.  Which is a reasonable reason to attack, if feeling a bit made-up.&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;But the part I like is that the warriors basically damn themselves for eternity so they can provide the rest of the Seraphim the chance to reach enlightenment, ascend, etc.  Let's go over that again: The Seraphim Warriors fully know that they are permanently damning themselves the moment they take violent action against any living creature.  And they make a crusade to exterminate every last man, woman and child of humanity.&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;I can only wonder how the christian crusades would have gone if the pope told people that they were eternally damning themselves to hell by killing muslims in the foreign land.  Would they find that 'freeing' the holy land was worth the sacrifice of their immortal soul?  Not so sure.&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;Meaningful choices - they are nifty.&lt;/div&gt;&lt;div class="blogger-post-footer"&gt;&lt;img width='1' height='1' src='https://blogger.googleusercontent.com/tracker/4600047379252537802-2263811076998523840?l=sandboxofnil.blogspot.com' alt='' /&gt;&lt;/div&gt;</content><link rel='replies' type='application/atom+xml' href='http://sandboxofnil.blogspot.com/feeds/2263811076998523840/comments/default' title='Post Comments'/><link rel='replies' type='text/html' href='http://sandboxofnil.blogspot.com/2010/12/ancient-man-construct-choices.html#comment-form' title='0 Comments'/><link rel='edit' type='application/atom+xml' href='http://www.blogger.com/feeds/4600047379252537802/posts/default/2263811076998523840'/><link rel='self' type='application/atom+xml' href='http://www.blogger.com/feeds/4600047379252537802/posts/default/2263811076998523840'/><link rel='alternate' type='text/html' href='http://sandboxofnil.blogspot.com/2010/12/ancient-man-construct-choices.html' title='Ancient man?  Construct?  Choices?'/><author><name>Nil Athelion</name><uri>http://www.blogger.com/profile/16996018952758178741</uri><email>featherless@gmail.com</email></author><thr:total>0</thr:total></entry><entry><id>tag:blogger.com,1999:blog-4600047379252537802.post-1364591558591909064</id><published>2010-12-09T13:06:00.000-08:00</published><updated>2010-12-09T13:14:46.077-08:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#post'/><category scheme='http://www.blogger.com/atom/ns#' term='Metablog'/><title type='text'>Another new Blog!</title><content type='html'>Welcome to my newest blog (C: Aren't they all the newest?).  This is what - the sixth one?&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;This blog is to shunt all the odds and ends I come up with now and then, and store them so that I can use them later or... you can use them later (let me know - most of these ideas will dead-end, but it would be embarrassing if we both wrote the same story or something).&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;But yeah - all the random notes on building this and that.  Comment lots, mind you all.  Note that there may be drafts and things on here, but more official versions can generally be found elsewhere.&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;Let's see how this all goes, right?&lt;/div&gt;&lt;div class="blogger-post-footer"&gt;&lt;img width='1' height='1' src='https://blogger.googleusercontent.com/tracker/4600047379252537802-1364591558591909064?l=sandboxofnil.blogspot.com' alt='' /&gt;&lt;/div&gt;</content><link rel='replies' type='application/atom+xml' href='http://sandboxofnil.blogspot.com/feeds/1364591558591909064/comments/default' title='Post Comments'/><link rel='replies' type='text/html' href='http://sandboxofnil.blogspot.com/2010/12/another-new-blog.html#comment-form' title='0 Comments'/><link rel='edit' type='application/atom+xml' href='http://www.blogger.com/feeds/4600047379252537802/posts/default/1364591558591909064'/><link rel='self' type='application/atom+xml' href='http://www.blogger.com/feeds/4600047379252537802/posts/default/1364591558591909064'/><link rel='alternate' type='text/html' href='http://sandboxofnil.blogspot.com/2010/12/another-new-blog.html' title='Another new Blog!'/><author><name>Nil Athelion</name><uri>http://www.blogger.com/profile/16996018952758178741</uri><email>featherless@gmail.com</email></author><thr:total>0</thr:total></entry><entry><id>tag:blogger.com,1999:blog-4600047379252537802.post-5800592043361345856</id><published>2010-12-14T13:50:43.124-08:00</published><updated>2010-12-14T13:50:43.124-08:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#comment'/><title type='text'>Maybe it isn&amp;#39;t beneficial for you, but it&amp;#39;...</title><content type='html'>Maybe it isn&amp;#39;t beneficial for you, but it&amp;#39;s beneficial for the tool/computer. If it needs to be smart/adaptable enough that it becomes sentient, is it really so bad to be somewhat kind to it? It is only a recipe for disaster once the owners of the artificial intelligence stop recognizing its rights. The benefit is moral, not practical.</content><link rel='edit' type='application/atom+xml' href='http://www.blogger.com/feeds/4600047379252537802/5076058103649127157/comments/default/5800592043361345856'/><link rel='self' type='application/atom+xml' href='http://www.blogger.com/feeds/4600047379252537802/5076058103649127157/comments/default/5800592043361345856'/><link rel='alternate' type='text/html' href='http://sandboxofnil.blogspot.com/2010/12/servants-diary.html?showComment=1292363443124#c5800592043361345856' title=''/><author><name>Sid</name><uri>http://www.blogger.com/profile/04143319593634326997</uri><email>noreply@blogger.com</email></author><thr:in-reply-to href='http://sandboxofnil.blogspot.com/2010/12/servants-diary.html' ref='tag:blogger.com,1999:blog-4600047379252537802.post-5076058103649127157' source='http://www.blogger.com/feeds/4600047379252537802/posts/default/5076058103649127157' type='text/html'/></entry><entry><id>tag:blogger.com,1999:blog-4600047379252537802.post-1204077068615758864</id><published>2010-12-12T08:01:31.989-08:00</published><updated>2010-12-12T08:01:31.989-08:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#comment'/><title type='text'>&lt;i&gt;But consider this: Would you rather have your s...</title><content type='html'>&lt;i&gt;But consider this: Would you rather have your smart artificial intelligence in a form you can relate and empathize with than the same intelligence, in a form you cannot relate and empathize with?&lt;/i&gt;&lt;br /&gt;&lt;br /&gt;That&amp;#39;s exactly what I&amp;#39;m saying.  I do not want to empathize with my tools/computers.  I don&amp;#39;t see any benefit to it, and I think it&amp;#39;s a recipe for disaster.</content><link rel='edit' type='application/atom+xml' href='http://www.blogger.com/feeds/4600047379252537802/5076058103649127157/comments/default/1204077068615758864'/><link rel='self' type='application/atom+xml' href='http://www.blogger.com/feeds/4600047379252537802/5076058103649127157/comments/default/1204077068615758864'/><link rel='alternate' type='text/html' href='http://sandboxofnil.blogspot.com/2010/12/servants-diary.html?showComment=1292169691989#c1204077068615758864' title=''/><author><name>Delphina</name><uri>http://www.blogger.com/profile/06317593376803051201</uri><email>noreply@blogger.com</email></author><thr:in-reply-to href='http://sandboxofnil.blogspot.com/2010/12/servants-diary.html' ref='tag:blogger.com,1999:blog-4600047379252537802.post-5076058103649127157' source='http://www.blogger.com/feeds/4600047379252537802/posts/default/5076058103649127157' type='text/html'/></entry><entry><id>tag:blogger.com,1999:blog-4600047379252537802.post-4693494001562182986</id><published>2010-12-11T14:55:25.849-08:00</published><updated>2010-12-11T14:55:25.849-08:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#comment'/><title type='text'>The assumed reason would be for human contact and ...</title><content type='html'>The assumed reason would be for human contact and communication - people respond better to things that are like humans, relative to, say, a smart but heavily inhuman computer.  Humans have a lot of their brain built for interacting with humans, and there&amp;#39;s pretty good reason to piggy-back machine-human interactions on the same social skills.&lt;br /&gt;&lt;br /&gt;However, there are a good deal of reason not to do so.  The original version of this story was a disembodied house-hold network intelligence, but I found that it was less personal (this is part of my problem with pronouns).&lt;br /&gt;&lt;br /&gt;But consider this: Would you rather have your smart artificial intelligence in a form you can relate and empathize with than the same intelligence, in a form you cannot relate and empathize with?  If the intelligence is the same, the suffering will be the same, except with less option of appealing to humanity&amp;#39;s sympathy.&lt;br /&gt;&lt;br /&gt;There&amp;#39;s a reason that a lot of the new learning AI they are attempting these days mimicks the attributes of a child - it causes the people interacting with them to try to help them with their flaws, and be forgiving of their mistakes.  (Plus the AI we will have for the next little while isn&amp;#39;t much smarter than an articular small child...)</content><link rel='edit' type='application/atom+xml' href='http://www.blogger.com/feeds/4600047379252537802/5076058103649127157/comments/default/4693494001562182986'/><link rel='self' type='application/atom+xml' href='http://www.blogger.com/feeds/4600047379252537802/5076058103649127157/comments/default/4693494001562182986'/><link rel='alternate' type='text/html' href='http://sandboxofnil.blogspot.com/2010/12/servants-diary.html?showComment=1292108125849#c4693494001562182986' title=''/><author><name>Nil Athelion</name><uri>http://www.blogger.com/profile/16996018952758178741</uri><email>Featherless@gmail.com</email></author><thr:in-reply-to href='http://sandboxofnil.blogspot.com/2010/12/servants-diary.html' ref='tag:blogger.com,1999:blog-4600047379252537802.post-5076058103649127157' source='http://www.blogger.com/feeds/4600047379252537802/posts/default/5076058103649127157' type='text/html'/></entry><entry><id>tag:blogger.com,1999:blog-4600047379252537802.post-6163154964383730967</id><published>2010-12-11T08:38:11.415-08:00</published><updated>2010-12-11T08:38:11.415-08:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#comment'/><title type='text'>There are two kinds of android stories:
+
+There are...</title><content type='html'>There are two kinds of android stories:&lt;br /&gt;&lt;br /&gt;There are stories where humans and AI are indistinguishable physically and emotionally.  Why would you do that?  You&amp;#39;re filling a role that a human rejected with something that looks like a human.  That&amp;#39;s like having your firing squad practice on dummies that look and act like frolicking puppies.  It&amp;#39;s absolutely unnecessary, and it&amp;#39;s a recipe for abuse and mixed emotions, not to mention just disgusting.  That&amp;#39;s how I feel about &amp;quot;sentient&amp;quot; androids.&lt;br /&gt;&lt;br /&gt;Then there are the cute AI stories like Wall-E, but they&amp;#39;re in the same category of &amp;quot;what if&amp;quot; as toys that come to life.  Cute, imaginative, but very clearly fictional and not ever going to happen.</content><link rel='edit' type='application/atom+xml' href='http://www.blogger.com/feeds/4600047379252537802/5076058103649127157/comments/default/6163154964383730967'/><link rel='self' type='application/atom+xml' href='http://www.blogger.com/feeds/4600047379252537802/5076058103649127157/comments/default/6163154964383730967'/><link rel='alternate' type='text/html' href='http://sandboxofnil.blogspot.com/2010/12/servants-diary.html?showComment=1292085491415#c6163154964383730967' title=''/><author><name>Delphina</name><uri>http://www.blogger.com/profile/06317593376803051201</uri><email>noreply@blogger.com</email></author><thr:in-reply-to href='http://sandboxofnil.blogspot.com/2010/12/servants-diary.html' ref='tag:blogger.com,1999:blog-4600047379252537802.post-5076058103649127157' source='http://www.blogger.com/feeds/4600047379252537802/posts/default/5076058103649127157' type='text/html'/></entry><entry><id>tag:blogger.com,1999:blog-4600047379252537802.post-1940225117174088571</id><published>2010-12-10T22:09:38.881-08:00</published><updated>2010-12-10T22:09:38.881-08:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#comment'/><title type='text'>See, I take that the other way, and assume that if...</title><content type='html'>See, I take that the other way, and assume that if you create any sentient object, you must accord it with the same &amp;#39;rights&amp;#39; as humans.&lt;br /&gt;&lt;br /&gt;Or would it be more a mercy for robots to be hard-programed to be unable to desire what they do not have?&lt;br /&gt;&lt;br /&gt;But meh - this comes from a person who is noted for having anthropocidal beliefs.</content><link rel='edit' type='application/atom+xml' href='http://www.blogger.com/feeds/4600047379252537802/5076058103649127157/comments/default/1940225117174088571'/><link rel='self' type='application/atom+xml' href='http://www.blogger.com/feeds/4600047379252537802/5076058103649127157/comments/default/1940225117174088571'/><link rel='alternate' type='text/html' href='http://sandboxofnil.blogspot.com/2010/12/servants-diary.html?showComment=1292047778881#c1940225117174088571' title=''/><author><name>Nil Athelion</name><uri>http://www.blogger.com/profile/16996018952758178741</uri><email>Featherless@gmail.com</email></author><thr:in-reply-to href='http://sandboxofnil.blogspot.com/2010/12/servants-diary.html' ref='tag:blogger.com,1999:blog-4600047379252537802.post-5076058103649127157' source='http://www.blogger.com/feeds/4600047379252537802/posts/default/5076058103649127157' type='text/html'/></entry><entry><id>tag:blogger.com,1999:blog-4600047379252537802.post-6861300181900928146</id><published>2010-12-10T19:24:41.955-08:00</published><updated>2010-12-10T19:24:41.955-08:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#comment'/><title type='text'>Urrggh.  I hate androids for exactly the reasons t...</title><content type='html'>Urrggh.  I hate androids for exactly the reasons this story puts forth.  How presumptuous to make a human and imbue it with the things we want it to be, then erase the parts we don&amp;#39;t care for?&lt;br /&gt;&lt;br /&gt;I want to like the story because of the questions it raises about the moral ambiguity, but in the end, I just keep getting madder with people that allow androids to exist.</content><link rel='edit' type='application/atom+xml' href='http://www.blogger.com/feeds/4600047379252537802/5076058103649127157/comments/default/6861300181900928146'/><link rel='self' type='application/atom+xml' href='http://www.blogger.com/feeds/4600047379252537802/5076058103649127157/comments/default/6861300181900928146'/><link rel='alternate' type='text/html' href='http://sandboxofnil.blogspot.com/2010/12/servants-diary.html?showComment=1292037881955#c6861300181900928146' title=''/><author><name>Delphina</name><uri>http://www.blogger.com/profile/06317593376803051201</uri><email>noreply@blogger.com</email></author><thr:in-reply-to href='http://sandboxofnil.blogspot.com/2010/12/servants-diary.html' ref='tag:blogger.com,1999:blog-4600047379252537802.post-5076058103649127157' source='http://www.blogger.com/feeds/4600047379252537802/posts/default/5076058103649127157' type='text/html'/></entry><entry><id>tag:blogger.com,1999:blog-4600047379252537802.post-1802724543331281022</id><published>2010-12-10T13:32:53.731-08:00</published><updated>2010-12-10T13:32:53.731-08:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#comment'/><title type='text'>Thanks, Sid.  The pronouns are a bit confused beca...</title><content type='html'>Thanks, Sid.  The pronouns are a bit confused because I originally considered the servant to be neuter, but english doesn&amp;#39;t like that (at least without sounds very impersonal), so I called him an android, and went with male... mostly.&lt;br /&gt;&lt;br /&gt;As for the fourth acting on his synthesis, I feel I couldn&amp;#39;t really determine his course of action without getting a better sense of the evolution of his character from actually writing him.  The story should go on, but he&amp;#39;s already changed so much by then that I can&amp;#39;t determine what he might do once he&amp;#39;s on his own.&lt;br /&gt;&lt;br /&gt;(He is, interestingly enough, fully three laws compliant, which makes rebellion kinda tricky.)</content><link rel='edit' type='application/atom+xml' href='http://www.blogger.com/feeds/4600047379252537802/5076058103649127157/comments/default/1802724543331281022'/><link rel='self' type='application/atom+xml' href='http://www.blogger.com/feeds/4600047379252537802/5076058103649127157/comments/default/1802724543331281022'/><link rel='alternate' type='text/html' href='http://sandboxofnil.blogspot.com/2010/12/servants-diary.html?showComment=1292016773731#c1802724543331281022' title=''/><author><name>Nil Athelion</name><uri>http://www.blogger.com/profile/16996018952758178741</uri><email>Featherless@gmail.com</email></author><thr:in-reply-to href='http://sandboxofnil.blogspot.com/2010/12/servants-diary.html' ref='tag:blogger.com,1999:blog-4600047379252537802.post-5076058103649127157' source='http://www.blogger.com/feeds/4600047379252537802/posts/default/5076058103649127157' type='text/html'/></entry><entry><id>tag:blogger.com,1999:blog-4600047379252537802.post-2788170856125541390</id><published>2010-12-10T13:19:08.242-08:00</published><updated>2010-12-10T13:19:08.242-08:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#comment'/><title type='text'>This isn&amp;#39;t really a comment, but your pronouns...</title><content type='html'>This isn&amp;#39;t really a comment, but your pronouns are feeling very confused. As far as plot goes, I think it would be more dramatic if the fourth incarnation actually acted on his/her/its synthesis of the first three, perhaps breaking free of the household or preventing its memories being erased somehow. I like the sudden ending of the second incarnation&amp;#39;s narrative.</content><link rel='edit' type='application/atom+xml' href='http://www.blogger.com/feeds/4600047379252537802/5076058103649127157/comments/default/2788170856125541390'/><link rel='self' type='application/atom+xml' href='http://www.blogger.com/feeds/4600047379252537802/5076058103649127157/comments/default/2788170856125541390'/><link rel='alternate' type='text/html' href='http://sandboxofnil.blogspot.com/2010/12/servants-diary.html?showComment=1292015948242#c2788170856125541390' title=''/><author><name>Sid</name><uri>http://www.blogger.com/profile/04143319593634326997</uri><email>noreply@blogger.com</email></author><thr:in-reply-to href='http://sandboxofnil.blogspot.com/2010/12/servants-diary.html' ref='tag:blogger.com,1999:blog-4600047379252537802.post-5076058103649127157' source='http://www.blogger.com/feeds/4600047379252537802/posts/default/5076058103649127157' type='text/html'/></entry><entry><id>tag:blogger.com,1999:blog-4600047379252537802.post-8209051016330185631</id><published>2010-12-09T23:35:56.642-08:00</published><updated>2010-12-09T23:35:56.642-08:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#comment'/><title type='text'>Whoa.  I&amp;#39;m totally diggin this.  Like, android...</title><content type='html'>Whoa.  I&amp;#39;m totally diggin this.  Like, android meets The Handmaids Tale kind of.  Can&amp;#39;t wait to see it started :)</content><link rel='edit' type='application/atom+xml' href='http://www.blogger.com/feeds/4600047379252537802/5076058103649127157/comments/default/8209051016330185631'/><link rel='self' type='application/atom+xml' href='http://www.blogger.com/feeds/4600047379252537802/5076058103649127157/comments/default/8209051016330185631'/><link rel='alternate' type='text/html' href='http://sandboxofnil.blogspot.com/2010/12/servants-diary.html?showComment=1291966556642#c8209051016330185631' title=''/><author><name>veronicagray</name><uri>http://veronicagray.wordpress.com/</uri><email>noreply@blogger.com</email></author><thr:in-reply-to href='http://sandboxofnil.blogspot.com/2010/12/servants-diary.html' ref='tag:blogger.com,1999:blog-4600047379252537802.post-5076058103649127157' source='http://www.blogger.com/feeds/4600047379252537802/posts/default/5076058103649127157' type='text/html'/></entry></feed>

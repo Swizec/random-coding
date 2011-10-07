@@ -1,0 +1,1927 @@
+<?xml version='1.0' encoding='UTF-8'?><?xml-stylesheet href="http://www.blogger.com/styles/atom.css" type="text/css"?><feed xmlns='http://www.w3.org/2005/Atom' xmlns:openSearch='http://a9.com/-/spec/opensearchrss/1.0/' xmlns:georss='http://www.georss.org/georss' xmlns:gd='http://schemas.google.com/g/2005' xmlns:thr='http://purl.org/syndication/thread/1.0'><id>tag:blogger.com,1999:blog-8158087446522153219.archive</id><updated>2011-09-28T16:35:51.640-07:00</updated><title type='text'>Nil's Annotated Wesnoth Replays</title><link rel='http://schemas.google.com/g/2005#feed' type='application/atom+xml' href='http://wesnothannotatedreplay.blogspot.com/feeds/archive'/><link rel='self' type='application/atom+xml' href='http://www.blogger.com/feeds/8158087446522153219/archive'/><link rel='http://schemas.google.com/g/2005#post' type='application/atom+xml' href='http://www.blogger.com/feeds/8158087446522153219/archive'/><link rel='alternate' type='text/html' href='http://wesnothannotatedreplay.blogspot.com/'/><author><name>Nil Athelion</name><uri>http://www.blogger.com/profile/16996018952758178741</uri><email>Featherless@gmail.com</email></author><generator version='7.00' uri='http://www.blogger.com'>Blogger</generator><entry><id>tag:blogger.com,1999:blog-8158087446522153219.layout</id><published>2010-10-25T10:49:59.766-07:00</published><updated>2011-09-28T16:35:51.640-07:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#template'/><title type='text'>Template: Nil's Annotated Wesnoth Replays</title><content type='text'>&lt;?xml version="1.0" encoding="UTF-8" ?&gt;
+&lt;!DOCTYPE html&gt;
+&lt;html b:version='2' class='v2' expr:dir='data:blog.languageDirection' xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'&gt;
+  &lt;head&gt;
+    &lt;meta content='IE=EmulateIE7' http-equiv='X-UA-Compatible'/&gt;
+    &lt;b:if cond='data:blog.isMobile'&gt;
+      &lt;meta content='width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0' name='viewport'/&gt;
+    &lt;b:else/&gt;
+      &lt;meta content='width=1100' name='viewport'/&gt;
+    &lt;/b:if&gt;
+    &lt;b:include data='blog' name='all-head-content'/&gt;
+    &lt;title&gt;&lt;data:blog.pageTitle/&gt;&lt;/title&gt;
+
+    &lt;b:skin&gt;&lt;![CDATA[/*
+-----------------------------------------------
+Blogger Template Style
+Name:     Ethereal
+Designer: Jason Morrow
+URL:      jasonmorrow.etsy.com
+----------------------------------------------- */
+
+/* Variable definitions
+   ====================
+   &lt;Variable name="keycolor" description="Main Color" type="color" default="#000000" value="#3d85c6"/&gt;
+
+   &lt;Group description="Body Text" selector="body"&gt;
+     &lt;Variable name="body.font" description="Font" type="font"
+         default="normal normal 13px Arial, Tahoma, Helvetica, FreeSans, sans-serif" value="normal normal 13px Arial, Tahoma, Helvetica, FreeSans, sans-serif"/&gt;
+     &lt;Variable name="body.text.color" description="Text Color" type="color" default="#666666" value="#666666"/&gt;
+   &lt;/Group&gt;
+
+   &lt;Group description="Background" selector=".body-fauxcolumns-outer"&gt;
+     &lt;Variable name="body.background.color" description="Outer Background" type="color" default="#fb5e53" value="#3d85c6"/&gt;
+     &lt;Variable name="content.background.color" description="Main Background" type="color" default="#ffffff" value="#d4e1ff"/&gt;
+     &lt;Variable name="body.border.color" description="Border Color" type="color" default="#fb5e53" value="#bbbbff"/&gt;
+   &lt;/Group&gt;
+
+   &lt;Group description="Links" selector=".main-inner"&gt;
+     &lt;Variable name="link.color" description="Link Color" type="color" default="#2198a6" value="#3d74a5"/&gt;
+     &lt;Variable name="link.visited.color" description="Visited Color" type="color" default="#4d469c" value="#4d469c"/&gt;
+     &lt;Variable name="link.hover.color" description="Hover Color" type="color" default="$(link.color)" value="$(link.color)"/&gt;
+   &lt;/Group&gt;
+
+   &lt;Group description="Blog Title" selector=".header h1"&gt;
+     &lt;Variable name="header.font" description="Font" type="font"
+         default="normal normal 60px Times, 'Times New Roman', FreeSerif, serif" value="normal normal 60px Times, 'Times New Roman', FreeSerif, serif"/&gt;
+     &lt;Variable name="header.text.color" description="Text Color" type="color" default="#ff8b8b" value="#3d74a5"/&gt;
+   &lt;/Group&gt;
+
+   &lt;Group description="Blog Description" selector=".header .description"&gt;
+     &lt;Variable name="description.text.color" description="Description Color" type="color"
+         default="#666666" value="#666666"/&gt;
+   &lt;/Group&gt;
+
+   &lt;Group description="Tabs Text" selector=".tabs-inner .widget li a"&gt;
+     &lt;Variable name="tabs.font" description="Font" type="font"
+         default="normal normal 12px Arial, Tahoma, Helvetica, FreeSans, sans-serif" value="normal normal 12px Arial, Tahoma, Helvetica, FreeSans, sans-serif"/&gt;
+     &lt;Variable name="tabs.selected.text.color" description="Selected Color" type="color" default="#ffffff" value="#ffffff"/&gt;
+     &lt;Variable name="tabs.text.color" description="Text Color" type="color" default="$(body.text.color)" value="#666666"/&gt;
+   &lt;/Group&gt;
+
+   &lt;Group description="Tabs Background" selector=".tabs-outer .PageList"&gt;
+     &lt;Variable name="tabs.selected.background.color" description="Selected Color" type="color" default="#ffa183" value="#4eabff"/&gt;
+     &lt;Variable name="tabs.background.color" description="Background Color" type="color" default="#ffdfc7" value="#c2d8fa"/&gt;
+     &lt;Variable name="tabs.border.bevel.color" description="Bevel Color" type="color" default="#fb5e53" value="#c2d8fa"/&gt;
+   &lt;/Group&gt;
+
+   &lt;Group description="Post Title" selector="h3.post-title, h4, h3.post-title a"&gt;
+     &lt;Variable name="post.title.font" description="Font" type="font"
+         default="normal normal 24px Times, Times New Roman, serif" value="normal normal 24px Times, Times New Roman, serif"/&gt;
+     &lt;Variable name="post.title.text.color" description="Text Color" type="color" default="#2198a6" value="#3d85c6"/&gt;
+   &lt;/Group&gt;
+
+   &lt;Group description="Gadget Title" selector="h2"&gt;
+     &lt;Variable name="widget.title.font" description="Title Font" type="font"
+        default="normal bold 12px Arial, Tahoma, Helvetica, FreeSans, sans-serif" value="normal bold 12px Verdana, Geneva, sans-serif"/&gt;
+     &lt;Variable name="widget.title.text.color" description="Text Color" type="color" default="$(body.text.color)" value="#666666"/&gt;
+     &lt;Variable name="widget.title.border.bevel.color" description="Bevel Color" type="color" default="#dbdbdb" value="#dbdbdb"/&gt;
+   &lt;/Group&gt;
+
+   &lt;Group description="Accents" selector=".main-inner .widget"&gt;
+     &lt;Variable name="widget.alternate.text.color" description="Alternate Color" type="color" default="#cccccc" value="#666666"/&gt;
+     &lt;Variable name="widget.border.bevel.color" description="Bevel Color" type="color" default="#dbdbdb" value="#dbdbdb"/&gt;
+   &lt;/Group&gt;
+
+   &lt;Variable name="body.background" description="Body Background" type="background"
+       color="$(body.background.color)" default="$(color) none repeat-x scroll top left" value="$(color) none repeat-x scroll top left"/&gt;
+   &lt;Variable name="body.background.gradient" description="Body Gradient Cap" type="url"
+       default="none" value="url(http://themes.googleusercontent.com/image?id=0BwVBOzw_-hbMMDZjM2Q4YjctMTY2OC00ZGU2LWJjZDYtODVjOGRiOThlMGQ3)"/&gt;
+   &lt;Variable name="body.background.imageBorder" description="Body Image Border" type="url"
+       default="none" value="none"/&gt;
+   &lt;Variable name="body.background.imageBorder.position.left" description="Body Image Border Left" type="length"
+       default="0" value="0"/&gt;
+   &lt;Variable name="body.background.imageBorder.position.right" description="Body Image Border Right" type="length"
+       default="0" value="0"/&gt;
+   &lt;Variable name="header.background.gradient" description="Header Background Gradient" type="url" default="none" value="none"/&gt;
+   &lt;Variable name="content.background.gradient" description="Content Gradient" type="url" default="none" value="url(http://www.blogblog.com/1kt/ethereal/white-fade.png)"/&gt;
+
+   &lt;Variable name="link.decoration" description="Link Decoration" type="string" default="none" value="none"/&gt;
+   &lt;Variable name="link.visited.decoration" description="Link Visited Decoration" type="string" default="$(link.decoration)" value="$(link.decoration)"/&gt;
+   &lt;Variable name="link.hover.decoration" description="Link Hover Decoration" type="string" default="underline" value="underline"/&gt;
+
+   &lt;Variable name="widget.padding.top" description="Widget Padding Top" type="length" default="15px" value="15px"/&gt;
+
+   &lt;Variable name="date.space" description="Date Space" type="length" default="15px" value="15px"/&gt;
+
+   &lt;Variable name="post.first.padding.top" description="First Post Padding Top" type="length" default="0" value="0"/&gt;
+
+   &lt;Variable name="mobile.background.overlay" description="Mobile Background Overlay" type="string" default="" value=""/&gt;
+   &lt;Variable name="mobile.background.size" description="Mobile Background Size" type="string" default="auto" value="auto"/&gt;
+
+   &lt;Variable name="startSide" description="Side where text starts in blog language" type="automatic" default="left" value="left"/&gt;
+   &lt;Variable name="endSide" description="Side where text ends in blog language" type="automatic" default="right" value="right"/&gt;
+*/
+
+/* Content
+----------------------------------------------- */
+body {
+  font: $(body.font);
+  color: $(body.text.color);
+  background: $(body.background);
+}
+
+html body .content-outer {
+  min-width: 0;
+  max-width: 100%;
+  width: 100%;
+}
+
+a:link {
+  text-decoration: $(link.decoration);
+  color: $(link.color);
+}
+
+a:visited {
+  text-decoration: $(link.visited.decoration);
+  color: $(link.visited.color);
+}
+
+a:hover {
+  text-decoration: $(link.hover.decoration);
+  color: $(link.hover.color);
+}
+
+.main-inner {
+  padding-top: $(date.space);
+}
+
+.body-fauxcolumn-outer {
+  background: transparent $(body.background.gradient) repeat-x scroll top center;
+}
+
+.content-fauxcolumns .fauxcolumn-inner {
+  background: $(content.background.color) $(content.background.gradient) repeat-x scroll top left;
+  border-left: 1px solid $(body.border.color);
+  border-right: 1px solid $(body.border.color);
+}
+
+/* Flexible Background
+----------------------------------------------- */
+.content-fauxcolumn-outer .fauxborder-left {
+  width: 100%;
+  padding-left: $(body.background.imageBorder.position.left);
+  margin-left: -$(body.background.imageBorder.position.left);
+  background-color: transparent;
+  background-image: $(body.background.imageBorder);
+  background-repeat: no-repeat;
+  background-position: left top;
+}
+
+
+.content-fauxcolumn-outer .fauxborder-right {
+  margin-right: -$(body.background.imageBorder.position.right);
+  width: $(body.background.imageBorder.position.right);
+  background-color: transparent;
+  background-image: $(body.background.imageBorder);
+  background-repeat: no-repeat;
+  background-position: right top;
+}
+
+
+/* Columns
+----------------------------------------------- */
+
+.content-inner {
+  padding: 0;
+}
+
+/* Header
+----------------------------------------------- */
+.header-inner {
+  padding: 27px 0 3px;
+}
+
+.header-inner .section {
+  margin: 0 35px;
+}
+
+.Header h1 {
+  font: $(header.font);
+  color: $(header.text.color);
+}
+
+.Header h1 a {
+  color: $(header.text.color);
+}
+
+.Header .description {
+  font-size: 115%;
+  color: $(description.text.color);
+}
+
+.header-inner .Header .titlewrapper,
+.header-inner .Header .descriptionwrapper {
+  padding-left: 0;
+  padding-right: 0;
+  margin-bottom: 0;
+}
+
+/* Tabs
+----------------------------------------------- */
+.tabs-outer {
+  position: relative;
+  background: transparent;
+}
+
+.tabs-cap-top, .tabs-cap-bottom {
+  position: absolute;
+  width: 100%;
+}
+
+.tabs-cap-bottom {
+  bottom: 0;
+}
+
+.tabs-inner {
+  padding: 0;
+}
+
+.tabs-inner .section {
+  margin: 0 35px;
+}
+
+*+html body .tabs-inner .widget li {
+  padding: 1px;
+}
+
+.PageList {
+  border-bottom: 1px solid $(tabs.border.bevel.color);
+}
+
+.tabs-inner .widget li.selected a,
+.tabs-inner .widget li a:hover {
+  position: relative;
+  -moz-border-radius-topleft: 5px;
+  -moz-border-radius-topright: 5px;
+  -webkit-border-top-left-radius: 5px;
+  -webkit-border-top-right-radius: 5px;
+  -goog-ms-border-top-left-radius: 5px;
+  -goog-ms-border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+
+  background: $(tabs.selected.background.color) none ;
+  color: $(tabs.selected.text.color);
+}
+
+.tabs-inner .widget li a {
+  display: inline-block;
+  margin: 0;
+  margin-right: 1px;
+  padding: .65em 1.5em;
+  font: $(tabs.font);
+  color: $(tabs.text.color);
+  background-color: $(tabs.background.color);
+
+  -moz-border-radius-topleft: 5px;
+  -moz-border-radius-topright: 5px;
+  -webkit-border-top-left-radius: 5px;
+  -webkit-border-top-right-radius: 5px;
+  -goog-ms-border-top-left-radius: 5px;
+  -goog-ms-border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+/* Headings
+----------------------------------------------- */
+h2 {
+  font: $(widget.title.font);
+  color: $(widget.title.text.color);
+}
+
+/* Widgets
+----------------------------------------------- */
+.main-inner .column-left-inner {
+  padding: 0 0 0 20px;
+}
+
+.main-inner .column-left-inner .section {
+  margin-right: 0;
+}
+
+.main-inner .column-right-inner {
+  padding: 0 20px 0 0;
+}
+
+.main-inner .column-right-inner .section {
+  margin-left: 0;
+}
+
+.main-inner .section {
+  padding: 0;
+}
+
+.main-inner .widget {
+  padding: 0 0 15px;
+  margin: 20px 0;
+  border-bottom: 1px solid $(widget.border.bevel.color);
+}
+
+.main-inner .widget h2 {
+  margin: 0;
+  padding: .6em 0 .5em;
+}
+
+.footer-inner .widget h2 {
+  padding: 0 0 .4em;
+}
+
+.main-inner .widget h2 + div, .footer-inner .widget h2 + div {
+  padding-top: $(widget.padding.top);
+}
+
+.main-inner .widget .widget-content {
+  margin: 0;
+  padding: 15px 0 0;
+}
+
+.main-inner .widget ul, .main-inner .widget #ArchiveList ul.flat {
+  margin: -$(widget.padding.top) -15px -15px;
+  padding: 0;
+
+  list-style: none;
+}
+
+.main-inner .sidebar .widget h2 {
+  border-bottom: 1px solid $(widget.title.border.bevel.color);
+}
+
+.main-inner .widget #ArchiveList {
+  margin: -$(widget.padding.top) 0 0;
+}
+
+.main-inner .widget ul li, .main-inner .widget #ArchiveList ul.flat li {
+  padding: .5em 15px;
+  text-indent: 0;
+}
+
+.main-inner .widget #ArchiveList ul li {
+  padding-top: .25em;
+  padding-bottom: .25em;
+}
+
+.main-inner .widget ul li:first-child, .main-inner .widget #ArchiveList ul.flat li:first-child {
+  border-top: none;
+}
+
+.main-inner .widget ul li:last-child, .main-inner .widget #ArchiveList ul.flat li:last-child {
+  border-bottom: none;
+}
+
+.main-inner .widget .post-body ul {
+  padding: 0 2.5em;
+  margin: .5em 0;
+
+  list-style: disc;
+}
+
+.main-inner .widget .post-body ul li {
+  padding: 0.25em 0;
+  margin-bottom: .25em;
+  color: $(body.text.color);
+  border: none;
+}
+
+.footer-inner .widget ul {
+  padding: 0;
+
+  list-style: none;
+}
+
+.widget .zippy {
+  color: $(widget.alternate.text.color);
+}
+
+/* Posts
+----------------------------------------------- */
+.main.section {
+  margin: 0 20px;
+}
+
+body .main-inner .Blog {
+  padding: 0;
+  background-color: transparent;
+  border: none;
+}
+
+.main-inner .widget h2.date-header {
+  border-bottom: 1px solid $(widget.title.border.bevel.color);
+}
+
+.date-outer {
+  position: relative;
+  margin: $(date.space) 0 20px;
+}
+
+.date-outer:first-child {
+  margin-top: 0;
+}
+
+.date-posts {
+  clear: both;
+}
+
+.post-outer, .inline-ad {
+  border-bottom: 1px solid $(widget.border.bevel.color);
+  padding: 30px 0;
+}
+
+.post-outer {
+  padding-bottom: 10px;
+}
+
+.post-outer:first-child {
+  padding-top: $(post.first.padding.top);
+  border-top: none;
+}
+
+.post-outer:last-child, .inline-ad:last-child {
+  border-bottom: none;
+}
+
+.post-body img {
+  padding: 8px;
+}
+
+h3.post-title, h4 {
+  font: $(post.title.font);
+  color: $(post.title.text.color);
+}
+
+h3.post-title a {
+  font: $(post.title.font);
+  color: $(post.title.text.color);
+  text-decoration: none;
+}
+
+h3.post-title a:hover {
+  color: $(link.hover.color);
+  text-decoration: underline;
+}
+
+.post-header {
+  margin: 0 0 1.5em;
+}
+
+.post-body {
+  line-height: 1.4;
+}
+
+.post-footer {
+  margin: 1.5em 0 0;
+}
+
+#blog-pager {
+  padding: 15px;
+}
+
+.blog-feeds, .post-feeds {
+  margin: 1em 0;
+  text-align: center;
+}
+
+.post-outer .comments {
+  margin-top: 2em;
+}
+
+/* Footer
+----------------------------------------------- */
+.footer-inner {
+  padding: 30px 0;
+  overflow: hidden;
+}
+
+/* Mobile
+----------------------------------------------- */
+body.mobile  {
+  padding: 0 10px;
+  background-size: $(mobile.background.size)
+}
+
+.mobile .body-fauxcolumn-outer {
+  background: $(mobile.background.overlay);
+}
+
+.mobile .content-fauxcolumns .fauxcolumn-inner {
+  opacity: 0.75;
+}
+
+.mobile .content-fauxcolumn-outer .fauxborder-right {
+  margin-right: 0;
+}
+
+.mobile-link-button {
+  background-color: $(tabs.selected.background.color);
+}
+
+.mobile-link-button a:link, .mobile-link-button a:visited {
+  color: $(tabs.selected.text.color);
+}
+
+.mobile-index-contents {
+  color: #444444;
+}
+
+.mobile .body-fauxcolumn-outer {
+  background-size: 100% auto;
+}
+
+.mobile .mobile-date-outer {
+  border-bottom: transparent;
+}
+
+.mobile .PageList {
+  border-bottom: none;
+}
+
+.mobile .tabs-inner .section {
+  margin: 0;
+}
+
+.mobile .tabs-inner .PageList .widget-content {
+  background: $(tabs.selected.background.color) none;
+  color: $(tabs.selected.text.color);
+}
+
+.mobile .tabs-inner .PageList .widget-content .pagelist-arrow {
+  border-$startSide: 1px solid $(tabs.selected.text.color);
+}
+
+.mobile .footer-inner {
+  overflow: visible;
+}
+
+body.mobile .AdSense {
+  margin: 0 -10px;
+}
+]]&gt;&lt;/b:skin&gt;
+
+    &lt;b:template-skin&gt;
+      &lt;b:variable default='960px' name='content.width' type='length' value='1000px'/&gt;
+      &lt;b:variable default='0' name='main.column.left.width' type='length' value='0px'/&gt;
+      &lt;b:variable default='310px' name='main.column.right.width' type='length' value='200px'/&gt;
+
+      &lt;![CDATA[
+      body {
+        min-width: $(content.width);
+      }
+
+      .content-outer, .content-fauxcolumn-outer, .region-inner {
+        min-width: $(content.width);
+        max-width: $(content.width);
+        _width: $(content.width);
+      }
+
+      .main-inner .columns {
+        padding-left: $(main.column.left.width);
+        padding-right: $(main.column.right.width);
+      }
+
+      .main-inner .fauxcolumn-center-outer {
+        left: $(main.column.left.width);
+        right: $(main.column.right.width);
+        /* IE6 does not respect left and right together */
+        _width: expression(this.parentNode.offsetWidth -
+            parseInt("$(main.column.left.width)") -
+            parseInt("$(main.column.right.width)") + 'px');
+      }
+
+      .main-inner .fauxcolumn-left-outer {
+        width: $(main.column.left.width);
+      }
+
+      .main-inner .fauxcolumn-right-outer {
+        width: $(main.column.right.width);
+      }
+
+      .main-inner .column-left-outer {
+        width: $(main.column.left.width);
+        right: 100%;
+        margin-left: -$(main.column.left.width);
+      }
+
+      .main-inner .column-right-outer {
+        width: $(main.column.right.width);
+        margin-right: -$(main.column.right.width);
+      }
+
+      #layout {
+        min-width: 0;
+      }
+
+      #layout .content-outer {
+        min-width: 0;
+        width: 800px;
+      }
+
+      #layout .region-inner {
+        min-width: 0;
+        width: auto;
+      }
+      ]]&gt;
+    &lt;/b:template-skin&gt;
+  &lt;/head&gt;
+
+  &lt;body expr:class='&amp;quot;loading&amp;quot; + data:blog.mobileClass'&gt;
+  &lt;div class='body-fauxcolumns'&gt;
+    &lt;div class='fauxcolumn-outer body-fauxcolumn-outer'&gt;
+    &lt;div class='cap-top'&gt;
+      &lt;div class='cap-left'/&gt;
+      &lt;div class='cap-right'/&gt;
+    &lt;/div&gt;
+    &lt;div class='fauxborder-left'&gt;
+    &lt;div class='fauxborder-right'/&gt;
+    &lt;div class='fauxcolumn-inner'&gt;
+    &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class='cap-bottom'&gt;
+      &lt;div class='cap-left'/&gt;
+      &lt;div class='cap-right'/&gt;
+    &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;div class='content'&gt;
+  &lt;div class='content-fauxcolumns'&gt;
+    &lt;div class='fauxcolumn-outer content-fauxcolumn-outer'&gt;
+    &lt;div class='cap-top'&gt;
+      &lt;div class='cap-left'/&gt;
+      &lt;div class='cap-right'/&gt;
+    &lt;/div&gt;
+    &lt;div class='fauxborder-left'&gt;
+    &lt;div class='fauxborder-right'/&gt;
+    &lt;div class='fauxcolumn-inner'&gt;
+    &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class='cap-bottom'&gt;
+      &lt;div class='cap-left'/&gt;
+      &lt;div class='cap-right'/&gt;
+    &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;div class='content-outer'&gt;
+  &lt;div class='content-cap-top cap-top'&gt;
+    &lt;div class='cap-left'/&gt;
+    &lt;div class='cap-right'/&gt;
+  &lt;/div&gt;
+  &lt;div class='fauxborder-left content-fauxborder-left'&gt;
+  &lt;div class='fauxborder-right content-fauxborder-right'/&gt;
+  &lt;div class='content-inner'&gt;
+
+    &lt;header&gt;
+    &lt;div class='header-outer'&gt;
+    &lt;div class='header-cap-top cap-top'&gt;
+      &lt;div class='cap-left'/&gt;
+      &lt;div class='cap-right'/&gt;
+    &lt;/div&gt;
+    &lt;div class='fauxborder-left header-fauxborder-left'&gt;
+    &lt;div class='fauxborder-right header-fauxborder-right'/&gt;
+    &lt;div class='region-inner header-inner'&gt;
+      &lt;b:section class='header' id='header' maxwidgets='1' showaddelement='no'&gt;
+&lt;b:widget id='Header1' locked='true' title='Nil&amp;apos;s Annotated Wesnoth Replays (Header)' type='Header'&gt;
+&lt;b:includable id='main'&gt;
+
+  &lt;b:if cond='data:useImage'&gt;
+    &lt;b:if cond='data:imagePlacement == &amp;quot;BEHIND&amp;quot;'&gt;
+      &lt;!--
+      Show image as background to text. You can't really calculate the width
+      reliably in JS because margins are not taken into account by any of
+      clientWidth, offsetWidth or scrollWidth, so we don't force a minimum
+      width if the user is using shrink to fit.
+      This results in a margin-width's worth of pixels being cropped. If the
+      user is not using shrink to fit then we expand the header.
+      --&gt;
+      &lt;b:if cond='data:mobile'&gt;
+          &lt;div id='header-inner'&gt;
+            &lt;div class='titlewrapper' style='background: transparent'&gt;
+              &lt;h1 class='title' style='background: transparent; border-width: 0px'&gt;
+                &lt;b:include name='title'/&gt;
+              &lt;/h1&gt;
+            &lt;/div&gt;
+            &lt;b:include name='description'/&gt;
+          &lt;/div&gt;
+        &lt;b:else/&gt;
+          &lt;div expr:style='&amp;quot;background-image: url(\&amp;quot;&amp;quot; + data:sourceUrl + &amp;quot;\&amp;quot;); &amp;quot;                        + &amp;quot;background-position: &amp;quot;                        + data:backgroundPositionStyleStr + &amp;quot;; &amp;quot;                        + data:widthStyleStr                        + &amp;quot;min-height: &amp;quot; + data:height                        + &amp;quot;_height: &amp;quot; + data:height                        + &amp;quot;background-repeat: no-repeat; &amp;quot;' id='header-inner'&gt;
+            &lt;div class='titlewrapper' style='background: transparent'&gt;
+              &lt;h1 class='title' style='background: transparent; border-width: 0px'&gt;
+                &lt;b:include name='title'/&gt;
+              &lt;/h1&gt;
+            &lt;/div&gt;
+            &lt;b:include name='description'/&gt;
+          &lt;/div&gt;
+        &lt;/b:if&gt;
+    &lt;b:else/&gt;
+      &lt;!--Show the image only--&gt;
+      &lt;div id='header-inner'&gt;
+        &lt;a expr:href='data:blog.homepageUrl' style='display: block'&gt;
+          &lt;img expr:alt='data:title' expr:height='data:height' expr:id='data:widget.instanceId + &amp;quot;_headerimg&amp;quot;' expr:src='data:sourceUrl' expr:width='data:width' style='display: block'/&gt;
+        &lt;/a&gt;
+        &lt;!--Show the description--&gt;
+        &lt;b:if cond='data:imagePlacement == &amp;quot;BEFORE_DESCRIPTION&amp;quot;'&gt;
+          &lt;b:include name='description'/&gt;
+        &lt;/b:if&gt;
+      &lt;/div&gt;
+    &lt;/b:if&gt;
+  &lt;b:else/&gt;
+    &lt;!--No header image --&gt;
+    &lt;div id='header-inner'&gt;
+      &lt;div class='titlewrapper'&gt;
+        &lt;h1 class='title'&gt;
+          &lt;b:include name='title'/&gt;
+        &lt;/h1&gt;
+      &lt;/div&gt;
+      &lt;b:include name='description'/&gt;
+    &lt;/div&gt;
+  &lt;/b:if&gt;
+&lt;/b:includable&gt;
+&lt;b:includable id='title'&gt;
+  &lt;b:if cond='data:blog.url == data:blog.homepageUrl'&gt;
+    &lt;data:title/&gt;
+  &lt;b:else/&gt;
+    &lt;a expr:href='data:blog.homepageUrl'&gt;&lt;data:title/&gt;&lt;/a&gt;
+  &lt;/b:if&gt;
+&lt;/b:includable&gt;
+&lt;b:includable id='description'&gt;
+  &lt;div class='descriptionwrapper'&gt;
+    &lt;p class='description'&gt;&lt;span&gt;&lt;data:description/&gt;&lt;/span&gt;&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/b:includable&gt;
+&lt;/b:widget&gt;
+&lt;/b:section&gt;
+    &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class='header-cap-bottom cap-bottom'&gt;
+      &lt;div class='cap-left'/&gt;
+      &lt;div class='cap-right'/&gt;
+    &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;/header&gt;
+
+    &lt;div class='tabs-outer'&gt;
+    &lt;div class='tabs-cap-top cap-top'&gt;
+      &lt;div class='cap-left'/&gt;
+      &lt;div class='cap-right'/&gt;
+    &lt;/div&gt;
+    &lt;div class='fauxborder-left tabs-fauxborder-left'&gt;
+    &lt;div class='fauxborder-right tabs-fauxborder-right'/&gt;
+    &lt;div class='region-inner tabs-inner'&gt;
+      &lt;b:section class='tabs' id='crosscol' maxwidgets='1' showaddelement='yes'/&gt;
+      &lt;b:section class='tabs' id='crosscol-overflow' showaddelement='no'/&gt;
+    &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class='tabs-cap-bottom cap-bottom'&gt;
+      &lt;div class='cap-left'/&gt;
+      &lt;div class='cap-right'/&gt;
+    &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;div class='main-outer'&gt;
+    &lt;div class='main-cap-top cap-top'&gt;
+      &lt;div class='cap-left'/&gt;
+      &lt;div class='cap-right'/&gt;
+    &lt;/div&gt;
+
+    &lt;div class='fauxborder-left main-fauxborder-left'&gt;
+    &lt;div class='fauxborder-right main-fauxborder-right'/&gt;
+    &lt;div class='region-inner main-inner'&gt;
+
+      &lt;div class='columns fauxcolumns'&gt;
+
+        &lt;div class='fauxcolumn-outer fauxcolumn-center-outer'&gt;
+        &lt;div class='cap-top'&gt;
+          &lt;div class='cap-left'/&gt;
+          &lt;div class='cap-right'/&gt;
+        &lt;/div&gt;
+        &lt;div class='fauxborder-left'&gt;
+        &lt;div class='fauxborder-right'/&gt;
+        &lt;div class='fauxcolumn-inner'&gt;
+        &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class='cap-bottom'&gt;
+          &lt;div class='cap-left'/&gt;
+          &lt;div class='cap-right'/&gt;
+        &lt;/div&gt;
+        &lt;/div&gt;
+
+        &lt;div class='fauxcolumn-outer fauxcolumn-left-outer'&gt;
+        &lt;div class='cap-top'&gt;
+          &lt;div class='cap-left'/&gt;
+          &lt;div class='cap-right'/&gt;
+        &lt;/div&gt;
+        &lt;div class='fauxborder-left'&gt;
+        &lt;div class='fauxborder-right'/&gt;
+        &lt;div class='fauxcolumn-inner'&gt;
+        &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class='cap-bottom'&gt;
+          &lt;div class='cap-left'/&gt;
+          &lt;div class='cap-right'/&gt;
+        &lt;/div&gt;
+        &lt;/div&gt;
+
+        &lt;div class='fauxcolumn-outer fauxcolumn-right-outer'&gt;
+        &lt;div class='cap-top'&gt;
+          &lt;div class='cap-left'/&gt;
+          &lt;div class='cap-right'/&gt;
+        &lt;/div&gt;
+        &lt;div class='fauxborder-left'&gt;
+        &lt;div class='fauxborder-right'/&gt;
+        &lt;div class='fauxcolumn-inner'&gt;
+        &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class='cap-bottom'&gt;
+          &lt;div class='cap-left'/&gt;
+          &lt;div class='cap-right'/&gt;
+        &lt;/div&gt;
+        &lt;/div&gt;
+
+        &lt;!-- corrects IE6 width calculation --&gt;
+        &lt;div class='columns-inner'&gt;
+
+        &lt;div class='column-center-outer'&gt;
+        &lt;div class='column-center-inner'&gt;
+          &lt;b:section class='main' id='main' showaddelement='no'&gt;
+&lt;b:widget id='Blog1' locked='true' title='Blog Posts' type='Blog'&gt;
+&lt;b:includable id='nextprev'&gt;
+  &lt;div class='blog-pager' id='blog-pager'&gt;
+    &lt;b:if cond='data:newerPageUrl'&gt;
+      &lt;span id='blog-pager-newer-link'&gt;
+      &lt;a class='blog-pager-newer-link' expr:href='data:newerPageUrl' expr:id='data:widget.instanceId + &amp;quot;_blog-pager-newer-link&amp;quot;' expr:title='data:newerPageTitle'&gt;&lt;data:newerPageTitle/&gt;&lt;/a&gt;
+      &lt;/span&gt;
+    &lt;/b:if&gt;
+
+    &lt;b:if cond='data:olderPageUrl'&gt;
+      &lt;span id='blog-pager-older-link'&gt;
+      &lt;a class='blog-pager-older-link' expr:href='data:olderPageUrl' expr:id='data:widget.instanceId + &amp;quot;_blog-pager-older-link&amp;quot;' expr:title='data:olderPageTitle'&gt;&lt;data:olderPageTitle/&gt;&lt;/a&gt;
+      &lt;/span&gt;
+    &lt;/b:if&gt;
+
+    &lt;a class='home-link' expr:href='data:blog.homepageUrl'&gt;&lt;data:homeMsg/&gt;&lt;/a&gt;
+
+    &lt;b:if cond='data:mobileLinkUrl'&gt;
+      &lt;div class='blog-mobile-link'&gt;
+        &lt;a expr:href='data:mobileLinkUrl'&gt;&lt;data:mobileLinkMsg/&gt;&lt;/a&gt;
+      &lt;/div&gt;
+    &lt;/b:if&gt;
+
+  &lt;/div&gt;
+  &lt;div class='clear'/&gt;
+&lt;/b:includable&gt;
+&lt;b:includable id='shareButtons' var='post'&gt;
+  &lt;b:if cond='data:top.showEmailButton'&gt;&lt;a class='goog-inline-block share-button sb-email' expr:href='data:post.sharePostUrl + &amp;quot;&amp;amp;target=email&amp;quot;' expr:title='data:top.emailThisMsg' target='_blank'&gt;&lt;span class='share-button-link-text'&gt;&lt;data:top.emailThisMsg/&gt;&lt;/span&gt;&lt;/a&gt;&lt;/b:if&gt;&lt;b:if cond='data:top.showBlogThisButton'&gt;&lt;a class='goog-inline-block share-button sb-blog' expr:href='data:post.sharePostUrl + &amp;quot;&amp;amp;target=blog&amp;quot;' expr:onclick='&amp;quot;window.open(this.href, \&amp;quot;_blank\&amp;quot;, \&amp;quot;height=270,width=475\&amp;quot;); return false;&amp;quot;' expr:title='data:top.blogThisMsg' target='_blank'&gt;&lt;span class='share-button-link-text'&gt;&lt;data:top.blogThisMsg/&gt;&lt;/span&gt;&lt;/a&gt;&lt;/b:if&gt;&lt;b:if cond='data:top.showTwitterButton'&gt;&lt;a class='goog-inline-block share-button sb-twitter' expr:href='data:post.sharePostUrl + &amp;quot;&amp;amp;target=twitter&amp;quot;' expr:title='data:top.shareToTwitterMsg' target='_blank'&gt;&lt;span class='share-button-link-text'&gt;&lt;data:top.shareToTwitterMsg/&gt;&lt;/span&gt;&lt;/a&gt;&lt;/b:if&gt;&lt;b:if cond='data:top.showFacebookButton'&gt;&lt;a class='goog-inline-block share-button sb-facebook' expr:href='data:post.sharePostUrl + &amp;quot;&amp;amp;target=facebook&amp;quot;' expr:onclick='&amp;quot;window.open(this.href, \&amp;quot;_blank\&amp;quot;, \&amp;quot;height=430,width=640\&amp;quot;); return false;&amp;quot;' expr:title='data:top.shareToFacebookMsg' target='_blank'&gt;&lt;span class='share-button-link-text'&gt;&lt;data:top.shareToFacebookMsg/&gt;&lt;/span&gt;&lt;/a&gt;&lt;/b:if&gt;&lt;b:if cond='data:top.showOrkutButton'&gt;&lt;a class='goog-inline-block share-button sb-orkut' expr:href='data:post.sharePostUrl + &amp;quot;&amp;amp;target=orkut&amp;quot;' expr:title='data:top.shareToOrkutMsg' target='_blank'&gt;&lt;span class='share-button-link-text'&gt;&lt;data:top.shareToOrkutMsg/&gt;&lt;/span&gt;&lt;/a&gt;&lt;/b:if&gt;&lt;b:if cond='data:top.showDummy'&gt;&lt;div class='goog-inline-block dummy-container'&gt;&lt;data:post.dummyTag/&gt;&lt;/div&gt;&lt;/b:if&gt;
+&lt;/b:includable&gt;
+&lt;b:includable id='backlinks' var='post'&gt;
+  &lt;a name='links'/&gt;&lt;h4&gt;&lt;data:post.backlinksLabel/&gt;&lt;/h4&gt;
+  &lt;b:if cond='data:post.numBacklinks != 0'&gt;
+    &lt;dl class='comments-block' id='comments-block'&gt;
+      &lt;b:loop values='data:post.backlinks' var='backlink'&gt;
+        &lt;div class='collapsed-backlink backlink-control'&gt;
+          &lt;dt class='comment-title'&gt;
+            &lt;span class='backlink-toggle-zippy'&gt;&amp;#160;&lt;/span&gt;
+            &lt;a expr:href='data:backlink.url' rel='nofollow'&gt;&lt;data:backlink.title/&gt;&lt;/a&gt;
+            &lt;b:include data='backlink' name='backlinkDeleteIcon'/&gt;
+          &lt;/dt&gt;
+          &lt;dd class='comment-body collapseable'&gt;
+            &lt;data:backlink.snippet/&gt;
+          &lt;/dd&gt;
+          &lt;dd class='comment-footer collapseable'&gt;
+            &lt;span class='comment-author'&gt;&lt;data:post.authorLabel/&gt; &lt;data:backlink.author/&gt;&lt;/span&gt;
+            &lt;span class='comment-timestamp'&gt;&lt;data:post.timestampLabel/&gt; &lt;data:backlink.timestamp/&gt;&lt;/span&gt;
+          &lt;/dd&gt;
+        &lt;/div&gt;
+      &lt;/b:loop&gt;
+    &lt;/dl&gt;
+  &lt;/b:if&gt;
+  &lt;p class='comment-footer'&gt;
+    &lt;a class='comment-link' expr:href='data:post.createLinkUrl' expr:id='data:widget.instanceId + &amp;quot;_backlinks-create-link&amp;quot;' target='_blank'&gt;&lt;data:post.createLinkLabel/&gt;&lt;/a&gt;
+  &lt;/p&gt;
+&lt;/b:includable&gt;
+&lt;b:includable id='mobile-main' var='top'&gt;
+    &lt;!-- posts --&gt;
+    &lt;div class='blog-posts hfeed'&gt;
+
+      &lt;b:include data='top' name='status-message'/&gt;
+
+      &lt;b:if cond='data:blog.pageType == &amp;quot;index&amp;quot;'&gt;
+        &lt;b:loop values='data:posts' var='post'&gt;
+          &lt;b:include data='post' name='mobile-index-post'/&gt;
+        &lt;/b:loop&gt;
+      &lt;b:else/&gt;
+        &lt;b:loop values='data:posts' var='post'&gt;
+          &lt;b:include data='post' name='mobile-post'/&gt;
+        &lt;/b:loop&gt;
+      &lt;/b:if&gt;
+    &lt;/div&gt;
+
+   &lt;b:include name='mobile-nextprev'/&gt;
+&lt;/b:includable&gt;
+&lt;b:includable id='post' var='post'&gt;
+  &lt;div class='post hentry'&gt;
+    &lt;a expr:name='data:post.id'/&gt;
+    &lt;b:if cond='data:post.title'&gt;
+      &lt;h3 class='post-title entry-title'&gt;
+      &lt;b:if cond='data:post.link'&gt;
+        &lt;a expr:href='data:post.link'&gt;&lt;data:post.title/&gt;&lt;/a&gt;
+      &lt;b:else/&gt;
+        &lt;b:if cond='data:post.url'&gt;
+          &lt;b:if cond='data:blog.url != data:post.url'&gt;
+            &lt;a expr:href='data:post.url'&gt;&lt;data:post.title/&gt;&lt;/a&gt;
+          &lt;b:else/&gt;
+            &lt;data:post.title/&gt;
+          &lt;/b:if&gt;
+        &lt;b:else/&gt;
+          &lt;data:post.title/&gt;
+        &lt;/b:if&gt;
+      &lt;/b:if&gt;
+      &lt;/h3&gt;
+    &lt;/b:if&gt;
+
+    &lt;div class='post-header'&gt;
+    &lt;div class='post-header-line-1'/&gt;
+    &lt;/div&gt;
+
+    &lt;div class='post-body entry-content' expr:id='&amp;quot;post-body-&amp;quot; + data:post.id'&gt;
+      &lt;data:post.body/&gt;
+      &lt;div style='clear: both;'/&gt; &lt;!-- clear for photos floats --&gt;
+    &lt;/div&gt;
+
+    &lt;b:if cond='data:post.hasJumpLink'&gt;
+      &lt;div class='jump-link'&gt;
+        &lt;a expr:href='data:post.url + &amp;quot;#more&amp;quot;' expr:title='data:post.title'&gt;&lt;data:post.jumpText/&gt;&lt;/a&gt;
+      &lt;/div&gt;
+    &lt;/b:if&gt;
+
+    &lt;div class='post-footer'&gt;
+    &lt;div class='post-footer-line post-footer-line-1'&gt;&lt;span class='post-author vcard'&gt;
+        &lt;b:if cond='data:top.showAuthor'&gt;
+          &lt;data:top.authorLabel/&gt;
+          &lt;span class='fn'&gt;&lt;data:post.author/&gt;&lt;/span&gt;
+        &lt;/b:if&gt;
+      &lt;/span&gt; &lt;span class='post-timestamp'&gt;
+        &lt;b:if cond='data:top.showTimestamp'&gt;
+          &lt;data:top.timestampLabel/&gt;
+        &lt;b:if cond='data:post.url'&gt;
+          &lt;a class='timestamp-link' expr:href='data:post.url' rel='bookmark' title='permanent link'&gt;&lt;abbr class='published' expr:title='data:post.timestampISO8601'&gt;&lt;data:post.timestamp/&gt;&lt;/abbr&gt;&lt;/a&gt;
+        &lt;/b:if&gt;
+        &lt;/b:if&gt;
+      &lt;/span&gt; &lt;span class='post-comment-link'&gt;
+        &lt;b:if cond='data:blog.pageType != &amp;quot;item&amp;quot;'&gt;
+          &lt;b:if cond='data:blog.pageType != &amp;quot;static_page&amp;quot;'&gt;
+            &lt;b:if cond='data:post.allowComments'&gt;
+              &lt;a class='comment-link' expr:href='data:post.addCommentUrl' expr:onclick='data:post.addCommentOnclick'&gt;&lt;b:if cond='data:post.numComments == 1'&gt;1 &lt;data:top.commentLabel/&gt;&lt;b:else/&gt;&lt;data:post.numComments/&gt; &lt;data:top.commentLabelPlural/&gt;&lt;/b:if&gt;&lt;/a&gt;
+            &lt;/b:if&gt;
+          &lt;/b:if&gt;
+        &lt;/b:if&gt;
+      &lt;/span&gt; &lt;span class='post-icons'&gt;
+        &lt;!-- email post links --&gt;
+        &lt;b:if cond='data:post.emailPostUrl'&gt;
+          &lt;span class='item-action'&gt;
+          &lt;a expr:href='data:post.emailPostUrl' expr:title='data:top.emailPostMsg'&gt;
+              &lt;img alt='' class='icon-action' height='13' src='http://img1.blogblog.com/img/icon18_email.gif' width='18'/&gt;
+          &lt;/a&gt;
+          &lt;/span&gt;
+        &lt;/b:if&gt;
+
+        &lt;!-- quickedit pencil --&gt;
+        &lt;b:include data='post' name='postQuickEdit'/&gt;
+      &lt;/span&gt; &lt;div class='post-share-buttons goog-inline-block'&gt;
+        &lt;b:if cond='data:post.sharePostUrl'&gt;
+          &lt;b:include data='post' name='shareButtons'/&gt;
+        &lt;/b:if&gt;
+      &lt;/div&gt; &lt;/div&gt;
+
+      &lt;div class='post-footer-line post-footer-line-2'&gt;&lt;span class='post-labels'&gt;
+        &lt;b:if cond='data:post.labels'&gt;
+          &lt;data:postLabelsLabel/&gt;
+          &lt;b:loop values='data:post.labels' var='label'&gt;
+            &lt;a expr:href='data:label.url' rel='tag'&gt;&lt;data:label.name/&gt;&lt;/a&gt;&lt;b:if cond='data:label.isLast != &amp;quot;true&amp;quot;'&gt;,&lt;/b:if&gt;
+          &lt;/b:loop&gt;
+        &lt;/b:if&gt;
+      &lt;/span&gt; &lt;/div&gt;
+
+      &lt;div class='post-footer-line post-footer-line-3'&gt;&lt;span class='post-location'&gt;
+        &lt;b:if cond='data:top.showLocation'&gt;
+          &lt;b:if cond='data:post.location'&gt;
+            &lt;data:postLocationLabel/&gt;
+            &lt;a expr:href='data:post.location.mapsUrl' target='_blank'&gt;&lt;data:post.location.name/&gt;&lt;/a&gt;
+          &lt;/b:if&gt;
+        &lt;/b:if&gt;
+      &lt;/span&gt; &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/b:includable&gt;
+&lt;b:includable id='status-message'&gt;
+  &lt;b:if cond='data:navMessage'&gt;
+  &lt;div class='status-msg-wrap'&gt;
+    &lt;div class='status-msg-body'&gt;
+      &lt;data:navMessage/&gt;
+    &lt;/div&gt;
+    &lt;div class='status-msg-border'&gt;
+      &lt;div class='status-msg-bg'&gt;
+        &lt;div class='status-msg-hidden'&gt;&lt;data:navMessage/&gt;&lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div style='clear: both;'/&gt;
+  &lt;/b:if&gt;
+&lt;/b:includable&gt;
+&lt;b:includable id='comment-form' var='post'&gt;
+  &lt;div class='comment-form'&gt;
+    &lt;a name='comment-form'/&gt;
+    &lt;b:if cond='data:mobile'&gt;
+      &lt;h4 id='comment-post-message'&gt;
+        &lt;a expr:id='data:widget.instanceId + &amp;quot;_comment-editor-toggle-link&amp;quot;' href='javascript:void(0)'&gt;&lt;data:postCommentMsg/&gt;&lt;/a&gt;&lt;/h4&gt;
+      &lt;p&gt;&lt;data:blogCommentMessage/&gt;&lt;/p&gt;
+      &lt;data:blogTeamBlogMessage/&gt;
+      &lt;a expr:href='data:post.commentFormIframeSrc' id='comment-editor-src'/&gt;
+      &lt;iframe allowtransparency='true' class='blogger-iframe-colorize blogger-comment-from-post' frameborder='0' height='410' id='comment-editor' name='comment-editor' src='' style='display: none' width='100%'/&gt;
+    &lt;b:else/&gt;
+      &lt;h4 id='comment-post-message'&gt;&lt;data:postCommentMsg/&gt;&lt;/h4&gt;
+      &lt;p&gt;&lt;data:blogCommentMessage/&gt;&lt;/p&gt;
+      &lt;data:blogTeamBlogMessage/&gt;
+      &lt;a expr:href='data:post.commentFormIframeSrc' id='comment-editor-src'/&gt;
+      &lt;iframe allowtransparency='true' class='blogger-iframe-colorize blogger-comment-from-post' frameborder='0' height='410' id='comment-editor' name='comment-editor' src='' width='100%'/&gt;
+    &lt;/b:if&gt;
+    &lt;data:post.friendConnectJs/&gt;
+    &lt;data:post.cmtfpIframe/&gt;
+    &lt;script type='text/javascript'&gt;
+      BLOG_CMT_createIframe(&amp;#39;&lt;data:post.appRpcRelayPath/&gt;&amp;#39;, &amp;#39;&lt;data:post.communityId/&gt;&amp;#39;);
+    &lt;/script&gt;
+  &lt;/div&gt;
+&lt;/b:includable&gt;
+&lt;b:includable id='backlinkDeleteIcon' var='backlink'&gt;
+  &lt;span expr:class='&amp;quot;item-control &amp;quot; + data:backlink.adminClass'&gt;
+    &lt;a expr:href='data:backlink.deleteUrl' expr:title='data:top.deleteBacklinkMsg'&gt;
+      &lt;img src='//www.blogger.com/img/icon_delete13.gif'/&gt;
+    &lt;/a&gt;
+  &lt;/span&gt;
+&lt;/b:includable&gt;
+&lt;b:includable id='mobile-nextprev'&gt;
+  &lt;div class='blog-pager' id='blog-pager'&gt;
+    &lt;b:if cond='data:newerPageUrl'&gt;
+      &lt;div class='mobile-link-button' id='blog-pager-newer-link'&gt;
+      &lt;a class='blog-pager-newer-link' expr:href='data:newerPageUrl' expr:id='data:widget.instanceId + &amp;quot;_blog-pager-newer-link&amp;quot;' expr:title='data:newerPageTitle'&gt;&amp;amp;lsaquo;&lt;/a&gt;
+      &lt;/div&gt;
+    &lt;/b:if&gt;
+
+    &lt;b:if cond='data:olderPageUrl'&gt;
+      &lt;div class='mobile-link-button' id='blog-pager-older-link'&gt;
+      &lt;a class='blog-pager-older-link' expr:href='data:olderPageUrl' expr:id='data:widget.instanceId + &amp;quot;_blog-pager-older-link&amp;quot;' expr:title='data:olderPageTitle'&gt;&amp;amp;rsaquo;&lt;/a&gt;
+      &lt;/div&gt;
+    &lt;/b:if&gt;
+
+    &lt;div class='mobile-link-button' id='blog-pager-home-link'&gt;
+    &lt;a class='home-link' expr:href='data:blog.homepageUrl'&gt;&lt;data:homeMsg/&gt;&lt;/a&gt;
+    &lt;/div&gt;
+
+    &lt;div class='mobile-desktop-link'&gt;
+      &lt;a class='home-link' expr:href='data:desktopLinkUrl'&gt;&lt;data:desktopLinkMsg/&gt;&lt;/a&gt;
+    &lt;/div&gt;
+
+  &lt;/div&gt;
+  &lt;div class='clear'/&gt;
+&lt;/b:includable&gt;
+&lt;b:includable id='mobile-post' var='post'&gt;
+  &lt;div class='date-outer'&gt;
+    &lt;b:if cond='data:post.dateHeader'&gt;
+      &lt;h2 class='date-header'&gt;&lt;span&gt;&lt;data:post.dateHeader/&gt;&lt;/span&gt;&lt;/h2&gt;
+    &lt;/b:if&gt;
+    &lt;div class='date-posts'&gt;
+      &lt;div class='post-outer'&gt;
+
+        &lt;div class='post hentry uncustomized-post-template'&gt;
+          &lt;a expr:name='data:post.id'/&gt;
+          &lt;b:if cond='data:post.title'&gt;
+            &lt;h3 class='post-title entry-title'&gt;
+              &lt;b:if cond='data:post.link'&gt;
+                &lt;a expr:href='data:post.link'&gt;&lt;data:post.title/&gt;&lt;/a&gt;
+              &lt;b:else/&gt;
+                &lt;b:if cond='data:post.url'&gt;
+                  &lt;b:if cond='data:blog.url != data:post.url'&gt;
+                    &lt;a expr:href='data:post.url'&gt;&lt;data:post.title/&gt;&lt;/a&gt;
+                  &lt;b:else/&gt;
+                    &lt;data:post.title/&gt;
+                  &lt;/b:if&gt;
+                &lt;b:else/&gt;
+                  &lt;data:post.title/&gt;
+                &lt;/b:if&gt;
+              &lt;/b:if&gt;
+            &lt;/h3&gt;
+          &lt;/b:if&gt;
+
+          &lt;div class='post-header'&gt;
+            &lt;div class='post-header-line-1'/&gt;
+          &lt;/div&gt;
+
+          &lt;div class='post-body entry-content' expr:id='&amp;quot;post-body-&amp;quot; + data:post.id'&gt;
+            &lt;data:post.body/&gt;
+            &lt;div style='clear: both;'/&gt; &lt;!-- clear for photos floats --&gt;
+          &lt;/div&gt;
+
+          &lt;div class='post-footer'&gt;
+            &lt;div class='post-footer-line post-footer-line-1'&gt;
+              &lt;span class='post-author vcard'&gt;
+                &lt;b:if cond='data:top.showAuthor'&gt;
+                  &lt;data:top.authorLabel/&gt;
+                  &lt;span class='fn'&gt;&lt;data:post.author/&gt;&lt;/span&gt;
+                &lt;/b:if&gt;
+              &lt;/span&gt;
+
+              &lt;span class='post-timestamp'&gt;
+                &lt;b:if cond='data:top.showTimestamp'&gt;
+                  &lt;data:top.timestampLabel/&gt;
+                  &lt;b:if cond='data:post.url'&gt;
+                    &lt;a class='timestamp-link' expr:href='data:post.url' rel='bookmark' title='permanent link'&gt;&lt;abbr class='published' expr:title='data:post.timestampISO8601'&gt;&lt;data:post.timestamp/&gt;&lt;/abbr&gt;&lt;/a&gt;
+                  &lt;/b:if&gt;
+                &lt;/b:if&gt;
+              &lt;/span&gt;
+
+              &lt;span class='post-comment-link'&gt;
+                &lt;b:if cond='data:blog.pageType != &amp;quot;item&amp;quot;'&gt;
+                  &lt;b:if cond='data:blog.pageType != &amp;quot;static_page&amp;quot;'&gt;
+                    &lt;b:if cond='data:post.allowComments'&gt;
+                      &lt;a class='comment-link' expr:href='data:post.addCommentUrl' expr:onclick='data:post.addCommentOnclick'&gt;&lt;b:if cond='data:post.numComments == 1'&gt;1 &lt;data:top.commentLabel/&gt;&lt;b:else/&gt;&lt;data:post.numComments/&gt; &lt;data:top.commentLabelPlural/&gt;&lt;/b:if&gt;&lt;/a&gt;
+                    &lt;/b:if&gt;
+                  &lt;/b:if&gt;
+                &lt;/b:if&gt;
+              &lt;/span&gt;
+            &lt;/div&gt;
+
+            &lt;div class='post-footer-line post-footer-line-2'&gt;
+              &lt;b:if cond='data:top.showMobileShare'&gt;
+                &lt;div class='mobile-link-button goog-inline-block' id='mobile-share-button'&gt;
+                  &lt;a href='javascript:void(0);'&gt;&lt;data:shareMsg/&gt;&lt;/a&gt;
+                &lt;/div&gt;
+              &lt;/b:if&gt;
+              &lt;b:if cond='data:top.showDummy'&gt;
+                &lt;div class='goog-inline-block dummy-container'&gt;&lt;data:post.dummyTag/&gt;&lt;/div&gt;
+              &lt;/b:if&gt;
+            &lt;/div&gt;
+
+          &lt;/div&gt;
+        &lt;/div&gt;
+
+        &lt;b:if cond='data:blog.pageType == &amp;quot;static_page&amp;quot;'&gt;
+          &lt;b:include data='post' name='comments'/&gt;
+        &lt;/b:if&gt;
+        &lt;b:if cond='data:blog.pageType == &amp;quot;item&amp;quot;'&gt;
+          &lt;b:include data='post' name='comments'/&gt;
+        &lt;/b:if&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/b:includable&gt;
+&lt;b:includable id='postQuickEdit' var='post'&gt;
+  &lt;b:if cond='data:post.editUrl'&gt;
+    &lt;span expr:class='&amp;quot;item-control &amp;quot; + data:post.adminClass'&gt;
+      &lt;a expr:href='data:post.editUrl' expr:title='data:top.editPostMsg'&gt;
+        &lt;img alt='' class='icon-action' height='18' src='http://img2.blogblog.com/img/icon18_edit_allbkg.gif' width='18'/&gt;
+      &lt;/a&gt;
+    &lt;/span&gt;
+  &lt;/b:if&gt;
+&lt;/b:includable&gt;
+&lt;b:includable id='main' var='top'&gt;
+  &lt;b:if cond='data:mobile == &amp;quot;false&amp;quot;'&gt;
+
+    &lt;!-- posts --&gt;
+    &lt;div class='blog-posts hfeed'&gt;
+
+      &lt;b:include data='top' name='status-message'/&gt;
+
+      &lt;data:defaultAdStart/&gt;
+      &lt;b:loop values='data:posts' var='post'&gt;
+        &lt;b:if cond='data:post.isDateStart'&gt;
+          &lt;b:if cond='data:post.isFirstPost == &amp;quot;false&amp;quot;'&gt;
+            &amp;lt;/div&amp;gt;&amp;lt;/div&amp;gt;
+          &lt;/b:if&gt;
+        &lt;/b:if&gt;
+        &lt;b:if cond='data:post.isDateStart'&gt;
+          &amp;lt;div class=&amp;quot;date-outer&amp;quot;&amp;gt;
+        &lt;/b:if&gt;
+        &lt;b:if cond='data:post.dateHeader'&gt;
+          &lt;h2 class='date-header'&gt;&lt;span&gt;&lt;data:post.dateHeader/&gt;&lt;/span&gt;&lt;/h2&gt;
+        &lt;/b:if&gt;
+        &lt;b:if cond='data:post.isDateStart'&gt;
+          &amp;lt;div class=&amp;quot;date-posts&amp;quot;&amp;gt;
+        &lt;/b:if&gt;
+        &lt;div class='post-outer'&gt;
+        &lt;b:include data='post' name='post'/&gt;
+        &lt;b:if cond='data:blog.pageType == &amp;quot;static_page&amp;quot;'&gt;
+          &lt;b:include data='post' name='comments'/&gt;
+        &lt;/b:if&gt;
+        &lt;b:if cond='data:blog.pageType == &amp;quot;item&amp;quot;'&gt;
+          &lt;b:include data='post' name='comments'/&gt;
+        &lt;/b:if&gt;
+        &lt;/div&gt;
+        &lt;b:if cond='data:post.includeAd'&gt;
+          &lt;b:if cond='data:post.isFirstPost'&gt;
+            &lt;data:defaultAdEnd/&gt;
+          &lt;b:else/&gt;
+            &lt;data:adEnd/&gt;
+          &lt;/b:if&gt;
+          &lt;div class='inline-ad'&gt;
+            &lt;data:adCode/&gt;
+          &lt;/div&gt;
+          &lt;data:adStart/&gt;
+        &lt;/b:if&gt;
+        &lt;b:if cond='data:post.trackLatency'&gt;
+          &lt;data:post.latencyJs/&gt;
+        &lt;/b:if&gt;
+      &lt;/b:loop&gt;
+      &lt;b:if cond='data:numPosts != 0'&gt;
+        &amp;lt;/div&amp;gt;&amp;lt;/div&amp;gt;
+      &lt;/b:if&gt;
+      &lt;data:adEnd/&gt;
+    &lt;/div&gt;
+
+    &lt;!-- navigation --&gt;
+    &lt;b:include name='nextprev'/&gt;
+
+    &lt;!-- feed links --&gt;
+    &lt;b:include name='feedLinks'/&gt;
+
+    &lt;b:if cond='data:top.showStars'&gt;
+      &lt;script src='//www.google.com/jsapi' type='text/javascript'/&gt;
+      &lt;script type='text/javascript'&gt;
+        google.load(&amp;quot;annotations&amp;quot;, &amp;quot;1&amp;quot;, {&amp;quot;locale&amp;quot;: &amp;quot;&lt;data:top.languageCode/&gt;&amp;quot;});
+        function initialize() {
+          google.annotations.setApplicationId(&lt;data:top.blogspotReviews/&gt;);
+          google.annotations.createAll();
+          google.annotations.fetch();
+        }
+        google.setOnLoadCallback(initialize);
+      &lt;/script&gt;
+    &lt;/b:if&gt;
+
+  &lt;b:else/&gt;
+    &lt;b:include name='mobile-main'/&gt;
+  &lt;/b:if&gt;
+
+  &lt;b:if cond='data:top.showDummy'&gt;
+    &lt;data:top.dummyBootstrap/&gt;
+  &lt;/b:if&gt;
+
+&lt;/b:includable&gt;
+&lt;b:includable id='commentDeleteIcon' var='comment'&gt;
+  &lt;span expr:class='&amp;quot;item-control &amp;quot; + data:comment.adminClass'&gt;
+    &lt;b:if cond='data:showCmtPopup'&gt;
+      &lt;div class='goog-toggle-button'&gt;
+        &lt;div class='goog-inline-block comment-action-icon'/&gt;
+      &lt;/div&gt;
+    &lt;b:else/&gt;
+      &lt;a class='comment-delete' expr:href='data:comment.deleteUrl' expr:title='data:top.deleteCommentMsg'&gt;
+        &lt;img src='//www.blogger.com/img/icon_delete13.gif'/&gt;
+      &lt;/a&gt;
+    &lt;/b:if&gt;
+  &lt;/span&gt;
+&lt;/b:includable&gt;
+&lt;b:includable id='feedLinks'&gt;
+  &lt;b:if cond='data:blog.pageType != &amp;quot;item&amp;quot;'&gt; &lt;!-- Blog feed links --&gt;
+    &lt;b:if cond='data:feedLinks'&gt;
+      &lt;div class='blog-feeds'&gt;
+        &lt;b:include data='feedLinks' name='feedLinksBody'/&gt;
+      &lt;/div&gt;
+    &lt;/b:if&gt;
+
+    &lt;b:else/&gt; &lt;!--Post feed links --&gt;
+    &lt;div class='post-feeds'&gt;
+      &lt;b:loop values='data:posts' var='post'&gt;
+        &lt;b:if cond='data:post.allowComments'&gt;
+          &lt;b:if cond='data:post.feedLinks'&gt;
+            &lt;b:include data='post.feedLinks' name='feedLinksBody'/&gt;
+          &lt;/b:if&gt;
+        &lt;/b:if&gt;
+      &lt;/b:loop&gt;
+    &lt;/div&gt;
+  &lt;/b:if&gt;
+&lt;/b:includable&gt;
+&lt;b:includable id='mobile-index-post' var='post'&gt;
+  &lt;div class='mobile-date-outer date-outer'&gt;
+    &lt;b:if cond='data:post.dateHeader'&gt;
+      &lt;div class='date-header'&gt;
+        &lt;span&gt;&lt;data:post.dateHeader/&gt;&lt;/span&gt;
+      &lt;/div&gt;
+    &lt;/b:if&gt;
+
+    &lt;div class='mobile-post-outer'&gt;
+      &lt;a expr:href='data:post.url'&gt;
+        &lt;h3 class='mobile-index-title entry-title'&gt;
+          &lt;data:post.title/&gt;
+        &lt;/h3&gt;
+
+        &lt;div class='mobile-index-arrow'&gt;&amp;amp;rsaquo;&lt;/div&gt;
+
+        &lt;div class='mobile-index-contents'&gt;
+          &lt;b:if cond='data:post.thumbnailUrl'&gt;
+            &lt;div class='mobile-index-thumbnail'&gt;
+              &lt;div class='Image'&gt;
+                &lt;img expr:src='data:post.thumbnailUrl'/&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/b:if&gt;
+
+          &lt;div class='post-body'&gt;
+            &lt;b:if cond='data:post.snippet'&gt;&lt;data:post.snippet/&gt;&lt;/b:if&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+
+        &lt;div style='clear: both;'/&gt;
+      &lt;/a&gt;
+
+      &lt;div class='mobile-index-comment'&gt;
+        &lt;b:if cond='data:blog.pageType != &amp;quot;static_page&amp;quot;'&gt;
+          &lt;b:if cond='data:post.allowComments'&gt;
+            &lt;b:if cond='data:post.numComments != 0'&gt;
+              &lt;a class='comment-link' expr:href='data:post.addCommentUrl' expr:onclick='data:post.addCommentOnclick'&gt;&lt;b:if cond='data:post.numComments == 1'&gt;1 &lt;data:top.commentLabel/&gt;&lt;b:else/&gt;&lt;data:post.numComments/&gt; &lt;data:top.commentLabelPlural/&gt;&lt;/b:if&gt;&lt;/a&gt;
+            &lt;/b:if&gt;
+          &lt;/b:if&gt;
+        &lt;/b:if&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/b:includable&gt;
+&lt;b:includable id='feedLinksBody' var='links'&gt;
+  &lt;div class='feed-links'&gt;
+  &lt;data:feedLinksMsg/&gt;
+  &lt;b:loop values='data:links' var='f'&gt;
+     &lt;a class='feed-link' expr:href='data:f.url' expr:type='data:f.mimeType' target='_blank'&gt;&lt;data:f.name/&gt; (&lt;data:f.feedType/&gt;)&lt;/a&gt;
+  &lt;/b:loop&gt;
+  &lt;/div&gt;
+&lt;/b:includable&gt;
+&lt;b:includable id='comments' var='post'&gt;
+  &lt;div class='comments' id='comments'&gt;
+    &lt;a name='comments'/&gt;
+    &lt;b:if cond='data:post.allowComments'&gt;
+      &lt;h4&gt;
+        &lt;b:if cond='data:post.numComments == 1'&gt;
+          1 &lt;data:commentLabel/&gt;:
+        &lt;b:else/&gt;
+          &lt;data:post.numComments/&gt; &lt;data:commentLabelPlural/&gt;:
+        &lt;/b:if&gt;
+      &lt;/h4&gt;
+
+      &lt;b:if cond='data:post.commentPagingRequired'&gt;
+        &lt;span class='paging-control-container'&gt;
+          &lt;a expr:class='data:post.oldLinkClass' expr:href='data:post.oldestLinkUrl'&gt;&lt;data:post.oldestLinkText/&gt;&lt;/a&gt;
+          &amp;#160;
+          &lt;a expr:class='data:post.oldLinkClass' expr:href='data:post.olderLinkUrl'&gt;&lt;data:post.olderLinkText/&gt;&lt;/a&gt;
+          &amp;#160;
+          &lt;data:post.commentRangeText/&gt;
+          &amp;#160;
+          &lt;a expr:class='data:post.newLinkClass' expr:href='data:post.newerLinkUrl'&gt;&lt;data:post.newerLinkText/&gt;&lt;/a&gt;
+          &amp;#160;
+          &lt;a expr:class='data:post.newLinkClass' expr:href='data:post.newestLinkUrl'&gt;&lt;data:post.newestLinkText/&gt;&lt;/a&gt;
+        &lt;/span&gt;
+      &lt;/b:if&gt;
+
+      &lt;div expr:id='data:widget.instanceId + &amp;quot;_comments-block-wrapper&amp;quot;'&gt;
+        &lt;dl expr:class='data:post.avatarIndentClass' id='comments-block'&gt;
+          &lt;b:loop values='data:post.comments' var='comment'&gt;
+            &lt;dt expr:class='&amp;quot;comment-author &amp;quot; + data:comment.authorClass' expr:id='data:comment.anchorName'&gt;
+              &lt;b:if cond='data:comment.favicon'&gt;
+                &lt;img expr:src='data:comment.favicon' height='16px' style='margin-bottom:-2px;' width='16px'/&gt;
+              &lt;/b:if&gt;
+              &lt;a expr:name='data:comment.anchorName'/&gt;
+              &lt;b:if cond='data:blog.enabledCommentProfileImages'&gt;
+                &lt;data:comment.authorAvatarImage/&gt;
+              &lt;/b:if&gt;
+              &lt;b:if cond='data:comment.authorUrl'&gt;
+                &lt;a expr:href='data:comment.authorUrl' rel='nofollow'&gt;&lt;data:comment.author/&gt;&lt;/a&gt;
+              &lt;b:else/&gt;
+                &lt;data:comment.author/&gt;
+              &lt;/b:if&gt;
+              &lt;data:commentPostedByMsg/&gt;
+            &lt;/dt&gt;
+            &lt;dd class='comment-body' expr:id='data:widget.instanceId + data:comment.cmtBodyIdPostfix'&gt;
+              &lt;b:if cond='data:comment.isDeleted'&gt;
+                &lt;span class='deleted-comment'&gt;&lt;data:comment.body/&gt;&lt;/span&gt;
+              &lt;b:else/&gt;
+                &lt;p&gt;
+                  &lt;data:comment.body/&gt;
+                &lt;/p&gt;
+              &lt;/b:if&gt;
+            &lt;/dd&gt;
+            &lt;dd class='comment-footer'&gt;
+              &lt;span class='comment-timestamp'&gt;
+                &lt;a expr:href='data:comment.url' title='comment permalink'&gt;
+                  &lt;data:comment.timestamp/&gt;
+                &lt;/a&gt;
+                &lt;b:include data='comment' name='commentDeleteIcon'/&gt;
+              &lt;/span&gt;
+            &lt;/dd&gt;
+          &lt;/b:loop&gt;
+        &lt;/dl&gt;
+      &lt;/div&gt;
+
+      &lt;b:if cond='data:post.commentPagingRequired'&gt;
+        &lt;span class='paging-control-container'&gt;
+          &lt;a expr:class='data:post.oldLinkClass' expr:href='data:post.oldestLinkUrl'&gt;
+            &lt;data:post.oldestLinkText/&gt;
+          &lt;/a&gt;
+          &lt;a expr:class='data:post.oldLinkClass' expr:href='data:post.olderLinkUrl'&gt;
+            &lt;data:post.olderLinkText/&gt;
+          &lt;/a&gt;
+          &amp;#160;
+          &lt;data:post.commentRangeText/&gt;
+          &amp;#160;
+          &lt;a expr:class='data:post.newLinkClass' expr:href='data:post.newerLinkUrl'&gt;
+            &lt;data:post.newerLinkText/&gt;
+          &lt;/a&gt;
+          &lt;a expr:class='data:post.newLinkClass' expr:href='data:post.newestLinkUrl'&gt;
+            &lt;data:post.newestLinkText/&gt;
+          &lt;/a&gt;
+        &lt;/span&gt;
+      &lt;/b:if&gt;
+
+      &lt;p class='comment-footer'&gt;
+        &lt;b:if cond='data:post.embedCommentForm'&gt;
+          &lt;b:if cond='data:post.allowNewComments'&gt;
+            &lt;b:include data='post' name='comment-form'/&gt;
+          &lt;b:else/&gt;
+            &lt;data:post.noNewCommentsText/&gt;
+          &lt;/b:if&gt;
+        &lt;b:else/&gt;
+          &lt;b:if cond='data:post.allowComments'&gt;
+            &lt;a expr:href='data:post.addCommentUrl' expr:onclick='data:post.addCommentOnclick'&gt;&lt;data:postCommentMsg/&gt;&lt;/a&gt;
+          &lt;/b:if&gt;
+        &lt;/b:if&gt;
+
+      &lt;/p&gt;
+    &lt;/b:if&gt;
+    &lt;b:if cond='data:showCmtPopup'&gt;
+      &lt;div id='comment-popup'&gt;
+        &lt;iframe allowtransparency='true' frameborder='0' id='comment-actions' name='comment-actions' scrolling='no'&gt;
+        &lt;/iframe&gt;
+      &lt;/div&gt;
+    &lt;/b:if&gt;
+
+    &lt;div id='backlinks-container'&gt;
+    &lt;div expr:id='data:widget.instanceId + &amp;quot;_backlinks-container&amp;quot;'&gt;
+       &lt;b:if cond='data:post.showBacklinks'&gt;
+         &lt;b:include data='post' name='backlinks'/&gt;
+       &lt;/b:if&gt;
+    &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/b:includable&gt;
+&lt;/b:widget&gt;
+&lt;/b:section&gt;
+        &lt;/div&gt;
+        &lt;/div&gt;
+
+        &lt;div class='column-left-outer'&gt;
+        &lt;div class='column-left-inner'&gt;
+          &lt;aside&gt;
+          &lt;macro:include id='main-column-left-sections' name='sections'&gt;
+            &lt;macro:param default='0' name='num' value='0'/&gt;
+            &lt;macro:param default='sidebar-left' name='idPrefix'/&gt;
+            &lt;macro:param default='sidebar' name='class'/&gt;
+            &lt;macro:param default='true' name='includeBottom'/&gt;
+          &lt;/macro:include&gt;
+          &lt;/aside&gt;
+        &lt;/div&gt;
+        &lt;/div&gt;
+
+        &lt;div class='column-right-outer'&gt;
+        &lt;div class='column-right-inner'&gt;
+          &lt;aside&gt;
+          &lt;macro:include id='main-column-right-sections' name='sections'&gt;
+            &lt;macro:param default='2' name='num' value='1'/&gt;
+            &lt;macro:param default='sidebar-right' name='idPrefix'/&gt;
+            &lt;macro:param default='sidebar' name='class'/&gt;
+            &lt;macro:param default='true' name='includeBottom'/&gt;
+          &lt;/macro:include&gt;
+          &lt;/aside&gt;
+        &lt;/div&gt;
+        &lt;/div&gt;
+
+        &lt;/div&gt;
+
+        &lt;div style='clear: both'/&gt;
+      &lt;!-- columns --&gt;
+      &lt;/div&gt;
+
+    &lt;!-- main --&gt;
+    &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class='main-cap-bottom cap-bottom'&gt;
+      &lt;div class='cap-left'/&gt;
+      &lt;div class='cap-right'/&gt;
+    &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;footer&gt;
+    &lt;div class='footer-outer'&gt;
+    &lt;div class='footer-cap-top cap-top'&gt;
+      &lt;div class='cap-left'/&gt;
+      &lt;div class='cap-right'/&gt;
+    &lt;/div&gt;
+    &lt;div class='fauxborder-left footer-fauxborder-left'&gt;
+    &lt;div class='fauxborder-right footer-fauxborder-right'/&gt;
+    &lt;div class='region-inner footer-inner'&gt;
+      &lt;macro:include id='footer-sections' name='sections'&gt;
+        &lt;macro:param default='2' name='num'/&gt;
+        &lt;macro:param default='footer' name='idPrefix'/&gt;
+        &lt;macro:param default='foot' name='class'/&gt;
+        &lt;macro:param default='false' name='includeBottom'/&gt;
+      &lt;/macro:include&gt;
+      &lt;!-- outside of the include in order to lock Attribution widget --&gt;
+      &lt;b:section class='foot' id='footer-3' showaddelement='no'&gt;
+&lt;b:widget id='Attribution1' locked='true' title='' type='Attribution'&gt;
+&lt;b:includable id='main'&gt;
+    &lt;b:if cond='data:feedbackSurveyLink'&gt;
+      &lt;div class='mobile-survey-link' style='text-align: center;'&gt;
+        &lt;data:feedbackSurveyLink/&gt;
+      &lt;/div&gt;
+    &lt;/b:if&gt;
+
+    &lt;div class='widget-content' style='text-align: center;'&gt;
+      &lt;b:if cond='data:attribution != &amp;quot;&amp;quot;'&gt;
+       &lt;data:attribution/&gt;
+      &lt;/b:if&gt;
+    &lt;/div&gt;
+
+    &lt;b:include name='quickedit'/&gt;
+  &lt;/b:includable&gt;
+&lt;/b:widget&gt;
+&lt;/b:section&gt;
+    &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class='footer-cap-bottom cap-bottom'&gt;
+      &lt;div class='cap-left'/&gt;
+      &lt;div class='cap-right'/&gt;
+    &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;/footer&gt;
+
+  &lt;!-- content --&gt;
+  &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class='content-cap-bottom cap-bottom'&gt;
+    &lt;div class='cap-left'/&gt;
+    &lt;div class='cap-right'/&gt;
+  &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;script type='text/javascript'&gt;
+    window.setTimeout(function() {
+        document.body.className = document.body.className.replace(&amp;#39;loading&amp;#39;, &amp;#39;&amp;#39;);
+      }, 10);
+  &lt;/script&gt;
+&lt;/body&gt;
+
+&lt;macro:includable id='sections' var='col'&gt;
+  &lt;macro:if cond='data:col.num == 0'&gt;
+  &lt;macro:else/&gt;
+    &lt;b:section mexpr:class='data:col.class' mexpr:id='data:col.idPrefix + &amp;quot;-1&amp;quot;' preferred='yes' showaddelement='yes'/&gt;
+
+    &lt;macro:if cond='data:col.num &amp;gt;= 2'&gt;
+      &lt;table border='0' cellpadding='0' cellspacing='0' mexpr:class='&amp;quot;section-columns columns-&amp;quot; + data:col.num'&gt;
+      &lt;tbody&gt;
+      &lt;tr&gt;
+        &lt;td class='first columns-cell'&gt;
+          &lt;b:section mexpr:class='data:col.class' mexpr:id='data:col.idPrefix + &amp;quot;-2-1&amp;quot;'/&gt;
+        &lt;/td&gt;
+
+        &lt;td class='columns-cell'&gt;
+          &lt;b:section mexpr:class='data:col.class' mexpr:id='data:col.idPrefix + &amp;quot;-2-2&amp;quot;'/&gt;
+        &lt;/td&gt;
+
+        &lt;macro:if cond='data:col.num &amp;gt;= 3'&gt;
+          &lt;td class='columns-cell'&gt;
+            &lt;b:section mexpr:class='data:col.class' mexpr:id='data:col.idPrefix + &amp;quot;-2-3&amp;quot;'/&gt;
+          &lt;/td&gt;
+        &lt;/macro:if&gt;
+
+        &lt;macro:if cond='data:col.num &amp;gt;= 4'&gt;
+          &lt;td class='columns-cell'&gt;
+            &lt;b:section mexpr:class='data:col.class' mexpr:id='data:col.idPrefix + &amp;quot;-2-4&amp;quot;'/&gt;
+          &lt;/td&gt;
+        &lt;/macro:if&gt;
+      &lt;/tr&gt;
+      &lt;/tbody&gt;
+      &lt;/table&gt;
+
+      &lt;macro:if cond='data:col.includeBottom'&gt;
+        &lt;b:section mexpr:class='data:col.class' mexpr:id='data:col.idPrefix + &amp;quot;-3&amp;quot;' showaddelement='no'/&gt;
+      &lt;/macro:if&gt;
+    &lt;/macro:if&gt;
+  &lt;/macro:if&gt;
+&lt;/macro:includable&gt;
+
+&lt;b:section-contents id='sidebar-right-1'&gt;
+&lt;b:widget id='Label1' locked='false' title='Labels' type='Label'&gt;
+&lt;b:includable id='main'&gt;
+  &lt;b:if cond='data:title'&gt;
+    &lt;h2&gt;&lt;data:title/&gt;&lt;/h2&gt;
+  &lt;/b:if&gt;
+  &lt;div expr:class='&amp;quot;widget-content &amp;quot; + data:display + &amp;quot;-label-widget-content&amp;quot;'&gt;
+    &lt;b:if cond='data:display == &amp;quot;list&amp;quot;'&gt;
+      &lt;ul&gt;
+      &lt;b:loop values='data:labels' var='label'&gt;
+        &lt;li&gt;
+          &lt;b:if cond='data:blog.url == data:label.url'&gt;
+            &lt;span expr:dir='data:blog.languageDirection'&gt;&lt;data:label.name/&gt;&lt;/span&gt;
+          &lt;b:else/&gt;
+            &lt;a expr:dir='data:blog.languageDirection' expr:href='data:label.url'&gt;&lt;data:label.name/&gt;&lt;/a&gt;
+          &lt;/b:if&gt;
+          &lt;b:if cond='data:showFreqNumbers'&gt;
+            &lt;span dir='ltr'&gt;(&lt;data:label.count/&gt;)&lt;/span&gt;
+          &lt;/b:if&gt;
+        &lt;/li&gt;
+      &lt;/b:loop&gt;
+      &lt;/ul&gt;
+    &lt;b:else/&gt;
+      &lt;b:loop values='data:labels' var='label'&gt;
+        &lt;span expr:class='&amp;quot;label-size label-size-&amp;quot; + data:label.cssSize'&gt;
+          &lt;b:if cond='data:blog.url == data:label.url'&gt;
+            &lt;span expr:dir='data:blog.languageDirection'&gt;&lt;data:label.name/&gt;&lt;/span&gt;
+          &lt;b:else/&gt;
+            &lt;a expr:dir='data:blog.languageDirection' expr:href='data:label.url'&gt;&lt;data:label.name/&gt;&lt;/a&gt;
+          &lt;/b:if&gt;
+          &lt;b:if cond='data:showFreqNumbers'&gt;
+            &lt;span class='label-count' dir='ltr'&gt;(&lt;data:label.count/&gt;)&lt;/span&gt;
+          &lt;/b:if&gt;
+        &lt;/span&gt;
+      &lt;/b:loop&gt;
+    &lt;/b:if&gt;
+    &lt;b:include name='quickedit'/&gt;
+  &lt;/div&gt;
+&lt;/b:includable&gt;
+&lt;/b:widget&gt;
+&lt;b:widget id='Subscribe1' locked='false' title='Subscribe!' type='Subscribe'&gt;
+&lt;b:includable id='main'&gt;
+  &lt;b:if cond='data:isPublic'&gt;
+  &lt;div style='white-space:nowrap'&gt;
+
+    &lt;b:if cond='data:title != &amp;quot;&amp;quot;'&gt;
+      &lt;h2 class='title'&gt;&lt;data:title/&gt;&lt;/h2&gt;
+    &lt;/b:if&gt;
+  &lt;div class='widget-content'&gt;
+    &lt;b:loop values='data:feeds' var='feed'&gt;
+        &lt;div expr:class='&amp;quot;subscribe-wrapper subscribe-type-&amp;quot; + data:feed.type'&gt;
+
+
+        &lt;div expr:class='&amp;quot;subscribe expanded subscribe-type-&amp;quot; + data:feed.type' expr:id='&amp;quot;SW_READER_LIST_&amp;quot; + data:widgetId + data:feed.type' style='display:none;'&gt;
+
+          &lt;div class='top'&gt;
+            &lt;span class='inner' expr:onclick='&amp;quot;return(_SW_toggleReaderList(event, \&amp;quot;&amp;quot; + data:widgetId +data:feed.type + &amp;quot;\&amp;quot;));&amp;quot;'&gt;
+              &lt;img class='subscribe-dropdown-arrow' expr:src='data:arrowDropdownImg'/&gt;
+              &lt;img align='absmiddle' alt='' border='0' class='feed-icon' expr:src='data:feedIconImg'/&gt;
+              &lt;data:feed.title/&gt;
+            &lt;/span&gt;
+
+            &lt;div class='feed-reader-links'&gt;
+              &lt;a class='feed-reader-link' expr:href='&amp;quot;http://www.google.com/ig/add?source=bstp&amp;amp;feedurl=&amp;quot; + data:feed.encodedUrl' target='_blank'&gt;
+                &lt;img expr:src='data:imagePathBase + &amp;quot;subscribe-google.png&amp;quot;'/&gt;
+              &lt;/a&gt;
+              &lt;a class='feed-reader-link' expr:href='&amp;quot;http://www.netvibes.com/subscribe.php?url=&amp;quot; + data:feed.encodedUrl' target='_blank'&gt;
+                &lt;img expr:src='data:imagePathBase + &amp;quot;subscribe-netvibes.png&amp;quot;'/&gt;
+              &lt;/a&gt;
+              &lt;a class='feed-reader-link' expr:href='&amp;quot;http://www.newsgator.com/ngs/subscriber/subext.aspx?url=&amp;quot; + data:feed.encodedUrl' target='_blank'&gt;
+                &lt;img expr:src='data:imagePathBase + &amp;quot;subscribe-newsgator.png&amp;quot;'/&gt;
+              &lt;/a&gt;
+              &lt;a class='feed-reader-link' expr:href='&amp;quot;http://add.my.yahoo.com/content?url=&amp;quot; + data:feed.encodedUrl' target='_blank'&gt;
+                &lt;img expr:src='data:imagePathBase + &amp;quot;subscribe-yahoo.png&amp;quot;'/&gt;
+              &lt;/a&gt;
+              &lt;a class='feed-reader-link' expr:href='data:feed.url' target='_blank'&gt;
+                &lt;img align='absmiddle' class='feed-icon' expr:src='data:feedIconImg'/&gt;
+                Atom
+              &lt;/a&gt;
+            &lt;/div&gt;
+
+          &lt;/div&gt;
+          &lt;div class='bottom'/&gt;
+        &lt;/div&gt;
+        
+        &lt;div class='subscribe' expr:id='&amp;quot;SW_READER_LIST_CLOSED_&amp;quot; + data:widgetId +data:feed.type' expr:onclick='&amp;quot;return(_SW_toggleReaderList(event, \&amp;quot;&amp;quot; + data:widgetId +data:feed.type + &amp;quot;\&amp;quot;));&amp;quot;'&gt;
+          &lt;div class='top'&gt;
+             &lt;span class='inner'&gt;
+               &lt;img class='subscribe-dropdown-arrow' expr:src='data:arrowDropdownImg'/&gt;
+               &lt;span expr:onclick='&amp;quot;return(_SW_toggleReaderList(event, \&amp;quot;&amp;quot; + data:widgetId +data:feed.type + &amp;quot;\&amp;quot;));&amp;quot;'&gt;
+                 &lt;img align='absmiddle' alt='' border='0' class='feed-icon' expr:src='data:feedIconImg'/&gt;
+                 &lt;data:feed.title/&gt;
+               &lt;/span&gt;
+             &lt;/span&gt;
+           &lt;/div&gt;
+          &lt;div class='bottom'/&gt;
+        &lt;/div&gt;
+        
+      &lt;/div&gt;
+    &lt;/b:loop&gt;
+
+    &lt;div style='clear:both'/&gt;
+
+  &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;b:include name='quickedit'/&gt;
+
+ &lt;/b:if&gt;
+&lt;/b:includable&gt;
+&lt;/b:widget&gt;
+&lt;b:widget id='Profile1' locked='false' title='About Me' type='Profile'&gt;
+&lt;b:includable id='main'&gt;
+    &lt;b:if cond='data:title != &amp;quot;&amp;quot;'&gt;
+      &lt;h2&gt;&lt;data:title/&gt;&lt;/h2&gt;
+    &lt;/b:if&gt;
+    &lt;div class='widget-content'&gt;
+    &lt;b:if cond='data:team == &amp;quot;true&amp;quot;'&gt; &lt;!-- team blog profile --&gt;
+      &lt;ul&gt;
+        &lt;b:loop values='data:authors' var='i'&gt;
+          &lt;li&gt;&lt;a expr:href='data:i.userUrl'&gt;&lt;data:i.display-name/&gt;&lt;/a&gt;&lt;/li&gt;
+        &lt;/b:loop&gt;
+      &lt;/ul&gt;
+
+      &lt;b:else/&gt; &lt;!-- normal blog profile --&gt;
+
+      &lt;b:if cond='data:photo.url != &amp;quot;&amp;quot;'&gt;
+        &lt;a expr:href='data:userUrl'&gt;&lt;img class='profile-img' expr:alt='data:photo.alt' expr:height='data:photo.height' expr:src='data:photo.url' expr:width='data:photo.width'/&gt;&lt;/a&gt;
+      &lt;/b:if&gt;
+
+      &lt;dl class='profile-datablock'&gt;
+        &lt;dt class='profile-data'&gt;
+          &lt;a class='profile-name-link' expr:href='data:userUrl' rel='author'&gt;
+            &lt;data:displayname/&gt;
+          &lt;/a&gt;
+        &lt;/dt&gt;
+
+        &lt;b:if cond='data:showlocation == &amp;quot;true&amp;quot;'&gt;
+          &lt;dd class='profile-data'&gt;&lt;data:location/&gt;&lt;/dd&gt;
+        &lt;/b:if&gt;
+
+        &lt;b:if cond='data:aboutme != &amp;quot;&amp;quot;'&gt;&lt;dd class='profile-textblock'&gt;&lt;data:aboutme/&gt;&lt;/dd&gt;&lt;/b:if&gt;
+      &lt;/dl&gt;
+      &lt;a class='profile-link' expr:href='data:userUrl' rel='author'&gt;&lt;data:viewProfileMsg/&gt;&lt;/a&gt;
+    &lt;/b:if&gt;
+
+     &lt;b:include name='quickedit'/&gt;
+    &lt;/div&gt;
+  &lt;/b:includable&gt;
+&lt;/b:widget&gt;
+&lt;b:widget id='BlogArchive1' locked='false' title='Blog Archive' type='BlogArchive'&gt;
+&lt;b:includable id='main'&gt;
+  &lt;b:if cond='data:title'&gt;
+    &lt;h2&gt;&lt;data:title/&gt;&lt;/h2&gt;
+  &lt;/b:if&gt;
+  &lt;div class='widget-content'&gt;
+  &lt;div id='ArchiveList'&gt;
+  &lt;div expr:id='data:widget.instanceId + &amp;quot;_ArchiveList&amp;quot;'&gt;
+    &lt;b:if cond='data:style == &amp;quot;HIERARCHY&amp;quot;'&gt;
+     &lt;b:include data='data' name='interval'/&gt;
+    &lt;/b:if&gt;
+    &lt;b:if cond='data:style == &amp;quot;FLAT&amp;quot;'&gt;
+      &lt;b:include data='data' name='flat'/&gt;
+    &lt;/b:if&gt;
+    &lt;b:if cond='data:style == &amp;quot;MENU&amp;quot;'&gt;
+      &lt;b:include data='data' name='menu'/&gt;
+    &lt;/b:if&gt;
+  &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;b:include name='quickedit'/&gt;
+  &lt;/div&gt;
+&lt;/b:includable&gt;
+&lt;b:includable id='flat' var='data'&gt;
+  &lt;ul class='flat'&gt;
+    &lt;b:loop values='data:data' var='i'&gt;
+      &lt;li class='archivedate'&gt;
+        &lt;a expr:href='data:i.url'&gt;&lt;data:i.name/&gt;&lt;/a&gt; (&lt;data:i.post-count/&gt;)
+      &lt;/li&gt;
+    &lt;/b:loop&gt;
+  &lt;/ul&gt;
+&lt;/b:includable&gt;
+&lt;b:includable id='menu' var='data'&gt;
+  &lt;select expr:id='data:widget.instanceId + &amp;quot;_ArchiveMenu&amp;quot;'&gt;
+    &lt;option value=''&gt;&lt;data:title/&gt;&lt;/option&gt;
+    &lt;b:loop values='data:data' var='i'&gt;
+      &lt;option expr:value='data:i.url'&gt;&lt;data:i.name/&gt; (&lt;data:i.post-count/&gt;)&lt;/option&gt;
+    &lt;/b:loop&gt;
+  &lt;/select&gt;
+&lt;/b:includable&gt;
+&lt;b:includable id='interval' var='intervalData'&gt;
+  &lt;b:loop values='data:intervalData' var='i'&gt;
+      &lt;ul class='hierarchy'&gt;
+        &lt;li expr:class='&amp;quot;archivedate &amp;quot; + data:i.expclass'&gt;
+          &lt;b:include data='i' name='toggle'/&gt;
+          &lt;a class='post-count-link' expr:href='data:i.url'&gt;&lt;data:i.name/&gt;&lt;/a&gt;
+            &lt;span class='post-count' dir='ltr'&gt;(&lt;data:i.post-count/&gt;)&lt;/span&gt;
+          &lt;b:if cond='data:i.data'&gt;
+            &lt;b:include data='i.data' name='interval'/&gt;
+          &lt;/b:if&gt;
+          &lt;b:if cond='data:i.posts'&gt;
+            &lt;b:include data='i.posts' name='posts'/&gt;
+          &lt;/b:if&gt;
+        &lt;/li&gt;
+      &lt;/ul&gt;
+  &lt;/b:loop&gt;
+&lt;/b:includable&gt;
+&lt;b:includable id='toggle' var='interval'&gt;
+  &lt;b:if cond='data:interval.toggleId'&gt;
+  &lt;b:if cond='data:interval.expclass == &amp;quot;expanded&amp;quot;'&gt;
+    &lt;a class='toggle' href='javascript:void(0)'&gt;
+      &lt;span class='zippy toggle-open'&gt;&amp;#9660;&amp;#160;&lt;/span&gt;
+    &lt;/a&gt;
+  &lt;b:else/&gt;
+    &lt;a class='toggle' href='javascript:void(0)'&gt;
+      &lt;span class='zippy'&gt;
+        &lt;b:if cond='data:blog.languageDirection == &amp;quot;rtl&amp;quot;'&gt;
+          &amp;#9668;&amp;#160;
+        &lt;b:else/&gt;
+          &amp;#9658;&amp;#160;
+        &lt;/b:if&gt;
+      &lt;/span&gt;
+    &lt;/a&gt;
+  &lt;/b:if&gt;
+ &lt;/b:if&gt;
+&lt;/b:includable&gt;
+&lt;b:includable id='posts' var='posts'&gt;
+  &lt;ul class='posts'&gt;
+    &lt;b:loop values='data:posts' var='i'&gt;
+      &lt;li&gt;&lt;a expr:href='data:i.url'&gt;&lt;data:i.title/&gt;&lt;/a&gt;&lt;/li&gt;
+    &lt;/b:loop&gt;
+  &lt;/ul&gt;
+&lt;/b:includable&gt;
+&lt;/b:widget&gt;
+&lt;b:widget id='Followers1' locked='false' title='Followers' type='Followers'&gt;
+&lt;b:includable id='main'&gt;
+  &lt;b:if cond='data:title != &amp;quot;&amp;quot;'&gt;
+    &lt;b:if cond='data:codeSnippet != &amp;quot;&amp;quot;'&gt;
+      &lt;h2 class='title'&gt;&lt;data:title/&gt;&lt;/h2&gt;
+    &lt;b:else/&gt;
+      &lt;b:if cond='data:totalFollowerCount != &amp;quot;&amp;quot;'&gt;
+        &lt;h2 class='title'&gt;&lt;data:title/&gt; (&lt;data:totalFollowerCount/&gt;)&lt;/h2&gt;
+      &lt;/b:if&gt;
+    &lt;/b:if&gt;  
+  &lt;/b:if&gt;
+  &lt;div class='widget-content'&gt;
+    &lt;div expr:id='data:widget.instanceId + &amp;quot;-wrapper&amp;quot;'&gt;
+      &lt;b:if cond='data:codeSnippet != &amp;quot;&amp;quot;'&gt;
+        &lt;div style='margin-right:2px;'&gt;
+          &lt;data:codeSnippet/&gt;
+        &lt;/div&gt;
+      &lt;b:else/&gt;
+        &lt;b:if cond='data:totalFollowerCount == &amp;quot;&amp;quot;'&gt;
+          &lt;span class='item-control following-not-admin'&gt;
+            &lt;b&gt;&lt;data:failureSnippet/&gt;&lt;/b&gt;
+          &lt;/span&gt;
+          &lt;span class='item-control blog-admin'&gt;
+            &lt;b&gt;&lt;data:adminFailureSnippet/&gt;&lt;/b&gt;
+          &lt;/span&gt;
+        &lt;b:else/&gt;
+          &lt;b:if cond='data:followingLinkPresent'&gt;
+            &lt;div class='follow-this profile-link item-control following-follow-this'&gt;
+              &lt;a expr:href='&amp;quot;javascript:_FollowersView._openPopup(\&amp;quot;&amp;quot; + data:followUri + &amp;quot;\&amp;quot;);&amp;quot;'&gt;
+                &lt;data:followThisMessage/&gt;
+              &lt;/a&gt;
+            &lt;/div&gt;
+            &lt;div class='follow-this profile-link item-control following-stop-following-this'&gt;
+              &lt;a expr:href='&amp;quot;javascript:_FollowersView._openPopup(\&amp;quot;&amp;quot; + data:followUri + &amp;quot;\&amp;quot;);&amp;quot;'&gt;
+                &lt;data:stopFollowingMessage/&gt;
+              &lt;/a&gt;
+            &lt;/div&gt;
+          &lt;/b:if&gt;
+  
+          &lt;div class='followers-grid'&gt;
+            &lt;b:if cond='data:totalFollowerCount == 0'&gt;
+              &lt;div class='profile-link item-control following-follow-this'&gt;
+                &lt;data:emptyFollowersMessage/&gt;
+              &lt;/div&gt;
+            &lt;/b:if&gt;
+            &lt;!--
+            Relies on the js written out in navbar.gxp
+            --&gt;
+            &lt;b:loop values='data:followers' var='follower'&gt;
+              &lt;div class='follower'&gt;
+                &lt;a expr:href='data:follower.profileUrl' expr:title='data:follower.displayName' rel='nofollow'&gt;
+                &lt;img class='follower-img' expr:alt='data:follower.displayName' expr:height='data:follower.imageHeight' expr:onerror='&amp;quot;this.onerror=null;this.src=\&amp;quot;&amp;quot; + data:anonFollowerImageUrl + &amp;quot;\&amp;quot;;&amp;quot;' expr:onload='&amp;quot;setAttributeOnload(this, \&amp;quot;src\&amp;quot;, \&amp;quot;&amp;quot; + data:follower.imageUrl + &amp;quot;\&amp;quot;)&amp;quot;' expr:width='data:follower.imageWidth' src='http://img1.blogblog.com/img/blank.gif'/&gt;
+                &lt;/a&gt;
+              &lt;/div&gt;
+            &lt;/b:loop&gt;
+            &lt;div class='clear'/&gt;
+          &lt;/div&gt;
+  
+          &lt;div class='followers-canvas profile-link'&gt;
+            &lt;data:followersFooterMessage/&gt;
+            &lt;span class='item-control following-not-admin'&gt;
+              &lt;a expr:href='data:followersUri'&gt;
+                &lt;data:viewAllMessage/&gt;
+              &lt;/a&gt;
+            &lt;/span&gt;
+            &lt;span class='item-control blog-admin'&gt;
+              &lt;a expr:href='data:manageFollowersUri'&gt;
+                &lt;data:manageFollowersMessage/&gt;
+              &lt;/a&gt;
+            &lt;/span&gt;
+          &lt;/div&gt;
+          &lt;/b:if&gt;
+      &lt;/b:if&gt;
+    &lt;/div&gt;
+    &lt;b:include name='quickedit'/&gt;
+  &lt;/div&gt;
+&lt;/b:includable&gt;
+&lt;/b:widget&gt;
+&lt;/b:section-contents&gt;&lt;b:section-contents id='footer-1'/&gt;&lt;b:section-contents id='footer-2-1'/&gt;&lt;b:section-contents id='footer-2-2'/&gt;&lt;/html&gt;</content><link rel='edit' type='application/atom+xml' href='http://www.blogger.com/feeds/8158087446522153219/template/default'/><link rel='self' type='application/atom+xml' href='http://www.blogger.com/feeds/8158087446522153219/template/default'/><link rel='alternate' type='text/html' href='http://wesnothannotatedreplay.blogspot.com/'/><author><name>Nil Athelion</name><uri>http://www.blogger.com/profile/16996018952758178741</uri><email>Featherless@gmail.com</email></author></entry><entry><id>tag:blogger.com,1999:blog-8158087446522153219.post-8357723484882743724</id><published>2010-12-29T19:44:00.000-08:00</published><updated>2010-12-29T20:10:35.527-08:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#post'/><category scheme='http://www.blogger.com/atom/ns#' term='Northerners'/><category scheme='http://www.blogger.com/atom/ns#' term='Sulla&apos;s Ruins'/><category scheme='http://www.blogger.com/atom/ns#' term='MysteryExclamation'/><category scheme='http://www.blogger.com/atom/ns#' term='victory'/><category scheme='http://www.blogger.com/atom/ns#' term='Knalgan'/><title type='text'>Sulla's Ruins, Knalgans versus MysteryExclamation's Northerners</title><content type='html'>And so it arrived.  Another match of me trying to beat her Northerners with my Knalgans.  Same as when I lost...&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;I started this match with a footpad and a gryphon over in my starting keep, then immediately moved east to recruit a bunch of dwarves on the eastern top keep.  I then sent them hurdling down the side, and eventually moved my leader to the midway keep on the east side.&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;Meanwhile, my gryphon and my footpad wandered around grabbing villages and hitting targets of opportunity.&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;In the east, I holed up on hills and mountains, and ME led a relatively ineffectual assault against my position.  My retaliation slaughtered her attack force as it became day, and I moved down a bit, and took up positions a bit further.  Dwarf-creep.  It was my new tactic against Northies.&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;On the other side, my gryphon and footpad did will until they ran into an archer and an assassin, who proceeded to kill the footpad.  My gryphon ran south, hoping to draw them away from my villages, but they went north.  By then, I sent a Ulfserker across, and he arrived just time time to stall their advance.  They could out-see him (Or at least the assassin could), so they didn't get mauled, but they weren't willing to go where he could attack.  They waited until she sent up a naga, and I sent another unit or two to support.  I eventually got her naga in a land-battle, when she took a village with it, and then I was able to drive her away on that side.&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;On the other side, we fought hard and... bloodily.  For the northerners.  They couldn't take my hills and mountains, and I would attack at the end of night/start of day.  I took a few more losses (three by the end of the game, I recall), and made her pay dearly for every little corpse.&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;As the battle wore on, I gathered experience and troops, and my stray gryphon grabbed villages.&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;Soon... victory was mine.&lt;/div&gt;&lt;div class="blogger-post-footer"&gt;&lt;img width='1' height='1' src='https://blogger.googleusercontent.com/tracker/8158087446522153219-8357723484882743724?l=wesnothannotatedreplay.blogspot.com' alt='' /&gt;&lt;/div&gt;</content><link rel='replies' type='application/atom+xml' href='http://wesnothannotatedreplay.blogspot.com/feeds/8357723484882743724/comments/default' title='Post Comments'/><link rel='replies' type='text/html' href='http://wesnothannotatedreplay.blogspot.com/2010/12/sullas-ruins-knalgans-versus.html#comment-form' title='0 Comments'/><link rel='edit' type='application/atom+xml' href='http://www.blogger.com/feeds/8158087446522153219/posts/default/8357723484882743724'/><link rel='self' type='application/atom+xml' href='http://www.blogger.com/feeds/8158087446522153219/posts/default/8357723484882743724'/><link rel='alternate' type='text/html' href='http://wesnothannotatedreplay.blogspot.com/2010/12/sullas-ruins-knalgans-versus.html' title='Sulla&apos;s Ruins, Knalgans versus MysteryExclamation&apos;s Northerners'/><author><name>Nil Athelion</name><uri>http://www.blogger.com/profile/16996018952758178741</uri><email>featherless@gmail.com</email></author><thr:total>0</thr:total></entry><entry><id>tag:blogger.com,1999:blog-8158087446522153219.post-4341649723776082792</id><published>2010-12-24T16:23:00.000-08:00</published><updated>2010-12-24T16:59:31.066-08:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#post'/><category scheme='http://www.blogger.com/atom/ns#' term='Howling Ghost Badlands'/><category scheme='http://www.blogger.com/atom/ns#' term='Rebels'/><category scheme='http://www.blogger.com/atom/ns#' term='MysteryExclamation'/><category scheme='http://www.blogger.com/atom/ns#' term='victory'/><category scheme='http://www.blogger.com/atom/ns#' term='Knalgan'/><title type='text'>Howling Ghost Badlands, Knalgans versus MysteryExclamation's Rebels</title><content type='html'>Howling Ghost Badlands is an odd map in that it's basically diamond-shaped from the directions you can start in and, what's more, it actually matters.  There's stuff (villages) in those corners, so you ought to fight over them.  Also fake villages and villages that are hard to see.  What's with that, anyway?&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;In any even, I started with a good deal of outlaws and other things that move fast, and took over my side of the map quickly.  I advanced my leader at the same time, and then grabbed a bunch of dwaves when I got to a forward keep.&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;I then pressed the attack via dwarves on the west, and used dual footpads on the eastern front to trap and attack an elf.  I later followed up with a dwarf.  Early on I took a village, and I managed to hold onto the 1 village advantage the whole game (thus I had about 133.33% more villages than my foe my 8 villages to her 6 villages).&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;I got some good ulf-usage in the cramped quarters of the western battlefield (or against elves in general, really...), but overall the steadfast power of the dwarves triumphed over the pansy elves and their frail human allies.  Meanwhile, the eastern front went alright, and I generally distracted people there until her leader got involved.  70% dodge doesn't work against marksmanship.  Oh well.  Instead, I fled and grabbed villages instead, which worked out pretty well for me.&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;I eventually crushed her forces on the east, and then attacked forward, took her semi-forward keep, and recruited three ulfserkers with all the money I was getting.&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;Urfserker &gt; Elvish Marksman&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;I won.&lt;/div&gt;&lt;div class="blogger-post-footer"&gt;&lt;img width='1' height='1' src='https://blogger.googleusercontent.com/tracker/8158087446522153219-4341649723776082792?l=wesnothannotatedreplay.blogspot.com' alt='' /&gt;&lt;/div&gt;</content><link rel='replies' type='application/atom+xml' href='http://wesnothannotatedreplay.blogspot.com/feeds/4341649723776082792/comments/default' title='Post Comments'/><link rel='replies' type='text/html' href='http://wesnothannotatedreplay.blogspot.com/2010/12/howling-ghost-badlands-knalgans-versus.html#comment-form' title='0 Comments'/><link rel='edit' type='application/atom+xml' href='http://www.blogger.com/feeds/8158087446522153219/posts/default/4341649723776082792'/><link rel='self' type='application/atom+xml' href='http://www.blogger.com/feeds/8158087446522153219/posts/default/4341649723776082792'/><link rel='alternate' type='text/html' href='http://wesnothannotatedreplay.blogspot.com/2010/12/howling-ghost-badlands-knalgans-versus.html' title='Howling Ghost Badlands, Knalgans versus MysteryExclamation&apos;s Rebels'/><author><name>Nil Athelion</name><uri>http://www.blogger.com/profile/16996018952758178741</uri><email>featherless@gmail.com</email></author><thr:total>0</thr:total></entry><entry><id>tag:blogger.com,1999:blog-8158087446522153219.post-225691178741118986</id><published>2010-12-24T13:34:00.000-08:00</published><updated>2010-12-24T14:38:34.983-08:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#post'/><category scheme='http://www.blogger.com/atom/ns#' term='Loyalists'/><category scheme='http://www.blogger.com/atom/ns#' term='MysteryExclamation'/><category scheme='http://www.blogger.com/atom/ns#' term='victory'/><category scheme='http://www.blogger.com/atom/ns#' term='Drakes'/><category scheme='http://www.blogger.com/atom/ns#' term='Sablestone Delta'/><title type='text'>Sablestone Delta, Loyalists versus MysteryExclamation's Drakes</title><content type='html'>I was second-player this time around, and I was happy to be able to jump forward and get to the forward keep on the first turn.  Distributed my recruits between there and village-grabbers in the original keep.&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;ME was playing drakes, and with more drakes than Saurians.  I went as fast as possible, and during the last part of the day, I lunged deep into enemy territory to take out a Saurian Augur on the first turn.  Indeed, I played very, very aggressively this whole game.&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;A few thoughts on the match-up:&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;With standard recruiting patterns, the loyalists have the advantage in damage and health because of the abundance of piercing damage, etc.  Drakes can use saurians against piercing folks, but they fall easily to normal guys in the loyalist army (note that they are basically slightly-better/more-expensive fencers with no HP).  The other tactics they can use involves being careful about when and where to place attacks, hitting the piercing units with Burners' ranged attacks, and outright killing them before the can retaliate.  There are many tactics, but the limiting factor is that they all involve the drake player choosing his or her battles.&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;I didn't want to let MysteryExclamation choose her battles.  Instead I pushed forward hard and made the biggest bloodbath I could.  Bowmen shot Clashers, Spearmen stabbed everything, and calvary ran around finishing things off.  When the dust settled, I held the position, and had gotten a Spearman to become a Pikeman, which is golden against drakes.  Of course, by then I had killed about twice as many drakes as I had lost units, so the game was pretty much up by then.&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;Back to winning!&lt;/div&gt;&lt;div class="blogger-post-footer"&gt;&lt;img width='1' height='1' src='https://blogger.googleusercontent.com/tracker/8158087446522153219-225691178741118986?l=wesnothannotatedreplay.blogspot.com' alt='' /&gt;&lt;/div&gt;</content><link rel='replies' type='application/atom+xml' href='http://wesnothannotatedreplay.blogspot.com/feeds/225691178741118986/comments/default' title='Post Comments'/><link rel='replies' type='text/html' href='http://wesnothannotatedreplay.blogspot.com/2010/12/sablestone-delta-loyalists-versus.html#comment-form' title='0 Comments'/><link rel='edit' type='application/atom+xml' href='http://www.blogger.com/feeds/8158087446522153219/posts/default/225691178741118986'/><link rel='self' type='application/atom+xml' href='http://www.blogger.com/feeds/8158087446522153219/posts/default/225691178741118986'/><link rel='alternate' type='text/html' href='http://wesnothannotatedreplay.blogspot.com/2010/12/sablestone-delta-loyalists-versus.html' title='Sablestone Delta, Loyalists versus MysteryExclamation&apos;s Drakes'/><author><name>Nil Athelion</name><uri>http://www.blogger.com/profile/16996018952758178741</uri><email>featherless@gmail.com</email></author><thr:total>0</thr:total></entry><entry><id>tag:blogger.com,1999:blog-8158087446522153219.post-2013266911985415831</id><published>2010-12-24T12:58:00.000-08:00</published><updated>2010-12-24T13:31:57.069-08:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#post'/><category scheme='http://www.blogger.com/atom/ns#' term='Rebels'/><category scheme='http://www.blogger.com/atom/ns#' term='Northerners'/><category scheme='http://www.blogger.com/atom/ns#' term='The Freelands'/><category scheme='http://www.blogger.com/atom/ns#' term='Comeback'/><category scheme='http://www.blogger.com/atom/ns#' term='Tonepoet'/><category scheme='http://www.blogger.com/atom/ns#' term='Defeat'/><title type='text'>Freelands, Rebels versus Tonepoet's Northerners</title><content type='html'>This battle was against Tonepoet, who is overall better than me.  He also plays quite differently than Christy - Christy prefers to fight in solid battles, while Tonepoet tends to move around a whole lot, grabbing villages.&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;I grabbed all my villages pretty quickly, then advanced south two fighters and an archer in the middle, and a shaman and a scout on the west.  As I found, he had recruited fairly heavily into wolf-riders and assassins and trolls, with a conspicious lack of grunts.  Oh well.&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;He killed my scout and my shaman, who, following standard defensive doctrine, clung to the defenses near the mountains.  They were pinned down, and eventually died to terrain-ignoring assassins, etc.  He also swept by with his wolf riders, and seized a bunch of my villages, taking about four of them.  I recruited units to attack his wolf riders, and moved my other forces over to deal with the threat.  Eventually I got them all, but by then he had gotten a good deal of money, and swept up the other side with wolf-riders and assassins.  I tried to go home, but he sat on my keep with wolf-riders, and 70+ gold burned a hole in my pocket.&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;Eventually I was able to drive off his wolf-riders and recruit, and soon things were going much better.  Over the course of the game, I had killed many more units of his than he had killed of mine, which almost made up for his economic advantage.  I fanned out from my keep with my units, killing a few of his, and managing to outnumber him in that part of the field.  Things were looking up - I might pull even!  However, I was a bit careless with my leader, and he got killed by archers and wolf-riders and a few other things.  So I lost.&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;Very annoying, but quite deserved.  If you don't keep your leader safe, then that's a big risk you are taking.  Still very annoying.&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;Really need to learn to deal with mobility better.  More units spread out to block, etc.  Less of my tight formations, etc.&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;Many more games to go.&lt;/div&gt;&lt;div class="blogger-post-footer"&gt;&lt;img width='1' height='1' src='https://blogger.googleusercontent.com/tracker/8158087446522153219-2013266911985415831?l=wesnothannotatedreplay.blogspot.com' alt='' /&gt;&lt;/div&gt;</content><link rel='replies' type='application/atom+xml' href='http://wesnothannotatedreplay.blogspot.com/feeds/2013266911985415831/comments/default' title='Post Comments'/><link rel='replies' type='text/html' href='http://wesnothannotatedreplay.blogspot.com/2010/12/freelands-rebels-versus-tonepoets.html#comment-form' title='0 Comments'/><link rel='edit' type='application/atom+xml' href='http://www.blogger.com/feeds/8158087446522153219/posts/default/2013266911985415831'/><link rel='self' type='application/atom+xml' href='http://www.blogger.com/feeds/8158087446522153219/posts/default/2013266911985415831'/><link rel='alternate' type='text/html' href='http://wesnothannotatedreplay.blogspot.com/2010/12/freelands-rebels-versus-tonepoets.html' title='Freelands, Rebels versus Tonepoet&apos;s Northerners'/><author><name>Nil Athelion</name><uri>http://www.blogger.com/profile/16996018952758178741</uri><email>featherless@gmail.com</email></author><thr:total>0</thr:total></entry><entry><id>tag:blogger.com,1999:blog-8158087446522153219.post-4301682678286494520</id><published>2010-12-24T11:41:00.000-08:00</published><updated>2010-12-24T15:13:32.988-08:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#post'/><category scheme='http://www.blogger.com/atom/ns#' term='Northerners'/><category scheme='http://www.blogger.com/atom/ns#' term='MysteryExclamation'/><category scheme='http://www.blogger.com/atom/ns#' term='Weldyn Channel'/><category scheme='http://www.blogger.com/atom/ns#' term='Knalgan'/><category scheme='http://www.blogger.com/atom/ns#' term='Defeat'/><title type='text'>Weldyn Channel, Knalgans versus MysteryExclamation's Northerners</title><content type='html'>So... this went badly.  Or well, but in the wrong spots.&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;I recruited dwarves and outlaws.  Sent the outlaws down one side, and the dwarves down the other. Turns out that I'm fighting Northerners.&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;The dwarves do well, but the outlaws get overwhelmed and retreat, then die.  Note that I played a bit of mindgames here to convince ME that assassins were a bad idea - they are, in fact, a vital tool to get dwarves out of mountains.  My leader is off dicking around somewhere.&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;ME gets all the villages on the western side, starts to make lots of money.  Recruits lots of units.  I get holed up in my castle.  I get my leader back, and he recruits lots of units... all of whom are stuck at the same bottleneck that ME's troops are suck in.  I can't fight my way out, and as time goes on, her controlling most of the villages lets her buy tremendous amounts of units, while I can buy very few.&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;This tells, and I die horribly to Nagas assassinating my leader slightly before I would have died horrible to northerners overwhelming my forces.&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;SIGH.&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;Very embarrassing.  I resolved to get better at the Knalgan vs Northerner matchup.  Also on Weldyn channel - if there were one front, not two, I would have done a bit better - as it was, she played on my dwarves slow foot-speed, and I couldn't use them to support my outlaws.  Don't worry, faithful readers - I won this matchup the next time we clashed.&lt;/div&gt;&lt;div class="blogger-post-footer"&gt;&lt;img width='1' height='1' src='https://blogger.googleusercontent.com/tracker/8158087446522153219-4301682678286494520?l=wesnothannotatedreplay.blogspot.com' alt='' /&gt;&lt;/div&gt;</content><link rel='replies' type='application/atom+xml' href='http://wesnothannotatedreplay.blogspot.com/feeds/4301682678286494520/comments/default' title='Post Comments'/><link rel='replies' type='text/html' href='http://wesnothannotatedreplay.blogspot.com/2010/12/weldyn-channel-knalgans-versus.html#comment-form' title='0 Comments'/><link rel='edit' type='application/atom+xml' href='http://www.blogger.com/feeds/8158087446522153219/posts/default/4301682678286494520'/><link rel='self' type='application/atom+xml' href='http://www.blogger.com/feeds/8158087446522153219/posts/default/4301682678286494520'/><link rel='alternate' type='text/html' href='http://wesnothannotatedreplay.blogspot.com/2010/12/weldyn-channel-knalgans-versus.html' title='Weldyn Channel, Knalgans versus MysteryExclamation&apos;s Northerners'/><author><name>Nil Athelion</name><uri>http://www.blogger.com/profile/16996018952758178741</uri><email>featherless@gmail.com</email></author><thr:total>0</thr:total></entry><entry><id>tag:blogger.com,1999:blog-8158087446522153219.post-5199479868931519598</id><published>2010-12-24T11:40:00.001-08:00</published><updated>2010-12-24T11:54:59.055-08:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#post'/><category scheme='http://www.blogger.com/atom/ns#' term='Northerners'/><category scheme='http://www.blogger.com/atom/ns#' term='Loyalists'/><category scheme='http://www.blogger.com/atom/ns#' term='MysteryExclamation'/><category scheme='http://www.blogger.com/atom/ns#' term='victory'/><category scheme='http://www.blogger.com/atom/ns#' term='Hamlets'/><title type='text'>Hamlets, Northerners versus MysteryExclamation's Loyalists</title><content type='html'>Northerners!&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;I had been hearing about how to play Northerners for a while, and a lot of buzz on the forum seems to indicate that having more grunts and other cheap units was the way to go.  Specialty units were for specialty circumstances.  I resolved to use more grunts.&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;I also started recruiting with a keen eye as to how to get the most villages the quickest.  As was described to me on the forum, if buying one unit over another allows you to get to a village a turn earlier, you make +2 (or more, if upkeep is an issue), which can be thought of like 2 gold discount on the unit.  Extra kudos if you place your units right so that they can get extra villages without buying units that need more move points to do so (I am, as always, bad at scouting, as can be seen in this map).&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;Anyway, in Hamlets I prefer to get the two villages behind and to the side of my keep with my leader.  They are pretty out of my way, and it gives my leader something to do between buying units and getting sufficient villages.  Actually, in this case, I went back and bought more units first, because Northerners are so damn cheap.&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;When we clashed, night was starting, so I pressed the attack with grunts and trolls (and an assassin) on the west, and... well, I hadn't been expecting to fight on the eastern side, but I managed to knife the fencer pretty well.  If they were going to fight during the night, I was going to make the most of their nerfed damage, etc.  Unfortunately, against 60% defense my naga only hit twice, which is above average, but not enough to kill the fencer I was attacking.&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;In response, Christy killed my Assassin, and my attack on that side crumpled.  On the other side, I failed to kill a mage, but was able to finish off a merman fighter.  Unfortunately, most of her units were on pretty darn good terrain, so there wasn't a whole lot I could do right away.  Her counterattack put up some fresh targets.&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;In the meantime, I grabbed her middle swampy village.  I've come to realize that with the bucket-load of HP and decent dodge, northerners on a village are pretty hard to dislodge - I was hoping to hang onto that position and get more gold that way.&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;I tried some mroe to finish off the mage, but missed all four times.  Very disappointing.  Meanwhile, I used my assassin against the archer on the mountain and moved my troll (fearless, all that) onto the hills next to my grunt on the village.  Trolls aren't bad during the day, as the regeneration stays the same, and they are often fearless anyway.  Which is odd, but I guess it just goes to show &lt;a href="http://tvtropes.org/pmwiki/pmwiki.php/Main/AllTrollsAreDifferent"&gt;you can't have any expectations of what trolls are like&lt;/a&gt;.&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;So my right side was collapsing, and my left side had sort of collapsed.  Christy hadn't pressed the attack during the night there, though I only had one unit, instead retreating to protect her wounded.  I reinforced the position.&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;Holding the village didn't work out for me with the grunt, though he did good damage to his foes before dying.  I had an assassin in range, and used that to reinforce, and put my troll on the... village?  I led the reinforced western front to help the troll and assassin.  Meanwhile, I fell back on the other side completely - daytime Loyalists are very powerful.&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;As I moved my units forward (and killed a loyalist with rebel tactics), I noticed ME attacking my my right with a bowman and a mage - no melee units to defend them.  This made me happy, and I stationed two grunts, a troll, and my leader to intercept and ambush them.  She attacked the grunt on the mountain with her magic, but then had to put her archer on bad terrain to try to finish the grunt off.  I killed the mage with two grunts (as should be the case), and cornered her archer with a troll.  Also sent up a grunt there, and retreated my assassin that way.&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;In hindsight I realize that by this point, everyone who had participated in my &lt;i&gt;daytime assault&lt;/i&gt; against the loyalists had died, save for the archers.  Turns out that attacking a lawful faction with a chaotic one during the day is just as bad as it sounds.  Losses/kills by this point were 7/4, or 92/65 gold.&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;On the other hand, her response to her troubled bowman was... another bowman?  More blood for the bloodgod, I guess.  Meanwhile, I leveled up an intelligent Orcish Archer.  The other orcish archer died, and I resolved to make the most of my level 2, who was too cornered for me to bother running (basically, I couldn't get him back to my own lines, and if he ran away, he would simply help the Loyalist nighttime retreat).&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;The crossbowman did wonderfully, counterattacking with his 4-3 (5-3, nighttime) attack all over the place, and managing to somehow give as good as he got.  He also set up all my other units to attack the units he weakened.&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;When the smoke cleared, ME had gotten a fish leveled up, I had lost my crossbowman, and I had swooped in and killed 4 of her guys.  It was a pretty good deal, really.  I then trapped her fish, and took it down, while I distracted the rest of her guys with a troll and a grunt.&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;Note that one of Mystery Exclamation's bigger flaws is bad management of level 2s.  A level 2 is not an army by itself.  They need support to survive.  My Orcish Crossbowman died because he was alone, but while didn't kill a single unit himself, I was able to send in reinforcements to reap all four of the wounded.  ME's fish didn't even do that, attacking a unit who was out of the way, and then getting surrounded and dying.  I leveled up a grunt by killing it.&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;I then swept across the map.  ME rallied for a brief while, but while she killed my second nearly-leveled-up grunt, I leveled up a troll anyway, with a lucky hit against a fleeing fencer.  In a few turns I had most of the villages, and a massive army killing each unit sent at it.  I won in short order, having recruited nearly twenty grunts in the game.&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;(ME's worse flaw: she often sends insufficient reinforcements to a losing front, and then they still aren't enough for the losing front, so the front is still losing while she sends more insufficient reinforcements.  The proper response is to run away from the front, and get back to the reinforcements - not fight unless you have a decent number of units, all that.  I think this is because she was raised on the neutral elves, who don't always run away during opponent's ToD.  I was raised on DA/Skel Undead, who are immensely fragile on the defensive, and absolutely must run away during bad ToD.)&lt;/div&gt;&lt;div class="blogger-post-footer"&gt;&lt;img width='1' height='1' src='https://blogger.googleusercontent.com/tracker/8158087446522153219-5199479868931519598?l=wesnothannotatedreplay.blogspot.com' alt='' /&gt;&lt;/div&gt;</content><link rel='replies' type='application/atom+xml' href='http://wesnothannotatedreplay.blogspot.com/feeds/5199479868931519598/comments/default' title='Post Comments'/><link rel='replies' type='text/html' href='http://wesnothannotatedreplay.blogspot.com/2010/12/hamlets-northerners-versus.html#comment-form' title='0 Comments'/><link rel='edit' type='application/atom+xml' href='http://www.blogger.com/feeds/8158087446522153219/posts/default/5199479868931519598'/><link rel='self' type='application/atom+xml' href='http://www.blogger.com/feeds/8158087446522153219/posts/default/5199479868931519598'/><link rel='alternate' type='text/html' href='http://wesnothannotatedreplay.blogspot.com/2010/12/hamlets-northerners-versus.html' title='Hamlets, Northerners versus MysteryExclamation&apos;s Loyalists'/><author><name>Nil Athelion</name><uri>http://www.blogger.com/profile/16996018952758178741</uri><email>featherless@gmail.com</email></author><thr:total>0</thr:total></entry><entry><id>tag:blogger.com,1999:blog-8158087446522153219.post-2860409978706594146</id><published>2010-11-30T20:45:00.000-08:00</published><updated>2010-12-01T13:14:28.315-08:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#post'/><category scheme='http://www.blogger.com/atom/ns#' term='The Freelands'/><category scheme='http://www.blogger.com/atom/ns#' term='MysteryExclamation'/><category scheme='http://www.blogger.com/atom/ns#' term='Disconnection'/><category scheme='http://www.blogger.com/atom/ns#' term='victory'/><category scheme='http://www.blogger.com/atom/ns#' term='Knalgan'/><category scheme='http://www.blogger.com/atom/ns#' term='Drakes'/><title type='text'>The Freelands, Drakes versus MysteryExclamation's Knalgans</title><content type='html'>Woo!  Drakes!  I like drakes!&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;I started this game off on a relatively lousy note - I saw an Ulfserker on a village, and my Drake Fighter could fly over to him.  The chance to kill him was about 70% or so.  I figured that 17 gold worth of Drake was worth risking against 19 gold worth of crazed short-guy.  But then he died, badly, and I couldn't even finish off the Ulfserker.  (This is like... on my third turn.  I figured she would start screening better once other units caught up.)&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;So that was disappointing.  Night fell after that, so I mostly retreated, but I did send out my scout to distract people on the north-west.  Only the gryphon could get to it in one turn, but it managed to hit twice, which was annoying.  I recruited night troops, since ME had gotten close enough for me to use them right away.  I then jumped Poacher with Saurians - Saurians might be annoyingly fragile to most things, but they do have 20% resist to pierce and to arcane.  I didn't mind a few arrows, and the melee attack was pathetic too.  He died.&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;I also sent up a saurian to distract the fighter and the thief who were coming down the middle, hitting the thief while he was on flat terrain.  Not so great.  And the dwarf hits twice and kills him.  Boo!  Hiss!  I do get some measure of recompense when I saw his thunderer leave the mountain and miss a saurian.  He had a sixty-percent chance to kill there, but I figured she wouldn't do it, because the thunderer would definitely die the next turn, and a thunderer costs more than an Augur.  Him missing and also exposing himself was delicious.  He did hit the other Augur when I attacked him the next turn, but the other augur had enough health not to die right away.  More importantly, I finished him off with the Skirmisher, because he was on 30% terrain, not 60% terrain.  That's a clean +75% damage.&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;Since ME couldn't see that side now, I snuck my Clasher up that way.  I was rewarded when an unprotected Ulfserker wandered into view.  99.3% chance to kill, anyone?  On the other side, ME attacked my castle, killing a skirmisher with good luck.  This is me on the losing side.  My retaliation killed the dwarf, but couldn't finish off the (now highly experienced) Thief.  I did level the Skirmisher, though.  (ME said it didn't count, because it was only a saurian.)&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;Her retaliation was a bit worse than expected - the poacher and the gryphon hit my scout, as expected, but the gryphon hit twice and killed the poor thing.  This broke my screening, and let the Ulfserker do its thing on my drake burner.  Burners are expensive!&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;I really did want to kill that experienced Thief, and lo!  I happened to have a level 2 skimisher with move 8 (The lizard runs like a horse...).  I also had a clasher, which paired up nicely with the ulfserker, and my leader chopped the poacher to 1 HP, and then I finished it with a Augur.&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;ME recruited 2 guardsmen during this time.  I don't like guardsmen.  They are obscenely tough, but they don't really fight back.  I'd rather have a unit that will make my opponent pay in blood for overcoming the position, not just one that holds it for a while, but eventually dies, dealing minimal damage.  There are merits to the guardsmen, but... well, I kept this in mind.&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;Embarassingly, the thief and the gyrphon were able to kill the level 2 ambusher, partly because the gryphon hit twice.  Silly double-hitting gryphon!  And the gryphon also leveled up.  Choke on a pluot, but I'm not going to let him get away with that.  (Particularly since it had it's back to the wall, one of the few cases where cornering is made easy.  However (killing the thief with the clasher), I could only do this by blocking with a saurian Augur and my leader.  The Augur was high experience, but the Gryphon Master would have to hit twice to kill it... and if he didn't, it would level up, letting my kill the Gryphon easier.&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;Yeah.  Hit twice.  Good grief, Gryphon, every time you attack, you seem to double-hit.&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;The plan was to hurt him with the leader, then finish him off with the clasher, almost leveling it.  However, I hit the wrong leader attack (the 11-3 attack, rather than the more-likely-to-seriously-injure-but-not-kill 17-2 attack.  (2/3 hits is more likely than 2/2 hits), and killed him.&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;One poacher attack later, my leader was down to 14/62 HP, and beat a hasty retreat.  A lousy retaliation by the clasher and the augur was unable to finish off the poacher, and it retreated with 2/30 HP.  I then recruited one of everything, except for a scout, and found myself in that possition again - the one where ME's units are spread across the map, and all of mine are at my base (with slightly more, in this case, not less).  This usually results in a bloodbath, and my victory.&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;This time was little different, save that the bloodbath took a damn long while, due to the silly guardsmen who refused to die.  First I slaughtered a gryphon and a thief, then when the dwarf guardsmen moved off the mountains and stole my villages I... attacked the guardsmen.  And attacked them some more.  My entire army was attacking them  (save for one guy who gave his life to distract everyone else from stealing all my villages while I was so occupied).&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;I then marched up the side, and slaughtered everything in my path with a horde of drakes.  If you have enough drakes to surround someone, they are probably going to bite it.&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;Eventually I got to her leader, and, killing everyone around him, brought him down to very little health.&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;...and then it disconnected.  Go figure.  But Christy and I both count it as a win - I had covered her base in drakes, so she could not recruit, she was at low health, and could not escape, and the only units unaccounted for was a badly-wounded gryphon, who couldn't gank my (inordinately beefy) leader if he tried.&lt;/div&gt;&lt;div class="blogger-post-footer"&gt;&lt;img width='1' height='1' src='https://blogger.googleusercontent.com/tracker/8158087446522153219-2860409978706594146?l=wesnothannotatedreplay.blogspot.com' alt='' /&gt;&lt;/div&gt;</content><link rel='replies' type='application/atom+xml' href='http://wesnothannotatedreplay.blogspot.com/feeds/2860409978706594146/comments/default' title='Post Comments'/><link rel='replies' type='text/html' href='http://wesnothannotatedreplay.blogspot.com/2010/11/freelands-drakes-versus.html#comment-form' title='0 Comments'/><link rel='edit' type='application/atom+xml' href='http://www.blogger.com/feeds/8158087446522153219/posts/default/2860409978706594146'/><link rel='self' type='application/atom+xml' href='http://www.blogger.com/feeds/8158087446522153219/posts/default/2860409978706594146'/><link rel='alternate' type='text/html' href='http://wesnothannotatedreplay.blogspot.com/2010/11/freelands-drakes-versus.html' title='The Freelands, Drakes versus MysteryExclamation&apos;s Knalgans'/><author><name>Nil Athelion</name><uri>http://www.blogger.com/profile/16996018952758178741</uri><email>featherless@gmail.com</email></author><thr:total>0</thr:total></entry><entry><id>tag:blogger.com,1999:blog-8158087446522153219.post-8138571115178479770</id><published>2010-11-29T13:54:00.000-08:00</published><updated>2010-11-29T15:18:00.169-08:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#post'/><category scheme='http://www.blogger.com/atom/ns#' term='Loyalists'/><category scheme='http://www.blogger.com/atom/ns#' term='MysteryExclamation'/><category scheme='http://www.blogger.com/atom/ns#' term='Cynaun Battlefield'/><category scheme='http://www.blogger.com/atom/ns#' term='victory'/><category scheme='http://www.blogger.com/atom/ns#' term='Knalgan'/><title type='text'>Cynsaun Battlefield, Knalgans versus MysteryExclamation's Loyalists</title><content type='html'>Cynsaun Battlefield is... huge.  ME and I had never played on it before, and we both were a bit unsure what to do with it all.  I grabbed two Gryphons (which never seem to work out well for me), and then a relatively quick-moving assortment of mostly Hodoric troops, plus a dwarf, by accident.  I then immediately moved my leader forward, recruited some more when I got to the next keep.&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;By about then, I started seeing the enemy.  I saw a horseman over west, and later the leader herself (White Mage) on the south-east.  I decided to move my leader closer to hers, and see if I could hem her in, there.  I had an abortative plan to Ulf her, but that was dashed when she full-recruited in her new keep (the south-east one).&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;I lost all my gryphons pretty quick,  but she was unable to send reinforcements to the battle in the West.  I had more invested there, and while I lost more units than I won, I secured control of that area while engaging my foe fairly actively from my central keep.&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;I then proceeded to gather villages while recruiting dwarves for the close-in fighting between me and ME.  ME moved up to an even nearer keep, scarcely ten hexes away from my own, and between the white-mage healing and the good defensive position, managed to drive back my Dwarves pretty well.&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;But I had most of the map, and continued to get more of it.  Before long, I was getting 70+ gold a turn, and that started to take a toll on ME.  She ran south, and I called in all the village-gatherers, and killed her as my hordes were advancing from the north.&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;A fairly epic battle, but one that was mostly decided when I killed off the forces on my west.  Or, arguably, when I set up shop in the middle of the map, since that made everything possible.&lt;/div&gt;&lt;div class="blogger-post-footer"&gt;&lt;img width='1' height='1' src='https://blogger.googleusercontent.com/tracker/8158087446522153219-8138571115178479770?l=wesnothannotatedreplay.blogspot.com' alt='' /&gt;&lt;/div&gt;</content><link rel='replies' type='application/atom+xml' href='http://wesnothannotatedreplay.blogspot.com/feeds/8138571115178479770/comments/default' title='Post Comments'/><link rel='replies' type='text/html' href='http://wesnothannotatedreplay.blogspot.com/2010/11/cynsaun-battlefield-knalgans-versus.html#comment-form' title='0 Comments'/><link rel='edit' type='application/atom+xml' href='http://www.blogger.com/feeds/8158087446522153219/posts/default/8138571115178479770'/><link rel='self' type='application/atom+xml' href='http://www.blogger.com/feeds/8158087446522153219/posts/default/8138571115178479770'/><link rel='alternate' type='text/html' href='http://wesnothannotatedreplay.blogspot.com/2010/11/cynsaun-battlefield-knalgans-versus.html' title='Cynsaun Battlefield, Knalgans versus MysteryExclamation&apos;s Loyalists'/><author><name>Nil Athelion</name><uri>http://www.blogger.com/profile/16996018952758178741</uri><email>featherless@gmail.com</email></author><thr:total>0</thr:total></entry><entry><id>tag:blogger.com,1999:blog-8158087446522153219.post-1503653596478512152</id><published>2010-11-29T12:03:00.000-08:00</published><updated>2010-11-29T13:51:44.113-08:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#post'/><category scheme='http://www.blogger.com/atom/ns#' term='Rebels'/><category scheme='http://www.blogger.com/atom/ns#' term='Loyalists'/><category scheme='http://www.blogger.com/atom/ns#' term='MysteryExclamation'/><category scheme='http://www.blogger.com/atom/ns#' term='victory'/><category scheme='http://www.blogger.com/atom/ns#' term='Weldyn Channel'/><title type='text'>Weldyn Channel, Rebels versus MysteryExclamation's Loyalists</title><content type='html'>This battle went... pretty badly for ME.  She started off losing a horseman, and then... Well, she killed an Elvish Fighter and three Mermen during the entire battle, and two of the mermen were right at the end.  Things went badly.&lt;br /&gt;&lt;br /&gt;On the eastern front, I had a combination of a Mage, a Wose, an Archer, and...someone else (can't remember).  They were just supposed to hold that side until I could send reinforcements, but instead they basically slaughtered the few attacks that went in that direction.  Of particular amusement was a spearman and an bowman attacking the Wose.  That's 60% resistance is massive.&lt;br /&gt;&lt;br /&gt;On the other side, we fought a bit, and I lost my fighter there.  I brought in my leader to shoot arrows at things, and I leveled up a fighter there (Yay Elvish Captains!).  I then got my leader back and brought down a stream of re-inforcements, and ME's bad habit of making piece-meal attacks left solder after soldier to be slowed and picked off.&lt;br /&gt;&lt;br /&gt;By then the Eastern detachment, achieving well beyond my expectations, slaughtered their way to the leader and killed him.&lt;br /&gt;&lt;br /&gt;And so my Elvish Fighter was avenged.&lt;br /&gt;&lt;br /&gt;There is a thread &lt;a href="http://forums.wesnoth.org/viewtopic.php?f=3&amp;t=32222"&gt;here&lt;/a&gt; about the battle.  It contains the replay.&lt;div class="blogger-post-footer"&gt;&lt;img width='1' height='1' src='https://blogger.googleusercontent.com/tracker/8158087446522153219-1503653596478512152?l=wesnothannotatedreplay.blogspot.com' alt='' /&gt;&lt;/div&gt;</content><link rel='replies' type='application/atom+xml' href='http://wesnothannotatedreplay.blogspot.com/feeds/1503653596478512152/comments/default' title='Post Comments'/><link rel='replies' type='text/html' href='http://wesnothannotatedreplay.blogspot.com/2010/11/weldyn-channel-rebels-versus.html#comment-form' title='0 Comments'/><link rel='edit' type='application/atom+xml' href='http://www.blogger.com/feeds/8158087446522153219/posts/default/1503653596478512152'/><link rel='self' type='application/atom+xml' href='http://www.blogger.com/feeds/8158087446522153219/posts/default/1503653596478512152'/><link rel='alternate' type='text/html' href='http://wesnothannotatedreplay.blogspot.com/2010/11/weldyn-channel-rebels-versus.html' title='Weldyn Channel, Rebels versus MysteryExclamation&apos;s Loyalists'/><author><name>Nil Athelion</name><uri>http://www.blogger.com/profile/16996018952758178741</uri><email>featherless@gmail.com</email></author><thr:total>0</thr:total></entry><entry><id>tag:blogger.com,1999:blog-8158087446522153219.post-1319689292677122870</id><published>2010-11-18T21:55:00.001-08:00</published><updated>2010-11-18T22:25:06.808-08:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#post'/><category scheme='http://www.blogger.com/atom/ns#' term='Caves of the Basilisk'/><category scheme='http://www.blogger.com/atom/ns#' term='Northerners'/><category scheme='http://www.blogger.com/atom/ns#' term='MysteryExclamation'/><category scheme='http://www.blogger.com/atom/ns#' term='Comeback'/><category scheme='http://www.blogger.com/atom/ns#' term='Fixed'/><category scheme='http://www.blogger.com/atom/ns#' term='Drakes'/><category scheme='http://www.blogger.com/atom/ns#' term='Defeat'/><title type='text'>Caves of the Basilisk, Drakes versus MysteryExclamation's Northerners</title><content type='html'>&lt;div&gt;http://www.4shared.com/file/2Tx2BoJG/2p_-_Basilisk_ME_Fixed.html&lt;/div&gt;&lt;div&gt;&lt;br /&gt;So a few nights back, I was playing truth or dare with the folks on vent.  Since Truths are easy, I went for Dares.  Kallaster dared me to... well, let's just look at the chat.&lt;div&gt;What can you draw from this?  Well, I had a series of objectives.  Lose the game, and make it look like it was fair.  At the same time, show in the game that I could have won, but threw it.&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;11/16 22:48:22 Kallaster: I dare you to play a game of Wesnoth with someone and purposefully lose.&lt;/div&gt;&lt;div&gt;11/16 22:48:31 Kallaster: *evil*&lt;/div&gt;&lt;div&gt;11/16 22:48:35 Yineth: screenshots or it didn't happen&lt;/div&gt;&lt;div&gt;11/16 22:48:40 Nil Athelion: Screenshots?&lt;/div&gt;&lt;div&gt;11/16 22:48:44 Kallaster: mmhmm&lt;/div&gt;&lt;div&gt;11/16 22:48:44 Nil Athelion: I can give you a bloody replay.&lt;/div&gt;&lt;div&gt;11/16 22:48:45 Kanhef: (This is why legalese is so convoluted, to avoid ambiguous interpretation)&lt;/div&gt;&lt;div&gt;11/16 22:48:47 Kallaster: :D&lt;/div&gt;&lt;div&gt;11/16 22:48:54 Nil Athelion: Or computer-cam a replay.&lt;/div&gt;&lt;div&gt;11/16 22:48:54 Kallaster: yes, replay&lt;/div&gt;&lt;div&gt;11/16 22:49:03 Nil Athelion: With commentary.&lt;/div&gt;&lt;div&gt;11/16 22:49:09 Yineth: &lt; 3&lt;/div&gt;&lt;div&gt;11/16 22:49:29 Nil Athelion: Do you want me to make the other person think that I am playing hard, or do you want it to be obvious that I am throwing the game?&lt;/div&gt;&lt;div&gt;11/16 22:49:40 Yineth: playing hard :3&lt;/div&gt;&lt;div&gt;11/16 22:49:44 'Nil Athelion' has left the chat.&lt;/div&gt;&lt;div&gt;11/16 22:49:48 Yineth: &gt;.&gt;&lt;/div&gt;&lt;div&gt;11/16 22:50:05 Nil Athelion: Kall, what is your opinion.&lt;/div&gt;&lt;div&gt;11/16 22:50:07 Nil Athelion: ?&lt;/div&gt;&lt;div&gt;11/16 22:50:09 'Yineth' has left the chat.&lt;/div&gt;&lt;div&gt;11/16 22:50:21 Yineth: Bye bye Dopples&lt;/div&gt;&lt;div&gt;11/16 22:50:54 Nil Athelion: (Also do you want me to lose by leaving my leader open to assassination, or by over-all defeat?)&lt;/div&gt;&lt;div&gt;11/16 22:51:12 Nil Athelion: (Actually, it would have to be over-all.)&lt;/div&gt;&lt;div&gt;11/16 22:51:25 Nil Athelion: (None of the players I play against are really good at leader-ganking.)&lt;/div&gt;&lt;div&gt;11/16 22:51:30 Nil Athelion: (It's sort of my specialty.)&lt;/div&gt;&lt;div&gt;11/16 22:51:35 Nil Athelion: Okay.&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;I decided that I shouldn't make tactical mistakes, but rather sweeping strategic mistakes.&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;Mistake 1: Recruiting all pierce-vulnerable drakes, and only Fighters and a Burner.&lt;/div&gt;&lt;div&gt;Mistake 2: Doing a very ill-advised attack through the middle, where the great mobility of Fighters is negated.&lt;/div&gt;&lt;div&gt;Un-mistake 1: MysteryExclamation is playing Northerners, who have very little pierce.&lt;/div&gt;&lt;div&gt;Un-mistake 2: I send a fighter around the side - she doesn't notice, and he grabs all the villages.&lt;/div&gt;&lt;div&gt;Un-mistake 3: I slaughter her attack on the side.&lt;/div&gt;&lt;div&gt;Mistake 4: After slaughtering her attack on one side, I ignore the other side, save for the village-grabber (who I send to an early death).&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;By the time all the drakes are dead, I'm making 24 gold a turn... so I'm really winning.  Her level 2 turns what should have been me scaring her off into... well, she loses her water-mobile level 2.  I fight back a bit, and wind up with three level 2s, all saurians.&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;Mistake 3: So I decide not to recruit units until my current attacking force is done.  Should put a damper on things - plus I have oodles of gold by this point.&lt;/div&gt;&lt;div&gt;Un-mistake 4: I seem to be winning.  I crush the center, and dominate one of the sides.&lt;/div&gt;&lt;div&gt;Mistake 4: I don't take villages.  It would have been seriously easy just to claim all the villages and let her run out of units, even against my guys.&lt;/div&gt;&lt;div&gt;Mistake 5: I don't kill her leader, despite the many opprotunities to do so from my level-2 magic-users.  And everyone else, really.&lt;/div&gt;&lt;div&gt;Un-mistake 5: I still seem to be winning - even with her recruiting a few people, I still have most of the villages, and she's too busy to take them back.&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;...time to get tactical - I pit my magic-users on bad terrain against a high-HP unit in a village.  Looks like he's going to die anyway, but I hold back my nearly-level-2 Clasher on the side, and give her enough time to kill them, leveling up some of her units.  Also do things light attacking with low-health level 2 guy, using pierce-vunerable drakes against pierce-happy Goblin spearmen, etc.  I even manage to bother up the battle in the west.&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;Un-mistake 6: She sees my Clasher.  Now I have to attack with it, or everything looks silly.  He has a chance to kill her leader outright.  Awkward.  Fortunately he fails, and "merely" levels up.  I attack her leader again (she has more health now), and let her forces surround and kill my level 2 (rather than running off to a village and getting support.&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;And now it's just a matter of making it look real.&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;Mistake 6: I have 190 or so gold.  I buy only six saurians with it.  That's going to be my excuse for having no waves of re-enforcements - I was building up Saurians with all my money.  Or something.&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;Mistake 7: I split my unnecessarily meager forces between two fronts, rather than using their skirmishing and range to concentrate power and kill things.&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;Mistake 8: I get my leader trapped out on the front-line (in the cave) so he doesn't look stupid not recruiting anything.&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;...and then I lose!  Simple as pie!  Kinda!&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;Are you happy now, Kallaster?&lt;/div&gt;&lt;/div&gt;&lt;div class="blogger-post-footer"&gt;&lt;img width='1' height='1' src='https://blogger.googleusercontent.com/tracker/8158087446522153219-1319689292677122870?l=wesnothannotatedreplay.blogspot.com' alt='' /&gt;&lt;/div&gt;</content><link rel='replies' type='application/atom+xml' href='http://wesnothannotatedreplay.blogspot.com/feeds/1319689292677122870/comments/default' title='Post Comments'/><link rel='replies' type='text/html' href='http://wesnothannotatedreplay.blogspot.com/2010/11/caves-of-basilisk-drakes-versus.html#comment-form' title='0 Comments'/><link rel='edit' type='application/atom+xml' href='http://www.blogger.com/feeds/8158087446522153219/posts/default/1319689292677122870'/><link rel='self' type='application/atom+xml' href='http://www.blogger.com/feeds/8158087446522153219/posts/default/1319689292677122870'/><link rel='alternate' type='text/html' href='http://wesnothannotatedreplay.blogspot.com/2010/11/caves-of-basilisk-drakes-versus.html' title='Caves of the Basilisk, Drakes versus MysteryExclamation&apos;s Northerners'/><author><name>Nil Athelion</name><uri>http://www.blogger.com/profile/16996018952758178741</uri><email>featherless@gmail.com</email></author><thr:total>0</thr:total></entry><entry><id>tag:blogger.com,1999:blog-8158087446522153219.post-250960177178835689</id><published>2010-11-17T21:43:00.000-08:00</published><updated>2010-11-17T22:13:33.188-08:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#post'/><category scheme='http://www.blogger.com/atom/ns#' term='Defense'/><category scheme='http://www.blogger.com/atom/ns#' term='Tactical Notes'/><title type='text'>Tactical Notes: Defense and dodging</title><content type='html'>Sometimes you sit out there in the battlefield, and you think to yourself, "Why is this 10% extra defense relevant at all?"&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;Well... it is.&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;See, when you are getting hit by a 5-4 attack, that really translates into a mere 10% less damage of the total, which is only 2 damage, on average.  Which seems weak.  But this shouldn't be weighed as damage relative to max damage, but rather relative to the difference in damage taken between defenses.  Consider:&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;The difference between with 30% dodge and 40%, you take 16% more damage than you would have from that 10% difference.&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;For 40% and 50%, it's 20% more damage - the amount of most resistances units have.&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;For 50% and 60%, it is 25% more damage - the difference between the optimal time of day and the less-optimal time of day.&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;And for 60% and 70%?  That's a 33% difference.  Which is big, particularly since most evasive units take extra damage or have low HP to balance.&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;Consider:&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;An Orcish Assassin stands on plain ground, with a 60% to dodge.  An elvish fighter does a max of 24 damage to him, if all four hit make it.  With a 60% to dodge, on average that fighter is only going to do 9.6 damage to the Orc Assassin.  With only 26 HP, he's not going to last long - 2.7 attacks of that will finish him (which is to say that three elvish fighters have a pretty good shot at killing him in a turn). &lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;But what if he moves over to some place and gets 70% defense?   Suddenly that damage goes down to 7.2 per elvish fighter attacking.  He can survive 3.6 of those attacks - it would take about 4 elvish fighters to put him down, reasonably.&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;What's one extra elvish fighter?  Well, most of the time, units only get surrounded by, at most, three people.  Two people, if in a line, or three people, if not a very good line.  Four is... excessive.&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;(If you're curious about the exact difference, three elvish fighters have a 56.18% chance of killing an assassin on 60% terrain, and only a 27.63% chance on 70% terrain.)&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;Moral of the story?  The defense does matter.  But it matters more between high percent dodge rates than at low ones - the difference between 30% and 40% is less than half of the difference between 60% and 70%&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;Keep that in mind when you position your evasive units.&lt;/div&gt;&lt;div class="blogger-post-footer"&gt;&lt;img width='1' height='1' src='https://blogger.googleusercontent.com/tracker/8158087446522153219-250960177178835689?l=wesnothannotatedreplay.blogspot.com' alt='' /&gt;&lt;/div&gt;</content><link rel='replies' type='application/atom+xml' href='http://wesnothannotatedreplay.blogspot.com/feeds/250960177178835689/comments/default' title='Post Comments'/><link rel='replies' type='text/html' href='http://wesnothannotatedreplay.blogspot.com/2010/11/tactical-notes-defense-and-dodging.html#comment-form' title='0 Comments'/><link rel='edit' type='application/atom+xml' href='http://www.blogger.com/feeds/8158087446522153219/posts/default/250960177178835689'/><link rel='self' type='application/atom+xml' href='http://www.blogger.com/feeds/8158087446522153219/posts/default/250960177178835689'/><link rel='alternate' type='text/html' href='http://wesnothannotatedreplay.blogspot.com/2010/11/tactical-notes-defense-and-dodging.html' title='Tactical Notes: Defense and dodging'/><author><name>Nil Athelion</name><uri>http://www.blogger.com/profile/16996018952758178741</uri><email>featherless@gmail.com</email></author><thr:total>0</thr:total></entry><entry><id>tag:blogger.com,1999:blog-8158087446522153219.post-376889321434000445</id><published>2010-11-17T17:15:00.000-08:00</published><updated>2010-11-17T17:44:56.309-08:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#post'/><category scheme='http://www.blogger.com/atom/ns#' term='DC'/><category scheme='http://www.blogger.com/atom/ns#' term='Loyalists'/><category scheme='http://www.blogger.com/atom/ns#' term='The Freelands'/><category scheme='http://www.blogger.com/atom/ns#' term='victory'/><category scheme='http://www.blogger.com/atom/ns#' term='Knalgan'/><title type='text'>Freelands, Loyalists versus DC's Knalgans</title><content type='html'>http://www.4shared.com/file/KYhE39Tx/2p_-_The_Freelands_DC_replay_2.html&lt;br /&gt;&lt;br /&gt;DolphinCheddar's first Wesnoth game against a real human opponent!&lt;br /&gt;&lt;br /&gt;I won, unsurprisingly.  I was loyalists, and I didn't know what to expect, so I stocked up on spearmen and stuff.  Grabbed a Horseman for the Western front.  Embarassingly, I forgot to grab a village on my first turn.&lt;br /&gt;&lt;br /&gt;I marched forward and took the hills and stuff on my side of the Freeland basin.  The sun was just setting, and I had noticed two Griffins on DC's side.  Knaglans are neutral, sometimes chaotic, depending on the recruits.  Griffins, flying all that, have pretty good defense whereever they are - sort of a fake calvary effect.  I kept my troops on the hills, so they would at least survive the night.&lt;br /&gt;&lt;br /&gt;DC decided to build up first, and then attack, so she missed attacking during dusk and first watch.  She attacked during second watch, but my dawn counter-attack worked pretty well.  By then I could see she had griffins and stuff, so I got some Heavy Infantry and brought my leader forward.  My leader was the lieutenant, so he gave a bonus to my attackers - I brought down a bird and killed a Thunderer.  Meanwhile, I tried to sneak in with my horseman around the eastern front.&lt;br /&gt;&lt;br /&gt;I had chosen to ignore the Eastern front, concentrating my troops in the middle.  I was sort of worrying about her coming up that side, since I had no intel there, but she seemed intent on attacking in the basin.&lt;br /&gt;&lt;br /&gt;During the day, it was a bit of a slaughter - I killed all the troops initally there, and a few troops she sent in to attack as well.  In the Daytime, Loyalists are very strong.  What can I say.&lt;br /&gt;&lt;br /&gt;My horseman got hit by a griffin, and while arguably it could have beaten the griffin (it was on a village), I saw DC's leader (a trapper) leave her castle and wind up on 30% terrain.  As it turns out, I couldn't quite kill her leader.  My horseman did 22 damage, and attacked twice, but the leader had... 45 HP.  1 too much.  I attacked anyway, hit twice, and brought the leader down to 1.  The next turn I brought a spearman across to finish off the leader.&lt;br /&gt;&lt;br /&gt;And so the game ended!&lt;br /&gt;&lt;br /&gt;General strategic notes for DC:&lt;br /&gt;&lt;br /&gt;During a favorable time of day, it is the moment to attack.  The defending player generally has better terrain, so only when you have the advantage of day is it favorable to attack an entrenched position.  In one way of looking, this is what you did wrong - you attacked a fortified position right at teh end of your units' favorable time, and that just went wrong.&lt;br /&gt;&lt;br /&gt;A different way of looking at day of time is to say that you don't want to attack an fortified position anyway.  Instead, use speed to attack / seize undefended objectives, and draw the opponent off of their hills and out of their forests.  If they are out during the night, then they are at their most vulnerable.  I prefer to do this during the last part of their favorable period, as to hold land as long as possible.  Applied to this situation, my forces the whole night were sitting on hills and defending... only one village.  If the griffins had been sent around the sides, taking advantage of their speed, they could have seized villages.  If they seize villages, I can't attack them until daytime (grifs are strong...) and then I spend my favorable time reclaiming my own villages rather than counterattacking, and if I can't get back by night, you can seize my own defensive position.&lt;br /&gt;&lt;br /&gt;Other errors included tactical things, specifically not checking resistances, all that.&lt;br /&gt;&lt;br /&gt;Also leaving the leader out in the open, though that could just be a question of giving up, at that point.&lt;br /&gt;&lt;br /&gt;Don't attack loyalists during the day.  Maybe Drakes can do it.  If they are careful.  But if you aren't also lawful, you have no business attacking a lawful army during the day.  When dawn arrives, run, run away.  If you are faster, you can avoid being attacked altogether.&lt;br /&gt;&lt;br /&gt;Anyway, yeah.  Oh, and griffins are over-priced.&lt;div class="blogger-post-footer"&gt;&lt;img width='1' height='1' src='https://blogger.googleusercontent.com/tracker/8158087446522153219-376889321434000445?l=wesnothannotatedreplay.blogspot.com' alt='' /&gt;&lt;/div&gt;</content><link rel='replies' type='application/atom+xml' href='http://wesnothannotatedreplay.blogspot.com/feeds/376889321434000445/comments/default' title='Post Comments'/><link rel='replies' type='text/html' href='http://wesnothannotatedreplay.blogspot.com/2010/11/freelands-loyalists-versus-dcs-knalgans.html#comment-form' title='0 Comments'/><link rel='edit' type='application/atom+xml' href='http://www.blogger.com/feeds/8158087446522153219/posts/default/376889321434000445'/><link rel='self' type='application/atom+xml' href='http://www.blogger.com/feeds/8158087446522153219/posts/default/376889321434000445'/><link rel='alternate' type='text/html' href='http://wesnothannotatedreplay.blogspot.com/2010/11/freelands-loyalists-versus-dcs-knalgans.html' title='Freelands, Loyalists versus DC&apos;s Knalgans'/><author><name>Nil Athelion</name><uri>http://www.blogger.com/profile/16996018952758178741</uri><email>featherless@gmail.com</email></author><thr:total>0</thr:total></entry><entry><id>tag:blogger.com,1999:blog-8158087446522153219.post-8117675660746345956</id><published>2010-11-08T11:17:00.000-08:00</published><updated>2010-11-08T21:54:52.686-08:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#post'/><category scheme='http://www.blogger.com/atom/ns#' term='Rebels'/><category scheme='http://www.blogger.com/atom/ns#' term='MysteryExclamation'/><category scheme='http://www.blogger.com/atom/ns#' term='Comeback'/><category scheme='http://www.blogger.com/atom/ns#' term='victory'/><category scheme='http://www.blogger.com/atom/ns#' term='Drakes'/><category scheme='http://www.blogger.com/atom/ns#' term='Hamlets'/><title type='text'>Hamlets, Drakes versus MysteryExclamation's Rebels</title><content type='html'>&lt;div&gt;http://www.4shared.com/file/9NDKYqwg/2p_-_Hamlets_Christy_replay.html&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;So Drakes are probably my best race, all told.  But, as I am lead to believe, my Drakes game is... different than most.  I have a heavy predilection towards Drake Clashers, with their glorious 6-4 pierce attack, buttload of hitpoints, and good resistances.  However, the way drakes are mainly played takes advantage of their mobility, and of their ability to pack a high density of attack power into a few open hexes of attack.  Consequently, I've been trying to recruit units other than Clashers, Augurs, and Skimirshers.  Like Burners, or like Fighters.&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;Thus, for this game, I tried to recruit a good mix of units.  I did get two Augurs by accident.  I also tried my best to measure out how to get a good second turn of everyone getting to villages.  It worked... alright.&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;The lead-up to the first battle started more or less as planned.  I jabbed at an isolated Scout to drive him off for the night, then retreated.  (The scout jab was so he didn't prevent my retreat, and also target of opportunity.)&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;However, this got a bit derailed.  I can't stem my blood-lust, apparently, and there was this juicy mage... right... there...  So I killed her, taking one more unit than I expected.  I put the Saurian on the far end, because it was night, and the thing was chaotic, right?  Well, I neglected to put it on good terrain, and the different between 40% defense and 60% defense is him taking 150% more damage, and dying.  To a shaman!&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;But after a mediocre assault on her side, I found that the majority of her forces were on relatively bad terrain, all clumped together.  I decided that, since the sun was about to rise, I should trap them there, killing as many as possible.  It was the reverse of my augur - now they were on 40% terrain, with measly elven hit-points.&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;Well, despite relatively high kill chances for a lot of my attacks, nobody quite managed to die, surviving with 7, 1, and 1 hitpoints.  Also my leader managed to miss all 3 times against the archer, which was embarassing, since the archer had only 19 hit points.  Silly mountains.  Otherwise I would have been able to finish off the Scout with my Augur, and then use his square to finish off the fighter (or the Shaman) with my Burner.&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;Things after that went... pretty badly.  My Skirmisher, the one who only hit the Shaman 1 out of 4 times, despite a 60% chance to hit, happened to be both at the edge and on bad terrain.  He got shot four times by an archer, speared once by a Merman... and then killed by a shaman.  A shaman who leveled up from it.  Into a Druid.&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;Druids are... bad mojo.  Not only do they have slowing attacks, which seriously mess drakes up, but they also heal 8 hitpoints a turn to everyone around them.  "But Nil, don't villages do the same thing?"  Well, two things: First, a druid can move with the troops, healing them every turn, and secondly, a village only heals one person for 8 HP.  A druid can heal up to six people, each for 8 HP.  That's a good 48 HP, more than a Drake Clasher.  Even half of that (which happens more often), is 24HP, which is about 2/3 units worth of HP.  Getting two units of HP every three turns is... not what I wanted.&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;On the bright side, she hadn't slowed anyone yet, and it was day, and I was Drakes.  I attacked with my leader, who hit once, then with my fighter, who hit once, and then (cutting down the wounded scout) with a Clasher, who hit once.  That's 10 attacks against a 40% defense.  It hit at half of the average number, leaving the Druid at 6 HP.  One more hit - is that too much to ask for?&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;On the next turn, MysteryExclamation opened up with an Archer, and with help, killed my Fighter, releasing the druid from her hard pin.  She ran away, to heal and fight (okay, heal others) another day.&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;Except... ME took a really long time on deciding the placement of her fleeing units.  Suspiciously long.  Checking my units, indeed, one of the forward Fighters had a move speed of 7, just enough to get him in range of of her Druid.  My wounded Drake was in range to kill one of the wounded units screening the Druid, and so I was off!  I slew the wounded unit, and flew past his corpse with my other drake to slay the foul witch.  Druid.  It worked.  (I also freed my leader from being pinned, so I could move down and get back to my castle to recruit.)&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;Well, it worked, except that instead of having roughly equal losses on both sides, I left myself exposed and took heavy losses the next turn.  As in, both my Fighters died, including the one that was almost leveled up, and then she killed my healing Augur and a Clasher.  This left me with my leader and one Drake Burner against her entire army.  She had 7 units, and her leader.  Drakes are tough cookies, but that's pushing it, especially since drakes are uniformly weak to pierce (Clashers aren't technically weak to pierce, but they are resistant to almost everything else).&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;What to do?  Well, I thought I was going to lose, but perhaps the situation wasn't that bad.  Losses on both sides were roughly equal, albeit because the Druid counted as a lot of money lost, even if she didn't have to pay to recruit it directly (she paid 15 for a shaman and got a druid, rather than paying 35, the actual value of the unit - leveling up makes you money, you see.  And that's not counting the insta-heal).&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;I got back to my castle, and suffered an attack by a spearman on my leader, which put the unit 1 xp away from leveling.  I got to my keep, and recruited a bunch (two) of pierce-resistant Clashers, a Burner, and an Augur.  Woo, built-up money!&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;However, on the next turn, the spearman attacked again and leveled up.  Fortunately her horde of units was still only entering my field of sight (specifically, killing my original drake before he could level up).  I attacked her level 2 with an Augur, my leader, and two drake clashers.  That's 13 attacks of 6 damage each from the melee units, and a 5-3 magical attack.  Understandably, he went down like a brick of bags.  He also gave one of my Clashers half the XP he needed to level up (Clashers take 32 XP to level up, and a level two gives 16 XP, twice that of a level 1).&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;The next few turns were... tense, but the sun was rising and she was attacking with Elvish Fighters and Mermen Hunters.  My Augur held out admirably against three attackers (finally on good terrain, see?), and then I killed one of them with my experienced Clasher, and then another with the mighty fire attack of a Burner and a Clasher's massive attack.  Her counterattack almost killed my experienced Clasher and my Augur, but they lived with a little health.&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;Now, here I had options.  As previously mentioned, leveling up heals the unit fully.  I wasn't about to sit around and heal via villages when she controlled the majority of the map - it was live or die, kill or be killed.  ...I used my leader to weaken a Fighter, then killed him with my Clasher, leveling it up into an Arbiter, and then used a Clasher to weaken the (primarily ranged) Hunter, and finished him off with a magical attack (70% to hit, one hit needed, but if the opponent got an attack, they would have a 60% chance to kill me.  But 60% of 30% is only a 18% chance, so you can see where attacking is handy - the Drake case was very similar).  I finished off another unit with my Burner and a Clasher, using that obscene Drake attack power to my advantage.&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;Suddenly I was winning again.  She may still control most of the board, but I had more better units.  A Clasher is nothing to trifle with, and I sheer outnumbered her now.  With Drakes!&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;I swept upwards, wanting to take back my villages and end her economic advantage.  My Clasher's enormous 18-2 attack worked wonders against any elf with less than 36 health (I.e. all of them), and my units were still clumped together.  She recruited a Wose, for whatever reason (more on that later), and I killed that.  I chopped up Archers as they came by, etc.  She didn't do a very good job of grouping up for a counter-attack, and I carried onwards up the map.&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;I was leery of making the same mistake as her, and so when I pressed near to her castle, I made busy getting villages and converting my field advantage into an economic advantage.  Her leader, a Druid, came out of the castle to fight or die, since without the money she was going to lose anyway.&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;One of my Arbiters killed her in two hits.&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;Victory!&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;(Notes: Woses are a questionable choice against a Drake player - this is not just because fighters and burners deal fire damage, but also because because they only deal impact damage, to which every drake has a 20%-30% resistance.  Additionally, Woses are slow, which means drakes can avoid them until they can grab a burner to attack with, and since drakes are fast, they have a sight-range that sees Woses moving into forests to hide.  What's more, Woses are resistance to Impact (40%), and pierce (60%).  However, every Drake unit has a blade melee attack, so there isn't even that advantage.  The only thing they can do is slaughter Saurians, who have 26 and 22 HP, a 10% weakness to impact, and happen to melee in pierce and impact only.  (And a ranged attack of cold, but why the Augur is attacking rather than running away is beyond me).)&lt;/div&gt;&lt;div class="blogger-post-footer"&gt;&lt;img width='1' height='1' src='https://blogger.googleusercontent.com/tracker/8158087446522153219-8117675660746345956?l=wesnothannotatedreplay.blogspot.com' alt='' /&gt;&lt;/div&gt;</content><link rel='replies' type='application/atom+xml' href='http://wesnothannotatedreplay.blogspot.com/feeds/8117675660746345956/comments/default' title='Post Comments'/><link rel='replies' type='text/html' href='http://wesnothannotatedreplay.blogspot.com/2010/11/hamlets-drakes-versus.html#comment-form' title='0 Comments'/><link rel='edit' type='application/atom+xml' href='http://www.blogger.com/feeds/8158087446522153219/posts/default/8117675660746345956'/><link rel='self' type='application/atom+xml' href='http://www.blogger.com/feeds/8158087446522153219/posts/default/8117675660746345956'/><link rel='alternate' type='text/html' href='http://wesnothannotatedreplay.blogspot.com/2010/11/hamlets-drakes-versus.html' title='Hamlets, Drakes versus MysteryExclamation&apos;s Rebels'/><author><name>Nil Athelion</name><uri>http://www.blogger.com/profile/16996018952758178741</uri><email>featherless@gmail.com</email></author><thr:total>0</thr:total></entry><entry><id>tag:blogger.com,1999:blog-8158087446522153219.post-4053374944371292819</id><published>2010-11-03T23:30:00.000-07:00</published><updated>2010-11-06T15:45:28.568-07:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#post'/><category scheme='http://www.blogger.com/atom/ns#' term='Loyalists'/><category scheme='http://www.blogger.com/atom/ns#' term='The Freelands'/><category scheme='http://www.blogger.com/atom/ns#' term='Kallaster'/><category scheme='http://www.blogger.com/atom/ns#' term='Disconnection'/><category scheme='http://www.blogger.com/atom/ns#' term='victory'/><category scheme='http://www.blogger.com/atom/ns#' term='Knalgan'/><title type='text'>The Freelands, Knalgan Alliance versus Kallaster's Loyalists</title><content type='html'>&lt;div&gt;(Replay on other computer.  I'll get it... sometime.)&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;Played a game against Kallaster, from the &lt;a href="http://forum.seraph-inn.com/index.php"&gt;Seraph-Inn forums&lt;/a&gt;.  It was her first time playing multiplayer, and a variety of things went wrong.&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;First off, I was using Mesaba's twin sister, and that computer still retained the setting from playing Biophlosion.  Namely a relatively strict time limit.&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;I didn't notice it until after the game, when talking with dear Kallaster.  See, I take my turns relatively fast, when I am paying attention, so it never was an issue for me.  For her, she was reading unit descriptions, recruiting... and ran out of time.  Only recruited a few units on her first turn.&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;On my end of things I bought three dwarves at the start, and raced them downwards.  Freelands has some nice hills and mountains, so I wanted to clog up the middle there.  I also sent bandits down both sides, with mixed results.&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;Kall didn't have enough units at the start, and this showed in her only expanding slowly.  I was bearing down on her door with dwarves, of all things, and she had barely gotten her villages.  I beat away some isolated units, and set up shop on some nice hills for the day.&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;During the next night, I just started cutting down her troops, all fairly well.  In her counter-attack, she really, really, really should have been able to kill my Urfserker, but somehow it survived... and leveled up.  Then her connection died, but by then the result was obvious.  I switched it over to computer by accident, and it immediately shot arrows from the Lieutenant to the Berserker.  I then slaughtered it the next turn.&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;So... kinda lousy for a first game with Kall.  We need to play a nice proper game without her getting jumped by time-limits all the time.&lt;/div&gt;&lt;div class="blogger-post-footer"&gt;&lt;img width='1' height='1' src='https://blogger.googleusercontent.com/tracker/8158087446522153219-4053374944371292819?l=wesnothannotatedreplay.blogspot.com' alt='' /&gt;&lt;/div&gt;</content><link rel='replies' type='application/atom+xml' href='http://wesnothannotatedreplay.blogspot.com/feeds/4053374944371292819/comments/default' title='Post Comments'/><link rel='replies' type='text/html' href='http://wesnothannotatedreplay.blogspot.com/2010/11/freelands-knalgan-alliance-versus.html#comment-form' title='0 Comments'/><link rel='edit' type='application/atom+xml' href='http://www.blogger.com/feeds/8158087446522153219/posts/default/4053374944371292819'/><link rel='self' type='application/atom+xml' href='http://www.blogger.com/feeds/8158087446522153219/posts/default/4053374944371292819'/><link rel='alternate' type='text/html' href='http://wesnothannotatedreplay.blogspot.com/2010/11/freelands-knalgan-alliance-versus.html' title='The Freelands, Knalgan Alliance versus Kallaster&apos;s Loyalists'/><author><name>Nil Athelion</name><uri>http://www.blogger.com/profile/16996018952758178741</uri><email>featherless@gmail.com</email></author><thr:total>0</thr:total></entry><entry><id>tag:blogger.com,1999:blog-8158087446522153219.post-5187208978855478618</id><published>2010-10-30T18:44:00.000-07:00</published><updated>2010-11-29T13:52:17.960-08:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#post'/><category scheme='http://www.blogger.com/atom/ns#' term='The Forest of Fear'/><category scheme='http://www.blogger.com/atom/ns#' term='Rebels'/><category scheme='http://www.blogger.com/atom/ns#' term='Northerners'/><category scheme='http://www.blogger.com/atom/ns#' term='silly'/><category scheme='http://www.blogger.com/atom/ns#' term='Griffin Galore'/><category scheme='http://www.blogger.com/atom/ns#' term='free-for-all'/><category scheme='http://www.blogger.com/atom/ns#' term='victory'/><category scheme='http://www.blogger.com/atom/ns#' term='brother'/><category scheme='http://www.blogger.com/atom/ns#' term='Knalgan'/><category scheme='http://www.blogger.com/atom/ns#' term='Drakes'/><title type='text'>The Forest of Fear, Knaglan Alliance in free-for-all</title><content type='html'>http://www.4shared.com/file/Fway-vPz/User_Map_replay.html&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;My little brother (9 years old) wanted to play a game against me.  He made a 4-player map, and the settings were changed so that each player gets 5 gold a turn, on top of villages.&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;Due to map design, I started in an inhospitable icy hell, where most of my units moved at a crawl and had lousy defense (except for snowy forests and snowy mountains, where I had defense, but still moved at a crawl).  I first moved over to the border, since I knew there were lovely mountains there, and my dwarves would like them.  Then I didn't have to fight in snow.  Since it was a local game, my little brother saw this, and immediately attacked me, since I looked to be more of a threat.  he has a semi-successful battle against me before he called it off to fight on his southern border.  By which I mean I didn't attack his drakes for a turn, and then he decided to attack me again because I was "right there".  Hmm...&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;I then fought him a bit, and he decided to actually go and fight the southern battle.&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;So I stockpiled dwarves on the border there, eventually threatening his leader so he would stay peaceful.  Meanwhile, I used my income to build lots of griffins and attack over the ice and the river to down south, taking two villages and farming the northerners for experience.&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;Eventually I figured I had a good enough position on him that I would win any fight we fought, and I started stealing villages with my griffin.  He recruited units to man the flat hexes next to the mountains, and then we went to war a bit after that.&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;I won the battle, naturally, and claimed his villages.  I then sent my trapper around to the keep nearer to the battle, but wound up with so much gold by the time I got there, that I wound up recruiting griffins anyway.&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;Lots of griffins.  SO MANY griffins.  I was swarming the enemy units with griffins.  I had more griffins than I knew what to do with.&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;And really, once you have that many griffins, there's not much that's going to stop you.  Not a bunch of northerners anyway.&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;I drew their leader out, and swarmed him with griffin masters.  It only took three.&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;(I recruited 25 griffins that game, I lost 2 normal griffins, and two griffin masters.  By the end of the game I was making 63 gold a turn. That's 2.625 Griffins a turn, worth of cash.  I didn't really care about losses at that point.)&lt;/div&gt;&lt;div class="blogger-post-footer"&gt;&lt;img width='1' height='1' src='https://blogger.googleusercontent.com/tracker/8158087446522153219-5187208978855478618?l=wesnothannotatedreplay.blogspot.com' alt='' /&gt;&lt;/div&gt;</content><link rel='replies' type='application/atom+xml' href='http://wesnothannotatedreplay.blogspot.com/feeds/5187208978855478618/comments/default' title='Post Comments'/><link rel='replies' type='text/html' href='http://wesnothannotatedreplay.blogspot.com/2010/10/forest-of-fear-knaglan-alliance-in-free.html#comment-form' title='0 Comments'/><link rel='edit' type='application/atom+xml' href='http://www.blogger.com/feeds/8158087446522153219/posts/default/5187208978855478618'/><link rel='self' type='application/atom+xml' href='http://www.blogger.com/feeds/8158087446522153219/posts/default/5187208978855478618'/><link rel='alternate' type='text/html' href='http://wesnothannotatedreplay.blogspot.com/2010/10/forest-of-fear-knaglan-alliance-in-free.html' title='The Forest of Fear, Knaglan Alliance in free-for-all'/><author><name>Nil Athelion</name><uri>http://www.blogger.com/profile/16996018952758178741</uri><email>featherless@gmail.com</email></author><thr:total>0</thr:total></entry><entry><id>tag:blogger.com,1999:blog-8158087446522153219.post-5323032334382080926</id><published>2010-10-29T09:51:00.000-07:00</published><updated>2010-10-29T16:50:32.249-07:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#post'/><category scheme='http://www.blogger.com/atom/ns#' term='Loyalists'/><category scheme='http://www.blogger.com/atom/ns#' term='MysteryExclamation'/><category scheme='http://www.blogger.com/atom/ns#' term='Disconnection'/><category scheme='http://www.blogger.com/atom/ns#' term='Drakes'/><category scheme='http://www.blogger.com/atom/ns#' term='Den of Onis'/><category scheme='http://www.blogger.com/atom/ns#' term='Defeat'/><title type='text'>Den of Onis, Loyalists versus MysteryExclamation's Drakes</title><content type='html'>&lt;div&gt;http://www.4shared.com/file/Ba5v6PPy/2p_-_Den_of_Onis_replay.html&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;Okay, this battle went less than well for me, and I'm not exactly sure where I went wrong.  No huge strategic flaws, though I probably should have recruited more Bowmen.  I don't know, though.  I'm never comfortable with having the same alignment as my enemy, even though that happens a third of the time.  (Or a sixth, actually, since I prefer not to play mirrors, as I don't get to enjoy the differences between the races when that happens.)&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;I've been trying to get into the habit of using more fencers, so I recruited one instead of cavalry this game.  Figured it was better in closer quarters.  However, I still don't understand how to use them.  I did fine that the skirmish was really amusing in that I could walk past people to corner them, as I did with the glider.  I should keep note of being able to use them for mobile ZOC.  The main thing I hear is for them to slip behind lines and finish off wounded units, then be able to slip back.  This seems dubious to me.  Also wouldn't work against drakes (wounded saurians, maybe).  Other things I have been told include using it for harassing villages.  I was going to do that, but then I ran into the glider, and hunted it instead.&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;Spearmen do, of course, work wonders against drakes, particularly fighters.  However, I felt I had to keep them on the offensive, to avoid Burners coming in, and attacking them despite their little spear attack.  I probably should have figured out ways to keep them on good terrain, though.&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;I am a fan of gathering experience on my units.  However, this is hard against Drakes, as each Drake is built like a tank, and resists things that are not Pierce or Arcane.  Except for Clashers, which resist things that are not Arcane.  At least they don't dodge well?&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;I recruited a mage to burn out skirmishers.  Magic works around their high defense, and they are a little bit weak to it to boot.  However, I lost my mage (20 gold!) to some funky business.  If I had more troops, I could have protected it.&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;In the end, I lost to economy problems.  I did manage to finish off ME's wave, but there were Clashers coming up the Den, and all I had was a Red Mage (who deals fire damage, which is wholly ineffective against drakes) and a heavily wounded Spearman, who was three experience away from leveling up, due to all his failed attacks against that level 2.   Seriously, he should not have missed 6 attacks in a row.  That's just sad.&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;In other news, Cavalry is not that great against Drakes.  I tend to use cavalry against Northerners, both in Horseman and Cavalry variants because they are resistant to blade, and weak to pierce, something that the Northies only can deal from two fragile units.  In the Drake's case, the Drakes themselves are resistant to blade, and the expensive horseman is too much at risk from getting skewered.  The Drake Clasher has the third most powerful melee attack in the game (After the Horseman's charge, and Wose) and during the day can deal a full 36 damage to a Horseman.  Worse (in my opinion) are the Saurian Skirmishers, who can use their titular skirmisher to simply wander behind lines and use their pierce attack to skewer the hapless Horseman.  Horsemen get wounded.  They charge, their opponent deals double damage... even an Bowman's 4-2 attack turns into a 8-2 attack, the same as, say, a fencer  (Well, actually a little different, but ignore that).  Horsemen get wounded a lot.  While doubling both your attack and your enemy's attack pays dividends whenever you have more attack power than them, it's still going to hurt you, and then there's always going to be a Skirmisher driving a spear up your horse.&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;At the end, I felt my only option was to gamble on level up my units.  I had lost so many villages that I couldn't recruit much at all, and if I just played normally ME would grind me into dust, slowly but surely.  However, a streak of bad luck kept me from getting the Pikeman I was dreaming of...&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;And so I wound up all losing and stuff.  Sad cookies.  (And the internet died and killed the game, but I don't think there was much chance of me winning then.)&lt;/div&gt;&lt;div class="blogger-post-footer"&gt;&lt;img width='1' height='1' src='https://blogger.googleusercontent.com/tracker/8158087446522153219-5323032334382080926?l=wesnothannotatedreplay.blogspot.com' alt='' /&gt;&lt;/div&gt;</content><link rel='replies' type='application/atom+xml' href='http://wesnothannotatedreplay.blogspot.com/feeds/5323032334382080926/comments/default' title='Post Comments'/><link rel='replies' type='text/html' href='http://wesnothannotatedreplay.blogspot.com/2010/10/den-of-onis-loyalists-versus.html#comment-form' title='0 Comments'/><link rel='edit' type='application/atom+xml' href='http://www.blogger.com/feeds/8158087446522153219/posts/default/5323032334382080926'/><link rel='self' type='application/atom+xml' href='http://www.blogger.com/feeds/8158087446522153219/posts/default/5323032334382080926'/><link rel='alternate' type='text/html' href='http://wesnothannotatedreplay.blogspot.com/2010/10/den-of-onis-loyalists-versus.html' title='Den of Onis, Loyalists versus MysteryExclamation&apos;s Drakes'/><author><name>Nil Athelion</name><uri>http://www.blogger.com/profile/16996018952758178741</uri><email>featherless@gmail.com</email></author><thr:total>0</thr:total></entry><entry><id>tag:blogger.com,1999:blog-8158087446522153219.post-2055493088149605707</id><published>2010-10-26T23:49:00.000-07:00</published><updated>2010-10-29T16:51:21.794-07:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#post'/><category scheme='http://www.blogger.com/atom/ns#' term='Northerners'/><category scheme='http://www.blogger.com/atom/ns#' term='Loyalists'/><category scheme='http://www.blogger.com/atom/ns#' term='MysteryExclamation'/><category scheme='http://www.blogger.com/atom/ns#' term='Disconnection'/><category scheme='http://www.blogger.com/atom/ns#' term='Loris River'/><category scheme='http://www.blogger.com/atom/ns#' term='Tie'/><title type='text'>Loris River, Loyalists versus MysteryExclamation's Northerners</title><content type='html'>&lt;div&gt;&lt;div&gt;http://www.4shared.com/file/IBPJx2-F/4p_-_Loris_River_replay.html&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;This battle took place on the Loris River map, which is actually built for 4 players (with two teams, one in each corner).  I tried to do it for 2-player, just me and MysteryExclamation ("ME").&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;When I started, I realized this map was a bit big.  I sent off two spearmen to grab things in the northern part of the map, with... some success.  My main interest, however, was to rush down to ME's base and start harassing her immediately.  With luck, she would pick a fight with me with the front-line close to her base.  Since it's a square map with us in either corner, some villages are quite out of the way.&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;I had a good success with my Horseman-Cavalry tag-team.  I had picked the two of them because the Loyalist Cavalry has 20% resistance to blade, and 30% to impact - only orcish archers and goblin spearmen can hit their 20% weakness to pierce.  Plus they were fast, which was the point of this whole endeavor.  I killed a bunch of people, and did pretty well in the south.  I was gradually driven back, but on that front I got a Lancer, and had killed a good deal of her units.&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;On the topside, my idea of grabbing everything with the spear-men seemed kind of silly.  The map is wide, but it's not incredibly long.  I got into a continuous fight with ME's units up there, doing so-so.  Nothing special.&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;The Lancer I got in the southern campaign was... fun.  It naturally deals 12-3 damage, which is not bad, but then it charges, so whenever it attacks both in and the enemy deal double damage.  So it's basically 24-3.  During the day, that goes up to 30-3 damage.  That's right, he can deal up to 90 damage in a turn, and can one-hit anything with less than 30 life.&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;He killed a unit almost every turn.  Watch his spree in the replay.  He just wanders around sticking his lance in anything that comes his way.  Bad-ass.  I prefer Lancers to Knights for multiplayer because while a Lancer is more likely to die, he will probably kill more units in his short life than a Knight will an entire game.&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;Of course, this also means that other units get less experience, right?  In a campaign, this is fairly important.  However in multi-player, killing a few units means that your level 1 units will both survive better, and have a better chance of ganging up on the remaining enemy units.  I think it's fair, though having your level 1s deal the finishing blow is generally preferable.&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;After a fairly even battle on both fronts, I started to win a bit in the southern front, and eager to grab villages (I was below-half of the villages most of the game) I went and grabbed a bunch.&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;...silly me.  As it turns out ME had a decent-sized assault-force ready, and picked off my units the same way I like to pick off her units.  I was still massively ahead in terms of kills, but this had narrowed things a lot.&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;My plan at this point was to lose (or at least only mildly threaten) the lower area, and focus on wiping out the northern area, where I was on the verge of winning (I had done a bit of imbalance, sending more troops there when it looked like I was winning on the southern area).  The next day, I was going to wipe over that side of the map, then cut downwards between ME's keep and her troops in the field.&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;This would have been a feint, of course.  The Lancer (who had been sent back for repairs at this point) would be riding a route that kept him out of enemy sight-range.  He's got a speed of 10, so he can do that pretty well.  One the battle was drawn to between ME's leader and the rest of her troops, I would have the Lancer run in out of sight range and lance her leader.&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;Troll has 55 health and a 20% resistance to pierce.  A day-time blow with the lancer would deal 24 damage.  More importantly, her troll leader has 40% defence in a castle. I had a 64.8% chance to hit at least twice, with a 21% chance to kill her leader out-right.  If I only hit twice, then I would use another horseman (84% chance to hit once and kill) or any other unit I could get there - possibly fencers (82% chance to kill) to deal the last 7 damage.&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;Otherwise, it would just be a big battle where I could reclaim the villages of the south back while my units did their best to take equal amounts of northerners with them.  The units to support them would be streaming in through the lower continent, and taking the villages as they go (slowing the first re-enforcements to create a proper "wave", not just a stream of attackers).&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;By the time the reinforcements came in, I would control the vast majority of the villages on the map, and be able to send in enough troops to at least keep MysteryExclamation from re-expanding, and then eventually crush her.  Unless she fought to keep the southern continent, in which case I would have a very good chance of ganking her leader in the meantime.&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;Of course, then ME went to get fitted for a corset, and since she had forgotten to keep her computer plugged in, it ran out of battery and died.  Which killed the game.  Thus the replay ends half-way.&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;Lame.&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;Other general notes: Starting with 100 gold meant that I didn't have many units at the start.  Neither of us did, which made Loris River very, very big.  This emptiness is what made my cavalry tactics very potent.  However, starting with 200 gold (as if we each were two players) might be overall better.  It would certainly make for an epic fight.&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;I also did an over-all bad job of xp-management during this fight.  I let a lot of experienced units die.  (Plus the pseudo-loss from Soddreoc killing everyone.  He kills 9 units in the game, 3 to become a lancer, and 6 afterwards.  I'm not sad about his performance.)&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;There's an interesting problem with having to claim land on a map like this.  I often lose units to going and grabbing villages.  I should be more carefully about this.&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;Anyway, enjoy the replay.  If you have questions about particular decisions on my (Aelaris's) part, feel free to ask.&lt;/div&gt;&lt;div class="blogger-post-footer"&gt;&lt;img width='1' height='1' src='https://blogger.googleusercontent.com/tracker/8158087446522153219-2055493088149605707?l=wesnothannotatedreplay.blogspot.com' alt='' /&gt;&lt;/div&gt;</content><link rel='replies' type='application/atom+xml' href='http://wesnothannotatedreplay.blogspot.com/feeds/2055493088149605707/comments/default' title='Post Comments'/><link rel='replies' type='text/html' href='http://wesnothannotatedreplay.blogspot.com/2010/10/loris-river-loyalist-versus.html#comment-form' title='0 Comments'/><link rel='edit' type='application/atom+xml' href='http://www.blogger.com/feeds/8158087446522153219/posts/default/2055493088149605707'/><link rel='self' type='application/atom+xml' href='http://www.blogger.com/feeds/8158087446522153219/posts/default/2055493088149605707'/><link rel='alternate' type='text/html' href='http://wesnothannotatedreplay.blogspot.com/2010/10/loris-river-loyalist-versus.html' title='Loris River, Loyalists versus MysteryExclamation&apos;s Northerners'/><author><name>Nil Athelion</name><uri>http://www.blogger.com/profile/16996018952758178741</uri><email>featherless@gmail.com</email></author><thr:total>0</thr:total></entry><entry><id>tag:blogger.com,1999:blog-8158087446522153219.post-8213485919120056146</id><published>2010-10-25T11:03:00.000-07:00</published><updated>2010-10-25T11:11:34.560-07:00</updated><category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/blogger/2008/kind#post'/><category scheme='http://www.blogger.com/atom/ns#' term='Metablog'/><title type='text'>What's What</title><content type='html'>Woo!  A new blog!  Again!&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;I made a new folder to archive all my &lt;a href="http://www.wesnoth.org/"&gt;Wesnoth&lt;/a&gt; Replays, and it occurred to me that I had little idea what happened in these games.  So I thought to myself, hey, I should annotate them!  Then I decided that this would be too much effort, so I'd only annotate the games I play in the future.&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;But then... why have all the annotations rusting in a folder, when I could share them with everyone?&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;So here's the place to share.  Whenever I play a game, then afterwards I'm going to post it up here with a (primarily strategic) summary of what happened.  Probably short little things.&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;People who are following me in other blogs might notice things have gone quiet.  This is because I'm back on the Seraph-Inn forums, and so I use the "Complain" and "Anti-Complain" threads there, rather than expressing myself here.  This blog hopefully will not have competition like that.&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;I may make a few posts on strategy, or general Wesnoth ponderings.&lt;/div&gt;&lt;div class="blogger-post-footer"&gt;&lt;img width='1' height='1' src='https://blogger.googleusercontent.com/tracker/8158087446522153219-8213485919120056146?l=wesnothannotatedreplay.blogspot.com' alt='' /&gt;&lt;/div&gt;</content><link rel='replies' type='application/atom+xml' href='http://wesnothannotatedreplay.blogspot.com/feeds/8213485919120056146/comments/default' title='Post Comments'/><link rel='replies' type='text/html' href='http://wesnothannotatedreplay.blogspot.com/2010/10/whats-what.html#comment-form' title='0 Comments'/><link rel='edit' type='application/atom+xml' href='http://www.blogger.com/feeds/8158087446522153219/posts/default/8213485919120056146'/><link rel='self' type='application/atom+xml' href='http://www.blogger.com/feeds/8158087446522153219/posts/default/8213485919120056146'/><link rel='alternate' type='text/html' href='http://wesnothannotatedreplay.blogspot.com/2010/10/whats-what.html' title='What&apos;s What'/><author><name>Nil Athelion</name><uri>http://www.blogger.com/profile/16996018952758178741</uri><email>featherless@gmail.com</email></author><thr:total>0</thr:total></entry></feed>

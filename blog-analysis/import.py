@@ -22,7 +22,7 @@ if __name__ == '__main__':
     connection = Connection()
     db = connection.blog_data
 
-    data = feedparser.parse('datas/blog-10-01-2011 (3).xml')
+    data = feedparser.parse('datas/zacharycohn039sblog.wordpress.2011-10-03.xml')
 
     print urlparse(data.feed.link).netloc
 
