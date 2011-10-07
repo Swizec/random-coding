@@ -21,8 +21,8 @@ if __name__ == '__main__':
     connection = Connection()
     db = connection.blog_data
 
-    swizec = db['swizec.com']
+    robertbasic = db['robertbasic.com']
 
-    data = feedparser.parse('datas/ageekwithahat.wordpress.2011-10-06.xml')
-    map(lambda entry: store(entry, swizec),
+    data = feedparser.parse('datas/robertbasic.wordpress.2011-10-01.xml')
+    map(lambda entry: store(entry, robertbasic),
         cleanup(data).entries)
