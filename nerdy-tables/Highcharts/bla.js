@@ -42,6 +42,7 @@ function pairs_functional2(data) {
 }
 
 function pairs_native(data) {
+    return
 }
 
 function pairs_iterative(data) {
