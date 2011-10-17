@@ -1,0 +1,48 @@
+
+<html>
+<link href='http://fonts.googleapis.com/css?family=Droid+Serif' rel='stylesheet' type='text/css'>
+<style>
+  body { font-family: 'Droid Serif', serif; font-size: 0.8em; }
+
+  /* the quirk */
+  img {
+    width: auto;
+    height: auto;
+    max-width: 300px;
+    max-height: 200px;
+  }
+
+  .centered {
+    display: -webkit-box;
+    display: -moz-box;
+    display: box;
+
+    -webkit-box-pack: center;
+    -webkit-box-align: center;
+
+    -moz-box-pack: center;
+    -moz-box-align: center;
+
+    background: #59E64C;
+    width: 350px;
+    height: 250px;
+  }
+</style>
+
+<body>
+
+  <h1>Vanilla case, works perfectly in Webkit and Firefox</h1>
+  <img src="http://i.imgur.com/ocz40.jpg" />
+
+  <h1>Putting it in a flexbox'd div breaks FF</h1>
+  <div class="centered">
+    <img src="http://i.imgur.com/ocz40.jpg" />
+  </div>
+
+  <h1>Wrap in vanilla div to fix ...</h1>
+  <div class="centered">
+    <div><img src="http://i.imgur.com/ocz40.jpg" /></div>
+  </div>
+</body>
+
+</html>
