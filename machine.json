@@ -1,0 +1,5 @@
+[{"from": "q0", "to": "q1", "via": 1, "put": 1, "move": 1},
+ {"from": "q1", "to": "q1", "via": 1, "put": 1, "move": 1},
+ {"from": "q1", "to": "q2", "via": "eps", "put": 1, "move": -1},
+ {"from": "q2", "to": "q2", "via": 1, "put": 1, "move": -1},
+ {"from": "q2", "to": "q3", "via": "eps", "put": 0, "move": 1}]
