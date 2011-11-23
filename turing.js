@@ -10,14 +10,15 @@ var start = process.argv[4];
 var stop = process.argv[5];
 
 var delta = function (tape, states, state, i, end) {
-    if (state == end) return tape;
+    if (state == end) return true;
     var cur = (tape[i]) ? states[state][tape[i]] : states[state]['eps'];
+    var yes = false;
 
     if (cur) {
         if (cur.put != "eps") tape.splice(i, 1, cur.put);
-        tape = delta(tape, states, cur.to, i+cur.move, end);
+        yes = delta(tape, states, cur.to, i+cur.move, end);
     }
-    return tape;
+    return yes;
 };
 
 var states = {};
@@ -26,4 +27,4 @@ instructions.map(function (instr) {
     states[instr.from][instr.via] = instr;
 });
 
-console.log(delta(tape.split(""), states, start, 0, stop).join(""));
+console.log(delta(tape.split(""), states, start, 0, stop));
