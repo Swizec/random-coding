@@ -1,2 +1,6 @@
+<<<<<<< HEAD
 build/
 *.pyc
+=======
+local_settings.js
+>>>>>>> 01f5bb578ec133ed9300f390d2ec245dbb9e1ccc
