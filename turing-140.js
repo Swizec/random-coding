@@ -1,5 +1,17 @@
 
-function tm(I,t,e,s,i,c,k) {i=0;while(s!=e){c=t[i];k=(c)?I[s][c]:I[s].B;if(!k)return false;t.splice(i,1,k.w);i+=k.m;s=k.n;}return t;}
+function tm(I,tape,end,state,i,cell,current) {
+    i = 0;
+    while(state != end) {
+        cell = tape[i];
+        current = (cell) ? I[state][cell] : I[state].B;
+        if(!current)
+            return false;
+        tape.splice(i, 1, current.w);
+        i += current.m;
+        state = current.n;
+    }
+    return tape;
+}
 
 // for testing purposes, run in node as:
 // node turing-140.js machine-140.json 111 q5

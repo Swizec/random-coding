@@ -5,24 +5,45 @@
 // node turing.js <instructions> <word> <end-state>
 
 var _ = require('underscore'), states = {};
+var stack = 0;
+var STACK_OVERFLOW = 1000;
 
-var delta = function (states, step, end) {
-    if (_.keys(step).indexOf(end) >= 0) return true;
-    var _step = {}, foo = _.keys(step).map(function (k) {
-        var i = step[k][0], t = step[k][1],
-            cur = (i < 0 || i >= t.length) ? states[k]['esp'] :  states[k][t[i]];
-            if (cur) cur.map(function(cur) {
-                if (cur.put != "eps") t.splice(i, 1, cur.put);
-                _step[cur.to] = [i+cur.move, t];
-            });
-    });
-    return (_.size(_step)) ? delta(states, _step, end) : false;
-};
+/* --- golf'd --- */
 
-JSON.parse(require('fs').readFileSync(process.argv[2], 'utf-8')).map(function (i) {
+var δ=function(S,s,e){var π=_.keys,Θ={},k,i,λ,μ,ι,Σ=_.size,β,ψ;
+if(π(s).indexOf(e)>=0)return!0
+for(k in s){i=s[k][0],λ=s[k][1],ψ=S[k][λ[i]]||S[k].B;for(ι=0;ψ,ι<Σ(ψ);){
+μ=ψ[ι++],β=_.clone(λ),β.splice(i,1,μ.w),Θ[μ.n]=[i+μ.m,β]}}return Σ(Θ)?δ(S,Θ,e):!!0};
+
+/* --- end of golf'd --- */
+/*
+var δ = function(S,s,e){
+    var π=_.keys,Θ={},k,i,λ,μ,ι,Σ=_.size,β,ψ;
+    if(π(s).indexOf(e)>=0) return!0
+    for(k in s){
+        i=s[k][0],
+        λ=s[k][1],
+        ψ=S[k][λ[i]]||S[k].B;
+
+        for(ι=0; ψ,ι<Σ(ψ); ){
+            μ=ψ[ι++];
+            β=_.clone(λ);
+            β.splice(i,1,μ.w);
+            Θ[μ.n]=[i+μ.m,β];
+        }
+    }
+    return Σ(Θ)?δ(S,Θ,e):!!0;
+};*/
+
+/*JSON.parse(require('fs').readFileSync(process.argv[2], 'utf-8')).map(function (i) {
     states[i.from] = states[i.from] || {};
     states[i.from][i.via] = states[i.from][i.via] || [];
     states[i.from][i.via].push(i);
-});
+});*/
 
-console.log(delta(states, {"q0": [0, process.argv[3].split("")]}, process.argv[4]));
+states = JSON.parse(require('fs').readFileSync(process.argv[2], 'utf-8'));
+
+
+console.log(δ(states,
+              {"q0": [0, process.argv[3].split("")]},
+              process.argv[4]));
