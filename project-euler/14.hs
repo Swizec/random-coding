@@ -9,8 +9,8 @@ collatz :: Integer -> [Integer]
 collatz = memoize col where
   col 1 = []
   col n
-    | odd n = 3*n+1:collatz(3*n+1)
-    | even n = div n 2:collatz(div n 2)
+    | odd n = 3*n+1:col(3*n+1)
+    | even n = div n 2:col(div n 2)
 
 collatz_len :: Integer -> Integer
 collatz_len = memoize len where
@@ -35,4 +35,5 @@ longest max =
 --  putStrLn $ show $ last $ sortBy (comparing snd) $ zip [1..] $ take 1000000 chains''
 --  putStrLn $ show $ head $ reverse $ sortBy (comparing snd) $ zip [1..] $ take 1000000 chains''
 --  putStrLn $ show $ head $ reverse $ takeWhile (\(i,l) -> i <= 1000000) $ longest' (1,1)
+--  putStrLn $ show $ longest 1000000
 --  putStrLn $ show $ longest 1000000
