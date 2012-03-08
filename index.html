@@ -9,6 +9,7 @@
 
     <!-- Le styles -->
     <link href="./css/bootstrap.css" rel="stylesheet">
+      <link type="text/css" href="./css/custom-theme/jquery-ui-1.8.16.custom.css" rel="stylesheet" />
     <style>
       body {
         padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
@@ -53,7 +54,13 @@
     <div class="container">
 
       <h1>CS student earnings</h1>
-      <p>Use this document as a way to quick start any new project.<br> All you get is this message and a barebones HTML document.</p>
+
+      <p>
+	<label id="amount">Studying for 1 years.</label>
+      </p>
+      <div style="width:300px">
+        <div id="slider"></div>
+      </div>
 
       <div id="easy-as-pie-chart"></div>​<div id="easy-as-pie-chart"></div>
 
@@ -76,6 +83,8 @@
     <script src="./js/bootstrap-carousel.js"></script>
     <script src="./js/bootstrap-typeahead.js"></script>-->
     <script src="./js/d3.v2.min.js?2.8.1"></script>
+    <script src="./js/jquery-ui-1.8.16.custom.min.js"></script>
+    <script src="./js/piechart.js"></script>
 
     <script src="./js/data.js"></script>
     <script src="./js/main.js"></script>

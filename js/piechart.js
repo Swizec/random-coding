@@ -1,10 +1,4 @@
 
-(function ($) {
-
-    setTimeout(update, 1000);
-
-})(jQuery);
-
 var w = 450;
 var h = 300;
 var r = 100;
@@ -111,37 +105,18 @@ var totalUnits = center_group.append("svg:text")
 // STREAKER CONNECTION ////////////////////////////////////
 ///////////////////////////////////////////////////////////
 
-var updateInterval = window.setInterval(update, 1500);
-var hourly_rate_labels = ['(',do 7€/h,', ',1,'),
-    (',7€/h do 10€/h,', ',2,'),
-    (',10€/h do 13€/h,', ',2,'),
-    (',13€/h do 16€/h,', ',3,'),
-    (',16€/h do 20€/h,', ',4,'),
-    (',20€/h do 25€/h,', ',5,'),
-    (',25€/h do 30€/h,', ',5,'),
-    (',30€/h do 40€/h,', ',5,'),
-    (',40€/h do 50€/h,', ',5,'),
-    (',50€/h do 60€/h,', ',6,'),
-    (',60€/h do 70€/h,', ',6,'),
-    (',70€/h do 80€/h,', ',6,'),
-    (',80€/h do 90€/h,', ',7,'),
-    (',90€/h do 100€/h,', ',7,'),
-    (',nad 100€/h,', ',7,'),
+//var updateInterval = window.setInterval(update, 1500);
+
+var hourly_rate_labels = ['do 7€/h','7€/h do 13€/h','13€/h do 16€/h','16€/h do 20€/h','20€/h do 50€/h','50€/h do 80€/h','nad 80€/h'];
 
 // to run each time data is generated
-function update() {
-
-  //arraySize = Math.ceil(Math.random()*10);
-  //streakerDataAdded = d3.range(arraySize).map(fillArray);
-  //streakerDataAdded = DATA.filter(function (item) {
-  //    return item.years_study == 1}).map(function (item) {
-  //        return {'port':
-  var data = DATA.filter(function (item) { return item.years_study == 4; });
+function update(year) {
+  var data = DATA.filter(function (item) { return item.years_study == year; });
     streakerDataAdded = d3.range(7).map(function (i) {
         return {port: hourly_rate_labels[i],
                 octetTotalCount: 0};
     });
-    data.map(function (item) { streakerDataAdded[item.hourly_rate].octetTotalCount += 1; });
+    data.map(function (item) { streakerDataAdded[item.hourly_rate-1].octetTotalCount += 1; });
   oldPieData = filteredPieData;
   pieData = donut(streakerDataAdded);
 
