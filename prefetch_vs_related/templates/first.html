@@ -38,9 +38,9 @@
           <div class="nav-collapse">
             <ul class="nav">
               <li class="active"><a href="/">Home</a></li>
-              <li><a href="/first">First</a></li>
-              <li><a href="/select">Select related</a></li>
-              <li><a href="/prefetch">Prefetch related</a></li>
+              <li><a href="/first/">First</a></li>
+              <li><a href="/select/">Select related</a></li>
+              <li><a href="/prefetch/">Prefetch related</a></li>
             </ul>
           </div><!--/.nav-collapse -->
         </div>
@@ -79,6 +79,11 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
     <script src="../assets/js/bootstrap.min.js"></script>
+    <script>
+      $("ul.nav li").removeClass('active').find("[href='"+window.location.pathname+"']").parent().addClass("active");
+      console.log(window.location);
+    </script>
+
 
   </body>
 </html>
