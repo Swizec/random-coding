@@ -23,6 +23,7 @@ urlpatterns = patterns(
          'show_indexes': True}),
 
     url(r'^$', 'talk_example.views.home'),
+    url(r'^first/', 'talk_example.views.first'),
     url(r'^prefetch/', 'talk_example.views.prefetch'),
     url(r'^select/', 'talk_example.views.select'),
 )

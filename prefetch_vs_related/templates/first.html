@@ -51,10 +51,10 @@
 
       {% for album in albums %}
 
-      <h2>{{ album.title }}</h2> by {{ album.user_set.all.0.name }} with {{ album.user_set.all.0.albums.count }} albums
+      <h2>{{ album.title }}</h2> by {{ album.user.name }} with {{ album.user.albums.count }} albums
 
       <div class="row">
-        {% for pic in album.pics.all %}
+        {% for pic in album.pics %}
 
         <div class="span3">
           <img src="{{ pic.href }}" />
