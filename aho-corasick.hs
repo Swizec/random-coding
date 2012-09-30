@@ -5,30 +5,26 @@ import Data.Maybe
 import qualified Data.Set as Set
 
 dictionary::[String]
-dictionary = ["he", "she", "his", "hers"]
+dictionary = ["us", "he", "she", "his", "hers"]
 
 text::String
-text = "ushers" -- expect output: she, he, hers
+text = "ushers" -- expect output: us, she, he, hers
 
 goto::Map (Int, Char) Int -> Map Int Int -> (Int, Char) -> Int
 goto m f (state, c)
   | member (state, c) m = fromMaybe 0 $ Map.lookup (state, c) m
   | otherwise = if state == 0 then 0 else goto m f (fromMaybe 0 $ Map.lookup state f, c)
 
-output::Int -> [String]
-output 2 = ["he"]
-output 5 = ["she", "he"]
-output 7 = ["his"]
-output 9 = ["hers"]
-output _ = []
+output::Map Int [String] -> Int -> [String]
+output out state = fromMaybe [] $ Map.lookup state out
 
-ahocorasick::Map (Int, Char) Int -> Map Int Int -> [Char] -> Int -> [[String]]
-ahocorasick _ _ [] state = [output(state)]
-ahocorasick m f (c:rest) state =
+ahocorasick::Map (Int, Char) Int -> Map Int Int -> Map Int [String] -> [Char] -> Int -> [[String]]
+ahocorasick _ _ out [] state = [output out state]
+ahocorasick m f out (c:rest) state =
   let next = goto m f (state, c)
-  in if output(state) /= []
-     then output(state):(ahocorasick m f rest next)
-     else ahocorasick m f rest next
+  in if output out state /= []
+     then (output out state):(ahocorasick m f out rest next)
+     else ahocorasick m f out rest next
 
 
 -- builds the goto function
@@ -105,4 +101,4 @@ main = do
       f = build_fail m (nodes_at_depths m) $ (length $ nodes_at_depths m)-1
       out = build_output m dictionary
 
-  print $ ahocorasick m f text 0
+  print $ ahocorasick m f out text 0
