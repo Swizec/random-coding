@@ -10,6 +10,8 @@ dictionary = ["us", "he", "she", "his", "hers"]
 text::String
 text = "ushers" -- expect output: us, she, he, hers
 
+-- TODO: passing all those maps around is ugly, everything should be put in a monad
+
 goto::Map (Int, Char) Int -> Map Int Int -> (Int, Char) -> Int
 goto m f (state, c)
   | member (state, c) m = fromMaybe 0 $ Map.lookup (state, c) m
