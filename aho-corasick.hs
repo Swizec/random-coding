@@ -42,7 +42,7 @@ add_one state m (c:rest)
   where key = (state, c)
         max = (size m)+1
 
--- this doesn't fully work
+-- builds the output function
 build_output::Map (Int, Char) Int -> [String] -> Map Int [String]
 build_output _ [] = empty
 build_output m (s:rest) = Map.insert (fin m 0 s)
