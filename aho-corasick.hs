@@ -1,8 +1,10 @@
 
-import Data.Set
+import Data.List
+import Data.HashMap as Map
+import Data.Maybe
 
-dictionary::Set String
-dictionary = fromList ["he", "she", "his", "hers"]
+dictionary::[String]
+dictionary = ["he", "she", "his", "hers"]
 
 text::String
 text = "ushers" -- expect output: she, he, hers
@@ -46,5 +48,18 @@ ahocorasick (c:rest) state =
      then output(state):(ahocorasick rest next)
      else ahocorasick rest next
 
+
+build_goto::Map (Int, Char) Int -> String -> (Map (Int, Char) Int, String)
+build_goto m s = (add_one 0 m s, s)
+
+add_one::Int -> Map (Int, Char) Int -> [Char] -> Map (Int, Char) Int
+add_one _  m [] = m
+add_one state m (c:rest)
+  | member key m = add_one (fromMaybe 0 $ Map.lookup key m) m rest
+  | otherwise = add_one max (Map.insert key max m) rest
+  where key = (state, c)
+        max = (size m)+1
+
 main = do
-  print $ ahocorasick text 0
+  print $ fst $ mapAccumL build_goto empty dictionary
+--  print $ ahocorasick text 0
