@@ -9,18 +9,8 @@ dictionary = ["he", "she", "his", "hers"]
 text::String
 text = "ushers" -- expect output: she, he, hers
 
-goto::Int -> Char -> Int
-goto 0 'h' = 1
-goto 0 's' = 3
-goto 0 _ = 0
-goto 1 'e' = 2
-goto 1 'i' = 6
-goto 2 'r' = 8
-goto 3 'h' = 4
-goto 4 'e' = 5
-goto 6 's' = 7
-goto 8 's' = 9
-goto state char = goto (failure state) char
+goto::Map (Int, Char) Int -> (Int, Char) -> Int
+goto m (state, c) = fromMaybe (failure state) $ Map.lookup (state, c) m
 
 output::Int -> [String]
 output 2 = ["he"]
@@ -30,6 +20,7 @@ output 9 = ["hers"]
 output _ = []
 
 failure::Int -> Int
+failure 0 = 0
 failure 1 = 0
 failure 2 = 0
 failure 3 = 0
@@ -40,13 +31,13 @@ failure 7 = 3
 failure 8 = 0
 failure 9 = 3
 
-ahocorasick::[Char] -> Int -> [[String]]
-ahocorasick [] state = [output(state)]
-ahocorasick (c:rest) state =
-  let next = goto state c
+ahocorasick::Map (Int, Char) Int -> [Char] -> Int -> [[String]]
+ahocorasick _ [] state = [output(state)]
+ahocorasick m (c:rest) state =
+  let next = goto m (state, c)
   in if output(state) /= []
-     then output(state):(ahocorasick rest next)
-     else ahocorasick rest next
+     then output(state):(ahocorasick m rest next)
+     else ahocorasick m rest next
 
 
 build_goto::Map (Int, Char) Int -> String -> (Map (Int, Char) Int, String)
@@ -61,5 +52,5 @@ add_one state m (c:rest)
         max = (size m)+1
 
 main = do
-  print $ fst $ mapAccumL build_goto empty dictionary
---  print $ ahocorasick text 0
+  let m = fst $ mapAccumL build_goto empty dictionary
+  print $ ahocorasick m text 0
