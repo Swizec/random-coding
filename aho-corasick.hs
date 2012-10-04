@@ -12,32 +12,34 @@ dictionary = ["us", "he", "she", "his", "hers"]
 text::String
 text = "ushers" -- expect output: us, she, he, hers
 
--- TODO: passing all those maps around is ugly, everything should be put in a monad
+type Goto = Map (Int, Char) Int
+type Failure = Map Int Int
+type Output = Map Int [String]
 
-goto::Map (Int, Char) Int -> Map Int Int -> (Int, Char) -> Int
-goto m f (state, c)
-  | member (state, c) m = fromMaybe 0 $ Map.lookup (state, c) m
-  | otherwise = if state == 0 then 0 else goto m f (fromMaybe 0 $ Map.lookup state f, c)
+goto::(?m::Goto, ?f::Failure) => (Int, Char) -> Int
+goto (state, c)
+  | member (state, c) ?m = fromMaybe 0 $ Map.lookup (state, c) ?m
+  | otherwise = if state == 0 then 0 else goto (fromMaybe 0 $ Map.lookup state ?f, c)
 
-output::Map Int [String] -> Int -> [String]
+output::Output -> Int -> [String]
 output out state = fromMaybe [] $ Map.lookup state out
 
-ahocorasick::(?m::Map (Int, Char) Int, ?f::Map Int Int, ?out::Map Int [String]) =>
+ahocorasick::(?m::Goto, ?f::Failure, ?out::Output) =>
              [Char] -> Int -> [[String]]
 ahocorasick [] state = [output ?out state]
 ahocorasick(c:rest) state =
-  let next = goto ?m ?f (state, c)
+  let next = goto (state, c)
   in if output ?out state /= []
      then (output ?out state):(ahocorasick rest next)
      else ahocorasick rest next
 
 
 -- builds the goto function
-build_goto::Map (Int, Char) Int -> String -> (Map (Int, Char) Int, String)
+build_goto::Goto -> String -> (Goto, String)
 build_goto m s = (add_one 0 m s, s)
 
 -- adds one string to goto function
-add_one::Int -> Map (Int, Char) Int -> [Char] -> Map (Int, Char) Int
+add_one::Int -> Goto -> [Char] -> Goto
 add_one _  m [] = m
 add_one state m (c:rest)
   | member key m = add_one (fromMaybe 0 $ Map.lookup key m) m rest
@@ -46,27 +48,27 @@ add_one state m (c:rest)
         max = (size m)+1
 
 -- builds the output function
-build_output::(?m::Map (Int, Char) Int) => [String] -> Map Int [String]
+build_output::(?m::Goto) => [String] -> Output
 build_output [] = empty
 build_output (s:rest) = Map.insert (fin 0 s)
                           (List.filter (\x -> elem x dictionary) $ List.tails s) $
                           build_output rest
 
 -- returns the state in which an input string ends without using failures
-fin::(?m::Map (Int, Char) Int) => Int -> [Char] -> Int
+fin::(?m::Goto) => Int -> [Char] -> Int
 fin state [] = state
 fin state (c:rest) = fin next rest
   where next = fromMaybe 0 $ Map.lookup (state, c) ?m
 
 -- returns the path to traverse a string
-path::(?m::Map (Int, Char) Int) => Int -> [Char] -> [Int]
+path::(?m::Goto) => Int -> [Char] -> [Int]
 path state [c] = [fin state [c]]
 path state (c:rest) =
   let state' = (fin state [c])
   in state':path state' rest
 
 -- tells us which nodes in the goto state machine are at which traversal depth
-nodes_at_depths::(?m::Map (Int, Char) Int) => [[Int]]
+nodes_at_depths::(?m::Goto) => [[Int]]
 nodes_at_depths =
   List.map (\i ->
                   List.filter (>0) $
@@ -77,7 +79,7 @@ nodes_at_depths =
 
 
 -- builds the failure function
-build_fail::(?m::Map (Int, Char) Int) => [[Int]] -> Int -> Map Int Int
+build_fail::(?m::Goto) => [[Int]] -> Int -> Failure
 build_fail ns 0 = fst $
                   mapAccumL (\f state ->
                               (Map.insert state 0 f, state))
@@ -89,7 +91,7 @@ build_fail ns d = fst $
   where lower = build_fail ns (d-1)
 
 -- inner step of building the failure function
-decide_fail::Int -> Map (Int, Char) Int -> Map Int Int -> Int
+decide_fail::Int -> Goto -> Failure -> Int
 decide_fail state m lower = findWithDefault 0 (s, c) m
   where (s', c) = key' state $ assocs m
         s = findWithDefault 0 s' lower
@@ -104,8 +106,7 @@ key' state ((k, v):rest)
 
 main = do
   let ?m = fst $ mapAccumL build_goto empty dictionary
-  let nodes = nodes_at_depths
-  let ?f = build_fail nodes $ (length $ nodes)-1
+  let ?f = build_fail nodes_at_depths $ (length $ nodes_at_depths)-1
       ?out = build_output dictionary
 
   print $ ahocorasick text 0
