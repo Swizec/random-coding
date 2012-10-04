@@ -1,4 +1,6 @@
 
+{-# LANGUAGE ImplicitParams #-}
+
 import Data.List as List
 import Data.HashMap as Map
 import Data.Maybe
@@ -20,13 +22,14 @@ goto m f (state, c)
 output::Map Int [String] -> Int -> [String]
 output out state = fromMaybe [] $ Map.lookup state out
 
-ahocorasick::Map (Int, Char) Int -> Map Int Int -> Map Int [String] -> [Char] -> Int -> [[String]]
-ahocorasick _ _ out [] state = [output out state]
-ahocorasick m f out (c:rest) state =
-  let next = goto m f (state, c)
-  in if output out state /= []
-     then (output out state):(ahocorasick m f out rest next)
-     else ahocorasick m f out rest next
+ahocorasick::(?m::Map (Int, Char) Int, ?f::Map Int Int, ?out::Map Int [String]) =>
+             [Char] -> Int -> [[String]]
+ahocorasick [] state = [output ?out state]
+ahocorasick(c:rest) state =
+  let next = goto ?m ?f (state, c)
+  in if output ?out state /= []
+     then (output ?out state):(ahocorasick rest next)
+     else ahocorasick rest next
 
 
 -- builds the goto function
@@ -43,46 +46,47 @@ add_one state m (c:rest)
         max = (size m)+1
 
 -- builds the output function
-build_output::Map (Int, Char) Int -> [String] -> Map Int [String]
-build_output _ [] = empty
-build_output m (s:rest) = Map.insert (fin m 0 s)
+build_output::(?m::Map (Int, Char) Int) => [String] -> Map Int [String]
+build_output [] = empty
+build_output (s:rest) = Map.insert (fin 0 s)
                           (List.filter (\x -> elem x dictionary) $ List.tails s) $
-                          build_output m rest
+                          build_output rest
 
 -- returns the state in which an input string ends without using failures
-fin::Map (Int, Char) Int -> Int -> [Char] -> Int
-fin m state [] = state
-fin m state (c:rest) = fin m next rest
-  where next = fromMaybe 0 $ Map.lookup (state, c) m
+fin::(?m::Map (Int, Char) Int) => Int -> [Char] -> Int
+fin state [] = state
+fin state (c:rest) = fin next rest
+  where next = fromMaybe 0 $ Map.lookup (state, c) ?m
 
 -- returns the path to traverse a string
-path::Map (Int, Char) Int -> Int -> [Char] -> [Int]
-path m state [c] = [fin m state [c]]
-path m state (c:rest) =
-  let state' = (fin m state [c])
-  in state':path m state' rest
+path::(?m::Map (Int, Char) Int) => Int -> [Char] -> [Int]
+path state [c] = [fin state [c]]
+path state (c:rest) =
+  let state' = (fin state [c])
+  in state':path state' rest
 
 -- tells us which nodes in the goto state machine are at which traversal depth
-nodes_at_depths::Map (Int, Char) Int -> [[Int]]
-nodes_at_depths m =
+nodes_at_depths::(?m::Map (Int, Char) Int) => [[Int]]
+nodes_at_depths =
   List.map (\i ->
                   List.filter (>0) $
                   List.map (\l -> if i < length l then l!!i else -1)
                   paths)
            [0..(maximum $ List.map length paths)-1]
-  where paths = List.map (path m 0) dictionary
+  where paths = List.map (path 0) dictionary
 
 
 -- builds the failure function
-build_fail::Map (Int, Char) Int -> [[Int]] -> Int -> Map Int Int
-build_fail m ns 0 = fst $ mapAccumL (\f state ->
-                                      (Map.insert state 0 f, state))
-                          empty (ns!!0)
-build_fail m ns d = fst $
-                    mapAccumL (\f state ->
-                                (Map.insert state (decide_fail state m lower) f, state))
-                    lower (ns!!d)
-  where lower = build_fail m ns (d-1)
+build_fail::(?m::Map (Int, Char) Int) => [[Int]] -> Int -> Map Int Int
+build_fail ns 0 = fst $
+                  mapAccumL (\f state ->
+                              (Map.insert state 0 f, state))
+                  empty (ns!!0)
+build_fail ns d = fst $
+                  mapAccumL (\f state ->
+                              (Map.insert state (decide_fail state ?m lower) f, state))
+                  lower (ns!!d)
+  where lower = build_fail ns (d-1)
 
 -- inner step of building the failure function
 decide_fail::Int -> Map (Int, Char) Int -> Map Int Int -> Int
@@ -99,8 +103,9 @@ key' state ((k, v):rest)
   | otherwise = key' state rest
 
 main = do
-  let m = fst $ mapAccumL build_goto empty dictionary
-      f = build_fail m (nodes_at_depths m) $ (length $ nodes_at_depths m)-1
-      out = build_output m dictionary
+  let ?m = fst $ mapAccumL build_goto empty dictionary
+  let nodes = nodes_at_depths
+  let ?f = build_fail nodes $ (length $ nodes)-1
+      ?out = build_output dictionary
 
-  print $ ahocorasick m f out text 0
+  print $ ahocorasick text 0
