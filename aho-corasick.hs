@@ -7,31 +7,40 @@ import Data.Maybe
 import qualified Data.Set as Set
 
 dictionary::[String]
-dictionary = ["us", "he", "she", "his", "hers"]
+dictionary = ["he", "she", "his", "hers"]
 
 text::String
-text = "ushers" -- expect output: us, she, he, hers
+text = "ushers" -- expect output: she, he, hers
 
 type Goto = Map (Int, Char) Int
 type Failure = Map Int Int
 type Output = Map Int [String]
 
+-- the main function of the algorithm
+ahocorasick::(?m::Goto, ?f::Failure, ?out::Output) =>
+             String -> [(Int, [String])]
+ahocorasick text = ahocorasick' text 0 0
+
+-- real implementation
+ahocorasick'::(?m::Goto, ?f::Failure, ?out::Output) =>
+             [Char] -> Int -> Int -> [(Int, [String])]
+ahocorasick' [] state pos = [(pos, output state)]
+ahocorasick' (c:rest) state pos =
+  if output state /= []
+     then (pos, output state):(ahocorasick' rest next (pos+1))
+     else ahocorasick' rest next (pos+1)
+  where next = goto (state, c)
+
+-- helper function for the parser state machine
 goto::(?m::Goto, ?f::Failure) => (Int, Char) -> Int
 goto (state, c)
   | member (state, c) ?m = fromMaybe 0 $ Map.lookup (state, c) ?m
-  | otherwise = if state == 0 then 0 else goto (fromMaybe 0 $ Map.lookup state ?f, c)
+  | otherwise = if state == 0 then 0
+                else goto (fromMaybe 0 $ Map.lookup state ?f, c)
 
-output::Output -> Int -> [String]
-output out state = fromMaybe [] $ Map.lookup state out
-
-ahocorasick::(?m::Goto, ?f::Failure, ?out::Output) =>
-             [Char] -> Int -> [[String]]
-ahocorasick [] state = [output ?out state]
-ahocorasick(c:rest) state =
-  let next = goto (state, c)
-  in if output ?out state /= []
-     then (output ?out state):(ahocorasick rest next)
-     else ahocorasick rest next
+-- helper function to call the output "function"
+output::(?out::Output) => Int -> [String]
+output state = fromMaybe [] $ Map.lookup state ?out
 
 
 -- builds the goto function
@@ -80,20 +89,20 @@ nodes_at_depths =
 
 -- builds the failure function
 build_fail::(?m::Goto) => [[Int]] -> Int -> Failure
-build_fail ns 0 = fst $
+build_fail nodes 0 = fst $
                   mapAccumL (\f state ->
                               (Map.insert state 0 f, state))
-                  empty (ns!!0)
-build_fail ns d = fst $
+                  empty (nodes!!0)
+build_fail nodes d = fst $
                   mapAccumL (\f state ->
-                              (Map.insert state (decide_fail state ?m lower) f, state))
-                  lower (ns!!d)
-  where lower = build_fail ns (d-1)
+                              (Map.insert state (decide_fail state lower) f, state))
+                  lower (nodes!!d)
+  where lower = build_fail nodes (d-1)
 
 -- inner step of building the failure function
-decide_fail::Int -> Goto -> Failure -> Int
-decide_fail state m lower = findWithDefault 0 (s, c) m
-  where (s', c) = key' state $ assocs m
+decide_fail::(?m::Goto) => Int -> Failure -> Int
+decide_fail state lower = findWithDefault 0 (s, c) ?m
+  where (s', c) = key' state $ assocs ?m
         s = findWithDefault 0 s' lower
 
 
@@ -109,4 +118,4 @@ main = do
   let ?f = build_fail nodes_at_depths $ (length $ nodes_at_depths)-1
       ?out = build_output dictionary
 
-  print $ ahocorasick text 0
+  print $ ahocorasick text
