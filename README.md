@@ -50,7 +50,7 @@ object to enable the unshortener to use the bitly API directly:
 When an error occurs the callback is passed the original url and an
 error flag.
 
-## How it works
+## How it works basically
 
 node-unshortener aims to be able to unshorten any link possible, so it
 tries to behave as a browser and simply follows all the
